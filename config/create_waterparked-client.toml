@@ -1,0 +1,85 @@
+[slide]
+	#Show the "Shift to exit" hint while sliding.
+	showSlideExitHint = true
+	#Camera smoothing strength while sliding. 0 = off, higher = smoother.
+	# Default: 0.9
+	# Range: 0.0 ~ 0.9
+	cameraSmoothing = 0.9
+	#Show segment-junction skeleton rings when the slide tube is translucent in edit mode.
+	showSkeletonWhenTranslucent = false
+
+[rendering]
+	#Mesh polygon density scale. Lower = fewer faces.
+	# Default: 0.5
+	# Range: 0.05 ~ 2.0
+	polygonScale = 0.5
+	#Water flow scroll speed scale. Higher = faster.
+	# Default: 1.0
+	# Range: 0.1 ~ 4.0
+	waterFlowScale = 1.0
+	#Vertex count of the water envelope polygon. Lower = rougher water shape.
+	# Default: 16
+	# Range: 4 ~ 16
+	waterEnvelopeVertices = 16
+	#Spacing between rendered water envelope sections, in blocks.
+	# Default: 2
+	# Range: 1 ~ 4
+	waterEnvelopeSpacing = 2
+	#Water vertex jitter amplitude (turbulence) in blocks. 0 = off.
+	# Default: 0.2
+	# Range: 0.0 ~ 1.5
+	waterJitterScale = 0.2
+	#Water vertex jitter noise frequency (cycles per block).
+	# Default: 2.0
+	# Range: 1.0 ~ 16.0
+	waterJitterFrequency = 2.0
+	#Water vertex jitter noise time scale (how fast the noise evolves).
+	# Default: 12.0
+	# Range: 0.1 ~ 16.0
+	waterJitterTimeScale = 12.0
+
+[compat]
+	#Enable shaderpack water adaptation: the tube water and thrown stream are stamped and shaded through the active shaderpack's own water program (BSL / Complementary / Photon adapters). Turn off to render water with the plain translucent appearance under any shaderpack.
+	shaderWaterCompat = true
+
+[ghost]
+	#Fake block clipping mode. CLIP cuts the parts of a fake block that the tube wall envelope covers (default). OUTSET skips clipping entirely (fallback if clipping artifacts appear).
+	ghostClipMode = "CLIP"
+
+[support]
+	#Fraction of the tube's lower circumference wrapped by the support bracket shell. 1/3 = bottom 120 degrees.
+	# Default: 0.3333333333333333
+	# Range: 0.1 ~ 0.5
+	supportFraction = 0.3333333333333333
+	#Support bracket shell thickness in blocks (extends outward from the tube wall).
+	# Default: 0.15
+	# Range: 0.05 ~ 0.4
+	supportThickness = 0.15
+	#Support beam cross-section edge length in blocks (square profile).
+	# Default: 0.4
+	# Range: 0.2 ~ 0.8
+	supportBeamSize = 0.4
+	#Length of the bridge-style support bracket along the tube axis, in blocks (one bracket per anchor).
+	# Default: 0.5
+	# Range: 0.2 ~ 2.0
+	supportBracketThickness = 0.5
+
+[water]
+	#Number of particles used to compute the client-side water shape.
+	# Default: 64
+	# Range: 8 ~ 256
+	waterParticleCount = 64
+
+[splash]
+	#How tightly packed the splash particles are. Multiplier applied to the speed-based spawn rate.
+	# Default: 2.0
+	# Range: 0.25 ~ 8.0
+	splashDensity = 2.0
+	#Maximum splash particles spawned per side per second.
+	# Default: 40
+	# Range: 8 ~ 120
+	splashMaxRate = 40
+
+[debug]
+	#Show the server water simulation trajectories (debug).
+	waterSimDebug = false

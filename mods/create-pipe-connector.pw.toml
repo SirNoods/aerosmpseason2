@@ -1,0 +1,13 @@
+name = "Create: Pipe Connector"
+filename = "createpipeconnector-neoforge-1.21.1-1.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "10212a6bb95a27d5bdc7c190b07fd692ad57a553"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8650847
+project-id = 1610354

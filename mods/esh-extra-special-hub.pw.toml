@@ -1,0 +1,13 @@
+name = "[ESH] Extra Special Hub"
+filename = "extraspecialhub-1.0.1+1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b3690c3338ac60159094cbd9545b781daa62cfe4"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8886500
+project-id = 1658723

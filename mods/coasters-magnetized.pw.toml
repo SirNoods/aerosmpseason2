@@ -1,0 +1,13 @@
+name = "Coasters: Magnetized"
+filename = "coastersmagnetized-1.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "26332fc0110181036d58b4135fd1cf431d842cb0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8668703
+project-id = 1642979

@@ -1,0 +1,53 @@
+#Master toggle for adaptive physics optimization.
+enableOptimization = true
+#Number of ticks a sub-level must maintain near-zero velocity before
+#its physics work is reduced. Default 400 = 20 seconds at 20 TPS.
+# Default: 400
+# Range: > 20
+inactivityThresholdTicks = 400
+#Combined linear + angular velocity magnitude (m/s) below which a sub-level
+#is considered stationary. Default 0.01.
+# Default: 0.01
+# Range: 0.0 ~ 1.0
+velocityThreshold = 0.01
+#How often (in server ticks) the heatmap runs for active sub-levels.
+#Default 4 (every 4 ticks). 1 = every tick (vanilla behavior).
+#Note: Heatmap runs once per tick, not per physics substep.
+# Default: 4
+# Range: 1 ~ 20
+activeHeatmapTickInterval = 4
+#How often (in server ticks) the heatmap runs for inactive sub-levels.
+#Default 10 (every 10 ticks). Higher = less CPU usage.
+#Note: Heatmap runs once per tick, not per physics substep.
+# Default: 10
+# Range: 1 ~ 100
+inactiveHeatmapTickInterval = 10
+#How often (in physics substeps) pose updates run for inactive sub-levels.
+#Default 5 (every 5 substeps). Higher = less CPU usage but slower position sync.
+#Note: Pose updates run per physics substep, not per tick.
+# Default: 5
+# Range: 1 ~ 20
+inactivePosesSubstepInterval = 5
+#How often (in server ticks) block entity actors tick for inactive sub-levels.
+#Default 4 (every 4 ticks). Higher = less CPU usage for block entities.
+#Note: Actor ticks run once per tick, not per physics substep.
+# Default: 4
+# Range: 1 ~ 100
+inactiveActorTickInterval = 4
+#Reduce light engine CPU usage for inactive sub-levels.
+#When enabled, inactive sub-levels run light updates every N ticks
+#instead of every tick. Lighting catches up when the sub-level becomes active.
+enableLightOptimization = true
+#How often (in server ticks) light updates run for inactive sub-levels.
+#Default 4 (every 4 ticks = 5 Hz). 1 = every tick (vanilla behavior).
+#Higher = less CPU but slightly slower lighting updates on idle ships.
+# Default: 4
+# Range: 1 ~ 20
+inactiveLightTickInterval = 4
+#Skip redundant MergedMassTracker recomputation when mass data hasn't changed.
+#Mass data only changes on block changes or contraption assembly/disassembly.
+#When enabled, mass is recomputed once per tick instead of every physics substep.
+enableMassTrackerOptimization = true
+#Enable server-side optimizations for Create mod kinetics and contraptions.
+#Only effective when Create is installed. Safe to leave enabled otherwise.
+enableCreateOptimizations = true

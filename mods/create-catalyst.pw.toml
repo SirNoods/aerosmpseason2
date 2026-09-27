@@ -1,0 +1,13 @@
+name = "Create: Catalyst"
+filename = "catalyst-0.17.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f394dbf31c8f79d8cf0d4c1ab08c09b9d5ac671b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8544138
+project-id = 1620723

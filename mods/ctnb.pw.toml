@@ -1,0 +1,13 @@
+name = "Coasters: Tracks and Balloons"
+filename = "coasters_extras-neoforge-1.21.1-1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1615edd0c781c0489713ee9e81c2e03bbc989828"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8718286
+project-id = 1649197

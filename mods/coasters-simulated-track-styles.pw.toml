@@ -1,0 +1,13 @@
+name = "Coasters Simulated: Track Styles"
+filename = "coasterssimulatedextratypes-1.1.0-hotfix1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "37f7c03050ee36cd2be8c64597daa8cb866e1bf8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8672156
+project-id = 1642719

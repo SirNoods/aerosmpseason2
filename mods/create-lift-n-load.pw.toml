@@ -1,0 +1,13 @@
+name = "Create: Lift n' Load |  Simulated/Aeronautics Addon"
+filename = "Lift-n-Load-1.21.1-1.0c.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "60ad240e61882701b611f762651bccd58a3dd232"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8309882
+project-id = 1517465

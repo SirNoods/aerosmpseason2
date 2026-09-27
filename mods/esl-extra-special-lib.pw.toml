@@ -1,0 +1,13 @@
+name = "[ESL] Extra Special LIB"
+filename = "extraspeciallib-1.1.0+1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8f8369d40d0110cc7aa6f305961819679f1b74ca"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8872318
+project-id = 1655957

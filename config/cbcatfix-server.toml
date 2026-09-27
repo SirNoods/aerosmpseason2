@@ -1,0 +1,975 @@
+	[rockets.small]
+		#Maximum powered speed in blocks per tick.
+		# Default: 9.0
+		# Range: 0.1 ~ 20.0
+		maxSpeedBlocksPerTick = 9.0
+		#Maximum guided turn rate in degrees per tick.
+		# Default: 36.0
+		# Range: 0.0 ~ 45.0
+		guidedTurnRateDegreesPerTick = 36.0
+		#Powered flight time in seconds for a long-range rocket.
+		#A double-payload rocket receives half of this duration.
+		# Default: 1.5
+		# Range: 0.05 ~ 120.0
+		poweredFlightSeconds = 1.5
+		#Damage required to shoot this rocket down.
+		# Default: 10.0
+		# Range: 1.0 ~ 1000.0
+		durability = 10.0
+		#Maximum distance in blocks at which a guided rocket can retain its target.
+		# Default: 256.0
+		# Range: 1.0 ~ 4096.0
+		maximumGuidanceRangeBlocks = 256.0
+
+		[rockets.small.apWarhead]
+			#CBC penetrator mass consumed by impacts; distinct from rocket hull health.
+			# Default: 2.0
+			# Range: 0.01 ~ 100.0
+			durabilityMass = 2.0
+			#CBC armor penetration coefficient; not a fixed number of blocks.
+			# Default: 2.0
+			# Range: 0.0 ~ 100.0
+			penetration = 2.0
+			#CBC resistance to projectile shatter.
+			# Default: 1.0
+			# Range: 0.0 ~ 100.0
+			toughness = 1.0
+			#CBC angle coefficient used by the native ricochet calculation.
+			# Default: 0.7
+			# Range: 0.0 ~ 1.0
+			deflection = 0.7
+
+	[rockets.medium]
+		#Maximum powered speed in blocks per tick.
+		# Default: 6.0
+		# Range: 0.1 ~ 20.0
+		maxSpeedBlocksPerTick = 6.0
+		#Maximum guided turn rate in degrees per tick.
+		# Default: 18.0
+		# Range: 0.0 ~ 45.0
+		guidedTurnRateDegreesPerTick = 18.0
+		#Powered flight time in seconds for a long-range rocket.
+		#A double-payload rocket receives half of this duration.
+		# Default: 6.0
+		# Range: 0.05 ~ 120.0
+		poweredFlightSeconds = 6.0
+		#Damage required to shoot this rocket down.
+		# Default: 20.0
+		# Range: 1.0 ~ 1000.0
+		durability = 20.0
+		#Maximum distance in blocks at which a guided rocket can retain its target.
+		# Default: 768.0
+		# Range: 1.0 ~ 4096.0
+		maximumGuidanceRangeBlocks = 768.0
+
+		[rockets.medium.apWarhead]
+			#CBC penetrator mass consumed by impacts; distinct from rocket hull health.
+			# Default: 3.25
+			# Range: 0.01 ~ 100.0
+			durabilityMass = 3.25
+			#CBC armor penetration coefficient; not a fixed number of blocks.
+			# Default: 2.75
+			# Range: 0.0 ~ 100.0
+			penetration = 2.75
+			#CBC resistance to projectile shatter.
+			# Default: 1.33
+			# Range: 0.0 ~ 100.0
+			toughness = 1.33
+			#CBC angle coefficient used by the native ricochet calculation.
+			# Default: 0.66
+			# Range: 0.0 ~ 1.0
+			deflection = 0.66
+
+	[rockets.big]
+		#Maximum powered speed in blocks per tick.
+		# Default: 4.5
+		# Range: 0.1 ~ 20.0
+		maxSpeedBlocksPerTick = 4.5
+		#Maximum guided turn rate in degrees per tick.
+		# Default: 4.0
+		# Range: 0.0 ~ 45.0
+		guidedTurnRateDegreesPerTick = 4.0
+		#Powered flight time in seconds for a long-range rocket.
+		#A double-payload rocket receives half of this duration.
+		# Default: 18.0
+		# Range: 0.05 ~ 120.0
+		poweredFlightSeconds = 18.0
+		#Damage required to shoot this rocket down.
+		# Default: 40.0
+		# Range: 1.0 ~ 1000.0
+		durability = 40.0
+		#Maximum distance in blocks at which a guided rocket can retain its target.
+		# Default: 1536.0
+		# Range: 1.0 ~ 4096.0
+		maximumGuidanceRangeBlocks = 1536.0
+
+		[rockets.big.apWarhead]
+			#CBC penetrator mass consumed by impacts; distinct from rocket hull health.
+			# Default: 8.0
+			# Range: 0.01 ~ 100.0
+			durabilityMass = 8.0
+			#CBC armor penetration coefficient; not a fixed number of blocks.
+			# Default: 2.0
+			# Range: 0.0 ~ 100.0
+			penetration = 2.0
+			#CBC resistance to projectile shatter.
+			# Default: 1.0
+			# Range: 0.0 ~ 100.0
+			toughness = 1.0
+			#CBC angle coefficient used by the native ricochet calculation.
+			# Default: 0.7
+			# Range: 0.0 ~ 1.0
+			deflection = 0.7
+
+	[rockets.guidance]
+		#Fraction of speed lost for each degree actually turned in one tick.
+		# Default: 0.003
+		# Range: 0.0 ~ 0.1
+		speedLossPerTurnDegree = 0.003
+		#Maximum fraction of speed a rocket can lose to steering in one tick.
+		# Default: 0.15
+		# Range: 0.0 ~ 0.9
+		maximumSpeedLossPerTick = 0.15
+		#Mass multiplier for the one-warhead, one-fuel lightweight recipe.
+		# Default: 0.6
+		# Range: 0.1 ~ 1.0
+		lightweightMassMultiplier = 0.6
+		#Powered-flight-time multiplier for the one-warhead, one-fuel lightweight recipe.
+		# Default: 0.5
+		# Range: 0.05 ~ 1.0
+		lightweightFuelMultiplier = 0.5
+		#Allow rocket steering and launch-time Radar designation.
+		enabled = true
+		#Half-angle of the seeker's forward detection cone.
+		# Default: 30.0
+		# Range: 1.0 ~ 85.0
+		seekerHalfAngleDegrees = 30.0
+		#Multiplier before speed/mass steering inertia; effective cap 45 degrees/tick.
+		# Default: 1.0
+		# Range: 0.0 ~ 4.0
+		turnRateMultiplier = 1.0
+
+	[rockets.physics]
+		#Powered speed multiplier; effective speed is capped at 20 blocks/tick.
+		# Default: 1.0
+		# Range: 0.1 ~ 4.0
+		velocityMultiplier = 1.0
+		#Motor response multiplier; variants retain their mass penalty.
+		# Default: 1.0
+		# Range: 0.1 ~ 4.0
+		accelerationMultiplier = 1.0
+		#Configured fuel duration multiplier; total powered time is capped at 120 seconds.
+		# Default: 1.0
+		# Range: 0.1 ~ 4.0
+		fuelMultiplier = 1.0
+		#Ballistic rocket gravity multiplier. Does not add gravity during powered flight.
+		# Default: 1.0
+		# Range: 0.0 ~ 4.0
+		gravityMultiplier = 1.0
+		#Lightweight powered speed advantage; same 20 blocks/tick powered ceiling applies.
+		# Default: 1.2
+		# Range: 1.0 ~ 1.5
+		lightweightSpeedMultiplier = 1.2
+
+	[rockets.payload]
+		#Direct rocket impact damage multiplier; explosion and jet power have separate munition settings.
+		# Default: 1.0
+		# Range: 0.0 ~ 10.0
+		directDamageMultiplier = 1.0
+		#Rocket penetration coefficient multiplier; preserves CBC armor calculations.
+		# Default: 1.0
+		# Range: 0.0 ~ 4.0
+		penetrationMultiplier = 1.0
+		#Double-warhead damage/effect and penetrator mass scale; fuel remains halved.
+		# Default: 1.75
+		# Range: 1.0 ~ 2.0
+		doublePayloadMultiplier = 1.75
+		#Lightweight hull health multiplier; does not weaken the AP penetrator.
+		# Default: 0.75
+		# Range: 0.1 ~ 1.0
+		lightweightDurabilityMultiplier = 0.75
+
+		[munitions.heat.heavyAutocannon]
+			#HEAT explosion power against blocks.
+			# Default: 1.5
+			# Range: 0.0 ~ 32.0
+			blockExplosionPower = 1.5
+			#HEAT explosion power against entities.
+			# Default: 3.5
+			# Range: 0.0 ~ 32.0
+			entityExplosionPower = 3.5
+			#Maximum HEAT jet length through air, in blocks.
+			# Default: 6.0
+			# Range: 0.25 ~ 64.0
+			jetLengthBlocks = 6.0
+			#Energy available for penetrating CBC block armor.
+			# Default: 20.0
+			# Range: 0.0 ~ 1000.0
+			jetEnergy = 20.0
+			#Resistance to CBC armor hardness; higher values preserve more jet energy.
+			# Default: 5.0
+			# Range: 0.01 ~ 100.0
+			jetPenetration = 5.0
+			#Damage dealt once to each entity intersected by the HEAT jet.
+			# Default: 50.0
+			# Range: 0.0 ~ 1000.0
+			jetEntityDamage = 50.0
+
+		[munitions.heat.mediumRocket]
+			#HEAT explosion power against blocks.
+			# Default: 1.5
+			# Range: 0.0 ~ 32.0
+			blockExplosionPower = 1.5
+			#HEAT explosion power against entities.
+			# Default: 3.5
+			# Range: 0.0 ~ 32.0
+			entityExplosionPower = 3.5
+			#Maximum HEAT jet length through air, in blocks.
+			# Default: 8.0
+			# Range: 0.25 ~ 64.0
+			jetLengthBlocks = 8.0
+			#Energy available for penetrating CBC block armor.
+			# Default: 20.0
+			# Range: 0.0 ~ 1000.0
+			jetEnergy = 20.0
+			#Resistance to CBC armor hardness; higher values preserve more jet energy.
+			# Default: 5.0
+			# Range: 0.01 ~ 100.0
+			jetPenetration = 5.0
+			#Damage dealt once to each entity intersected by the HEAT jet.
+			# Default: 50.0
+			# Range: 0.0 ~ 1000.0
+			jetEntityDamage = 50.0
+
+		[munitions.heat.bigCannon]
+			#HEAT explosion power against blocks.
+			# Default: 2.5
+			# Range: 0.0 ~ 32.0
+			blockExplosionPower = 2.5
+			#HEAT explosion power against entities.
+			# Default: 2.5
+			# Range: 0.0 ~ 32.0
+			entityExplosionPower = 2.5
+			#Maximum HEAT jet length through air, in blocks.
+			# Default: 10.0
+			# Range: 0.25 ~ 64.0
+			jetLengthBlocks = 10.0
+			#Energy available for penetrating CBC block armor.
+			# Default: 32.0
+			# Range: 0.0 ~ 1000.0
+			jetEnergy = 32.0
+			#Resistance to CBC armor hardness; higher values preserve more jet energy.
+			# Default: 8.0
+			# Range: 0.01 ~ 100.0
+			jetPenetration = 8.0
+			#Damage dealt once to each entity intersected by the HEAT jet.
+			# Default: 80.0
+			# Range: 0.0 ~ 1000.0
+			jetEntityDamage = 80.0
+
+		[munitions.heat.bigRocket]
+			#HEAT explosion power against blocks.
+			# Default: 3.0
+			# Range: 0.0 ~ 32.0
+			blockExplosionPower = 3.0
+			#HEAT explosion power against entities.
+			# Default: 4.0
+			# Range: 0.0 ~ 32.0
+			entityExplosionPower = 4.0
+			#Maximum HEAT jet length through air, in blocks.
+			# Default: 12.0
+			# Range: 0.25 ~ 64.0
+			jetLengthBlocks = 12.0
+			#Energy available for penetrating CBC block armor.
+			# Default: 40.0
+			# Range: 0.0 ~ 1000.0
+			jetEnergy = 40.0
+			#Resistance to CBC armor hardness; higher values preserve more jet energy.
+			# Default: 8.0
+			# Range: 0.01 ~ 100.0
+			jetPenetration = 8.0
+			#Damage dealt once to each entity intersected by the HEAT jet.
+			# Default: 90.0
+			# Range: 0.0 ~ 1000.0
+			jetEntityDamage = 90.0
+
+			[munitions.cbcAt.autocannon.apds]
+				#Direct hit damage in health points, before armor and other native damage rules.
+				# Default: 12.0
+				# Range: 0.0 ~ 1000.0
+				entityDamage = 12.0
+				#Native projectile knockback strength.
+				# Default: 0.3
+				# Range: 0.0 ~ 1000.0
+				knockback = 0.3
+				#Vertical ballistic acceleration in blocks/tick squared; zero disables gravity.
+				# Default: -0.02
+				# Range: -1.0 ~ 0.0
+				gravity = -0.02
+				#Native linear or quadratic drag coefficient.
+				# Default: 0.01
+				# Range: 0.0 ~ 1.0
+				drag = 0.01
+				quadraticDrag = false
+				#CBC penetrator mass consumed by impacts; distinct from rocket hull health.
+				# Default: 1.75
+				# Range: 0.0 ~ 100.0
+				durabilityMass = 1.75
+				#CBC armor penetration coefficient; not a fixed number of blocks.
+				# Default: 2.5
+				# Range: 0.0 ~ 100.0
+				penetration = 2.5
+				#CBC resistance to projectile shatter.
+				# Default: 1.25
+				# Range: 0.0 ~ 100.0
+				toughness = 1.25
+				#CBC angle coefficient used by the native ricochet calculation.
+				# Default: 0.7
+				# Range: 0.0 ~ 1.0
+				deflection = 0.7
+
+			[munitions.cbcAt.autocannon.apdsfs]
+				#Direct hit damage in health points, before armor and other native damage rules.
+				# Default: 12.0
+				# Range: 0.0 ~ 1000.0
+				entityDamage = 12.0
+				#Native projectile knockback strength.
+				# Default: 0.3
+				# Range: 0.0 ~ 1000.0
+				knockback = 0.3
+				#Vertical ballistic acceleration in blocks/tick squared; zero disables gravity.
+				# Default: -0.016
+				# Range: -1.0 ~ 0.0
+				gravity = -0.016
+				#Native linear or quadratic drag coefficient.
+				# Default: 0.00825
+				# Range: 0.0 ~ 1.0
+				drag = 0.00825
+				quadraticDrag = false
+				#CBC penetrator mass consumed by impacts; distinct from rocket hull health.
+				# Default: 1.66
+				# Range: 0.0 ~ 100.0
+				durabilityMass = 1.66
+				#CBC armor penetration coefficient; not a fixed number of blocks.
+				# Default: 2.77
+				# Range: 0.0 ~ 100.0
+				penetration = 2.77
+				#CBC resistance to projectile shatter.
+				# Default: 1.3
+				# Range: 0.0 ~ 100.0
+				toughness = 1.3
+				#CBC angle coefficient used by the native ricochet calculation.
+				# Default: 0.7
+				# Range: 0.0 ~ 1.0
+				deflection = 0.7
+
+			[munitions.cbcAt.autocannon.he]
+				#Direct hit damage in health points, before armor and other native damage rules.
+				# Default: 9.0
+				# Range: 0.0 ~ 1000.0
+				entityDamage = 9.0
+				#Native projectile knockback strength.
+				# Default: 0.5
+				# Range: 0.0 ~ 1000.0
+				knockback = 0.5
+				#Vertical ballistic acceleration in blocks/tick squared; zero disables gravity.
+				# Default: -0.025
+				# Range: -1.0 ~ 0.0
+				gravity = -0.025
+				#Native linear or quadratic drag coefficient.
+				# Default: 0.01
+				# Range: 0.0 ~ 1.0
+				drag = 0.01
+				quadraticDrag = false
+				#CBC penetrator mass consumed by impacts; distinct from rocket hull health.
+				# Default: 1.0
+				# Range: 0.0 ~ 100.0
+				durabilityMass = 1.0
+				#CBC armor penetration coefficient; not a fixed number of blocks.
+				# Default: 0.9
+				# Range: 0.0 ~ 100.0
+				penetration = 0.9
+				#CBC resistance to projectile shatter.
+				# Default: 0.4
+				# Range: 0.0 ~ 100.0
+				toughness = 0.4
+				#CBC angle coefficient used by the native ricochet calculation.
+				# Default: 0.7
+				# Range: 0.0 ~ 1.0
+				deflection = 0.7
+				#Multiplier applied to the corresponding CBC flak explosion property.
+				# Default: 1.05
+				# Range: 0.0 ~ 10.0
+				cbcFlakExplosionScale = 1.05
+
+			[munitions.cbcAt.autocannon.hei]
+				#Direct hit damage in health points, before armor and other native damage rules.
+				# Default: 9.0
+				# Range: 0.0 ~ 1000.0
+				entityDamage = 9.0
+				#Native projectile knockback strength.
+				# Default: 1.0
+				# Range: 0.0 ~ 1000.0
+				knockback = 1.0
+				#Vertical ballistic acceleration in blocks/tick squared; zero disables gravity.
+				# Default: -0.025
+				# Range: -1.0 ~ 0.0
+				gravity = -0.025
+				#Native linear or quadratic drag coefficient.
+				# Default: 0.01
+				# Range: 0.0 ~ 1.0
+				drag = 0.01
+				quadraticDrag = false
+				#CBC penetrator mass consumed by impacts; distinct from rocket hull health.
+				# Default: 1.0
+				# Range: 0.0 ~ 100.0
+				durabilityMass = 1.0
+				#CBC armor penetration coefficient; not a fixed number of blocks.
+				# Default: 1.0
+				# Range: 0.0 ~ 100.0
+				penetration = 1.0
+				#CBC resistance to projectile shatter.
+				# Default: 0.4
+				# Range: 0.0 ~ 100.0
+				toughness = 0.4
+				#CBC angle coefficient used by the native ricochet calculation.
+				# Default: 0.7
+				# Range: 0.0 ~ 1.0
+				deflection = 0.7
+
+			[munitions.cbcAt.heavyAutocannon.ap]
+				#Direct hit damage in health points, before armor and other native damage rules.
+				# Default: 30.0
+				# Range: 0.0 ~ 1000.0
+				entityDamage = 30.0
+				#Native projectile knockback strength.
+				# Default: 1.825
+				# Range: 0.0 ~ 1000.0
+				knockback = 1.825
+				#Vertical ballistic acceleration in blocks/tick squared; zero disables gravity.
+				# Default: -0.03
+				# Range: -1.0 ~ 0.0
+				gravity = -0.03
+				#Native linear or quadratic drag coefficient.
+				# Default: 0.013
+				# Range: 0.0 ~ 1.0
+				drag = 0.013
+				quadraticDrag = true
+				#CBC penetrator mass consumed by impacts; distinct from rocket hull health.
+				# Default: 3.25
+				# Range: 0.0 ~ 100.0
+				durabilityMass = 3.25
+				#CBC armor penetration coefficient; not a fixed number of blocks.
+				# Default: 2.75
+				# Range: 0.0 ~ 100.0
+				penetration = 2.75
+				#CBC resistance to projectile shatter.
+				# Default: 1.33
+				# Range: 0.0 ~ 100.0
+				toughness = 1.33
+				#CBC angle coefficient used by the native ricochet calculation.
+				# Default: 0.66
+				# Range: 0.0 ~ 1.0
+				deflection = 0.66
+
+			[munitions.cbcAt.heavyAutocannon.apds]
+				#Direct hit damage in health points, before armor and other native damage rules.
+				# Default: 25.0
+				# Range: 0.0 ~ 1000.0
+				entityDamage = 25.0
+				#Native projectile knockback strength.
+				# Default: 1.3
+				# Range: 0.0 ~ 1000.0
+				knockback = 1.3
+				#Vertical ballistic acceleration in blocks/tick squared; zero disables gravity.
+				# Default: -0.02
+				# Range: -1.0 ~ 0.0
+				gravity = -0.02
+				#Native linear or quadratic drag coefficient.
+				# Default: 0.011
+				# Range: 0.0 ~ 1.0
+				drag = 0.011
+				quadraticDrag = true
+				#CBC penetrator mass consumed by impacts; distinct from rocket hull health.
+				# Default: 3.0
+				# Range: 0.0 ~ 100.0
+				durabilityMass = 3.0
+				#CBC armor penetration coefficient; not a fixed number of blocks.
+				# Default: 3.1
+				# Range: 0.0 ~ 100.0
+				penetration = 3.1
+				#CBC resistance to projectile shatter.
+				# Default: 1.45
+				# Range: 0.0 ~ 100.0
+				toughness = 1.45
+				#CBC angle coefficient used by the native ricochet calculation.
+				# Default: 0.66
+				# Range: 0.0 ~ 1.0
+				deflection = 0.66
+
+			[munitions.cbcAt.heavyAutocannon.apdsfs]
+				#Direct hit damage in health points, before armor and other native damage rules.
+				# Default: 24.5
+				# Range: 0.0 ~ 1000.0
+				entityDamage = 24.5
+				#Native projectile knockback strength.
+				# Default: 1.2
+				# Range: 0.0 ~ 1000.0
+				knockback = 1.2
+				#Vertical ballistic acceleration in blocks/tick squared; zero disables gravity.
+				# Default: -0.0175
+				# Range: -1.0 ~ 0.0
+				gravity = -0.0175
+				#Native linear or quadratic drag coefficient.
+				# Default: 0.008
+				# Range: 0.0 ~ 1.0
+				drag = 0.008
+				quadraticDrag = true
+				#CBC penetrator mass consumed by impacts; distinct from rocket hull health.
+				# Default: 2.67
+				# Range: 0.0 ~ 100.0
+				durabilityMass = 2.67
+				#CBC armor penetration coefficient; not a fixed number of blocks.
+				# Default: 3.33
+				# Range: 0.0 ~ 100.0
+				penetration = 3.33
+				#CBC resistance to projectile shatter.
+				# Default: 1.5
+				# Range: 0.0 ~ 100.0
+				toughness = 1.5
+				#CBC angle coefficient used by the native ricochet calculation.
+				# Default: 0.66
+				# Range: 0.0 ~ 1.0
+				deflection = 0.66
+
+			[munitions.cbcAt.heavyAutocannon.he]
+				#Direct hit damage in health points, before armor and other native damage rules.
+				# Default: 27.0
+				# Range: 0.0 ~ 1000.0
+				entityDamage = 27.0
+				#Native projectile knockback strength.
+				# Default: 1.825
+				# Range: 0.0 ~ 1000.0
+				knockback = 1.825
+				#Vertical ballistic acceleration in blocks/tick squared; zero disables gravity.
+				# Default: -0.03
+				# Range: -1.0 ~ 0.0
+				gravity = -0.03
+				#Native linear or quadratic drag coefficient.
+				# Default: 0.013
+				# Range: 0.0 ~ 1.0
+				drag = 0.013
+				quadraticDrag = true
+				#CBC penetrator mass consumed by impacts; distinct from rocket hull health.
+				# Default: 1.6
+				# Range: 0.0 ~ 100.0
+				durabilityMass = 1.6
+				#CBC armor penetration coefficient; not a fixed number of blocks.
+				# Default: 2.3
+				# Range: 0.0 ~ 100.0
+				penetration = 2.3
+				#CBC resistance to projectile shatter.
+				# Default: 0.8
+				# Range: 0.0 ~ 100.0
+				toughness = 0.8
+				#CBC angle coefficient used by the native ricochet calculation.
+				# Default: 0.66
+				# Range: 0.0 ~ 1.0
+				deflection = 0.66
+				#Multiplier applied to the corresponding CBC flak explosion property.
+				# Default: 1.66
+				# Range: 0.0 ~ 10.0
+				cbcFlakExplosionScale = 1.66
+
+			[munitions.cbcAt.heavyAutocannon.hef]
+				#Direct hit damage in health points, before armor and other native damage rules.
+				# Default: 28.0
+				# Range: 0.0 ~ 1000.0
+				entityDamage = 28.0
+				#Native projectile knockback strength.
+				# Default: 1.8
+				# Range: 0.0 ~ 1000.0
+				knockback = 1.8
+				#Vertical ballistic acceleration in blocks/tick squared; zero disables gravity.
+				# Default: -0.033
+				# Range: -1.0 ~ 0.0
+				gravity = -0.033
+				#Native linear or quadratic drag coefficient.
+				# Default: 0.013
+				# Range: 0.0 ~ 1.0
+				drag = 0.013
+				quadraticDrag = true
+				#CBC penetrator mass consumed by impacts; distinct from rocket hull health.
+				# Default: 1.6
+				# Range: 0.0 ~ 100.0
+				durabilityMass = 1.6
+				#CBC armor penetration coefficient; not a fixed number of blocks.
+				# Default: 2.125
+				# Range: 0.0 ~ 100.0
+				penetration = 2.125
+				#CBC resistance to projectile shatter.
+				# Default: 0.875
+				# Range: 0.0 ~ 100.0
+				toughness = 0.875
+				#CBC angle coefficient used by the native ricochet calculation.
+				# Default: 0.66
+				# Range: 0.0 ~ 1.0
+				deflection = 0.66
+				#Multiplier applied to the corresponding CBC flak explosion property.
+				# Default: 1.3
+				# Range: 0.0 ~ 10.0
+				cbcFlakBlockExplosionScale = 1.3
+				#Multiplier applied to the corresponding CBC flak explosion property.
+				# Default: 1.4
+				# Range: 0.0 ~ 10.0
+				cbcFlakEntityExplosionScale = 1.4
+				#Multiplier applied to the CBC flak fragment count.
+				# Default: 8.0
+				# Range: 0.0 ~ 10.0
+				cbcFlakFragmentCountScale = 8.0
+				#Multiplier applied to the CBC flak fragment spread.
+				# Default: 4.0
+				# Range: 0.0 ~ 10.0
+				cbcFlakFragmentSpreadScale = 4.0
+
+			[munitions.cbcAt.heavyAutocannon.heat]
+				#Direct hit damage in health points, before armor and other native damage rules.
+				# Default: 28.0
+				# Range: 0.0 ~ 1000.0
+				entityDamage = 28.0
+				#Native projectile knockback strength.
+				# Default: 1.75
+				# Range: 0.0 ~ 1000.0
+				knockback = 1.75
+				#Vertical ballistic acceleration in blocks/tick squared; zero disables gravity.
+				# Default: -0.035
+				# Range: -1.0 ~ 0.0
+				gravity = -0.035
+				#Native linear or quadratic drag coefficient.
+				# Default: 0.012
+				# Range: 0.0 ~ 1.0
+				drag = 0.012
+				quadraticDrag = true
+				#CBC penetrator mass consumed by impacts; distinct from rocket hull health.
+				# Default: 1.55
+				# Range: 0.0 ~ 100.0
+				durabilityMass = 1.55
+				#CBC armor penetration coefficient; not a fixed number of blocks.
+				# Default: 2.2
+				# Range: 0.0 ~ 100.0
+				penetration = 2.2
+				#CBC resistance to projectile shatter.
+				# Default: 0.85
+				# Range: 0.0 ~ 100.0
+				toughness = 0.85
+				#CBC angle coefficient used by the native ricochet calculation.
+				# Default: 0.66
+				# Range: 0.0 ~ 1.0
+				deflection = 0.66
+
+			[munitions.cbcAt.heavyAutocannon.smoke]
+				#Direct hit damage in health points, before armor and other native damage rules.
+				# Default: 25.0
+				# Range: 0.0 ~ 1000.0
+				entityDamage = 25.0
+				#Native projectile knockback strength.
+				# Default: 1.0
+				# Range: 0.0 ~ 1000.0
+				knockback = 1.0
+				#Vertical ballistic acceleration in blocks/tick squared; zero disables gravity.
+				# Default: -0.035
+				# Range: -1.0 ~ 0.0
+				gravity = -0.035
+				#Native linear or quadratic drag coefficient.
+				# Default: 0.005
+				# Range: 0.0 ~ 1.0
+				drag = 0.005
+				quadraticDrag = true
+				#CBC penetrator mass consumed by impacts; distinct from rocket hull health.
+				# Default: 0.75
+				# Range: 0.0 ~ 100.0
+				durabilityMass = 0.75
+				#CBC armor penetration coefficient; not a fixed number of blocks.
+				# Default: 0.5
+				# Range: 0.0 ~ 100.0
+				penetration = 0.5
+				#CBC resistance to projectile shatter.
+				# Default: 0.8
+				# Range: 0.0 ~ 100.0
+				toughness = 0.8
+				#CBC angle coefficient used by the native ricochet calculation.
+				# Default: 0.7
+				# Range: 0.0 ~ 1.0
+				deflection = 0.7
+				#Explosion strength against terrain, subject to CBC damage restrictions.
+				# Default: 1.66
+				# Range: 0.0 ~ 32.0
+				blockExplosionPower = 1.66
+				#Explosion strength against entities.
+				# Default: 2.0
+				# Range: 0.0 ~ 32.0
+				entityExplosionPower = 2.0
+				#Multiplier applied to native smoke lifetime.
+				# Default: 0.75
+				# Range: 0.0 ~ 10.0
+				smokeDurationScale = 0.75
+				#Multiplier applied to native smoke size.
+				# Default: 0.3
+				# Range: 0.0 ~ 10.0
+				smokeSizeScale = 0.3
+
+			[munitions.cbcAt.bigCannon.cluster]
+				#Direct hit damage in health points, before armor and other native damage rules.
+				# Default: 28.0
+				# Range: 0.0 ~ 1000.0
+				entityDamage = 28.0
+				#Native projectile knockback strength.
+				# Default: 2.5
+				# Range: 0.0 ~ 1000.0
+				knockback = 2.5
+				#Vertical ballistic acceleration in blocks/tick squared; zero disables gravity.
+				# Default: -0.05
+				# Range: -1.0 ~ 0.0
+				gravity = -0.05
+				#Native linear or quadratic drag coefficient.
+				# Default: 0.02
+				# Range: 0.0 ~ 1.0
+				drag = 0.02
+				quadraticDrag = false
+				#CBC penetrator mass consumed by impacts; distinct from rocket hull health.
+				# Default: 1.75
+				# Range: 0.0 ~ 100.0
+				durabilityMass = 1.75
+				#CBC armor penetration coefficient; not a fixed number of blocks.
+				# Default: 1.0
+				# Range: 0.0 ~ 100.0
+				penetration = 1.0
+				#CBC resistance to projectile shatter.
+				# Default: 1.0
+				# Range: 0.0 ~ 100.0
+				toughness = 1.0
+				#CBC angle coefficient used by the native ricochet calculation.
+				# Default: 0.7
+				# Range: 0.0 ~ 1.0
+				deflection = 0.7
+				#Additional native big-cannon charge power.
+				# Default: 0.0
+				# Range: 0.0 ~ 100.0
+				addedChargePower = 0.0
+				#Minimum charge power used by native squib checks.
+				# Default: 1.0
+				# Range: 0.0 ~ 1000.0
+				minimumChargePower = 1.0
+				canSquib = true
+				#Additional native big-cannon recoil.
+				# Default: 1.0
+				# Range: 0.0 ~ 100.0
+				addedRecoil = 1.0
+				#Maximum emitted submunition lifetime in ticks (20 ticks per second).
+				# Default: 50
+				# Range: 1 ~ 12000
+				submunitionLifetimeTicks = 50
+				#Multiplier applied to native cluster release speed.
+				# Default: 1.0
+				# Range: 0.0 ~ 10.0
+				submunitionSpeedScale = 1.0
+				#Native shoot inaccuracy parameter for cluster release; larger values widen the spread.
+				# Default: 25.0
+				# Range: 0.0 ~ 180.0
+				submunitionInaccuracyDegrees = 25.0
+				#Emitted cluster submunitions; crafting still consumes eight parts. Fuzes repeat in assembly order.
+				# Default: 8
+				# Range: 1 ~ 64
+				submunitionCount = 8
+
+			[munitions.fix.bigCannon.flak]
+				#Direct hit damage in health points, before armor and other native damage rules.
+				# Default: 10.0
+				# Range: 0.0 ~ 1000.0
+				entityDamage = 10.0
+				#Native projectile knockback strength.
+				# Default: 1.0
+				# Range: 0.0 ~ 1000.0
+				knockback = 1.0
+				#Vertical ballistic acceleration in blocks/tick squared; zero disables gravity.
+				# Default: -0.05
+				# Range: -1.0 ~ 0.0
+				gravity = -0.05
+				#Native linear or quadratic drag coefficient.
+				# Default: 0.01
+				# Range: 0.0 ~ 1.0
+				drag = 0.01
+				quadraticDrag = false
+				#CBC penetrator mass consumed by impacts; distinct from rocket hull health.
+				# Default: 2.0
+				# Range: 0.0 ~ 100.0
+				durabilityMass = 2.0
+				#CBC armor penetration coefficient; not a fixed number of blocks.
+				# Default: 1.0
+				# Range: 0.0 ~ 100.0
+				penetration = 1.0
+				#CBC resistance to projectile shatter.
+				# Default: 1.0
+				# Range: 0.0 ~ 100.0
+				toughness = 1.0
+				#CBC angle coefficient used by the native ricochet calculation.
+				# Default: 0.7
+				# Range: 0.0 ~ 1.0
+				deflection = 0.7
+				#Additional native big-cannon charge power.
+				# Default: 0.0
+				# Range: 0.0 ~ 100.0
+				addedChargePower = 0.0
+				#Minimum charge power used by native squib checks.
+				# Default: 1.0
+				# Range: 0.0 ~ 1000.0
+				minimumChargePower = 1.0
+				canSquib = true
+				#Additional native big-cannon recoil.
+				# Default: 1.0
+				# Range: 0.0 ~ 100.0
+				addedRecoil = 1.0
+				#Explosion strength against terrain, subject to CBC damage restrictions.
+				# Default: 2.0
+				# Range: 0.0 ~ 32.0
+				blockExplosionPower = 2.0
+				#Explosion strength against entities.
+				# Default: 2.0
+				# Range: 0.0 ~ 32.0
+				entityExplosionPower = 2.0
+				#Number of native fragment projectiles per detonation.
+				# Default: 45
+				# Range: 0 ~ 256
+				shrapnelCount = 45
+				#Number of native fragment projectiles per detonation.
+				# Default: 30
+				# Range: 0 ~ 256
+				burstParticleProjectileCount = 30
+
+			[munitions.fix.bigCannon.heavyHe]
+				#Direct hit damage in health points, before armor and other native damage rules.
+				# Default: 30.0
+				# Range: 0.0 ~ 1000.0
+				entityDamage = 30.0
+				#Native projectile knockback strength.
+				# Default: 3.0
+				# Range: 0.0 ~ 1000.0
+				knockback = 3.0
+				#Vertical ballistic acceleration in blocks/tick squared; zero disables gravity.
+				# Default: -0.07
+				# Range: -1.0 ~ 0.0
+				gravity = -0.07
+				#Native linear or quadratic drag coefficient.
+				# Default: 0.015
+				# Range: 0.0 ~ 1.0
+				drag = 0.015
+				quadraticDrag = false
+				#CBC penetrator mass consumed by impacts; distinct from rocket hull health.
+				# Default: 4.0
+				# Range: 0.0 ~ 100.0
+				durabilityMass = 4.0
+				#CBC armor penetration coefficient; not a fixed number of blocks.
+				# Default: 1.0
+				# Range: 0.0 ~ 100.0
+				penetration = 1.0
+				#CBC resistance to projectile shatter.
+				# Default: 1.0
+				# Range: 0.0 ~ 100.0
+				toughness = 1.0
+				#CBC angle coefficient used by the native ricochet calculation.
+				# Default: 0.7
+				# Range: 0.0 ~ 1.0
+				deflection = 0.7
+				#Additional native big-cannon charge power.
+				# Default: 0.0
+				# Range: 0.0 ~ 100.0
+				addedChargePower = 0.0
+				#Minimum charge power used by native squib checks.
+				# Default: 1.0
+				# Range: 0.0 ~ 1000.0
+				minimumChargePower = 1.0
+				canSquib = true
+				#Additional native big-cannon recoil.
+				# Default: 2.0
+				# Range: 0.0 ~ 100.0
+				addedRecoil = 2.0
+				#Explosion strength against terrain, subject to CBC damage restrictions.
+				# Default: 8.0
+				# Range: 0.0 ~ 32.0
+				blockExplosionPower = 8.0
+				#Explosion strength against entities.
+				# Default: 10.0
+				# Range: 0.0 ~ 32.0
+				entityExplosionPower = 10.0
+				#Projectile speed cap in blocks per tick.
+				# Default: 4.0
+				# Range: 0.1 ~ 20.0
+				maximumSpeedBlocksPerTick = 4.0
+
+			[munitions.fix.bigCannon.heat]
+				#Direct hit damage in health points, before armor and other native damage rules.
+				# Default: 25.0
+				# Range: 0.0 ~ 1000.0
+				entityDamage = 25.0
+				#Native projectile knockback strength.
+				# Default: 1.0
+				# Range: 0.0 ~ 1000.0
+				knockback = 1.0
+				#Vertical ballistic acceleration in blocks/tick squared; zero disables gravity.
+				# Default: -0.05
+				# Range: -1.0 ~ 0.0
+				gravity = -0.05
+				#Native linear or quadratic drag coefficient.
+				# Default: 0.01
+				# Range: 0.0 ~ 1.0
+				drag = 0.01
+				quadraticDrag = false
+				#CBC penetrator mass consumed by impacts; distinct from rocket hull health.
+				# Default: 2.0
+				# Range: 0.0 ~ 100.0
+				durabilityMass = 2.0
+				#CBC armor penetration coefficient; not a fixed number of blocks.
+				# Default: 2.0
+				# Range: 0.0 ~ 100.0
+				penetration = 2.0
+				#CBC resistance to projectile shatter.
+				# Default: 2.0
+				# Range: 0.0 ~ 100.0
+				toughness = 2.0
+				#CBC angle coefficient used by the native ricochet calculation.
+				# Default: 0.5
+				# Range: 0.0 ~ 1.0
+				deflection = 0.5
+				#Additional native big-cannon charge power.
+				# Default: 0.0
+				# Range: 0.0 ~ 100.0
+				addedChargePower = 0.0
+				#Minimum charge power used by native squib checks.
+				# Default: 1.0
+				# Range: 0.0 ~ 1000.0
+				minimumChargePower = 1.0
+				canSquib = true
+				#Additional native big-cannon recoil.
+				# Default: 1.2
+				# Range: 0.0 ~ 100.0
+				addedRecoil = 1.2
+
+[launchers]
+	#Multiplier after native CBCAT material/barrel-length spread. Native RNG is preserved.
+	# Default: 1.0
+	# Range: 0.0 ~ 4.0
+	spreadMultiplier = 1.0
+	#Firing-rate multiplier; minimum cooldown is one tick. Large rails retain their slower rate.
+	# Default: 1.0
+	# Range: 0.1 ~ 4.0
+	fireRateMultiplier = 1.0
+	#Additional firing-rate fraction per attached lane.
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	extraLaneFireRateBonus = 0.25
+
+	[compat.sable]
+		#Fraction of native Sable velocity inherited at rocket launch; Sable remains optional.
+		# Default: 1.0
+		# Range: 0.0 ~ 2.0
+		inheritedVelocityMultiplier = 1.0

@@ -1,0 +1,13 @@
+name = "Create: Coasters Simulated Additions"
+filename = "Create-Coasters-Simulated-Additions-0.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3958ed2b0d8e7a6df43465bc888c3b2da29e0ccb"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8772429
+project-id = 1661497

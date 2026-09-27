@@ -1,0 +1,13 @@
+name = "Spider Overhaul"
+filename = "SpiderOverhaul-0.0.6-NeoForge-v1.21.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2d25af4949c25c31c34849d8eafe720d05c5871e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8741447
+project-id = 1619127

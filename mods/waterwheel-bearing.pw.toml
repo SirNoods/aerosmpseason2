@@ -1,0 +1,13 @@
+name = "Create: WaterWheel bearing"
+filename = "waterwheelbearing-3.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c771a8551454f4f4ac9d30c8154cd8a643432bed"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8529952
+project-id = 1420394

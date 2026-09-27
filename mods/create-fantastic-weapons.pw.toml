@@ -1,0 +1,13 @@
+name = "Create: Fantastic Weapons"
+filename = "createfantasticweapons-1.1-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "fe49d877202791057b5f01b31970244bb5052352"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6600374
+project-id = 1205994

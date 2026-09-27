@@ -1,0 +1,47 @@
+[server.pv.error]
+mod_missing_kick_message = "Omlouváme se, na tomto serveru musíte mít Plasmo Voice mód, aby jste mohli hrát.\nStáhněte si zde: https://modrinth.com/plugin/plasmo-voice"
+player_not_found = "Hráč nenalezen"
+version_not_supported = "Omlouváme se, ale vaše verze Voice Plasmo není na tomto serveru podporována. %s"
+player_only_command = "Pouze hráč mohou provést tento příkaz"
+version_not_supported_click = "Stáhněte si podporovanou verzi"
+no_permissions = "&cOmlouvám se, ale nemáte oprávnění k provedení tohoto příkazu. Pokud se domníváte, že se jedná o omyl, kontaktujte správce serveru."
+version_not_supported_hover = "%s"
+[server.pv.mutes]
+unmuted = "Byl jsi odtlumený"
+empty_reason = "nespecifikováno"
+permanently_muted = "Byl jsi natrvalo ztlumen. Důvod: %s"
+temporarily_muted = "Byl jsi ztlumen %1$s. Důvod: %2$s"
+
+[server.pv.mutes.durations]
+hours = "za %s h"
+seconds = "za %s s"
+weeks = "za %s t"
+minutes = "za %s min"
+days = "za %s d"
+[server.pv.command.mute_list]
+expiration_time = "HH:mm:ss"
+never_expires = "nikdy"
+expiration_date = "dd.MM.rrrr"
+empty = "Žádní hráči nejsou ztlumeni"
+entry_muted_by = "%1$s umlčel %2$s, vyprší: %3$s. Důvod: %4$s"
+entry = "%1$s, vyprší: %2$s. Důvod: %3$s"
+header = "Ztlumení hráči:"
+expire_at = "%1$s v %2$s"
+[server.pv.command.mute]
+already_muted = "%s je již ztlumený"
+usage = "Využití: /vmute <player> [trvání] [důvod]"
+permanently_muted = "%1$s je natrvalo ztlumen. Důvod: %2$s"
+temporarily_muted = "Ztlumen %1$s %2$s. Důvod: %3$s"
+[server.pv.command.list]
+message = "Klienti (%1$s/%2$s): %3$s"
+empty = "nejsou nainstalováni žádní hráči s Plasmo Voice"
+[server.pv.command.reconnect]
+message = "Znovupřipojení na paket byl odeslán"
+[server.pv.command.reload]
+message = "Konfigurace obnovena"
+[server.pv.command.unmute]
+unmuted = "Zrušeno ztlumení %s"
+usage = "Využití: /vuntumlit <player>"
+not_muted = "%s není ztlumen"
+[client.pv.activation]
+proximity = "Blízkost"

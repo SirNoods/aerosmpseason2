@@ -1,0 +1,13 @@
+name = "Create Aeronautics: Claims "
+filename = "aeroclaims-0.9.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "83b48a5a406f4adab9f320a4d91d0dda27f5beb5"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8836872
+project-id = 1514529

@@ -1,0 +1,13 @@
+name = "Coasters: Engineered"
+filename = "coastersengineered-1.21.1-1.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "71238147443c0cf85bc661f0c56a9e6d4d36fd74"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8863559
+project-id = 1643631

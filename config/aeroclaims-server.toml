@@ -1,0 +1,45 @@
+[general]
+	#Which party/teams mod to use for claim access checks. FTB Teams or Open Parties and CLaims.
+	#Default: OPAC
+	#Allowed Values: FTB_TEAMS, OPAC
+	partyProvider = "OPAC"
+	#Which external claim mod supplies claim slots for AeroClaims.
+	#Supported: OPAC (Open Parties and Claims), FTB_CHUNKS (FTB Chunks).
+	#Default: OPAC
+	#Allowed Values: OPAC, FTB_CHUNKS
+	claimProvider = "OPAC"
+	#How many ship blocks one aero claim covers. Example: 100 means 1 claim = 100 block limit.
+	# Default: 250
+	# Range: > 1
+	blocksPerClaim = 250
+	#If true, the claim will be deactivated when a refresh finds the ship exceeds its block limit. Default: false.
+	deactivateOnOverflow = false
+	#Additional blocks of protection margin around claimed blocks. 0 = no margin, 1 = 1 block buffer, etc. Default: 0.
+	# Default: 0
+	# Range: 0 ~ 100
+	claimMarginBlocks = 0
+	#If true, explosions and Create: Big Cannons projectiles cannot destroy or damage blocks inside active claims.
+	#Default: true
+	explosionProtection = true
+	#If true, Create drills and saws can only break claimed blocks if placed by a player with permission. Default: true.
+	kineticBlockProtection = true
+	#WARNING: This command deletes ALL unclaimed sublevels from the world.
+	#Only enable this if you know what you're doing.
+	#Default: false
+	enableDeleteCommand = false
+	#Master switch for sublevel forceloading. If false, no claim will ever forceload its sublevel,
+	#regardless of the per-claim forceload toggle, and providerSlotsForceload is ignored entirely.
+	#Default: true
+	forceloadEnable = true
+	#If true, sublevel forceloading consumes OPAC/FTB forceload slots.
+	#If false, all activated claims get a free sub-level forceload.
+	#Has no effect if forceloadEnable is false.
+	#Default: false
+	providerSlotsForceload = false
+	#If true, claim owners can teleport to their claimed sublevels using the command or GUI.
+	#Default: false
+	teleportEnable = false
+	#Cooldown between sublevel teleports in seconds. Default: 120 (2 minutes).
+	# Default: 120
+	# Range: > 0
+	teleportCooldownSeconds = 120

@@ -1,0 +1,13 @@
+name = "Sable: Ragdolls + Cosmetic Armor Reworked Forked compatibility fix"
+filename = "ragdollscosmeticarmorfix-1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "956c419011538a241413c41da69814b55ca3fc02"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8756902
+project-id = 1672451

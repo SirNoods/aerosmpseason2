@@ -1,0 +1,22 @@
+#How far away a target can be to get pushed, in blocks.
+# Default: 6.0
+# Range: 1.0 ~ 64.0
+pushRange = 6.0
+#Launch speed along your look direction, in meters per second.
+# Default: 4.0
+# Range: 0.0 ~ 200.0
+pushStrength = 4.0
+#Extra upward launch speed, in meters per second.
+# Default: 1.0
+# Range: -50.0 ~ 50.0
+pushLift = 1.0
+#Ticks to wait between pushes.
+# Default: 20
+# Range: 0 ~ 1200
+pushCooldownTicks = 20
+#Whether mobs can be pushed as well as players.
+pushMobs = false
+#Whether to show particles around the target you are aiming at.
+targetParticles = true
+#Whether to show the target's name and push key under the crosshair.
+targetPrompt = true

@@ -1,0 +1,45 @@
+[server.pv.error]
+mod_missing_kick_message = "Извините, али морате да инсталирате Plasmo Voice мод, да би играли на овом серверу. Скините овде: https://modrinth.com/plugin/plasmo-voice"
+player_not_found = "Играч није пронађен"
+version_not_supported = "Извините, ваша верзија Plasmo Voice није подржана на овом серверу. %s"
+player_only_command = "Само играч може да изврши ову команду"
+version_not_supported_click = "Скините подржану верзију"
+no_permissions = "&cЖао ми је, али немате дозволу да извршите ову команду. Молимо контактирајте администраторе сервера ако сматрате да је ово грешка."
+version_not_supported_hover = "%s"
+[server.pv.mutes]
+unmuted = "Звук вам је поново омогућен"
+empty_reason = "није наведено"
+permanently_muted = "Ућуткан вам је звук заувек. Разлог: %s"
+temporarily_muted = "Ућуткан вам је звук %1$s. Разлог: %2$s"
+
+[server.pv.mutes.durations]
+hours = "на %s ч"
+seconds = "на %s сек"
+weeks = "на %s нед"
+minutes = "на %s мин"
+days = "на %s д."
+[server.pv.command.mute_list]
+never_expires = "никад"
+empty = "Ниједан играч није ућуткан"
+entry_muted_by = "%1$s је ућуткан од стране %2$s, истиче: %3$s. Разлог: %4$s"
+entry = "%1$s, истиче: %2$s. Разлог: %3$s"
+header = "Ућуткани играчи:"
+expire_at = "%1$s у %2$s"
+[server.pv.command.mute]
+already_muted = "%s је већ ућуткан"
+usage = "Коришћење: /vmute <player> [трајање] [разлог]"
+permanently_muted = "%1$s је заувек ућуткан. Разлог: %2$s"
+temporarily_muted = "\n%1$s је ућуткан %2$s. Разлог: %3$s"
+[server.pv.command.list]
+message = "Клијенти (%1$s/%2$s): %3$s"
+empty = "нема играча са инсталираним Plasmo Voice"
+[server.pv.command.reconnect]
+message = "Пакет за поновно повезивање је послат"
+[server.pv.command.reload]
+message = "Конфигурација је поново учитана"
+[server.pv.command.unmute]
+unmuted = "%s Више није ућуткан"
+usage = "Коришћење: /vunmute <player>"
+not_muted = "%s Није ућуткан"
+[client.pv.activation]
+proximity = "Домет"

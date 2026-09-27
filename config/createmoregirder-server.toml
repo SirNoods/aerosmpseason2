@@ -1,0 +1,22 @@
+[strut]
+	#Maximum number of strut connections a single anchor block can hold.
+	#Default 1 enforces 'one anchor = one strut'. Increase to restore legacy multi-connection behavior.
+	# Default: 1
+	# Range: 1 ~ 16
+	maxConnectionsPerAnchor = 1
+
+[placement]
+	#Create Girder Placement System.
+	#If true (default), CMG girders use base Create's placement/update system, so they
+	#behave exactly like Create's metal girder:
+	#  - TOP/BOTTOM bracket connectors only attach to bracket-compatible blocks and are
+	#    cleared again when their support disappears.
+	#  - Horizontal beams collapse back into poles when they lose their horizontal
+	#    connections, and poles promote back to beams when connections appear.
+	#If false, the CMG placement system is used instead:
+	#  - Connectors are enabled by ANY block above/below and are never cleared by neighbor
+	#    updates (so paved tracks keep their auto-brackets).
+	#  - Horizontal beams never collapse back into poles via neighbor updates.
+	#Note: changing this does not rewrite existing blockstates; each girder adopts the
+	#active rules on its next neighbor update.
+	createGirderPlacementSystem = true

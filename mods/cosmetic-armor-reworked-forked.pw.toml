@@ -1,0 +1,13 @@
+name = "Cosmetic Armor Reworked Forked"
+filename = "cosmeticarmorreworkedforked-neoforge-1.21.1-0.0.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4f090e6cd4e43d003b1b0518f8f8d6ee30f3363a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7685857
+project-id = 1434118

@@ -1,0 +1,345 @@
+[boost]
+	#
+	#How fast a Boost Track drives carts, in blocks per second.
+	#Used on any boost curve whose Boost Speed dial has never been set. 0 disables it.
+	# Default: 22.0
+	# Range: 0.0 ~ 1000.0
+	speed = 22.0
+	#
+	#How hard a boost pushes up to that speed, in blocks per second squared.
+	#Low is a gentle shove over several blocks; high is an instant kick.
+	# Default: 40.0
+	# Range: 0.1 ~ 2000.0
+	acceleration = 40.0
+
+[rainbow]
+	#
+	#How quickly the Rainbow Track's colour and chime move along the track.
+	#This is cycles per block, so 0.06 runs a full rainbow every ~17 blocks
+	#and 0.20 every ~5. Higher means more colour and more notes per second of
+	#ride; lower means long sweeps of one colour. Drives both, so they always
+	#stay in step with each other.
+	# Default: 0.16
+	# Range: 0.001 ~ 5.0
+	colourScale = 0.16
+
+[bobsled]
+	#
+	#Below this speed, in blocks per second, a bobsled cart does not lean.
+	#A parked cart has no corner to lean into, so it sits upright.
+	# Default: 2.0
+	# Range: 0.0 ~ 100.0
+	minSpeed = 2.0
+	#
+	#The furthest a bobsled cart will lean, in degrees.
+	#Real bobsleds reach vertical on a hard corner; 35 reads well in game
+	#without the rider losing track of which way is up. 0 disables leaning.
+	# Default: 35.0
+	# Range: 0.0 ~ 89.0
+	maxBankDegrees = 35.0
+	#
+	#How hard the cart is pulled toward the lean the corner calls for.
+	#Higher snaps into the bank; lower rolls into it lazily.
+	# Default: 6.0
+	# Range: 0.1 ~ 100.0
+	bankStiffness = 6.0
+	#
+	#How strongly the roll is settled toward that target each tick.
+	#Too low and the cart wallows; too high and it snaps and jitters.
+	# Default: 0.35
+	# Range: 0.01 ~ 1.0
+	bankDamping = 0.35
+	#
+	#The gravity used to work out the lean angle, in blocks per second squared.
+	#This is the reference the sideways force is compared against, not the
+	#world's actual gravity. Lower it to make every corner lean harder.
+	# Default: 9.81
+	# Range: 0.1 ~ 200.0
+	gravity = 9.81
+	#
+	#Flip which way the cart leans in a corner.
+	#Which sign is correct depends on the base mod handedness, so this is a
+	#config toggle rather than a constant: if your carts lean OUT of corners
+	#instead of into them, set this true and they will lean the other way.
+	invertBank = false
+
+[powered_boost]
+	#
+	#How fast a Powered Boost Track drives carts while it has redstone,
+	#in blocks per second. Used on any powered boost curve whose dial has
+	#never been set. 0 disables it.
+	# Default: 22.0
+	# Range: 0.0 ~ 1000.0
+	speed = 22.0
+	#
+	#How hard a powered boost pushes up to that speed, in blocks per
+	#second squared. Kept separate from the plain boost so a signal-driven
+	#launch can be violent without making every boost on the map violent.
+	# Default: 55.0
+	# Range: 0.1 ~ 2000.0
+	acceleration = 55.0
+
+[brake]
+	#
+	#The speed a Brake Track slows carts down to, in blocks per second.
+	#Used when the Braking Sensitivity dial has never been set. 0 means a dead stop.
+	# Default: 4.0
+	# Range: 0.0 ~ 1000.0
+	targetSpeed = 4.0
+	#
+	#The gentlest a brake ever grabs, in blocks per second squared.
+	#A cart only barely over the target loses speed at least this fast.
+	# Default: 30.0
+	# Range: 0.1 ~ 5000.0
+	deceleration = 30.0
+	#
+	#How many blocks of brake run it takes to reach the target speed, at any arrival speed.
+	#Shorter means faster carts get gripped harder. This is the number to change if
+	#rides sail through your brake runs.
+	# Default: 6.0
+	# Range: 0.1 ~ 128.0
+	stopDistance = 6.0
+	#
+	#Hardest a brake is ever allowed to grab, in blocks per second squared.
+	#A safety ceiling so a ridiculous arrival speed still slows down instead of
+	#stopping dead in one tick.
+	# Default: 1200.0
+	# Range: 1.0 ~ 100000.0
+	decelerationMax = 1200.0
+	#
+	#Above this arrival speed a brake starts throwing sparks, smoke and hiss.
+	#Purely the show -- it does not change how hard the brake grips.
+	# Default: 14.0
+	# Range: 0.0 ~ 1000.0
+	sparkSpeed = 14.0
+	#
+	#The speed at which the brake's effects are at full blast -- most particles, loudest hiss.
+	#Must be above brake.sparkSpeed; it is forced above it at runtime if you set it lower.
+	# Default: 50.0
+	# Range: 0.1 ~ 2000.0
+	fullEffectSpeed = 50.0
+	#
+	#How far over the target speed a cart has to be before its wheels glow for nearby players.
+	# Default: 2.0
+	# Range: 0.0 ~ 100.0
+	glowOverspeed = 2.0
+	#
+	#When a brake is set to stop carts completely, this last crawl is cancelled outright
+	#instead of being braked, so the cart parks rather than creeping on forever.
+	# Default: 0.8
+	# Range: 0.0 ~ 10.0
+	deadStopSpeed = 0.8
+
+[station]
+	#
+	#How fast a station dispatches a coaster, in blocks per second.
+	#This is the speed the ride leaves the platform at -- enough to reach the
+	#first drop or the next boost track. Raise it if your rides stall out
+	#leaving the station, lower it for a gentler departure.
+	# Default: 120.0
+	# Range: 0.5 ~ 500.0
+	launchSpeed = 120.0
+	#
+	#How hard it accelerates up to that speed, in blocks per second squared.
+	#Low values ease out of the station; high values shove. This is what makes
+	#a dispatch feel like a real ride rather than a teleport.
+	# Default: 60.0
+	# Range: 0.5 ~ 500.0
+	launchAcceleration = 60.0
+	#
+	#The comfortable slowdown a station aims for on arrival, in blocks per second squared.
+	#Low is a long unhurried glide in. Carts arriving too fast for this brake harder
+	#anyway, because they still have to be stopped by the end of the platform.
+	# Default: 5.0
+	# Range: 0.1 ~ 1000.0
+	approachDeceleration = 5.0
+	#
+	#Hardest a station will ever brake, in blocks per second squared.
+	#This also decides the fastest arrival it can catch at all: roughly
+	#sqrt(2 x this x platform length), so about 155 b/s across eight blocks at 1500.
+	#Lower it and fast coasters start sailing straight through the station.
+	# Default: 1500.0
+	# Range: 1.0 ~ 100000.0
+	maxDeceleration = 1500.0
+	#
+	#How close to the end of the platform, in blocks, counts as having arrived.
+	#Raising it parks trains further short of the end; it must stay above zero.
+	# Default: 0.45
+	# Range: 0.05 ~ 8.0
+	arriveDistance = 0.45
+	#
+	#A cart that stalls partway down the platform is nudged along at this speed
+	#until it reaches the end, in blocks per second.
+	# Default: 1.6
+	# Range: 0.0 ~ 20.0
+	creepSpeed = 1.6
+	#
+	#How briskly that nudge comes on, in blocks per second squared.
+	# Default: 4.0
+	# Range: 0.1 ~ 200.0
+	creepAcceleration = 4.0
+	#
+	#Below this speed a cart in a station counts as parked, so the station remembers
+	#which way it was going instead of reading a heading that is no longer there.
+	# Default: 0.35
+	# Range: 0.01 ~ 5.0
+	stoppedSpeed = 0.35
+	#
+	#How long a train waits in a station before it is dispatched, in seconds.
+	#Used on any station whose dwell dial has never been set.
+	# Default: 3.0
+	# Range: 0.05 ~ 600.0
+	dwellSeconds = 3.0
+	#
+	#Above this arrival speed a station puffs steam and clanks as it brakes. Show only.
+	# Default: 6.0
+	# Range: 0.0 ~ 500.0
+	brakeEffectSpeed = 6.0
+	#
+	#How long a departing train stays under station power after the bell, in ticks (20 = 1 second).
+	#It has to be long enough for the whole train to clear the platform, or the station
+	#catches the back of it and stops the ride it just sent out.
+	# Default: 60
+	# Range: 1 ~ 1200
+	dispatchWindowTicks = 60
+	#
+	#A station nothing has touched for this many ticks is forgotten to save memory.
+	#Housekeeping only -- leave it alone unless you build and delete stations constantly.
+	#Never allowed below station.dispatchWindowTicks, or a train would be forgotten mid-dispatch.
+	# Default: 200
+	# Range: 60 ~ 24000
+	forgetAfterTicks = 200
+
+[slippery]
+	#
+	#Fraction of its own speed a cart gets handed back per second on Slippery Track,
+	#to cancel out friction. 0.55 roughly matches ordinary drag; higher actively speeds
+	#rides up, 0 makes the track do nothing.
+	# Default: 0.55
+	# Range: 0.0 ~ 10.0
+	recoverFraction = 0.55
+	#
+	#Slippery Track stops helping once a cart is going this fast, in blocks per second.
+	# Default: 60.0
+	# Range: 0.5 ~ 1000.0
+	maxSpeed = 60.0
+	#
+	#And it does nothing at all below this speed, so a parked cart is not flung off.
+	# Default: 0.5
+	# Range: 0.0 ~ 100.0
+	minSpeed = 0.5
+
+[splash]
+	#
+	#Fraction of its speed a cart loses per second to the water, when the Water Boost
+	#dial is left untouched. Deliberately light -- water slows a ride, it does not stop one.
+	# Default: 0.12
+	# Range: 0.0 ~ 10.0
+	drag = 0.12
+	#
+	#Below this speed a cart makes no splash at all, so a parked one does not fountain.
+	# Default: 0.6
+	# Range: 0.0 ~ 100.0
+	minSpeed = 0.6
+	#
+	#The speed at which a splash is at its biggest and loudest, in blocks per second.
+	# Default: 24.0
+	# Range: 0.1 ~ 500.0
+	fullEffectSpeed = 24.0
+	#
+	#How far out to each side of the rail the spray erupts, in blocks. Look only.
+	# Default: 0.45
+	# Range: 0.0 ~ 4.0
+	sideOffset = 0.45
+	#
+	#How far out from the centre the OUTER splash sits, in blocks.
+	#This is the one that lands past the side rails and sheets off them.
+	#Set it equal to splash.sideOffset for a single narrow spout.
+	# Default: 0.78
+	# Range: 0.0 ~ 6.0
+	railOffset = 0.78
+	#
+	#How far below the rail the water curtain falls, in blocks.
+	#0 keeps the splash on top of the track; higher drapes it underneath.
+	# Default: 0.38
+	# Range: 0.0 ~ 6.0
+	underDepth = 0.38
+	#
+	#How far along the track the splash spreads either way, in blocks.
+	#Turns a splash from a point into a sheet the length of the cart.
+	#0 collapses every emitter back onto the contact point.
+	# Default: 0.45
+	# Range: 0.0 ~ 6.0
+	lengthSpread = 0.45
+	#
+	#A cart plays one splash sound, then stays quiet for this many ticks (20 = 1 second),
+	#so a long water section is a splash rather than a continuous roar.
+	# Default: 22
+	# Range: 1 ~ 200
+	soundCooldownTicks = 22
+
+[launch]
+	#
+	#How fast a Launch Track flings carts, in blocks per second.
+	#Used when the Launch Speed dial has never been set. Unlike a boost, a launch
+	#will start a cart that is standing still.
+	# Default: 45.0
+	# Range: 0.0 ~ 2000.0
+	speed = 45.0
+	#
+	#How violently it gets there, in blocks per second squared. This is what makes a
+	#launch feel like a catapult instead of a strong boost.
+	# Default: 130.0
+	# Range: 0.1 ~ 5000.0
+	acceleration = 130.0
+
+[reverse]
+	#
+	#Below this speed a cart on a Reverse Track is treated as parked and left alone,
+	#rather than being flipped where it stands.
+	# Default: 0.5
+	# Range: 0.0 ~ 100.0
+	minSpeed = 0.5
+	#
+	#After being flipped, a cart cannot be flipped again for this many ticks (20 = 1 second),
+	#which is what stops it juddering back and forth on the same piece of track.
+	#Raise it if long trains bounce on a reverse; it cannot be set to 0 for that reason.
+	# Default: 15
+	# Range: 1 ~ 200
+	cooldownTicks = 15
+
+[driver]
+	#
+	#How far from a cart a seated player can be and still count as its driver, in blocks.
+	#Keep it small -- a large value lets someone drive a coaster they are not actually on.
+	# Default: 3.5
+	# Range: 0.5 ~ 16.0
+	range = 3.5
+	#
+	#Top speed a coaster reaches under a driver's own throttle, in blocks per second.
+	# Default: 28.0
+	# Range: 0.5 ~ 1000.0
+	maxSpeed = 28.0
+	#
+	#How quickly the throttle answers when a driver speeds up, in blocks per second squared.
+	# Default: 14.0
+	# Range: 0.1 ~ 1000.0
+	acceleration = 14.0
+	#
+	#How quickly it slows when they ease off or pull back. Firmer than accelerating on
+	#purpose, so S brakes first and only then reverses.
+	# Default: 26.0
+	# Range: 0.1 ~ 2000.0
+	brake = 26.0
+	#
+	#How hard the spacebar handbrake bites, in blocks per second squared.
+	#Firmer again, so reaching for the brake reads as a deliberate stop.
+	# Default: 42.0
+	# Range: 0.1 ~ 2000.0
+	handbrake = 42.0
+	#
+	#Below this speed the coaster counts as stopped, and a driver setting off picks their
+	#direction by facing that way. Keep it well under a walking pace.
+	# Default: 0.35
+	# Range: 0.01 ~ 5.0
+	stoppedSpeed = 0.35

@@ -1,0 +1,13 @@
+name = "EMF Compat: Core"
+filename = "emf_compat_core_1.21.1_2.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e22256acaaabc43d4043b119a748e8f52e27a451"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8793794
+project-id = 1605113

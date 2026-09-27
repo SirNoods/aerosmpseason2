@@ -1,0 +1,20 @@
+{
+  "create_version": "21.0.35",
+  "structures": {
+    "giant_mossy_glowshroom": true,
+    "megalake": true,
+    "megalake_small": true,
+    "end_lake": true,
+    "end_lake_normal": true,
+    "end_lake_rare": true,
+    "end_bridge": true,
+    "mountain": true,
+    "painted_mountain": true,
+    "eternal_portal": true,
+    "giant_ice_star": true,
+    "small_island": true,
+    "sulphuric_cave": true,
+    "end_village": true
+  },
+  "modify_version": "21.0.35"
+}

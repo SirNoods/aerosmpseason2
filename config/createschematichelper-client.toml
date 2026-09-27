@@ -1,0 +1,24 @@
+#Enable the schematic upload feature
+enabled = true
+#Upload schematics to createmod.com when saved (if false and local screenshot saving is enabled, only screenshots are generated)
+autoUpload = true
+#Base URL for the createmod.com API
+baseUrl = "https://createmod.com"
+#Aspect ratio for rendered images (e.g. '16:9', '4:3', '1:1')
+aspectRatio = "16:9"
+#Override image width in pixels (0 = automatic based on schematic size and aspect ratio)
+# Default: 0
+# Range: 0 ~ 4096
+overrideWidth = 0
+#Override image height in pixels (0 = automatic based on schematic size)
+# Default: 0
+# Range: 0 ~ 4096
+overrideHeight = 0
+#Save the 4 perspective screenshots locally to the schematics folder
+saveFeaturedFrames = false
+#Image format for rendered frames: 'jpeg' (smaller files, recommended) or 'png' (lossless)
+imageFormat = "jpeg"
+#Path to a custom background image file (jpeg or png). Leave empty to use the default blueprint grid background.
+backgroundImage = ""
+#Show a clickable chat prompt before uploading or generating screenshots (if false, proceeds automatically)
+promptBeforeUpload = true

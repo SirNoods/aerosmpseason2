@@ -1,0 +1,13 @@
+name = "Create Aeronautics: Automated Logistics"
+filename = "create_aeronautics_automated_logistics-0.6.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1954f5c4f72620942851241bd18217197ed59b46"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8673342
+project-id = 1537420

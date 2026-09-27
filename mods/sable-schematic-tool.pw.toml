@@ -1,0 +1,13 @@
+name = "Sable Photomancy"
+filename = "sable-photomancy-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4f33a1ce8f4c241afe0963d7c96e2d612cc62ee1"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8606655
+project-id = 1526951

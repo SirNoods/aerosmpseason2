@@ -1,0 +1,13 @@
+name = "Create: Aeronautics Weightworks"
+filename = "gws_aeronautics_copycats-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7ea4be78d660665af00757a29f7fa4cd02831900"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8416402
+project-id = 1574633

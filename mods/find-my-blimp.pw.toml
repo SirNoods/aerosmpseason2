@@ -1,0 +1,13 @@
+name = "Find My Blimp"
+filename = "hbs_aerowaypoint-neoforge-1.21.1-1.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c1642036867d6b2549102b7ffcbf44a555472a56"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8495990
+project-id = 1617286

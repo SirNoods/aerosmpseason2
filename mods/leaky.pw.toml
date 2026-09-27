@@ -1,0 +1,13 @@
+name = "Leaky - Item Lag Fix"
+filename = "leaky-1.21-3.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2531009d47c3630ad5166a988cbbb3fb80839f07"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8763884
+project-id = 856906

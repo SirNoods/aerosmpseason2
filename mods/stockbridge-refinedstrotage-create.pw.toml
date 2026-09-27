@@ -1,0 +1,13 @@
+name = "StockBridge:Refined Strotage+Create"
+filename = "stockbridge-1.0.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "33104421d5ae77dc04d889263bbffb11b9280883"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8540644
+project-id = 1551188

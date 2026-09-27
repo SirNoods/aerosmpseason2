@@ -1,0 +1,156 @@
+#General settings for raid encounters
+[general]
+	#Set to false to disable all automatic raid spawns
+	enableRaidSpawns = true
+	#Whether players can capture ships using Captain's Orders
+	enableShipCapture = true
+	#Broadcast raid debug messages in chat
+	debugChatMessages = false
+
+#.
+#Controls when and how often raids spawn.
+#Chance starts at base and increases by increment each failed roll.
+[spawn_timing]
+	#Minutes between spawn attempts
+	# Default: 15
+	# Range: 1 ~ 120
+	spawnAttemptInterval = 15
+	#Starting spawn chance (%) on first attempt
+	# Default: 10.0
+	# Range: 0.0 ~ 100.0
+	spawnChanceBase = 10.0
+	#Added to spawn chance (%) after each failed roll
+	# Default: 4.0
+	# Range: 0.0 ~ 100.0
+	spawnChanceIncrement = 4.0
+	#Maximum spawn chance (%) Never exceeds this
+	# Default: 50.0
+	# Range: 0.0 ~ 100.0
+	spawnChanceMax = 50.0
+	#Spawn chance increment (%) when blocked (max raids or no eligible groups).
+	#Set lower than normal increment to prevent rapid back to back spawns.
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	spawnChanceBlockedIncrement = 1.0
+
+#.
+#Multiplayer targeting, grouping, and cooldown settings.
+[multiplayer]
+	#Maximum active raid encounters server-wide
+	# Default: 3
+	# Range: 1 ~ 20
+	maxActiveRaids = 3
+	#Minutes of cooldown per player after an encounter ends
+	# Default: 10
+	# Range: 0 ~ 120
+	personalCooldownMinutes = 10
+	#Radius (blocks) within which players are grouped as one target
+	# Default: 200
+	# Range: 50 ~ 1000
+	playerGroupingRadius = 200
+	#Base weight for target group selection (before tier/Bad Omen bonuses)
+	# Default: 10.0
+	# Range: 1.0 ~ 100.0
+	targetWeightBase = 10.0
+	#Additional selection weight per unlocked tier
+	# Default: 1.0
+	# Range: 0.0 ~ 50.0
+	targetWeightPerTier = 1.0
+	#Additional selection weight per Bad Omen level
+	# Default: 10.0
+	# Range: 0.0 ~ 100.0
+	badOmenWeightPerLevel = 10.0
+
+#.
+#Ship tier progression: unlocked by captain kill count.
+[tier_system]
+	#Enable tier 1 ships (Scout)
+	enableTier1 = true
+	#Enable tier 2 ships (Skiff)
+	enableTier2 = true
+	#Enable tier 3 ships (Warship)
+	enableTier3 = true
+	#Enable tier 4 ships (Flagship
+	enableTier4 = true
+	#Captain kills required to unlock tier 2
+	# Default: 8
+	# Range: 0 ~ 1000
+	tier2UnlockKills = 8
+	#Captain kills required to unlock tier 3
+	# Default: 25
+	# Range: 0 ~ 1000
+	tier3UnlockKills = 25
+	#Captain kills required to unlock tier 4
+	# Default: 50
+	# Range: 0 ~ 1000
+	tier4UnlockKills = 50
+
+	#Spawn weights per tier. Higher number = more likely to be selected
+	[tier_system.weights]
+		#Tier 1 spawn weight
+		# Default: 50
+		# Range: 0 ~ 1000
+		tier1Weight = 50
+		#Tier 2 spawn weight
+		# Default: 30
+		# Range: 0 ~ 1000
+		tier2Weight = 30
+		#Tier 3 spawn weight
+		# Default: 15
+		# Range: 0 ~ 1000
+		tier3Weight = 15
+		#Tier 4 spawn weight
+		# Default: 5
+		# Range: 0 ~ 1000
+		tier4Weight = 5
+
+#.
+#Bad Omen effects on raid difficulty and loot.
+#Guarantees the player's highest unlocked tier to spawn.
+#Multiplier formula: base + (level - 1) * step.
+[bad_omen]
+	#Crew size multiplier at Bad Omen I
+	# Default: 1.5
+	# Range: 1.0 ~ 10.0
+	badOmenCrewMultiplierBase = 1.5
+	#Additional crew multiplier per Bad Omen level above I
+	# Default: 0.5
+	# Range: 0.0 ~ 5.0
+	badOmenCrewMultiplierStep = 0.5
+	#Loot quantity multiplier at Bad Omen I
+	# Default: 1.5
+	# Range: 1.0 ~ 10.0
+	badOmenLootMultiplierBase = 1.5
+	#Additional loot multiplier per Bad Omen level above I
+	# Default: 0.5
+	# Range: 0.0 ~ 5.0
+	badOmenLootMultiplierStep = 0.5
+
+#.
+#Captain kill tracking settings.
+[captain_kills]
+	#Whether kills from raid ship captains count toward tier progression
+	raidCaptainKillsCounted = true
+	#Per-player tracking (true) or shared server-wide total (false)
+	perPlayerKillTracking = true
+
+#.
+#Emergency departure and destruction settings.
+[departure]
+	#Enable the explosion destruction sequence on emergency departures.
+	#When false, unclaimed ships still depart with alarm sounds but despawn cleanly.
+	enableExplosions = true
+	#How long (in seconds) debris fragments persist before being cleaned up
+	# Default: 30
+	# Range: 5 ~ 600
+	debrisLifetimeSeconds = 30
+
+#.
+#Sound settings for raid encounters.
+[audio]
+	#Play a horn sound when a raid ship spawns nearby
+	enableSpawnHornSound = true
+	#Range in blocks at which the horn sound is audible
+	# Default: 200.0
+	# Range: 10.0 ~ 1000.0
+	hornSoundRange = 200.0

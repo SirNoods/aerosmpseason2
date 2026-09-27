@@ -1,0 +1,10 @@
+#============================================================
+#EXTRA SPECIAL CORE
+#Library diagnostics only. Theme / colour / motion settings
+#are in extraspecialcore-theme-common.toml and -theme-client.toml.
+#============================================================
+[general]
+	#----- START HERE -----
+	#When true, ESC may log extra diagnostics for troubleshooting.
+	#Default: false.
+	debugLogging = false

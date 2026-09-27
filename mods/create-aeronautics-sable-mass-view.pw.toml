@@ -1,0 +1,13 @@
+name = "Sable: Mass view (Create Aeronautics)"
+filename = "sablemassview-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e568ce1389bcb259483766cf35542dbc8cefb2b1"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7948985
+project-id = 1518454

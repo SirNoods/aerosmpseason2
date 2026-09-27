@@ -1,0 +1,13 @@
+name = "Sophisticated Backpacks RS Bridge | Quick Deposit into Refined Storage Networks"
+filename = "backpackrs-1.0.0+mc1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "269c69de71ee7b92c2f2101c2ae458e8906db17f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8710301
+project-id = 1664334

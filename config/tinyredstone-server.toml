@@ -1,0 +1,37 @@
+#Feature Settings
+[feature]
+	#Should it be possible to export or import the blueprint as json? (default:true)
+	json_blueprint = true
+	#When should the information be displayed in the overlay? 0 = no, 1 = always, 2 = only in extended or debug, 3 = when you have a wrench in your hand, 4 = when you have any component in your hand
+	# Default: 1
+	# Range: 0 ~ 4
+	display_mode = 1
+	#Should a panel containing components, a cover, or a custom color drop as an item when broken in creative mode?
+	#This prevents an accidental left click from permanently destroying a circuit. (default:true)
+	creative_panel_drops = true
+
+#Performance Settings
+[performance]
+	#Should redstone torches output light to the surrounding area? (default:false)
+	torch_light = false
+	#Maximum redstone tick delay for super repeaters. 10 redstone ticks = 1 second. (default:1000)
+	# Default: 1000
+	# Range: > 4
+	super_repeater_max = 1000
+	#How many blocks long can a line of redstone run in a single tick?
+	#This number determines approximately 2x how many zero tick super repeaters can extend a single redstone line?
+	#(Since each repeater can extend signal 2 full blocks.)
+	#Very large numbers may degrade performance and potentially risk crash. (default=32)
+	# Default: 32
+	# Range: 4 ~ 1024
+	max_zero_tick_run = 32
+	#Allow components to be placed anywhere, not just on panels. (default: true)
+	allow_world_placement = true
+	#Number of ticks to wait before applying light level changes from tiny lamps and torches.
+	#Higher values improve performance with many active lamps. Lower values give more responsive lighting.
+	#Set to 0 for immediate updates. 20 ticks = 1 second. (default: 4)
+	# Default: 4
+	# Range: 0 ~ 100
+	light_update_delay = 4
+	#List of blocks from other mods to be treated as redstone wire.
+	redstone_wires = ["redstonepen:track", "cb_multipart:multipart", "cyclic:clock", "tinyredstone:redstone_panel"]

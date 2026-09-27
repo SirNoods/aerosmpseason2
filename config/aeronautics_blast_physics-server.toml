@@ -1,0 +1,24 @@
+#Explosion impulses applied to Sable rigid-body craft.
+[blast_physics]
+	#Master switch for explosion-driven craft movement.
+	enabled = true
+	#Multiplies the explosion power to determine impulse reach.
+	#The default 2.0 matches vanilla's entity knockback reach.
+	# Default: 2.0
+	# Range: 0.0 ~ 16.0
+	blast_radius_multiplier = 2.0
+	#Impulse per block of projected craft area and point of explosion power.
+	#Increase this when heavy craft do not move enough.
+	# Default: 2.0
+	# Range: 0.0 ~ 1000.0
+	impulse_per_power_block = 2.0
+	#Maximum projected area used for one craft, in square blocks.
+	#This limits pathological sparse or extremely large bounding boxes.
+	# Default: 4096.0
+	# Range: 1.0 ~ 1000000.0
+	maximum_effective_area = 4096.0
+	#Maximum linear velocity change contributed by one explosion.
+	#The cap scales the maximum impulse with the craft's mass.
+	# Default: 40.0
+	# Range: 0.0 ~ 10000.0
+	maximum_velocity_change = 40.0

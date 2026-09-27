@@ -1,0 +1,116 @@
+[server.pv.addon.groups]
+divider = "&8&m-----------------------------------------------------"
+
+[server.pv.addon.groups.format]
+group_name = "&6[%s]"
+players_and_owner = "&7Người chơi: &r%1$s&7, Trưởng nhóm của &r%2$s"
+invite = "%1$s mời bạn tham gia nhóm voice %2$s"
+only_players = "&7Người Chơi: &r%s"
+page = "&7Trang &r%s/%s"
+
+[server.pv.addon.groups.tooltip]
+group_uuid = "Uuid: %s"
+password_protected = "Nhóm này được bảo vệ bằng mật khẩu"
+
+[server.pv.addon.groups.error]
+not_in_group = "&cBạn cần ở trong một nhóm để dùng lệnh này"
+name_length = "&cTên phải nằm trong khoảng %1$s tới %2$s ký tự"
+player_not_found = "&cKhông có người chơi nào có tên như vậy"
+unknown_subcommand = "&cLệnh Không tồn tại. Các lệnh hiện có %s"
+unknown = "&cLỗi không xác định"
+group_not_found = "&cKhông tìm thấy nhóm"
+uuid_parse = "&cLỗi định dang uuid. '%s' không phải uuid"
+no_permission = "Không có quyền:'%s'"
+
+[server.pv.addon.groups.icons]
+password_protected = "&6⛨"
+
+[server.pv.addon.groups.command.unset.error]
+permissions_not_set = "&cBộ lọc \"Quên hạn\" hiện tại đang trống"
+unknown_flag = "&cKhông thể chỉnh flag này \"%1$s\". Các flag hiện có: %2$s"
+password_not_set = "&cNhóm hiện tại đã không còn được bảo vể bởi mật khẩu"
+usage = "&cDùng: /groups unset <flag>"
+
+[server.pv.addon.groups.command.ban.error]
+already_banned = "&cNgười chơi này đã bị cấm khỏi nhóm rồi"
+usage = "&cDùng: /groups ban <người chơi>"
+
+[server.pv.addon.groups.command.leave]
+success = "&aBạn đã rời khỏi nhóm"
+
+[server.pv.addon.groups.command.create]
+success = "&aNhóm đã được tạo:"
+
+[server.pv.addon.groups.command.join]
+success = "&aBạn đã vào nhóm"
+
+[server.pv.addon.groups.command.join.error]
+already_joined = "&cBạn đã vào nhóm này rồi"
+wrong_password = "&cMật khẩu không đúng"
+usage = "&cDùng: /groups joint <uuid nhóm> [mật khẩu]"
+banned = "&cBạn đã bị cấm khỏi nhóm"
+password_arg_missing = "&cNhóm này yêu cầu mật khẩu để tham gia"
+
+[server.pv.addon.groups.command.set.error]
+unknown_flag = "&cKhông có flag: \"%1$s\". Các flaf hiện có: %2$s"
+usage = "&cDùng: /groups set <flag> <giá trị>"
+identical_value = "&cGiá trị này giống hệt với giá trọ hiện tại"
+
+[server.pv.addon.groups.command.unban.error]
+not_banned = "&cNgười chơi này không bị cấm trong nhóm"
+usage = "&cDùng: /groups unban <người chơi>"
+
+[server.pv.addon.groups.command.transfer.error]
+already_owner = "&cBạn đã là Trưởng nhóm của nhóm này rồi"
+usage = "&cDùng: /groups tranfer <người chơi>"
+
+[server.pv.addon.groups.command.kick.error]
+not_in_group = "&cNgười chơi không có trong nhóm"
+usage = "&cDùng: /groups kich <người chơi>"
+
+[server.pv.addon.groups.command.invite]
+success = "&cGửi lời mời cho %s"
+
+[server.pv.addon.groups.command.invite.error]
+already_joined = "&cNgười chơi này đã vào nhóm này rồi"
+usage = "&cDùng: /groups invite <người chơi>"
+banned = "&cNgười chơi này đã bị ban khỏi nhóm"
+invite_self = "&cBạn không thể mời chính bản thân mình"
+
+[server.pv.addon.groups.command.browse.error]
+page_not_found = "&cKhông tìm thấy trang"
+no_groups = "&cKhông có nhóm. Để tạo nhóm hãy dùng \"/groups create\""
+
+[server.pv.addon.groups.button]
+next = "&e>"
+leave = "&c← Rời đi"
+prev = "&e<"
+invite = "&e✉ Mời"
+join = "&e→ Tham gia"
+
+[server.pv.addon.groups.arg]
+groups_uuid = "<uuid nhóm>"
+password = "<mật khẩu>"
+permissions = "<Danh sách các quyền, cách nhau bằng dấu phẩy>"
+name = "<tên>"
+page = "[trang]"
+
+[server.pv.addon.groups.notifications]
+player_unbanned = "%s đã được bỏ cấm khỏi nhóm"
+player_left = "%s đã rời nhóm"
+banned = "&cBạn đã bị cấm khỏi nhóm"
+new_owner = "%s là Trưởng nhóm mới của nhóm"
+player_banned = "%s đã bị cấm khỏi nhóm"
+persistent_false = "Nhóm hiện tại chỉ là tạm thời"
+player_kicked = "%s đã bị đá khỏi nhóm"
+kicked = "&cBạn đã bị đá khỏi nhóm"
+password_changed = "Đổi mật khẩu nhóm đã được đổi"
+persistent_true = "Nhóm bây giờ sẽ không bị giải tán khi thoát"
+permissions_unset = "Quyền bảo vệ đã bị loại bỏ"
+group_deleted = "Nhóm đã bị xóa"
+player_join = "%s đã tham gia nhóm"
+password_unset = "Mật khẩu bảo vệ đã được loại bỏ"
+permissions_changed = "Quyền của nhóm đã được đổi"
+name_change = "Nhóm đã đổi từ '%1$s' thành '%2$s'"
+[client.pv.activation]
+groups = "Nhóm"

@@ -1,0 +1,13 @@
+name = "Create Style Sophisticated Backpacks"
+filename = "CreateSophBackpacks.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0c834a3a13d3d597b6d1273375d2bd049fc3d728"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7707479
+project-id = 899330

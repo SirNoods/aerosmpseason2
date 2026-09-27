@@ -1,0 +1,13 @@
+name = "Drive-By-Sable"
+filename = "drivebysable-r1.6.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "482a96ff028717e7ac7e8ff7da9f9801496cc7c8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8932193
+project-id = 1576519

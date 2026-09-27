@@ -1,0 +1,13 @@
+name = "Create Aeronautics: Explosion Physics (Simulated)"
+filename = "aeronautics_blast_physics-0.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "57bfb23f39e3381ba7b178db3a6af0e8d3d1834b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8861262
+project-id = 1691834

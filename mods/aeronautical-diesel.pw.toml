@@ -1,0 +1,13 @@
+name = "Create: Aeronautical Diesel"
+filename = "aeronautical_diesel-1.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0f2b2ea62fa2738f9a21ee5f0ab1565c10c59db5"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8884266
+project-id = 1640042

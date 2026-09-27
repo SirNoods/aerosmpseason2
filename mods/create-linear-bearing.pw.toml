@@ -1,0 +1,13 @@
+name = "Create: Linear Bearing"
+filename = "linearbearing-1.2.6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6b3da63cd216da8c79f6d2fd1f8b11f910704173"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8181069
+project-id = 1556708

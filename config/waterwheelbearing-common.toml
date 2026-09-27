@@ -1,0 +1,6 @@
+#Legacy setting kept for old config compatibility.
+#Waterwheel balance is now datapack-driven via data/waterwheelbearing/waterwheel_balance.json.
+#This value is not used by the default balance formula.
+# Default: 256
+# Range: 1 ~ 1000000
+baseStressCapacity = 256

@@ -1,0 +1,13 @@
+name = "Create Lootr"
+filename = "Create LootR Chest.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e558fcfdd9c541aff1b0bfb1a685d106274f3fe0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6460260
+project-id = 1131561

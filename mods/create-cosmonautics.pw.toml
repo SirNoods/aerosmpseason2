@@ -1,0 +1,13 @@
+name = "Create Cosmonautics"
+filename = "cosmonautics-26.08.307.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9b70ebf3ff2beaee0ab0ba6c8f46643da3e4f4fc"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8612744
+project-id = 1595491

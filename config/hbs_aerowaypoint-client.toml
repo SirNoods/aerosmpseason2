@@ -1,0 +1,5 @@
+[waypointRendering]
+	#When waypoint beams are visible. Options: ALWAYS, GOGGLES, CROUCH, GOGGLES_AND_CROUCH
+	waypointVisibility = "ALWAYS"
+	#When waypoint name-tag labels are visible. Options: ALWAYS, GOGGLES, LOOKING, LOOKING_AND_GOGGLES
+	tagVisibility = "ALWAYS"

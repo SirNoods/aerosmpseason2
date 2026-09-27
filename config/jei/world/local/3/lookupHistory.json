@@ -1,0 +1,6 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"sinfyukesmod:physics_knife"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"mcwdoors:garage_gray_door"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"coasters_extras:bobsled_track"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

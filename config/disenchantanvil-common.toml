@@ -1,0 +1,3 @@
+[disenchanting]
+	#Blocks an anvil may land on to trigger disenchanting
+	allowedBaseBlocks = ["minecraft:obsidian", "minecraft:crying_obsidian"]

@@ -1,0 +1,115 @@
+#============================================================
+#LEAK DETECTION
+#When CTL treats chunk counts as noise vs a real leak,
+#how long after startup to stay quiet, and how trends/TPS
+#feed severity. Tune these first on busy servers.
+#============================================================
+[detection]
+	#----- START HERE: CHUNK THRESHOLDS -----
+	#Chunk count below which retained chunks are treated as baseline
+	#(normal cache), not a leak. Default: 48.
+	# Default: 48
+	# Range: > 0
+	baseline_chunk_threshold = 48
+	#Chunk count above which a leak is treated as confirmed / escalated.
+	#Default: 96.
+	# Default: 96
+	# Range: > 0
+	escalation_chunk_threshold = 96
+	#Seconds after server start during which leak warnings are suppressed
+	#(world load and caches settle). Default: 600 (10 minutes).
+	# Default: 600
+	# Range: > 0
+	startup_grace_period_seconds = 600
+	#Minutes of chunk-count history used to decide GROWING / STABLE trends.
+	#Default: 15.
+	# Default: 15
+	# Range: 1 ~ 60
+	trend_window_minutes = 15
+	#Spark TPS (5s) below this, together with a GROWING leak, bumps severity.
+	#Default: 17.5.
+	# Default: 17.5
+	# Range: 1.0 ~ 20.0
+	low_tps_threshold = 17.5
+	#How many (count, heap %) samples to keep per leak for sparklines
+	#and acceleration. Default: 48.
+	# Default: 48
+	# Range: 8 ~ 256
+	time_series_max_samples = 48
+
+#============================================================
+#UI AND CHAT
+#Whether ATL lines spam chat/log, whether /ctl opens the panel,
+#and whether ops may enable world leak memory from the panel.
+#============================================================
+[ui]
+	#true: parsed AllTheLeaks leak lines are not printed to log/chat;
+	#use /ctl panel instead. Default: true.
+	suppress_atl_leak_lines = true
+	#true: /ctl status|leaks|explain opens the diagnostics GUI for players
+	#instead of dumping to chat. Default: true.
+	prefer_diagnostics_gui = true
+	#When opening the CTL panel from a command, send a short chat
+	#acknowledgement. Default: false.
+	ctl_chat_ack = false
+	#Lets ops use the CTL panel to turn world leak memory on or off.
+	#Nothing is written under the world until someone enables it.
+	#Set false to hide/forbid the feature. Default: true.
+	allow_world_leak_memory = true
+
+#============================================================
+#PRESCRIPTION GATES
+#How many ATL refreshes and how much confidence CTL needs before
+#it prints a prescription block. Heap pressure can ease those gates.
+#============================================================
+[prescription]
+	#Minimum ATL refresh observations before CTL may emit a prescription.
+	#Default: 3.
+	# Default: 3
+	# Range: 1 ~ 50
+	prescription_min_observations = 3
+	#Minimum analysis confidence (0–1) required for a prescription.
+	#Default: 0.62.
+	# Default: 0.62
+	# Range: 0.2 ~ 0.99
+	prescription_min_confidence = 0.62
+	#Observations needed to prescribe on a mod-conflict pattern alone.
+	#Default: 3.
+	# Default: 3
+	# Range: 1 ~ 50
+	prescription_conflict_min_observations = 3
+	#Observations needed for the persistent-leak prescription branch.
+	#Default: 6.
+	# Default: 6
+	# Range: 2 ~ 100
+	prescription_persistent_min_observations = 6
+	#Observations before CONSISTENTLY_* pattern labels tighten.
+	#Default: 5.
+	# Default: 5
+	# Range: 2 ~ 100
+	pattern_mature_observations = 5
+	#Extra confidence when heap is above ~80% and trend is GROWING.
+	#Default: 0.12.
+	# Default: 0.12
+	# Range: 0.0 ~ 0.5
+	heap_pressure_confidence_boost = 0.12
+	#true: high heap + GROWING reduces the prescription observation
+	#requirement by 1. Default: true.
+	heap_pressure_eases_prescription = true
+	#Heap % threshold for the prescription fast-track when trend is GROWING.
+	#Default: 85.
+	# Default: 85.0
+	# Range: 50.0 ~ 100.0
+	heap_pressure_prescription_percent = 85.0
+
+#============================================================
+#DEBUG
+#Leave these off for normal play unless you are chasing a leak
+#or want automatic Spark profiles when CTL escalates.
+#============================================================
+[debug]
+	#Log detailed CTL debug information to the server log. Default: false.
+	log_debug_details = false
+	#true: automatically trigger Spark profiling when leaks are detected.
+	#false: skip auto profiles (and related chat). Default: true.
+	auto_spark_profiling = false

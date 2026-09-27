@@ -1,0 +1,13 @@
+name = "Sounds X Create"
+filename = "Sounds x Create V1.4.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c5b5334e7656f0f49c2f08abdbb18472f40aaaa1"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7367005
+project-id = 1354127

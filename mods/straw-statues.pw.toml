@@ -1,0 +1,13 @@
+name = "Straw Statues"
+filename = "StrawStatues-v21.1.0-1.21.1-NeoForge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "133f187ee682ee71c3db7307b93c572b7951af4b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5732771
+project-id = 682564

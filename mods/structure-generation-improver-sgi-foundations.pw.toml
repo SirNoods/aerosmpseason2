@@ -1,0 +1,13 @@
+name = "Structure Generation Improver (SGI: Foundations!)"
+filename = "structure_generation_improver-2.0.1-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "29cf2a6dc18c9698f9d86ccc4d95b88e4bbc306f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8923594
+project-id = 1473087

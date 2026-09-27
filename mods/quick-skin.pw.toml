@@ -1,0 +1,13 @@
+name = "Quick Skin"
+filename = "Quick Skin - NeoForge - 1.21.1-2.6.2.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a5ba6d1ccaf5e15f2d33235ea0a180c5d899cb83"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7718937
+project-id = 1323980

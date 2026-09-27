@@ -1,0 +1,13 @@
+name = "Lexiconfig"
+filename = "lexiconfig-neoforge-1.4.21-novel.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f862c78f4d27938208913d1c3ee4d9be1a13d166"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8208839
+project-id = 1019452

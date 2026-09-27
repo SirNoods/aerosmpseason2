@@ -1,0 +1,13 @@
+name = "Photon"
+filename = "photon-neoforge-1.21.1-2.1.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7596be2fff68c9c6d62e44dc4ea4d66cb006e738"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8323335
+project-id = 871522

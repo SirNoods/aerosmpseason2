@@ -1,0 +1,15 @@
+#Multiplier applied to DnD large fan thrust.
+#1.0 makes a DnD large fan match Create Aeronautics' wooden propeller thrust curve.
+# Default: 1.0
+# Range: 0.0 ~ 1000.0
+largeFanThrustMultiplier = 1.0
+#Multiplier applied to DnD large fan airflow.
+#1.0 makes a DnD large fan match Create Aeronautics' wooden propeller airflow curve.
+# Default: 1.0
+# Range: 0.0 ~ 1000.0
+largeFanAirflowMultiplier = 1.0
+#Stress impact of DnD large fans, in SU per RPM.
+#Create Aeronautics' wooden, andesite, and smart propellers use 4.0.
+# Default: 4.0
+# Range: 0.0 ~ 1000.0
+largeFanStressImpact = 4.0

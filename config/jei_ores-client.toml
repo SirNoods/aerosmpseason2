@@ -1,0 +1,4 @@
+addBiomesToIndex = true
+showFeatureIds = true
+showUnshownPlacementWarnings = true
+showGenerationStats = true

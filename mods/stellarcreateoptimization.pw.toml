@@ -1,0 +1,13 @@
+name = "StellarCreateOptimization"
+filename = "stellarcreateoptimization-neoforge-1.21.1-1.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "84a06ad2c1e2f0ba99daf699d052af805078c31b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8940620
+project-id = 1637437

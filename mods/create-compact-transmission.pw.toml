@@ -1,0 +1,13 @@
+name = "Create: Compact Transmission"
+filename = "create_compact_transmission-1.0.7.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "30a695f6fb661798966f26770c9226604aae2a59"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8243511
+project-id = 1468930

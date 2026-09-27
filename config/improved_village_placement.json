@@ -1,0 +1,4 @@
+{
+  // Smaller variants of vanilla villages generate with less restrictive placement conditions.
+  "generate_small_villages": true
+}

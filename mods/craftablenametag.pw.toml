@@ -1,0 +1,13 @@
+name = "Craftable Name Tag"
+filename = "craftablenametag-1.21.1-0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6a79885de2289b1ea1c5b69de9c7a1e2b77ad73a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5752254
+project-id = 920866

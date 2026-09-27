@@ -1,0 +1,13 @@
+name = "Flashback Neoforge Fixed"
+filename = "flashback_neoforge_fixed-1.0.8.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0a6e6a74adce10cae6f5a56d6c987e3d3e97b18b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8856704
+project-id = 1671440

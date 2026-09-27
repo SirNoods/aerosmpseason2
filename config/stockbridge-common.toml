@@ -1,0 +1,44 @@
+#stockbridge.configuration.networkInterfaceEnergy.tooltip
+# Default: 5
+# Range: 0 ~ 2000
+networkInterfaceEnergy = 5
+#stockbridge.configuration.slotCacheMs.tooltip
+# Default: 2000
+# Range: 250 ~ 30000
+slotCacheMs = 2000
+#stockbridge.configuration.maxExposedItemSlots.tooltip
+# Default: 512
+# Range: 16 ~ 4096
+maxExposedItemSlots = 512
+#stockbridge.configuration.maxExposedFluidTanks.tooltip
+# Default: 64
+# Range: 8 ~ 1024
+maxExposedFluidTanks = 64
+#stockbridge.configuration.comparatorFullAmount.tooltip
+# Default: 64
+# Range: 1 ~ 2000000000
+comparatorFullAmount = 64
+#stockbridge.configuration.colonyScanRadius.tooltip
+# Default: 256
+# Range: 16 ~ 1024
+colonyScanRadius = 256
+#stockbridge.configuration.colonyRefreshTicks.tooltip
+# Default: 40
+# Range: 5 ~ 600
+colonyRefreshTicks = 40
+#stockbridge.configuration.colonyTerminalEnergy.tooltip
+# Default: 5
+# Range: 0 ~ 2000
+colonyTerminalEnergy = 5
+#stockbridge.configuration.colonyMaxDisplayEntries.tooltip
+# Default: 50
+# Range: 5 ~ 200
+colonyMaxDisplayEntries = 50
+#stockbridge.configuration.wirelessTerminalRange.tooltip
+# Default: 8
+# Range: 2 ~ 16
+wirelessTerminalRange = 8
+#stockbridge.configuration.wirelessTerminalEnergy.tooltip
+# Default: 5
+# Range: 0 ~ 2000
+wirelessTerminalEnergy = 5

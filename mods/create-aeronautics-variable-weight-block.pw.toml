@@ -1,0 +1,13 @@
+name = "Create Aeronautics: Variable Weight Block"
+filename = "CreateAeronauticsVariableWeightBlock-1.21.1-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5aadfd592bd61df5760b4834dd84f337b4593347"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8060336
+project-id = 1537699

@@ -1,0 +1,53 @@
+[slide]
+	#Horizontal friction while the player is on a water slide. Lower = faster.
+	# Default: 0.88
+	# Range: 0.0 ~ 1.0
+	slideFriction = 0.88
+	#Extra velocity applied when entering a water slide, blocks/tick.
+	# Default: 0.35
+	# Range: 0.0 ~ 2.0
+	entranceBoost = 0.35
+	#Maximum entry speed for slide trajectory computation, in blocks/second.
+	# Default: 30.0
+	# Range: 1.0 ~ 100.0
+	slideMaxEntrySpeedBlocksPerSecond = 30.0
+	#Trajectory sample spacing along the slide spine, in blocks.
+	# Default: 0.5
+	# Range: 0.1 ~ 4.0
+	slideTrajectorySampleSpacing = 0.5
+	#Maximum number of trajectory samples sent to the client.
+	# Default: 4096
+	# Range: 64 ~ 32768
+	slideMaxTrajectorySamples = 4096
+
+[anchor]
+	#Default opening radius of a new slide anchor, in blocks.
+	# Default: 1.0
+	# Range: 0.1 ~ 10.0
+	defaultSlideRadius = 1.0
+	#Minimum slide opening radius, in blocks.
+	# Default: 0.35
+	# Range: 0.05 ~ 10.0
+	minSlideRadius = 0.35
+	#Maximum slide opening radius, in blocks.
+	# Default: 20.0
+	# Range: 0.1 ~ 20.0
+	maxSlideRadius = 20.0
+	#Maximum lift at a slide anchor, in blocks.
+	# Default: 16.0
+	# Range: 0.5 ~ 16.0
+	maxSlideLift = 16.0
+	#Maximum number of sectors per water slide curve.
+	# Default: 16
+	# Range: 2 ~ 64
+	maxSectors = 16
+	#Maximum number of fake (ghost) blocks attached to one water slide curve.
+	# Default: 64
+	# Range: 1 ~ 512
+	maxGhostBlocksPerCurve = 64
+	#Border size in pixels used for 9-slice tiling of block textures on sectors.
+	# Default: 2
+	# Range: 0 ~ 8
+	sectorBorderPx = 2
+	#Remove bezier curve angle limits for water slides.
+	disableSlideCurveAngleLimit = true

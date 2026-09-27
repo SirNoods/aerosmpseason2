@@ -1,0 +1,61 @@
+#.
+#Frogport Grapple Capture Rules
+#- ruleMode = DEFAULT: use built-in defaults
+#- ruleMode = CUSTOM : read selectors from config lists (level0-3, deny)
+#
+#Selector syntax:
+#  - category:<MobCategory>   e.g. category:MONSTER
+#  - #<tag>                  e.g. #minecraft:bosses
+#  - entity:<id>             e.g. entity:minecraft:zombie
+#
+#Empty [] level list means OTHERS at that level, but Deny always overrides.
+#
+["Frogport Grapple"]
+	#.
+	#.
+	#Rule mode: DEFAULT uses built-in rules; CUSTOM uses config selector lists.
+	#Allowed Values: DEFAULT, CUSTOM
+	captureRuleMode = "DEFAULT"
+	#.
+	#Allow Frogport Grapple to target and pull player entities.
+	allowTargetPlayers = true
+	#.
+	#Max tongue reach distance (blocks).
+	# Default: 48
+	# Range: > 1
+	tongueLength = 48
+	#Impulse applied each tick when a grounded player holds Shift while hooked to a physical structure.
+	physicalStructurePullStrength = 5.0
+	#Maximum structure velocity toward the player caused by the grapple.
+	physicalStructurePullMaxSpeed = 5.0
+
+	["Frogport Grapple".custom_rule_lists]
+		#Advanced: edit rules here (GUI may not support list editing well).
+		level0 = ["category:CREATURE", "category:AMBIENT", "category:WATER_CREATURE", "category:WATER_AMBIENT", "category:UNDERGROUND_WATER_CREATURE", "category:AXOLOTLS"]
+		level1 = []
+		level2 = ["category:MONSTER"]
+		level3 = ["entity:minecraft:ender_dragon", "entity:minecraft:wither", "entity:minecraft:warden"]
+		deny = []
+
+#.
+#Flywheel Mace charge and dash settings.
+[flywheelMace]
+	#.
+	#.
+	#Ticks required to gain one full unit of flywheel mace charge.
+	# Default: 80
+	# Range: > 5
+	chargeTicks = 80
+	#.
+	#Duration of a flywheel mace dash in ticks.
+	# Default: 20
+	# Range: > 1
+	dashTicks = 20
+	#Base dash speed in blocks per tick.
+	# Default: 0.7
+	# Range: 0.0 ~ 100.0
+	baseDashSpeed = 0.7
+	#Additional dash speed per unit of stored energy.
+	# Default: 0.9
+	# Range: 0.0 ~ 100.0
+	energyDashSpeed = 0.9

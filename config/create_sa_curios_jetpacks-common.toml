@@ -1,0 +1,9 @@
+[curios_jetpack_armor_stats]
+	#If true, a jetpack in the Curios body slot can add its base chestplate armor attributes.
+	#This only applies base armor/toughness/knockback attributes; it does not promise full vanilla/modded armor enchantment compatibility.
+	enableCuriosJetpackArmorStats = true
+	#Controls how Curios jetpack armor stats interact with the normal chest armor slot.
+	#CHEST_EMPTY_ONLY: Curios jetpacks add armor stats only when the vanilla chest armor slot is empty.
+	#STACK_WITH_CHEST: Curios jetpack armor stats stack with whatever is in the vanilla chest armor slot. This is stronger and may be unbalanced.
+	#Allowed Values: CHEST_EMPTY_ONLY, STACK_WITH_CHEST
+	curiosJetpackArmorStatsStackingMode = "CHEST_EMPTY_ONLY"

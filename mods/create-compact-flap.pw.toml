@@ -1,0 +1,13 @@
+name = "Create: Compact Flap"
+filename = "compactflap-neoforge-1.21.1-1.0.4.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0018b99ee0a82e066d1acad4de389aae2426b812"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8031969
+project-id = 1530869

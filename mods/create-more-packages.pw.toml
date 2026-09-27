@@ -1,0 +1,13 @@
+name = "Create more packages"
+filename = "ccomunityboxes-2.3-neoForge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "dff593b0eb5c88298627d2b2acbbdc12f73c189e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7299895
+project-id = 1252942

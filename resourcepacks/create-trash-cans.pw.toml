@@ -1,0 +1,13 @@
+name = "Create Trash Cans"
+filename = "create-trash-cans-1.2.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0845c684796d4d3681d17c06e26e5120ab55e4af"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7882262
+project-id = 1332625

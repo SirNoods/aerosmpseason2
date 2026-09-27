@@ -1,0 +1,30 @@
+[chute]
+	#Ticks before retrying a chute lookup that returned no target/capability.
+	# Default: 5
+	# Range: 1 ~ 20
+	negativeCacheTicks = 5
+
+[fan]
+	#Periodic fan fallback interval. Set to 0 to disable the fallback scan.
+	# Default: 20
+	# Range: 0 ~ 200
+	periodicFallbackIntervalTicks = 20
+
+[boiler]
+	#Boiler tick rate. Higher values reduce CPU usage but may slightly delay boiler state updates.
+	#Set to 1 for vanilla behavior (every tick). Recommended: 1-5.
+	# Default: 1
+	# Range: 1 ~ 20
+	boilerTickRate = 1
+
+[fluidTank]
+	#Ticks to cache fluid tank controller references before revalidating.
+	#Higher values improve performance but may delay multi-block updates. Recommended: 10-40.
+	# Default: 20
+	# Range: 5 ~ 100
+	controllerCacheLifetime = 20
+
+[belt]
+	#Replace FluidLogistics' 11x11x11 mechanical fluid gun scan with a per-Level target index.
+	#Has no effect when FluidLogistics is not installed.
+	fluidGunTargetIndexEnabled = true

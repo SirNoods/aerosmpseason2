@@ -1,0 +1,13 @@
+name = "Beltborne Lanterns"
+filename = "beltborne_lanterns-1.2.5-neoforge+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3a30923e4ec5db8fd6838d20ce2743b24feb212d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7763532
+project-id = 1337474

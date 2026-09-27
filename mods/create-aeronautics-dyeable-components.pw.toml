@@ -1,0 +1,13 @@
+name = "Create Aeronautics: Dyeable Components"
+filename = "dyeable-components-1.0.4+mc1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "caf60f71d89a3068cd07283f45bffc31704a7474"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8344761
+project-id = 1518023

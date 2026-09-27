@@ -1,0 +1,13 @@
+name = "AeroEngine fuel compat"
+filename = "aeroengine_fuel_compat-0.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "189b867b1e438b15fd6c061e0285b51423648fbe"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8559152
+project-id = 1602011

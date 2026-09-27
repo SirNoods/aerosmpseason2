@@ -1,0 +1,13 @@
+name = "Lever drugster"
+filename = "lever-drugster-1.8.8.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5a523e3966260bc85b3e4e0b3af966d0019126cb"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8416778
+project-id = 1530992

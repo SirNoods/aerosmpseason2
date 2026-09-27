@@ -1,0 +1,13 @@
+#Create: Server Optimizer settings
+[optimization]
+	enabled = true
+	#One-time positional staggering that spreads validation spikes without reducing tick frequency.
+	# Default: 20
+	# Range: 0 ~ 200
+	validationSpreadTicks = 20
+	#Stagger Create block entity maintenance without reducing its frequency.
+	spreadLazyTicks = true
+	#Skip provably identical kinetic network updates repeated in the same tick.
+	deduplicateNetworkUpdates = true
+	#Apply safe network and maintenance optimizations to detected Create addons.
+	createAddonOptimizations = true

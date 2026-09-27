@@ -1,0 +1,8 @@
+#Check CurseForge for newly uploaded StockBridge files when joining a world.
+updateChecksEnabled = true
+#Internal: last CurseForge file ID the client already knows about.
+# Default: 0
+# Range: > 0
+knownReleaseFileId = 8540644
+#Internal: mod version from the last update check.
+installedModVersion = "1.0.4"

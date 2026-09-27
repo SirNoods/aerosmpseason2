@@ -1,0 +1,13 @@
+name = "Create: Bits 'n' Tracks"
+filename = "bits_n_tracks-1.0.3.1-release.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "146e8d560c60a76ed2ab559ceade2d85fe8ee8bb"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8285379
+project-id = 1569156

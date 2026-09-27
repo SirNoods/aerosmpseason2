@@ -1,0 +1,13 @@
+name = "Hide Experimental Warning"
+filename = "hideexperimentalwarning-1.21.1-1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "11498f7f2aaf659b8f63ce718b7b4218ef5d97ff"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5609644
+project-id = 1009556

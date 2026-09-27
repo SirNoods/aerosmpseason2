@@ -1,0 +1,32 @@
+#Create: Coaster Fins — server settings (shared by everyone on a server).
+[massPlacement]
+	#Enable fitting a whole coupling chain by right-clicking a cart with a fin.
+	enabled = true
+	#Maximum number of carts traversed in a single mass placement (cycle-safe hard cap).
+	# Default: 256
+	# Range: 1 ~ 4096
+	maxChainLength = 256
+	#Per-player cooldown in ticks between mass placements.
+	# Default: 5
+	# Range: 0 ~ 200
+	cooldownTicks = 5
+
+#Force spans — a fin drives carts along a selected stretch of track.
+[forceSpan]
+	#Acceleration (blocks/s^2) applied to carts in a fin's force-span at strength 100 (0 disables force spans).
+	# Default: 60.0
+	# Range: 0.0 ~ 500.0
+	accel = 60.0
+	#Optional cart speed cap (blocks/s) above which a force-span stops adding energy. 0 = no limit (boosts accelerate forever).
+	# Default: 0.0
+	# Range: 0.0 ~ 10000.0
+	maxSpeed = 0.0
+
+#Workarounds for base Create Simulated Coasters behaviour.
+[trackSnap]
+	#How far (blocks) an engaged cart may sit from its rail before CS drops it. CS uses 2.5;
+	#raise this so swivel-bearing / rivet carts whose bearing swings out are not disengaged
+	#mid-air and dropped. 2.5 = vanilla CS behaviour.
+	# Default: 6.0
+	# Range: 2.5 ~ 64.0
+	keepEngagedRadius = 6.0

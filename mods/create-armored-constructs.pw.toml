@@ -1,0 +1,13 @@
+name = "Create: Armored Constructs"
+filename = "arcon-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "db7447e81bda71f4c16113c9bfa4e861165af66c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8350784
+project-id = 1544255

@@ -1,0 +1,13 @@
+name = "Rustic Delight"
+filename = "rusticdelight-neoforge-1.21-1.7.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "697df889af0cec1823cf5330fca62bf7f6e5037f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8549320
+project-id = 1106612

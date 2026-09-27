@@ -1,0 +1,13 @@
+name = "CC Create: Material Checklist Peripheral"
+filename = "ccmcp-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "16674cd885c649625001e7be873ff1a673c268a2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8190330
+project-id = 1563428

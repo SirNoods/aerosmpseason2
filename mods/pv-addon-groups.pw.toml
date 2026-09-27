@@ -1,0 +1,13 @@
+name = "pv-addon-groups"
+filename = "pv-addon-groups-1.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "065b44daef8f25d0cf35c24da7239ec3921aa5da"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7374084
+project-id = 1412683

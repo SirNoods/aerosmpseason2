@@ -1,0 +1,13 @@
+name = "Create: Compact Additions"
+filename = "compact_additions-2.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2c635f05a332b3ae66c111a0855769a4301a726e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8438628
+project-id = 1611505

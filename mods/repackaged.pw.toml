@@ -1,0 +1,13 @@
+name = "Create: Repackaged"
+filename = "repackaged-0.0.7.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6879e69dd11c4bea0866193ba497ae7ccdf97edc"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7981478
+project-id = 1516453

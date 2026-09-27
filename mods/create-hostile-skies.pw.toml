@@ -1,0 +1,13 @@
+name = "Create: Hostile Skies"
+filename = "hostile_skies-0.2.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7828571f15c2ce15fb6183a39fd957a1d29336ae"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8944299
+project-id = 1629101

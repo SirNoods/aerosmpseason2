@@ -1,0 +1,13 @@
+name = "Create (v6) SolidSails - +FPS with Shaders & Create Windmills [ResourcePack]"
+filename = "Create v6 SolidSails Soft.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a100bd56f54a1ea31063d7459cb6a56cc1ea718e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6461559
+project-id = 1251265

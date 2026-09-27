@@ -1,0 +1,13 @@
+name = "Jade Sable Compat"
+filename = "sablejade-1.3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "beb78d81a4d5768780c8566fa869ced5dbe08263"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8681404
+project-id = 1530988

@@ -1,0 +1,13 @@
+name = "CC Synaxis Connector"
+filename = "ccsconnector-0.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ac662fb8f12ab6f271a59adfcbbeb21b6ded1829"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8856946
+project-id = 1595292

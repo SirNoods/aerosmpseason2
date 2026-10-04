@@ -1,0 +1,443 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "confectionary"
+	group: "6398AB49C115030C"
+	id: "3E72C52E7F86053A"
+	images: [ ]
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			id: "33A0198E1D098A1D"
+			tasks: [{
+				id: "0D3095C6203EBB78"
+				item: { count: 1, id: "minecraft:sugar" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "1F24C2771922FF55"
+			tasks: [{
+				id: "09FA9A25BB71B401"
+				item: { count: 1, id: "minecraft:cocoa_beans" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			id: "37AF6E4BA5B41118"
+			tasks: [{
+				id: "31D89151AD602201"
+				item: { count: 1, id: "minecraft:wheat" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["37AF6E4BA5B41118"]
+			id: "5F1AD904545650BB"
+			rewards: [{
+				id: "0D49E32822B5E535"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "74B55B7E2C3CD50E"
+				item: { count: 1, id: "create:wheat_flour" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5F1AD904545650BB"]
+			id: "3E6032E2197B8FFB"
+			rewards: [{
+				id: "30DDF7B33555BE1D"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "33ED8D6F5EDE5732"
+				item: { count: 1, id: "create_confectionery:gingerdough" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3E6032E2197B8FFB"]
+			id: "1F8C7E4FF3FCF23B"
+			rewards: [{
+				id: "533DB647410995A0"
+				item: {
+					count: 1
+					id: "create_confectionery:gingerbread_man"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3188AE8B046AB9A6"
+					item: { count: 1, id: "create_confectionery:gingerbread_block" }
+					type: "item"
+				}
+				{
+					id: "26A83049171E9718"
+					item: { count: 1, id: "minecraft:carved_pumpkin" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3E6032E2197B8FFB"]
+			id: "6D2CF198E59DFED2"
+			rewards: [{
+				id: "7D93F23AEF469E73"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7FFC9169D50F1149"
+				item: { count: 1, id: "create_confectionery:gingerbread_man" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3E6032E2197B8FFB"]
+			id: "5A9F2FCA5AAD59E3"
+			rewards: [{
+				id: "36C26FAF7254CD1C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "58363DF535426371"
+				item: { count: 1, id: "create_confectionery:gingerbread" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["33A0198E1D098A1D"]
+			id: "65718103B3198F72"
+			tasks: [{
+				id: "29E138DBEA9D73D4"
+				item: { count: 1, id: "create_confectionery:candy_cane" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["65718103B3198F72"]
+			id: "468974B645B918E6"
+			tasks: [{
+				id: "7AA6EA9A47CE6796"
+				item: { count: 1, id: "create_confectionery:candy_cane_sword" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["65718103B3198F72"]
+			id: "68D3622D2174A5D6"
+			tasks: [{
+				id: "1D69D3C7BDC68882"
+				item: { count: 1, id: "create_confectionery:candy_cane_pickaxe" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["65718103B3198F72"]
+			id: "297B5B1E519CFE9F"
+			tasks: [{
+				id: "5F2398C15B1B503B"
+				item: { count: 1, id: "create_confectionery:candy_cane_axe" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["65718103B3198F72"]
+			id: "7F66A0579F5F4EAC"
+			tasks: [{
+				id: "19CF982CC552924F"
+				item: { count: 1, id: "create_confectionery:candy_cane_shovel" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["65718103B3198F72"]
+			id: "5748406984A15B8C"
+			tasks: [{
+				id: "39766B1840E18207"
+				item: { count: 1, id: "create_confectionery:candy_cane_hoe" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["65718103B3198F72"]
+			id: "67D37AD7E1AF6401"
+			tasks: [{
+				id: "0D8F6F57AE723251"
+				item: { count: 1, id: "create_confectionery:candy_cane_block" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["65718103B3198F72"]
+			id: "24FFEE0A7A189043"
+			tasks: [{
+				id: "6608676DED9416CA"
+				item: { count: 1, id: "create_confectionery:the_bright_side" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1F24C2771922FF55"]
+			id: "3DE72F84DCADC792"
+			rewards: [{
+				id: "52CF3B14F2EB884C"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "55A9E4D3ADA09B09"
+				item: { count: 1, id: "create_confectionery:cocoa_butter" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DE72F84DCADC792"]
+			id: "654E0628C79163BA"
+			rewards: [{
+				id: "4B2D1DA278899149"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "445F2E230CD3590A"
+				item: { count: 1, id: "create_confectionery:bar_of_black_chocolate" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["654E0628C79163BA"]
+			id: "75AD8C2F90F31169"
+			rewards: [{
+				id: "59753FB4CB9DCDB9"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "739943E480A4E3D7"
+				item: { count: 1, id: "create_confectionery:ruby_chocolate_candy_3" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["654E0628C79163BA"]
+			id: "34BAF4E6B4D5E930"
+			rewards: [{
+				id: "11EDB0E22707C61F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "39F810F2DCE0B89F"
+				item: { count: 1, id: "create_confectionery:white_chocolate_candy" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["654E0628C79163BA"]
+			id: "121C7228A4938D5B"
+			rewards: [{
+				id: "77AEA80CAD61F5F7"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "2E13679D9A101F36"
+				item: { count: 1, id: "create_confectionery:chocolate_candy" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["654E0628C79163BA"]
+			id: "07E575A029AFD871"
+			rewards: [{
+				id: "0920CDB358F0BAB4"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "696C5DF1DD19ED39"
+				item: { count: 1, id: "create_confectionery:black_chocolate_candy" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["654E0628C79163BA"]
+			id: "46A3B64568429777"
+			rewards: [{
+				id: "5EE0F313F1963418"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "55FE39CD6358E786"
+				item: { count: 1, id: "create_confectionery:black_chocolate_bricks" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			id: "412EBE6E314C1353"
+			rewards: [{
+				id: "56F7B812869A3314"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "7536B47E31C6F69F"
+				item: { components: { "ftbquests:missing_item": "camping:marshmallow" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["412EBE6E314C1353"]
+			id: "7CA49A542120F11E"
+			rewards: [{
+				id: "71E8DE88732AE30F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "14968D3BB17B391F"
+				item: { count: 1, id: "create_confectionery:marshmallow_on_a_stick" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7CA49A542120F11E"]
+			id: "34709BA585795B3A"
+			rewards: [{
+				id: "73CB38A697BC5589"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "5DC2D74CA49BCF5C"
+				item: { count: 1, id: "create_confectionery:caramelized_marshmellow_on_a_stick" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["412EBE6E314C1353"]
+			id: "071A56C0192BB89D"
+			rewards: [{
+				id: "01A507E5BE92B45C"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "31CC0F3014CC0A91"
+				item: { count: 1, id: "create_confectionery:chocolate_glazed_marshmallow" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["412EBE6E314C1353"]
+			id: "360B7B572FF83696"
+			rewards: [{
+				id: "7961FC531ACC0D29"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "6606CEFD9EBDBC98"
+				item: { count: 1, id: "create_confectionery:black_chocolate_glazed_marshmallow" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["412EBE6E314C1353"]
+			id: "0ADF2F355F1427C2"
+			rewards: [{
+				id: "5CA28BAA83A0D056"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "45ADFF9BAD867C8A"
+				item: { count: 1, id: "create_confectionery:white_chocolate_glazed_marshmallow" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["412EBE6E314C1353"]
+			id: "6E5A68D0A0D20661"
+			rewards: [{
+				id: "1CB98EE4DC03AB83"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "09B1D5DF2C0569EF"
+				item: { count: 1, id: "create_confectionery:ruby_chocolate_glazed_marshmallow" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.5d
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	autofocus_id: "0000000000000000"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome_chapter"
+	group: ""
+	id: "5643BBCABC0964A5"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "simulated:physics_assembler"
+			}
+			id: "6EEDD37CBB070FCE"
+			rewards: [{
+				id: "7181DCB8BA103314"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "21F0B07A70AF6AE7"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6EEDD37CBB070FCE"]
+			icon: {
+				id: "aeronautics:andesite_propeller"
+			}
+			id: "2B49C95AEE86C994"
+			tasks: [{
+				id: "4D4834CDA54CB61C"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+	]
+}

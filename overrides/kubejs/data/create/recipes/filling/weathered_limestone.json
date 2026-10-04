@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "create:limestone"
+    },
+    {
+      "amount": 125,
+      "fluid": "minecraft:water",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "dndecor:weathered_limestone"
+    }
+  ]
+}

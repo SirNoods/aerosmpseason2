@@ -1,0 +1,5 @@
+#Whether to prevent Create SA armors to modify the first person player's hand
+hideFirstPersonArmor = true
+#Whether to add netherite exoskeleton first person player hand model to have parity with the other exoskeletons
+#This is canceled by setting HIDE_FIRST_PERSON_ARMOR to true
+netherite_exoskeleton_first_person_hand = true

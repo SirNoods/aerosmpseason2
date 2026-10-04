@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "minecraft:crimson_fungus"
+    }
+  ],
+  "processingTime": 50,
+  "results": [
+    {
+      "count": 2,
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "chance": 0.1,
+      "item": "minecraft:nether_wart"
+    }
+  ]
+}

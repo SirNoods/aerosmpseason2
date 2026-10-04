@@ -1,0 +1,667 @@
+{
+	autofocus_id: "138C764D48EB4127"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "farmers_delight"
+	group: ""
+	icon: {
+		id: "farmersdelight:diamond_knife"
+	}
+	id: "1FED0B2DC9E5C6AC"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "138C764D48EB4127"
+			rewards: [
+				{
+					id: "2731D355E721F857"
+					type: "xp"
+					xp: 28
+				}
+				{
+					id: "0000000080010040"
+					item: {
+						count: 1
+						id: "farmersdelight:flint_knife"
+					}
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			tasks: [{
+				id: "6B3272BC3231A386"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["138C764D48EB4127"]
+			id: "6CAD31E853C5AABD"
+			rewards: [
+				{
+					id: "4544ED1853E09550"
+					type: "xp"
+					xp: 28
+				}
+				{
+					id: "0000000080010041"
+					item: {
+						count: 1
+						id: "farmersdelight:cutting_board"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "farmersdelight:main/craft_knife"
+				criterion: ""
+				id: "32D2BF28BCA465B7"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["138C764D48EB4127"]
+			id: "4F546AAC6F3D4963"
+			rewards: [
+				{
+					id: "712B838365D0DC75"
+					type: "xp"
+					xp: 28
+				}
+				{
+					count: 4
+					id: "0000000080010042"
+					item: {
+						count: 1
+						id: "farmersdelight:cooked_bacon"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "farmersdelight:main/place_campfire"
+				criterion: ""
+				id: "25A8FDE5EC68B361"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["138C764D48EB4127"]
+			id: "4F1BAD0FF159CDF0"
+			rewards: [
+				{
+					id: "049A001D5851D40E"
+					type: "xp"
+					xp: 28
+				}
+				{
+					count: 4
+					id: "0000000080010043"
+					item: {
+						count: 1
+						id: "farmersdelight:cabbage_seeds"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0000000080010044"
+					item: {
+						count: 1
+						id: "farmersdelight:tomato_seeds"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "farmersdelight:main/get_fd_seed"
+				criterion: ""
+				id: "184DDE917E23E208"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6CAD31E853C5AABD"]
+			id: "4976A618E0C72517"
+			rewards: [
+				{
+					id: "6469C99B46A8A15B"
+					type: "xp"
+					xp: 28
+				}
+				{
+					count: 4
+					id: "0000000080010045"
+					item: {
+						count: 1
+						id: "farmersdelight:minced_beef"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6539E370177686EC"
+				item: { count: 1, id: "farmersdelight:cutting_board" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4F1BAD0FF159CDF0"]
+			id: "0000000080010000"
+			rewards: [
+				{
+					id: "0000000080010001"
+					type: "xp"
+					xp: 30
+				}
+				{
+					id: "0000000080010046"
+					item: {
+						count: 1
+						id: "farmersdelight:onion_crate"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0000000080010002"
+				item: { count: 1, id: "farmersdelight:acacia_cabinet" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F546AAC6F3D4963"]
+			id: "60777D98CE917817"
+			rewards: [
+				{
+					id: "7AAD2DD9DB974657"
+					type: "xp"
+					xp: 28
+				}
+				{
+					count: 4
+					id: "0000000080010047"
+					item: {
+						count: 1
+						id: "farmersdelight:raw_pasta"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "40D2D1601F0ABCF8"
+				item: { count: 1, id: "farmersdelight:cooking_pot" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4F546AAC6F3D4963"]
+			id: "05E72D0E7AC4B29A"
+			rewards: [
+				{
+					id: "673803836DFEDEEE"
+					type: "xp"
+					xp: 28
+				}
+				{
+					count: 4
+					id: "0000000080010048"
+					item: {
+						count: 1
+						id: "farmersdelight:beef_patty"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6A6EC747188D2815"
+				item: { count: 1, id: "farmersdelight:skillet" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["60777D98CE917817"]
+			id: "0000000080010003"
+			rewards: [
+				{
+					id: "0000000080010004"
+					type: "xp"
+					xp: 35
+				}
+				{
+					id: "0000000080010049"
+					item: {
+						count: 1
+						id: "farmersdelight:beef_stew"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000080010005"
+					item: { count: 1, id: "farmersdelight:cabbage_rolls" }
+					type: "item"
+				}
+				{
+					id: "0000000080010006"
+					item: { count: 1, id: "farmersdelight:beef_stew" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["05E72D0E7AC4B29A"]
+			id: "0000000080010007"
+			rewards: [
+				{
+					id: "0000000080010008"
+					type: "xp"
+					xp: 35
+				}
+				{
+					count: 4
+					id: "000000008001004A"
+					item: {
+						count: 1
+						id: "farmersdelight:fried_egg"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0000000080010009"
+					item: { count: 1, id: "farmersdelight:fried_egg" }
+					type: "item"
+				}
+				{
+					id: "000000008001000A"
+					item: { count: 1, id: "farmersdelight:cooked_bacon" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"0000000080010003"
+				"0000000080010007"
+			]
+			dependency_requirement: "one_completed"
+			id: "000000008001000B"
+			rewards: [
+				{
+					id: "000000008001000C"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "000000008001004B"
+					item: {
+						count: 1
+						id: "farmersdelight:shepherds_pie_block"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "000000008001000D"
+					item: { count: 1, id: "farmersdelight:stuffed_pumpkin_block" }
+					type: "item"
+				}
+				{
+					id: "000000008001000E"
+					item: { count: 1, id: "farmersdelight:roast_chicken_block" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6CAD31E853C5AABD"]
+			id: "6615CE64DC0565EC"
+			rewards: [
+				{
+					id: "6980E4A6B894E788"
+					type: "xp"
+					xp: 28
+				}
+				{
+					count: 4
+					id: "0C16615C44AAEEEF"
+					item: {
+						count: 1
+						id: "farmersdelight:straw"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "17B8DB66868D61C9"
+				item: { count: 1, id: "farmersdelight:straw" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6615CE64DC0565EC"]
+			id: "71CAD1D9089778BC"
+			rewards: [
+				{
+					id: "785DD713C05321CD"
+					type: "xp"
+					xp: 28
+				}
+				{
+					count: 2
+					id: "000000008001004C"
+					item: {
+						count: 1
+						id: "farmersdelight:safety_net"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2B036672F2CD6A33"
+					item: { count: 1, id: "farmersdelight:rope" }
+					type: "item"
+				}
+				{
+					id: "000000008001000F"
+					item: { count: 1, id: "farmersdelight:straw_bale" }
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6615CE64DC0565EC"]
+			id: "369CB78ACDDB0A88"
+			rewards: [
+				{
+					id: "3B44C405AD823CDA"
+					type: "xp"
+					xp: 28
+				}
+				{
+					id: "000000008001004D"
+					item: {
+						count: 1
+						id: "farmersdelight:smoked_ham"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "658CC03A60F0FCF8"
+				item: { count: 1, id: "farmersdelight:honey_glazed_ham_block" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4976A618E0C72517"]
+			id: "0000000080010023"
+			rewards: [
+				{
+					id: "0000000080010024"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "000000008001004E"
+					item: {
+						count: 1
+						id: "sliceanddice:fertilizer_bucket"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0000000080010025"
+				item: { count: 1, id: "sliceanddice:slicer" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0000000080010023"]
+			id: "0000000080010026"
+			rewards: [
+				{
+					id: "0000000080010027"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 4
+					id: "000000008001004F"
+					item: {
+						count: 1
+						id: "farmersdelight:rich_soil"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0000000080010028"
+				item: { count: 1, id: "sliceanddice:sprinkler" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4F1BAD0FF159CDF0"]
+			id: "000000008001002A"
+			rewards: [
+				{
+					id: "000000008001002B"
+					type: "xp"
+					xp: 35
+				}
+				{
+					count: 4
+					id: "0000000080010050"
+					item: {
+						count: 1
+						id: "rusticdelight:bell_pepper_red"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "000000008001002C"
+					item: { count: 1, id: "rusticdelight:bell_pepper_seeds" }
+					type: "item"
+				}
+				{
+					id: "000000008001002D"
+					item: { count: 1, id: "rusticdelight:cotton_seeds" }
+					type: "item"
+				}
+				{
+					id: "000000008001002E"
+					item: { count: 1, id: "rusticdelight:coffee_beans" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["000000008001002A"]
+			id: "000000008001002F"
+			rewards: [
+				{
+					id: "0000000080010030"
+					type: "xp"
+					xp: 40
+				}
+				{
+					count: 4
+					id: "0000000080010051"
+					item: {
+						count: 1
+						id: "rusticdelight:syrup_sandwich"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0000000080010031"
+				item: { count: 1, id: "rusticdelight:syrup" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["000000008001002F"]
+			id: "0000000080010032"
+			rewards: [
+				{
+					id: "0000000080010033"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 2
+					id: "0000000080010052"
+					item: {
+						count: 1
+						id: "rusticdelight:syrup_cheesecake_slice"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0000000080010034"
+				item: { count: 1, id: "rusticdelight:pancakes" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["000000008001002A"]
+			id: "0000000080010035"
+			rewards: [
+				{
+					id: "0000000080010036"
+					type: "xp"
+					xp: 45
+				}
+				{
+					count: 4
+					id: "0000000080010053"
+					item: {
+						count: 1
+						id: "rusticdelight:roasted_coffee_beans"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0000000080010037"
+				item: { count: 1, id: "rusticdelight:coffee" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0000000080010035"
+				"000000008001002F"
+			]
+			id: "0000000080010038"
+			rewards: [
+				{
+					id: "0000000080010039"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 2
+					id: "0000000080010054"
+					item: {
+						count: 1
+						id: "rusticdelight:dark_coffee"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "000000008001003A"
+					item: { count: 1, id: "rusticdelight:syrup_coffee" }
+					type: "item"
+				}
+				{
+					id: "000000008001003B"
+					item: { count: 1, id: "rusticdelight:chocolate_coffee" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4976A618E0C72517"]
+			id: "000000008001003C"
+			rewards: [
+				{
+					id: "000000008001003D"
+					type: "xp"
+					xp: 40
+				}
+				{
+					id: "0000000080010055"
+					item: {
+						count: 1
+						id: "farmersdelight:salmon_roll"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "000000008001003E"
+				item: { count: 1, id: "farmersdelight:squid_ink_pasta" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.5d
+		}
+	]
+}

@@ -1,0 +1,1070 @@
+{
+	autofocus_id: "33FC8F6543886276"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "aeronautics"
+	group: "6398AB49C115030C"
+	icon: {
+		id: "simulated:physics_assembler"
+	}
+	id: "563CFCB2EA16C2A8"
+	images: [
+		{
+			height: 1.0d
+			id: "4446604E2C0CB543"
+			image: "simulated:textures/gui/sprites/banner.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			id: "0362803F918D1F2C"
+			image: "simulated:entity/diagram_small"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			height: 1.0d
+			id: "75297753478AB347"
+			image: "simulated:entity/diagram_large"
+			rotation: 4.0d
+			width: 2.0d
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			height: 1.0d
+			id: "12C20060C5FCD353"
+			image: "simulated:entity/diagram_medium"
+			rotation: -4.0d
+			width: 2.0d
+			x: -2.5d
+			y: 0.0d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "33FC8F6543886276"
+			rewards: [{
+				id: "5CD5F8F3BFA0E514"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "3C55A7EF3AD41D36"
+				item: { count: 1, id: "simulated:physics_assembler" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			id: "721E56DA0C8D8E0B"
+			rewards: [{
+				count: 4
+				id: "2E7B687A0349F4BA"
+				item: {
+					count: 1
+					id: "create:metal_girder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7CAC5A60818C7037"
+				item: { count: 1, id: "simulated:swivel_bearing" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			id: "2342ED0D00362854"
+			rewards: [{
+				count: 16
+				id: "681B1A39006542CD"
+				item: {
+					count: 1
+					id: "minecraft:string"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "221D8ECD271DFA06"
+				item: { count: 1, id: "simulated:rope_coupling" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			id: "0213C3F63A653227"
+			rewards: [{
+				id: "08DC72368E6608D1"
+				item: {
+					count: 1
+					id: "create:industrial_iron_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "21648A13AD42ECA5"
+				item: { count: 1, id: "simulated:rope_connector" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			id: "57856383D9810957"
+			tasks: [{
+				id: "3B919C17337535EB"
+				item: { count: 1, id: "simulated:rope_winch" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			id: "55AC6BFFB13267D9"
+			rewards: [{
+				count: 2
+				id: "0928D9D3C20DE4BD"
+				item: {
+					count: 1
+					id: "minecraft:lever"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5BE28F814DE5ADA1"
+				item: { count: 1, id: "simulated:directional_gearshift" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			id: "7BE136ABD8DB4DAF"
+			tasks: [{
+				id: "2C117051E14799F0"
+				item: { count: 1, id: "simulated:torsion_spring" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			id: "5B7ABBB515772407"
+			rewards: [{
+				count: 2
+				id: "3F333689FFBAABF3"
+				item: {
+					count: 1
+					id: "create:andesite_funnel"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "31B6620E0BC593E6"
+					item: { count: 1, id: "simulated:auger_shaft" }
+					type: "item"
+				}
+				{
+					id: "762B41DF6A9059E0"
+					item: { count: 1, id: "simulated:auger_cog" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -4.0d
+		}
+		{
+			id: "1E9890769102E276"
+			rewards: [{
+				count: 64
+				id: "1AC12155534292C5"
+				item: {
+					count: 1
+					id: "minecraft:coal"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3069D04646EECB4B"
+				item: { count: 1, id: "simulated:red_portable_engine" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "18922D8834A0CF95"
+			rewards: [{
+				id: "0A8E8B730083EF69"
+				item: {
+					count: 1
+					id: "create_sa:slime_boots"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7FB5E0A5DABDDF94"
+				item: { count: 1, id: "simulated:altitude_sensor" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			id: "4E5A011F861FCE5A"
+			rewards: [{
+				id: "4239F70C286A5710"
+				item: {
+					count: 1
+					id: "create:propeller"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6E026E2B1568B36C"
+				item: { count: 1, id: "simulated:velocity_sensor" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			id: "2721013051EA0F4E"
+			rewards: [
+				{
+					id: "6DA22E5673BF69F5"
+					item: {
+						count: 1
+						id: "minecraft:compass"
+					}
+					type: "item"
+				}
+				{
+					id: "39B561A8E01A4C4D"
+					item: {
+						count: 1
+						id: "simulated:gyroscopic_mechanism"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "755D1819E4959E4C"
+				item: { count: 1, id: "simulated:gimbal_sensor" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			id: "308E1F5B53BFE9AB"
+			rewards: [{
+				id: "16007CE0CB21C946"
+				item: {
+					components: {
+						"ftbquests:missing_item": "minecolonies:pirate_hat"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5060A2624D4D43A9"
+				item: { count: 1, id: "simulated:steering_wheel" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			id: "7A1D999959471F11"
+			rewards: [{
+				id: "4898F153262ACF6E"
+				item: {
+					count: 1
+					id: "create:electron_tube"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "236BA7AFA326B431"
+				item: { count: 1, id: "simulated:analog_transmission" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			id: "78A3A928F74E5A0A"
+			rewards: [{
+				count: 4
+				id: "632100E5CB7C8C45"
+				item: {
+					count: 1
+					id: "create:redstone_link"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "07BCC71FBCFDDAEB"
+				item: { count: 1, id: "simulated:linked_typewriter" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			id: "1EEED0E88E2869EB"
+			rewards: [{
+				id: "03CFC7C929FB131E"
+				item: {
+					count: 1
+					id: "create:brass_casing"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "311DCDE8F6A9FD08"
+				item: { count: 1, id: "simulated:throttle_lever" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			id: "6289C9F19ED553A1"
+			rewards: [{
+				id: "6B3FBFF6EA10B702"
+				item: {
+					count: 1
+					id: "create:redstone_link"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3B3D880C1777BC82"
+				item: { count: 1, id: "simulated:directional_linked_receiver" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			id: "41C06E8BE899C6B0"
+			rewards: [{
+				count: 2
+				id: "06A7863D884E1A11"
+				item: {
+					count: 1
+					id: "create:redstone_link"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1DB953062B54D65D"
+				item: { count: 1, id: "simulated:modulating_linked_receiver" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			id: "5B05D32A01FABDC9"
+			rewards: [{
+				count: 8
+				id: "548543FDBFE8DFAF"
+				item: {
+					count: 1
+					id: "create:polished_rose_quartz"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "29DDC960CC8D9BA7"
+				item: { count: 1, id: "simulated:redstone_accumulator" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.0d
+		}
+		{
+			id: "2E40755A354B1ACC"
+			rewards: [{
+				count: 8
+				id: "0C255CACDD41B916"
+				item: {
+					count: 1
+					id: "create:brass_sheet"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "10BABB817AC99E02"
+				item: { count: 1, id: "simulated:redstone_inductor" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			id: "04AC241FE350DD86"
+			rewards: [{
+				id: "197FA320C254C487"
+				item: {
+					count: 1
+					id: "create:precision_mechanism"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "623C276E9048B037"
+				item: { count: 1, id: "simulated:plunger_launcher" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.0d
+		}
+		{
+			id: "1E99ACD96AD8A826"
+			tasks: [{
+				id: "333A2EC99A448E24"
+				item: { count: 1, id: "simulated:spring" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			id: "3806D43A958A0751"
+			rewards: [{
+				id: "79F99CBC06FC174B"
+				item: {
+					count: 1
+					id: "create:electron_tube"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0644BF0FC4F3C736"
+				item: { count: 1, id: "simulated:optical_sensor" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			id: "54C81018CE13F6F1"
+			rewards: [{
+				id: "15DE2586F3EBC349"
+				item: {
+					count: 1
+					id: "minecraft:budding_amethyst"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "58D26F78AD7775F9"
+				item: { count: 1, id: "simulated:laser_pointer" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			id: "2F41C6CFFB43E38F"
+			rewards: [{
+				id: "10238A797B2070A2"
+				item: {
+					count: 1
+					id: "minecraft:orange_dye"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "06A42F88243BE6CA"
+				item: { count: 1, id: "simulated:iron_handle" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			id: "55F7CB2455453231"
+			rewards: [{
+				count: 6
+				id: "01588503A1F63E40"
+				item: {
+					count: 1
+					id: "minecraft:amethyst_cluster"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "08B18B27629834AF"
+				item: { count: 1, id: "simulated:laser_sensor" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			id: "0ED823E6406CCC36"
+			rewards: [{
+				id: "771D1BE00123D7F7"
+				item: {
+					count: 1
+					id: "simulated:redstone_magnet"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "174E0E9C30E1B094"
+				item: { count: 1, id: "simulated:redstone_magnet" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			id: "323398F25937EDBD"
+			rewards: [
+				{
+					id: "0B9BBF8A5E24E4F4"
+					item: {
+						count: 1
+						id: "minecraft:compass"
+					}
+					type: "item"
+				}
+				{
+					id: "4F5D41493D0E05C7"
+					item: {
+						count: 1
+						id: "minecraft:lodestone"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1535D514A8C629BC"
+				item: { count: 1, id: "simulated:navigation_table" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			id: "4DFFD56294AF6E0F"
+			rewards: [{
+				id: "011946C2B0BD746B"
+				item: {
+					count: 1
+					id: "minecraft:red_dye"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "32593C46C4FE538F"
+				item: { count: 1, id: "simulated:white_nameplate" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.0d
+		}
+		{
+			id: "5ABFD8CA91AA15C8"
+			rewards: [{
+				id: "640B266589AAAC03"
+				item: {
+					count: 1
+					id: "rusticdelight:cotton_seeds"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "01D7AFD94A022500"
+				item: { count: 1, id: "simulated:contraption_diagram" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			id: "35F368749ADA0A9A"
+			rewards: [{
+				id: "52A9884096BACDF5"
+				item: {
+					count: 1
+					id: "minecraft:slime_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F8FFC6BCAD3E34C"
+				item: { count: 1, id: "minecraft:slime_ball" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.0d
+		}
+		{
+			id: "629658E9AB4D46F1"
+			rewards: [
+				{
+					count: 8
+					id: "6282E5B4F7CE1B91"
+					item: {
+						count: 1
+						id: "create:white_sail"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0B00630F713AB7E2"
+					item: {
+						count: 1
+						id: "simulated:white_symmetric_sail"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "35D9498269D15906"
+				item: { count: 1, id: "simulated:white_symmetric_sail" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			id: "40B057390DF9F54D"
+			tasks: [{
+				id: "04D431E61ECC00E5"
+				item: { count: 1, id: "aeronautics:white_envelope" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			id: "0DCC41C7AEE63B32"
+			rewards: [{
+				count: 3
+				id: "5968DCD1C2F3FC70"
+				item: {
+					count: 1
+					id: "aeronautics:adjustable_burner"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3C9A8A64DCABCB92"
+				item: { count: 1, id: "aeronautics:adjustable_burner" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			id: "3DD65447EA2C0EEF"
+			tasks: [{
+				id: "39A4D49777430839"
+				item: { count: 1, id: "aeronautics:steam_vent" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			id: "2D821681720A5409"
+			rewards: [{
+				count: 8
+				id: "699872E4B943759F"
+				item: {
+					count: 1
+					id: "create:white_sail"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "39627669B72BB70A"
+				item: { count: 1, id: "aeronautics:propeller_bearing" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			id: "2E17BF74F0DD6A58"
+			rewards: [{
+				count: 8
+				id: "6613DA7EF1C1EB2A"
+				item: {
+					count: 1
+					id: "create:white_sail"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0725373B509EA255"
+				item: { count: 1, id: "aeronautics:gyroscopic_propeller_bearing" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			id: "25606F0A9C843721"
+			rewards: [{
+				id: "0FFBC69CC104CDFE"
+				item: {
+					count: 1
+					id: "simulated:gyroscopic_mechanism"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6F6A78144BAEA99F"
+				item: { count: 1, id: "aeronautics:smart_propeller" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			id: "44DBEF7E43052868"
+			rewards: [{
+				count: 3
+				id: "09EAD16BC4C13FBC"
+				item: {
+					count: 1
+					id: "aeronautics:andesite_propeller"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5D97EF23F22D8BE7"
+				item: { count: 1, id: "aeronautics:andesite_propeller" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			id: "076C39593E801A5E"
+			rewards: [{
+				count: 3
+				id: "3584F467386DF31E"
+				item: {
+					count: 1
+					id: "aeronautics:wooden_propeller"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D233CA312C0F62D"
+				item: { count: 1, id: "aeronautics:wooden_propeller" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			id: "34F3C116A5DDEA9D"
+			rewards: [{
+				count: 3
+				id: "0BA6A8FCAEB38C1D"
+				item: {
+					count: 1
+					id: "create:encased_fan"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "601FD6DDA63FE42B"
+				item: { count: 1, id: "create:encased_fan" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.5d
+		}
+		{
+			id: "40CA6CEE85C276C9"
+			rewards: [{
+				count: 3
+				id: "75310C501EC090BC"
+				item: {
+					count: 1
+					id: "offroad:wheel_mount"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4E4A4A140FBCFADD"
+				item: { count: 1, id: "offroad:wheel_mount" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			id: "043D87F52A55D8F9"
+			rewards: [{
+				id: "2D3B3D39845BE401"
+				item: {
+					count: 1
+					id: "offroad:rockcutting_wheel"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5174F9B228C47268"
+				item: { count: 1, id: "offroad:borehead_bearing" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			id: "27C37C8E3AB82D99"
+			rewards: [{
+				count: 2
+				id: "4AFAA29AF754DF43"
+				item: {
+					count: 1
+					id: "create:crushing_wheel"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "67049AB7F96DD3EC"
+				item: { count: 1, id: "offroad:rockcutting_wheel" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			id: "1B48D15EF425C8C9"
+			rewards: [{
+				count: 8
+				id: "16C64A61A8E4D3C2"
+				item: {
+					count: 1
+					id: "minecraft:kelp"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "010490DADCC6E48E"
+				item: { count: 1, id: "offroad:small_tire" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			id: "340F5320DB6749AC"
+			rewards: [{
+				count: 16
+				id: "38F3A57F0FFD6C80"
+				item: {
+					count: 1
+					id: "minecraft:kelp"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A1FD0B3B7FA98D8"
+				item: { count: 1, id: "offroad:tire" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			id: "20D05EB3BBB0FAAB"
+			rewards: [{
+				count: 32
+				id: "04B0C1DCE1A58A28"
+				item: {
+					count: 1
+					id: "minecraft:kelp"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0575D98804DB78D8"
+				item: { count: 1, id: "offroad:large_tire" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			id: "1F6879A74DD18F0B"
+			rewards: [{
+				count: 64
+				id: "5BFAB1317AAAC878"
+				item: {
+					count: 1
+					id: "minecraft:kelp"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "245CCE4EB22ADE5D"
+				item: { count: 1, id: "offroad:monstrous_tire" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 5.0d
+		}
+		{
+			id: "4D68C830E782A337"
+			rewards: [{
+				id: "0790537AE7C62799"
+				item: {
+					count: 1
+					id: "minecraft:diamond_block"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6EEFA227690EF5F5"
+					item: { count: 1, id: "aeronautics_dyeable_components:white_tire" }
+					type: "item"
+				}
+				{
+					id: "39F58310F3C7E60E"
+					item: { count: 1, id: "aeronautics_dyeable_components:light_gray_tire" }
+					type: "item"
+				}
+				{
+					id: "197514F3D507443A"
+					item: { count: 1, id: "aeronautics_dyeable_components:gray_tire" }
+					type: "item"
+				}
+				{
+					id: "4CE51B1B9BBFDB13"
+					item: { count: 1, id: "aeronautics_dyeable_components:black_tire" }
+					type: "item"
+				}
+				{
+					id: "70FD5C93294FB9B0"
+					item: { count: 1, id: "aeronautics_dyeable_components:brown_tire" }
+					type: "item"
+				}
+				{
+					id: "0F613DA3786D6E54"
+					item: { count: 1, id: "aeronautics_dyeable_components:red_tire" }
+					type: "item"
+				}
+				{
+					id: "514614893B785CFF"
+					item: { count: 1, id: "aeronautics_dyeable_components:orange_tire" }
+					type: "item"
+				}
+				{
+					id: "0C8BE1D836292C35"
+					item: { count: 1, id: "aeronautics_dyeable_components:yellow_tire" }
+					type: "item"
+				}
+				{
+					id: "75333A439C36D5C2"
+					item: { count: 1, id: "aeronautics_dyeable_components:lime_tire" }
+					type: "item"
+				}
+				{
+					id: "6E156811E4B0670E"
+					item: { count: 1, id: "aeronautics_dyeable_components:green_tire" }
+					type: "item"
+				}
+				{
+					id: "3959FEF1CD8DBB84"
+					item: { count: 1, id: "aeronautics_dyeable_components:cyan_tire" }
+					type: "item"
+				}
+				{
+					id: "180EEE25EF9E8E0A"
+					item: { count: 1, id: "aeronautics_dyeable_components:light_blue_tire" }
+					type: "item"
+				}
+				{
+					id: "65E2F5B856227333"
+					item: { count: 1, id: "aeronautics_dyeable_components:blue_tire" }
+					type: "item"
+				}
+				{
+					id: "185F96723D730112"
+					item: { count: 1, id: "aeronautics_dyeable_components:purple_tire" }
+					type: "item"
+				}
+				{
+					id: "1B987472A276CF92"
+					item: { count: 1, id: "aeronautics_dyeable_components:magenta_tire" }
+					type: "item"
+				}
+				{
+					id: "7186A06AB86E003A"
+					item: { count: 1, id: "aeronautics_dyeable_components:pink_tire" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			id: "34E39DE9EF4F080A"
+			rewards: [{
+				id: "5BA0EC33D8D25239"
+				item: {
+					count: 1
+					id: "sophisticatedbackpacks:crafting_upgrade"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5821BBFC6562D987"
+				item: { count: 1, id: "aeronautics:aviators_goggles" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			id: "5C6BCEE1C12D951A"
+			rewards: [{
+				count: 16
+				id: "42E30FC5BE0F0439"
+				item: {
+					count: 1
+					id: "aeronautics:end_stone_powder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "343DB74A9FBB2730"
+				item: { count: 1, id: "aeronautics:levitite" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+	]
+}

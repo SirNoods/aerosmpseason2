@@ -1,0 +1,2 @@
+#Wed Sep 30 17:57:55 MDT 2026
+BorderFog=false

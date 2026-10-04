@@ -1,0 +1,452 @@
+{
+	autofocus_id: "390F025F4B6316CA"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "handy_stuff"
+	group: ""
+	icon: {
+		components: {
+			"ftbquests:missing_item": "quark:pickarang"
+		}
+		id: "ftbquests:missing_item"
+	}
+	id: "31DE2AF4A3147EDF"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["390F025F4B6316CA"]
+			id: "75381FED11B19F94"
+			tasks: [{
+				id: "3F6C43F666063567"
+				item: { count: 1, id: "chipped:botanist_workbench" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["390F025F4B6316CA"]
+			id: "4BDC7D2311DE3529"
+			tasks: [{
+				id: "0827F254D081940F"
+				item: { count: 1, id: "chipped:glassblower" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["390F025F4B6316CA"]
+			id: "6AD51F0EF068C421"
+			tasks: [{
+				id: "4E312133C9D2BB1D"
+				item: { count: 1, id: "chipped:carpenters_table" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["390F025F4B6316CA"]
+			id: "4A718F7CD8A8C919"
+			tasks: [{
+				id: "037573C945330033"
+				item: { count: 1, id: "chipped:loom_table" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["390F025F4B6316CA"]
+			id: "0EA30D7284020F0B"
+			tasks: [{
+				id: "4C3654DF92AAB46A"
+				item: { count: 1, id: "chipped:mason_table" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["390F025F4B6316CA"]
+			id: "071B6B4B6F072EC0"
+			tasks: [{
+				id: "4A4377BC1EDC852C"
+				item: { count: 1, id: "chipped:alchemy_bench" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["75381FED11B19F94"]
+			id: "4A76971D7B104816"
+			tasks: [{
+				id: "652A9537D1B298AD"
+				item: { count: 1, id: "sophisticatedbackpacks:chipped/botanist_workbench_upgrade" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4BDC7D2311DE3529"]
+			id: "170E70764F6E96BE"
+			tasks: [{
+				id: "0ED07F8C087FB7D8"
+				item: { count: 1, id: "sophisticatedbackpacks:chipped/glassblower_upgrade" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6AD51F0EF068C421"]
+			id: "3F1B37DD6228026C"
+			tasks: [{
+				id: "361CF5FDEF939541"
+				item: { count: 1, id: "sophisticatedbackpacks:chipped/carpenters_table_upgrade" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4A718F7CD8A8C919"]
+			id: "5EC18F69B2F7A645"
+			tasks: [{
+				id: "271AF39782DFE676"
+				item: { count: 1, id: "sophisticatedbackpacks:chipped/loom_table_upgrade" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0EA30D7284020F0B"]
+			id: "6D45F6EC5CD84130"
+			tasks: [{
+				id: "1C779083DFF6A5DD"
+				item: { count: 1, id: "sophisticatedbackpacks:chipped/mason_table_upgrade" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["071B6B4B6F072EC0"]
+			id: "2610D6EF553F3C9B"
+			tasks: [{
+				id: "10994B509E6AA46A"
+				item: { count: 1, id: "sophisticatedbackpacks:chipped/alchemy_bench_upgrade" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1DEA3143D4609AF8"]
+			id: "0780956CADABC7C6"
+			tasks: [{
+				id: "5465621F028C94B7"
+				item: { count: 1, id: "sophisticatedbackpacks:chipped/tinkering_table_upgrade" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			id: "142A02A9DA930FB4"
+			tasks: [{
+				id: "07B5748CF6BDF234"
+				item: { components: { "ftbquests:missing_item": "rechiseled:chisel" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["142A02A9DA930FB4"]
+			id: "50EB3988EF6E9710"
+			tasks: [{
+				id: "1E383816F6ACCE0C"
+				item: { components: { "ftbquests:missing_item": "rechiseledcreate:mechanical_chisel" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["390F025F4B6316CA"]
+			id: "1DEA3143D4609AF8"
+			tasks: [{
+				id: "69431BED4958DCCC"
+				item: { count: 1, id: "chipped:tinkering_table" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			id: "02C39AF9B0CDB5A4"
+			tasks: [{
+				id: "4DBE4B459A4061E3"
+				item: { components: { "ftbquests:missing_item": "quark:trowel" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			id: "06AFC3385C85BBD6"
+			tasks: [{
+				id: "63BE789F8989DE97"
+				item: { components: { "ftbquests:missing_item": "quark:abacus" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.5d
+		}
+		{
+			id: "390F025F4B6316CA"
+			tasks: [{
+				id: "07F8ED5B57C50B69"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			id: "0AC85C39CEEE118C"
+			tasks: [{
+				id: "44EFFE522BF7ADCC"
+				item: { components: { "ftbquests:missing_item": "quark:pickarang" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0AC85C39CEEE118C"]
+			id: "265DEDBF34CB37AF"
+			tasks: [{
+				id: "72B5AE74B8764767"
+				item: { components: { "ftbquests:missing_item": "quark:flamerang" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 5.5d
+		}
+		{
+			id: "44CA9AD9FFFFC90B"
+			tasks: [{
+				id: "7EE4CD115134B61B"
+				item: { count: 1, id: "naturescompass:naturescompass" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			id: "58F80E1BD05B026F"
+			tasks: [{
+				id: "076C0E7460402699"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			id: "40727A633E80B537"
+			rewards: [{
+				id: "39CAC4AE5B866AC1"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "0A79565D1C572FEE"
+				item: { count: 1, id: "comforts:sleeping_bag_white" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			id: "59DBB1D2EAEF1F34"
+			rewards: [{
+				id: "510346F45C0C33BA"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [
+				{
+					id: "73E03B08CE1BBEA4"
+					item: { count: 1, id: "comforts:hammock_white" }
+					type: "item"
+				}
+				{
+					id: "26357E70CA7D2FCC"
+					item: { count: 1, id: "comforts:rope_and_nail" }
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 6.0d
+		}
+		{
+			id: "7614FDF43E0AAD07"
+			rewards: [{
+				count: 64
+				id: "0873F20A0ED1D773"
+				item: {
+					count: 1
+					id: "minecraft:cobblestone"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "648649F5874B4CEC"
+				item: { count: 1, id: "trashcans:item_trash_can" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 6.0d
+		}
+		{
+			id: "63FE80143DB276C3"
+			rewards: [{
+				id: "37C9BC957D24BC32"
+				item: {
+					components: {
+						"ftbquests:missing_item": "quark:slime_in_a_bucket"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0A94C07DEE2B77E9"
+				item: { count: 1, id: "trashcans:liquid_trash_can" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			id: "32C545450F2DBD65"
+			rewards: [{
+				count: 2
+				id: "0F53AF93876D9AD0"
+				item: {
+					count: 1
+					id: "create:brass_ingot"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4E62002AAD513694"
+				item: { count: 1, id: "trashcans:ultimate_trash_can" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			id: "29D06B640C276146"
+			rewards: [{
+				id: "5C6541AB9DAF6A41"
+				item: {
+					count: 1
+					id: "minecraft:redstone_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5E200100677FF8A2"
+				item: { count: 1, id: "trashcans:energy_trash_can" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			id: "25D87D5522FD4861"
+			tasks: [{
+				id: "593B4485E36491B5"
+				item: { count: 1, id: "minecraft:apple" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			id: "48BF028309BD0A36"
+			tasks: [{
+				id: "0A850AD2151EC463"
+				item: { count: 1, id: "explorerscompass:explorerscompass" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			id: "69F9DB75244E6B3B"
+			rewards: [{
+				id: "688ED87B160A31AC"
+				item: {
+					count: 1
+					id: "minecraft:netherite_ingot"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "20BCED9F2294AD9C"
+					item: { count: 1, id: "constructionwand:stone_wand" }
+					type: "item"
+				}
+				{
+					id: "066D331E1C9DAF52"
+					item: { count: 1, id: "constructionwand:iron_wand" }
+					type: "item"
+				}
+				{
+					id: "362270791E81E71D"
+					item: { count: 1, id: "constructionwand:diamond_wand" }
+					type: "item"
+				}
+				{
+					id: "3F8761351A9FD8B4"
+					item: { count: 1, id: "constructionwand:netherite_wand" }
+					type: "item"
+				}
+				{
+					id: "0835BB4A4043FE10"
+					item: { count: 1, id: "constructionwand:core_angel" }
+					type: "item"
+				}
+				{
+					id: "1C77547881D61DFE"
+					item: { count: 1, id: "constructionwand:core_destruction" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			id: "34E6DA713B6DF25F"
+			tasks: [{
+				id: "10FBD4B318A42820"
+				item: { components: { "ftbquests:missing_item": "mcwlights:red_lamp" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+	]
+}

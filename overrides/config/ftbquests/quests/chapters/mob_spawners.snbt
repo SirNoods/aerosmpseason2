@@ -1,0 +1,107 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mob_spawners"
+	group: "6398AB49C115030C"
+	icon: {
+		id: "create_mob_spawners:empty_soul_catcher"
+	}
+	id: "78AA124AC9E370B1"
+	images: [ ]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["72910EFCAA5E2C54"]
+			id: "468F6E0151E77E71"
+			rewards: [{
+				count: 2
+				id: "0BD5826481FC245E"
+				item: {
+					count: 1
+					id: "minecraft:splash_potion"
+				}
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "683A090A113C16EC"
+				item: { count: 1, id: "create_mob_spawners:empty_soul_catcher" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["468F6E0151E77E71"]
+			id: "167C5A3841D3B89F"
+			rewards: [{
+				id: "7127E395F72A7A81"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "40C5254A2B2F4C82"
+				item: { count: 1, id: "create_mob_spawners:soul_catcher" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["167C5A3841D3B89F"]
+			id: "35AE07F6A0F11A4D"
+			rewards: [
+				{
+					id: "00B89C86A5E333C1"
+					item: {
+						count: 1
+						id: "create_mob_spawners:mechanical_spawner"
+					}
+					type: "item"
+				}
+				{
+					id: "4D6B5F42D5B77E3C"
+					type: "xp"
+					xp: 30
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				id: "4D3C0CF2B3C65530"
+				item: { count: 1, id: "create_mob_spawners:mechanical_spawner" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["35AE07F6A0F11A4D"]
+			id: "401990422501F5A3"
+			rewards: [
+				{
+					count: 10
+					id: "09653E9B40316E25"
+					item: {
+						count: 1
+						id: "create:experience_nugget"
+					}
+					type: "item"
+				}
+				{
+					id: "4921C2607E596E76"
+					type: "xp"
+					xp: 35
+				}
+			]
+			tasks: [{
+				id: "70D7C92461D36B5E"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+	]
+}

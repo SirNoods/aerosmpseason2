@@ -1,0 +1,290 @@
+#DLSS Style - DLSS-style temporal upscaling.
+#The world renders at a fraction of your window's pixels and
+#is stretched back smart: temporal accumulation with
+#depth-based camera reprojection.
+[upscale]
+	#OFF: native, nothing runs.
+	#QUALITY / BALANCED / PERFORMANCE / ULTRA_PERFORMANCE:
+	#DLSS's own scale ratios (67% / 58% / 50% / 33% per
+	#axis) - fps for pixels.
+	#DLAA: native res, the temporal pass as pure
+	#anti-aliasing - no quality sacrificed. The default.
+	#DYNAMIC: scale adjusts itself to hold your fps cap or
+	#refresh rate.
+	#Allowed Values: OFF, QUALITY, BALANCED, PERFORMANCE, ULTRA_PERFORMANCE, DLAA, DYNAMIC
+	preset = "BALANCED"
+	#Edge crispness added back after upscaling.
+	#Too high looks gritty.
+	# Default: 0.35
+	# Range: 0.0 ~ 1.0
+	sharpness = 0.75
+	#The fps the DYNAMIC preset holds. 0 = automatic
+	#(your fps cap, or the monitor's refresh rate when
+	#uncapped).
+	# Default: 0
+	# Range: 0 ~ 240
+	dynamicTargetFps = 80
+	#Allow the DYNAMIC preset. Off: DYNAMIC is hidden from
+	#preset cycling and treated as DLAA if already selected.
+	enableDynamic = true
+	#Reproject temporal history with real per-pixel world
+	#depth (snapshotted before vanilla clears the depth
+	#buffer for the hand). Off: rotation-only reprojection,
+	#the pre-1.2.3 behaviour - history mismatches while
+	#walking/strafing and detail resets to spatial there.
+	depthReprojection = true
+	#EXPERIMENTAL. Halve the render scale while a menu or
+	#inventory is open. Off by default: each open/close
+	#currently costs a framebuffer resize.
+	menuBoost = false
+	#Show the developer options in the settings screens.
+	#OFF, and deliberately not shown in either screen: the
+	#options it reveals are tuning knobs and diagnostics for
+	#working ON this mod, not for playing with it. A player
+	#who flips them is choosing between defaults that were
+	#measured and values that were not.
+	#Set it here, in the file, if you are debugging.
+	developerMode = false
+	#Allow the DUMP_BUFFERS marker file to write the
+	#pipeline's buffers as PNGs (logs/buffers/) - the
+	#debugging lever that found every bug in this mod.
+	debugDump = false
+	#EXPERIMENTAL, OPT-IN, OFF BY DEFAULT. Spacewarp:
+	#the world renders every Nth display frame and the
+	#frames between present the last real frame
+	#REPROJECTED by the camera's motion (the VR
+	#technique). The display stays at full refresh
+	#smoothness while the GPU pays for the world - and
+	#the shader pack - a fraction of the frames.
+	#Off by default because it changes what every
+	#presented frame IS; enable deliberately and judge
+	#with your eyes. First person only.
+	spacewarp = false
+	#Spacewarp: every Nth frame is a REAL render;
+	#the rest are warped. 2 = half the frames real.
+	# Default: 2
+	# Range: 2 ~ 4
+	spacewarpDivisor = 2
+	#NEW MODE. Reconstructs every frame from ONLY that
+	#frame - no history, no jitter. The shader already runs
+	#this exact path under a shader pack (its own TAA would
+	#otherwise double up with ours); this exposes it as a
+	#standalone option. Trade: zero ghosting/smearing on
+	#fast motion or moving entities (there is no history to
+	#mismatch), for more aliasing/shimmer than DLAA's
+	#temporal accumulation resolves. For anyone who finds
+	#smearing more distracting than shimmer.
+	spatialOnly = false
+	#Allow Spacewarp to run while an Iris-family shader
+	#pack is loaded. ON by default since 2026-08-29, and
+	#that default is a measurement, not a guess: a tester
+	#on BSL v8.4 went from 1160 fps to 592 the moment this
+	#gate closed, because every frame Spacewarp would have
+	#reprojected was rendered for real instead (GPU 9-25%
+	#-> 68-94% on the same scene).
+	#The gate exists because Spacewarp masks the
+	#first-person hand using the LIVE depth buffer, which
+	#vanilla leaves at 1.0 everywhere except the hand.
+	#Iris owns the framebuffers and does not preserve that,
+	#so the mask can come back empty - and an unmasked hand
+	#is warped like world geometry, which shears across the
+	#screen on every camera move. That risk is real, but it
+	#is cosmetic and confined to the hand; halving the frame
+	#rate of everyone running a pack is not. Turn this OFF
+	#if your hand smears when you strafe.
+	spacewarpUnderShaders = true
+	#On a reprojected frame, render the first-person
+	#hand for real instead of replaying it out of the
+	#captured frame through a depth mask.
+	#OFF by default - see the note below. The mask needs the
+	#LIVE depth buffer
+	#that vanilla leaves at 1.0 everywhere except the
+	#hand; Iris owns the framebuffers and does not
+	#preserve it, so under a shader pack the mask comes
+	#back empty and the hand is warped like world
+	#geometry - the shearing hand. Drawing the hand for
+	#real needs no mask at all, and as a side effect the
+	#hand animates at the full frame rate instead of the
+	#real-frame rate.
+	#ON by default, and under active repair. Aryan's
+	#pixel probe on 2026-08-29 caught two separate
+	#defects in the first version of this - the heatmap
+	#showed exactly two rectangles changing frame to
+	#frame, the hand and the CHAT BOX:
+	#1. FIXED: it leaked GL state into the GUI.
+	#renderItemInHand resets the projection matrix, and
+	#under Iris it can leave the pack's framebuffer
+	#bound. On a real frame this call is the last thing
+	#in renderLevel and the pipeline unwinds around it;
+	#on a warp frame the GUI draws next and inherits the
+	#mess. Projection, target, blend, depth and the light
+	#layer are now all restored in a finally block.
+	#2. OPEN: the hand still sits over a hole. The warp
+	#shader DISCARDS the captured hand's texels so the
+	#stale hand is not sheared across the screen, and
+	#the live hand does not land on exactly the same
+	#pixels, so a thin rim of the previous frame shows
+	#at the silhouette. Under a pack there is no mask at
+	#all, so nothing is discarded and the sheared
+	#capture sits UNDER the live hand.
+	#The real cure for 2 is to stop putting the hand in
+	#the captured frame in the first place - render it
+	#after the capture on every frame, real and warped -
+	#which deletes the mask, and the pack gate with it.
+	liveHandOnWarp = false
+	#Periodic diagnostics in the log: the shadow
+	#cache's 30-second skip report and per-change
+	#resolution/culling lines. Off (default): each
+	#logs once per session at most - a mod should
+	#not narrate a healthy install (user report
+	#2026-08-14: 'spamming my logs'). On: the full
+	#cadence, used for fps benchmarking - frame
+	#counts per 30s window ARE the fps meter.
+	verboseLogging = false
+	#Fullscreen only: cap 'Unlimited' just under the
+	#panel's refresh rate so G-Sync never hands off to
+	#vsync (the handoff is felt as a sharp drop -
+	#confirmed live). Off: fullscreen runs truly
+	#uncapped, for fps benchmarking or non-VRR panels.
+	#Windowed mode is never capped either way.
+	vrrCeiling = false
+	#Variables known to be missing from this shader mod
+	#build. Expression lines referencing any of these are
+	#neutralised in the '_fixed' copy. Extend this list when
+	#a pack update leans on a newer Iris variable.
+	packDoctorMissingVars = ["endFlashIntensity", "BIOME_PALE_GARDEN"]
+	#Shader-pack shadow map resolution scale.
+	#0 = automatic: follows the SCALING presets (0.75 /
+	#0.66 / 0.5 / 0.5) and leaves DLAA and Off at the
+	#pack's full resolution. An explicit value applies
+	#to EVERY preset, DLAA included - that is the fps
+	#lever for native-res play. 1.0 = never scale.
+	# Default: 0.0
+	# Range: 0.0 ~ 1.0
+	shadowScale = 0.0
+	#Scale for a shader pack's RELATIVE buffers -
+	#the reflection, AO and cloud targets a pack sized
+	#as a fraction of the screen. Its own control:
+	#this used to follow shadowScale, so a value set to
+	#tune SHADOW MAPS silently quartered a pack's
+	#reflections too, with no way to have one without
+	#the other. 0 = follow the preset curve (DLAA and
+	#Off untouched). 1.0 = never scale.
+	# Default: 0.0
+	# Range: 0.0 ~ 1.0
+	packBufferScale = 0.0
+	#Shadow culling distance in BLOCKS: geometry
+	#further than this from the camera is left out of
+	#the pack's shadow pass. The shadow pass re-renders
+	#every chunk in range from the sun's view each
+	#frame while the camera moves - the main motion
+	#cost under a pack. 0 = the pack's own distance.
+	# Default: 0
+	# Range: 0 ~ 256
+	shadowCullBlocks = 0
+	#Entity shadow distance in BLOCKS: mobs, items and
+	#other entities further than this from the camera are
+	#left out of a shader pack's shadow pass.
+	#0 = off, and off is the default: this REMOVES the
+	#shadows of distant entities, which is a visual change,
+	#not a free one. It is offered because entity geometry
+	#for the shadow pass is measurably the most expensive
+	#thing in that pass - a profile of a still frame put
+	#'build entity geometry' at 5-13% of the WHOLE frame -
+	#and because the shader packs that offer this setting
+	#themselves default it far below their shadow distance.
+	#Terrain shadows are unaffected; see shadowCullBlocks.
+	# Default: 0
+	# Range: 0 ~ 256
+	shadowEntityDistance = 0
+	#Escape hatch for auto-discovery false positives:
+	#identifiers listed here are always treated as provided
+	#and never cause a line to be neutralised.
+	packDoctorKnownVars = []
+	#Spacewarp declines to warp when the camera has
+	#moved more than this far SIDEWAYS since the frame
+	#it is reprojecting. Sideways motion is the only
+	#kind that uncovers surfaces the capture never saw
+	#- rotation reveals nothing - so this costs frames
+	#only on hard strafes, which are exactly the frames
+	#that would otherwise smear. 0 disables the gate.
+	# Default: 0.35
+	# Range: 0.0 ~ 4.0
+	warpMaxStrafeBlocks = 0.35
+	#When a spacewarp grid cell straddles a depth
+	#edge it has to stretch across the gap, and it is
+	#the FOREGROUND that stretches - a wall or a mob
+	#smeared over the hole behind it. This snaps that
+	#cell to the background instead, so the stretch is
+	#a soft background edge rather than melting
+	#geometry. Only acts while the camera is moving
+	#sideways; costs nothing otherwise.
+	warpBackgroundCollapse = true
+	#How torn a cell must be before it collapses.
+	#Lower = only the worst cells, higher = more of
+	#them. 1.0 would collapse every cell during any
+	#sideways motion and is not a sensible setting.
+	# Default: 0.5
+	# Range: 0.0 ~ 0.95
+	warpCollapseThreshold = 0.5
+	#Diagnostic. Paints spacewarp's confidence signal
+	#instead of the world: green is a confident quad,
+	#red is one about to stretch across a gap wider
+	#than itself. Strafe past a fence and a tree - if
+	#nothing turns red, the signal is broken.
+	confidenceHeatmap = false
+
+#Entity culling: stop drawing mobs that a wall is
+#already hiding.
+[entities]
+	#Skip entities the camera cannot actually see.
+	#Vanilla only checks whether a mob is in front of
+	#you, not whether anything is in the way, so a
+	#sealed mob farm is drawn in full through its own
+	#walls. Costs a few short raycasts per frame and
+	#gives back everything those hidden mobs were
+	#spending.
+	#A test that has not finished always draws, so the
+	#worst case is vanilla, never a missing mob.
+	entityCulling = true
+	#Never cull within this many blocks. Close mobs
+	#cost little and a mistake there is obvious.
+	# Default: 12
+	# Range: 0 ~ 64
+	entityCullNearBlocks = 12
+	#How many entities may be re-tested per frame.
+	#Raycasts walk the block grid, so a 400-mob farm
+	#must not become 400 walks in one frame. The rest
+	#keep their previous answer and are retested on a
+	#later frame. Lower is gentler and slower to react.
+	# Default: 48
+	# Range: 4 ~ 512
+	entityCullBudget = 48
+	#Do the same for block entities - machines,
+	#cables, tanks, chests. In a modded base these
+	#usually cost more than the mobs, and a base is
+	#mostly walls with things behind them.
+	#Anything declaring a render box bigger than its
+	#own block is left alone, so beacon beams and
+	#multiblocks are not affected. Only the animated
+	#renderer is skipped; the block itself is terrain
+	#and draws either way.
+	blockEntityCulling = true
+	#Skip particles behind walls. An empty plains
+	#field already runs about 60 live particles; a
+	#modded base with machines is in the hundreds,
+	#each building a quad every frame.
+	#Verdicts are cached per BLOCK, so forty
+	#particles inside one machine ask once and share
+	#the answer - which is what makes this cheap
+	#enough to be worth doing.
+	#Particles still tick and still age out normally;
+	#only the drawing is skipped.
+	particleCulling = true
+	#Stop drawing particles past this many blocks.
+	#0 disables the distance cut and leaves only the
+	#behind-a-wall test. Deliberately generous by
+	#default: this one is visible if set too low.
+	# Default: 64
+	# Range: 0 ~ 512
+	particleMaxDistance = 64

@@ -1,0 +1,23 @@
+{
+	autofocus_id: "6E925E17FB4454E2"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "trading_floor"
+	group: "6398AB49C115030C"
+	id: "658AA64BA56F0E68"
+	images: [ ]
+	order_index: 6
+	quest_links: [ ]
+	quests: [{
+		id: "6E925E17FB4454E2"
+		shape: "gear"
+		size: 2.0d
+		tasks: [{
+			id: "04CB3A4BBD828391"
+			item: { components: { "ftbquests:missing_item": "trading_floor:trading_depot" }, count: 1, id: "ftbquests:missing_item" }
+			type: "item"
+		}]
+		x: -0.5d
+		y: -0.5d
+	}]
+}

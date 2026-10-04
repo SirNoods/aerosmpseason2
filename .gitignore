@@ -1,1 +1,26 @@
-*.jar
+# Rename this file to .gitignore at the repo root (next to modrinth.index.json)
+
+# Logs, caches and backups generated at runtime
+overrides/config/CSC/Log/
+overrides/config/CSC/CSC_Warn.log
+overrides/config/CSC/backup/
+overrides/config/CSC/Data/
+overrides/config/spark/tmp/
+overrides/config/spark/tmp-client/
+overrides/config/plasmovoice/meta_cache.json
+overrides/config/dlssstyle-packdoctor.cache
+overrides/config/sodium-fingerprint.json
+*.bak
+
+# Per-user or per-world state (your lookup history, UI layouts, skins)
+overrides/config/jei/world/
+overrides/config/axiom/
+overrides/config/flashback/
+overrides/config/quickskin_preferences.json
+overrides/config/skin-preferences.json
+overrides/config/create_submarine_client_state.json
+overrides/config/create-blueprinted-state.toml
+overrides/config/ftbchunks-world.snbt
+
+# uncomment to keep the extracted shader folder out of git
+# overrides/shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5/

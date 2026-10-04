@@ -1,0 +1,410 @@
+{
+	autofocus_id: "0E1056A87BB27BC9"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "new_age"
+	group: "6398AB49C115030C"
+	id: "612AE87D4BCDF0A6"
+	images: [ ]
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			id: "714D87B91E1B61C6"
+			tasks: [{
+				id: "56B30C85BAC1B875"
+				item: { components: { "ftbquests:missing_item": "create_new_age:magnetite_block" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["714D87B91E1B61C6"]
+			id: "0E1056A87BB27BC9"
+			rewards: [{
+				count: 18
+				id: "1618294139459605"
+				item: {
+					components: {
+						"ftbquests:missing_item": "create_new_age:redstone_magnet"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6F381A7C8995052C"
+					item: { components: { "ftbquests:missing_item": "create_new_age:generator_coil" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "007151978C1146B3"
+					item: { components: { "ftbquests:missing_item": "create_new_age:carbon_brushes" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0E1056A87BB27BC9"]
+			id: "1312B33261493897"
+			tasks: [{
+				id: "2000C5A2F81D6881"
+				item: { components: { "ftbquests:missing_item": "create_new_age:redstone_magnet" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0E1056A87BB27BC9"]
+			id: "7D9305B219CC2597"
+			tasks: [{
+				id: "032A7820C20604E8"
+				item: { components: { "ftbquests:missing_item": "create_new_age:layered_magnet" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0E1056A87BB27BC9"]
+			id: "546E211BA9DF92D4"
+			tasks: [{
+				id: "59116C00A77DA93D"
+				item: { components: { "ftbquests:missing_item": "create_new_age:fluxuated_magnetite" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0E1056A87BB27BC9"]
+			id: "62CEF7BA977943DF"
+			tasks: [{
+				id: "4BE7413973BE00D8"
+				item: { components: { "ftbquests:missing_item": "create_new_age:netherite_magnet" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0E1056A87BB27BC9"]
+			id: "5F041CF4851D0153"
+			tasks: [{
+				id: "60512E28B4A08968"
+				item: { components: { "ftbquests:missing_item": "create_new_age:electrical_connector" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5F041CF4851D0153"]
+			id: "3CEE9685F0B06411"
+			tasks: [{
+				id: "2ACB43F35AB11AF6"
+				item: { components: { "ftbquests:missing_item": "create_new_age:copper_wire" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3CEE9685F0B06411"]
+			id: "65EC649FCC1F3F4F"
+			tasks: [{
+				id: "18947F00E76C079C"
+				item: { components: { "ftbquests:missing_item": "create_new_age:basic_motor" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["68481C8F13346EFA"]
+			id: "79B11ECF93A34D6B"
+			tasks: [{
+				id: "04A9DE116B892F88"
+				item: { components: { "ftbquests:missing_item": "create_new_age:advanced_motor" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2EBC13D65E42C257"]
+			id: "1E2390271DE512EE"
+			tasks: [{
+				id: "4B245061262893B4"
+				item: { components: { "ftbquests:missing_item": "create_new_age:reinforced_motor" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3CEE9685F0B06411"]
+			id: "66F5709B9D089670"
+			tasks: [{
+				id: "311567EBC354F7B7"
+				item: { components: { "ftbquests:missing_item": "create_new_age:basic_energiser" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["66F5709B9D089670"]
+			id: "68481C8F13346EFA"
+			tasks: [{
+				id: "3A7C189250BF381C"
+				item: { components: { "ftbquests:missing_item": "create_new_age:overcharged_iron" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["66F5709B9D089670"]
+			id: "6C119C536B004835"
+			tasks: [{
+				id: "59F5C20EB9CEC8A9"
+				item: { components: { "ftbquests:missing_item": "create_new_age:overcharged_gold" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6C119C536B004835"]
+			id: "6C63D006412B5BC8"
+			tasks: [{
+				id: "3D70BC035BC3FC73"
+				item: { components: { "ftbquests:missing_item": "create_new_age:advanced_energiser" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6C63D006412B5BC8"]
+			id: "2EBC13D65E42C257"
+			tasks: [{
+				id: "53F2CDDCB8679330"
+				item: { components: { "ftbquests:missing_item": "create_new_age:overcharged_diamond" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["68481C8F13346EFA"]
+			id: "2A64C7E9B886F1C8"
+			tasks: [{
+				id: "008C02E2F7E09EA6"
+				item: { components: { "ftbquests:missing_item": "create_new_age:overcharged_iron_wire" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6C119C536B004835"]
+			id: "7F2EB07232C738AD"
+			tasks: [{
+				id: "138357B20105C6DE"
+				item: { components: { "ftbquests:missing_item": "create_new_age:overcharged_golden_wire" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2EBC13D65E42C257"]
+			id: "15ED089AEFFFCBFA"
+			tasks: [{
+				id: "2C56BC146793D76F"
+				item: { components: { "ftbquests:missing_item": "create_new_age:overcharged_diamond_wire" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2EBC13D65E42C257"]
+			id: "5AE23B90C64D9E13"
+			tasks: [{
+				id: "6F792FB5FADF8771"
+				item: { components: { "ftbquests:missing_item": "create_new_age:reinforced_energiser" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			id: "7CEE50284584F2B3"
+			tasks: [{
+				id: "06BA5A9122653397"
+				item: { components: { "ftbquests:missing_item": "create_new_age:basic_solar_heating_plate" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7CEE50284584F2B3"]
+			id: "1BFEBF8CC804D3AB"
+			tasks: [{
+				id: "0B310A08223BE3AE"
+				item: { components: { "ftbquests:missing_item": "create_new_age:advanced_solar_heating_plate" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7CEE50284584F2B3"]
+			id: "730AE43A347E79B8"
+			tasks: [
+				{
+					id: "6712C26B031C4470"
+					item: { components: { "ftbquests:missing_item": "create_new_age:heat_pipe" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "46FDD41CE7435D1A"
+					item: { components: { "ftbquests:missing_item": "create_new_age:heat_pump" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["730AE43A347E79B8"]
+			id: "20B6827D7EBF60D3"
+			tasks: [{
+				id: "1132E8DB25BA9222"
+				item: { components: { "ftbquests:missing_item": "create_new_age:heater" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			id: "4A2DBA7AF83A40AD"
+			rewards: [{
+				count: 16
+				id: "63A74FBB2CD9E1DE"
+				item: {
+					components: {
+						"ftbquests:missing_item": "create_new_age:thorium"
+					}
+					count: 1
+					id: "ftbquests:missing_item"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "230255B6AF72F40E"
+				item: { components: { "ftbquests:missing_item": "create_new_age:thorium" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4A2DBA7AF83A40AD"]
+			id: "4B9C15062D3E4355"
+			tasks: [{
+				id: "52AEAF2FD0F7BD14"
+				item: { components: { "ftbquests:missing_item": "create_new_age:radioactive_thorium" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4A2DBA7AF83A40AD"]
+			id: "154A2371225585E9"
+			tasks: [{
+				id: "030177B2DB1EAB43"
+				item: { components: { "ftbquests:missing_item": "create_new_age:reactor_casing" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["154A2371225585E9"]
+			id: "339EED71152EF112"
+			tasks: [
+				{
+					id: "48A2A59087C4CE64"
+					item: { components: { "ftbquests:missing_item": "create_new_age:reactor_rod" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					id: "3395592C00F9D3EF"
+					item: { components: { "ftbquests:missing_item": "create_new_age:reactor_glass" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["339EED71152EF112"]
+			id: "187073F9830ECE79"
+			tasks: [{
+				id: "6A023B1A938C9FC0"
+				item: { components: { "ftbquests:missing_item": "create_new_age:reactor_fuel_acceptor" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["339EED71152EF112"]
+			id: "75F673C50C17DFC6"
+			tasks: [{
+				id: "5940B3558D353DEE"
+				item: { components: { "ftbquests:missing_item": "create_new_age:reactor_heat_vent" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"187073F9830ECE79"
+				"190D10907EC19AC1"
+			]
+			id: "0902520ECB26E099"
+			tasks: [{
+				id: "7EEECBFCB2C7D47A"
+				item: { count: 1, id: "create:andesite_funnel" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4B9C15062D3E4355"]
+			id: "190D10907EC19AC1"
+			tasks: [{
+				id: "4FB1433F3BCB5DBD"
+				item: { components: { "ftbquests:missing_item": "create_new_age:nuclear_fuel" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.5d
+		}
+	]
+}

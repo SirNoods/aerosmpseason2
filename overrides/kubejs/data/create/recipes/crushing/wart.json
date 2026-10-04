@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:crimson_fungus"
+    }
+  ],
+  "processingTime": 150,
+  "results": [
+    {
+      "count": 5,
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "chance": 0.1,
+      "item": "minecraft:blaze_powder"
+    }
+  ]
+}

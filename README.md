@@ -27,14 +27,16 @@ Most mods are listed in `modrinth.index.json` and downloaded by URL. Anything th
 
 ## Installing (players)
 
-1. Install [Prism Launcher](https://prismlauncher.org/).
-2. Download the latest `.mrpack` from the Releases page.
-3. In Prism: Add Instance, Import, then pick the `.mrpack` file (or paste its direct URL).
-4. Launch. Prism downloads everything listed in the index.
+The pack is published on Modrinth: <!-- add the project link here -->
+
+- **Modrinth App:** open the pack's page and press Install.
+- **Prism Launcher:** Add Instance, then the Modrinth tab, and search for the pack. Updates show up in Prism when a new version is published.
+
+Fallback: download the `.mrpack` from this repo's Releases page and use Add Instance, Import in Prism (a direct URL works too).
 
 ## Installing (server)
 
-A server cannot read an `.mrpack` on its own, so use a tool that resolves the index and downloads the mods, such as `mrpack-install`. Check its documentation for current usage.
+Use the server host's Modrinth modpack installer and pick this pack. If your host has no such option, a tool like `mrpack-install` resolves the index and downloads the mods; check its documentation for current usage.
 
 Known issue: a few client-only jars are still bundled in `overrides/mods/` and will end up on the server. Remove them from the server's `mods` folder after installing:
 
@@ -73,7 +75,7 @@ An `.mrpack` is a zip with the index at the root. From the repo root:
 zip -r -X ../AERO_SMP_TWO_v1.1.0.mrpack modrinth.index.json overrides
 ```
 
-Attach the result to a GitHub release. To roll back, check out an older tag and build the file the same way.
+Upload the result as a new version on the Modrinth project page and attach it to a GitHub release. To roll back, check out an older tag and build the file the same way.
 
 ## Known issues and planned work
 
@@ -83,4 +85,4 @@ Attach the result to a GitHub release. To roll back, check out an older tag and 
 
 ## Credits and licensing
 
-All mods, shaders and resource packs belong to their authors and are used under their own licenses. Bundled jars are included for use on this SMP only. Check each project's permissions before redistributing the pack or listing it publicly.
+All mods, shaders and resource packs belong to their authors and are used under their own licenses. Modrinth requires permission to include any content that is not your own in a modpack, so every jar bundled in `overrides/` needs its author's permission (or a license that allows it) before the pack is published.

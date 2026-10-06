@@ -21,7 +21,8 @@
 		"soundEvent": "minecraft:block.note_block.chime"
 	},
 	"mentionKeywords": [
-		"@CharlieDelta99"
+		"@CharlieDelta99",
+		"@Goshva"
 	],
 	"ignoreSystemChats": false,
 	"enableChatSoundCooldown": false,

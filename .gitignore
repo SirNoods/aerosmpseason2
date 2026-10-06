@@ -24,3 +24,21 @@ overrides/config/ftbchunks-world.snbt
 
 # uncomment to keep the extracted shader folder out of git
 # overrides/shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5/
+
+# World and runtime state that the CurseForge export drags in
+overrides/saves/
+overrides/screenshots/
+overrides/local/
+overrides/ftbbackups3/
+overrides/ESM/
+overrides/fancymenu_data/
+overrides/quickskin/
+overrides/downloads/
+overrides/dynamic-data-pack-cache/
+overrides/dynamic-resource-pack-cache/
+overrides/usercache.json
+overrides/usernamecache.json
+overrides/patchouli_data.json
+overrides/ponders_watched*.json
+overrides/defaultoptions.journal.json
+overrides/mods/Flashback-*.jar

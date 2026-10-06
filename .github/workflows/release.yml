@@ -16,7 +16,6 @@ env:
   PACK_NAME: AERO SMP TWO
   MC_VERSION: "1.21.1"
   LOADER: neoforge
-  # Modrinth project ID (shown on the project page under the three-dot menu)
   MODRINTH_PROJECT_ID: aJ4COQ6G
 
 jobs:
@@ -59,7 +58,7 @@ jobs:
           } >> "$GITHUB_OUTPUT"
 
       - name: Publish to Modrinth and GitHub
-        uses: Kir-Antipov/mc-publish@v3.3
+        uses: Kira-NT/mc-publish@v3
         with:
           modrinth-id: ${{ env.MODRINTH_PROJECT_ID }}
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}

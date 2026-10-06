@@ -1,0 +1,73 @@
+# Save as .github/workflows/release.yml in the repo.
+# Push a tag like v1.1.0 and this builds the .mrpack, uploads it to Modrinth
+# and attaches it to a GitHub release.
+
+name: Release modpack
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+env:
+  PACK_NAME: AERO SMP TWO
+  MC_VERSION: "1.21.1"
+  LOADER: neoforge
+  # Modrinth project ID (shown on the project page under the three-dot menu)
+  MODRINTH_PROJECT_ID: aJ4COQ6G
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Work out version from tag
+        run: echo "VERSION=${GITHUB_REF_NAME#v}" >> "$GITHUB_ENV"
+
+      - name: Stamp version into the index
+        run: |
+          jq --arg v "$VERSION" '.versionId = $v' modrinth.index.json > index.tmp
+          mv index.tmp modrinth.index.json
+
+      - name: Build .mrpack
+        run: |
+          FILE="AERO_SMP_TWO-${VERSION}.mrpack"
+          zip -r -X "$FILE" modrinth.index.json overrides \
+            $(ls -d client-overrides server-overrides 2>/dev/null)
+          echo "MRPACK=$FILE" >> "$GITHUB_ENV"
+
+      - name: Generate changelog from commits
+        id: changelog
+        run: |
+          PREV=$(git describe --tags --abbrev=0 "${GITHUB_REF_NAME}^" 2>/dev/null || true)
+          if [ -n "$PREV" ]; then
+            LOG=$(git log --pretty=format:'- %s' "${PREV}..${GITHUB_REF_NAME}")
+          else
+            LOG=$(git log --pretty=format:'- %s' "${GITHUB_REF_NAME}")
+          fi
+          {
+            echo "text<<CHANGELOG_EOF"
+            echo "$LOG"
+            echo "CHANGELOG_EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Publish to Modrinth and GitHub
+        uses: Kir-Antipov/mc-publish@v3.3
+        with:
+          modrinth-id: ${{ env.MODRINTH_PROJECT_ID }}
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          files: ${{ env.MRPACK }}
+          name: ${{ env.PACK_NAME }} ${{ env.VERSION }}
+          version: ${{ env.VERSION }}
+          version-type: release
+          loaders: ${{ env.LOADER }}
+          game-versions: ${{ env.MC_VERSION }}
+          changelog: ${{ steps.changelog.outputs.text }}

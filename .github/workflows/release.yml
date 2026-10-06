@@ -1,6 +1,8 @@
 # Save as .github/workflows/release.yml in the repo.
-# Push a tag like v1.1.0 and this builds the .mrpack, uploads it to Modrinth
-# and attaches it to a GitHub release.
+# Push a tag like v1.1.0 (release) or v1.2.0-beta.1 (beta) and this builds the
+# .mrpack, uploads it to Modrinth and attaches it to a GitHub release.
+# The release type comes from the tag: no suffix = release, -beta/-rc = beta,
+# -alpha = alpha. GitHub marks beta and alpha builds as pre-releases.
 
 name: Release modpack
 
@@ -27,8 +29,17 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Work out version from tag
-        run: echo "VERSION=${GITHUB_REF_NAME#v}" >> "$GITHUB_ENV"
+      - name: Work out version and release type from tag
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          # v1.4.0 -> release, v1.4.0-beta.1 or -rc.1 -> beta, v1.4.0-alpha.1 -> alpha
+          case "$VERSION" in
+            *-alpha*)       TYPE=alpha ;;
+            *-beta*|*-rc*)  TYPE=beta ;;
+            *)              TYPE=release ;;
+          esac
+          echo "VERSION=$VERSION" >> "$GITHUB_ENV"
+          echo "VERSION_TYPE=$TYPE" >> "$GITHUB_ENV"
 
       - name: Stamp version into the index
         run: |
@@ -66,7 +77,7 @@ jobs:
           files: ${{ env.MRPACK }}
           name: ${{ env.PACK_NAME }} ${{ env.VERSION }}
           version: ${{ env.VERSION }}
-          version-type: release
+          version-type: ${{ env.VERSION_TYPE }}
           loaders: ${{ env.LOADER }}
           game-versions: ${{ env.MC_VERSION }}
           changelog: ${{ steps.changelog.outputs.text }}

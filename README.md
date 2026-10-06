@@ -27,7 +27,7 @@ Most mods are listed in `modrinth.index.json` and downloaded by URL. Anything th
 
 ## Installing (players)
 
-The pack is published on Modrinth: <!-- add the project link here -->
+The pack is published on Modrinth: <!-- Projlink -->
 
 - **Modrinth App:** open the pack's page and press Install.
 - **Prism Launcher:** Add Instance, then the Modrinth tab, and search for the pack. Updates show up in Prism when a new version is published.
@@ -62,20 +62,49 @@ This list is a starting point, not exhaustive. Shaders and resource packs are op
    git commit -m "Describe the change"
    ```
 
-4. Bump `versionId` in `modrinth.index.json` to match the release.
-5. Tag the commit, for example `v1.1.0`.
+4. Push the commit, then tag it (see Versioning below).
 
 The `.gitignore` keeps runtime state (logs, backups, JEI history, UI layouts) out of the repo. If a new mod writes junk into `config/`, add it there rather than committing it.
 
-## Building a release file
+## Versioning and releases
 
-An `.mrpack` is a zip with the index at the root. From the repo root:
+Tags use semantic versioning with a `v` prefix: `vMAJOR.MINOR.PATCH`, plus an optional pre-release suffix.
+
+| Tag | Release type on Modrinth | Use it for |
+|---|---|---|
+| `v1.4.0-alpha.1` | alpha | rough work in progress, may break worlds |
+| `v1.4.0-beta.1` | beta | candidate for testing with the group |
+| `v1.4.0` | release | the version players should be on |
+
+What the numbers mean:
+
+- **MAJOR:** changes that can break existing worlds, such as removing a mod, a Minecraft or loader version change, or a rebalance that invalidates builds. Players should expect to read the changelog first.
+- **MINOR:** new mods or content, or notable recipe and config changes. Safe for existing worlds.
+- **PATCH:** mod version bumps, config tweaks and bug fixes.
+
+Typical flow: tag `v1.4.0-beta.1`, test it, fix what you find and tag `v1.4.0-beta.2`, then tag `v1.4.0` once it is good. Moving a pre-release to a full release means a new tag, so the final release is always built from a commit that was tagged on purpose.
+
+Pushing a tag starts the release workflow in `.github/workflows/release.yml`. It stamps the version into `modrinth.index.json`, builds the `.mrpack`, uploads it to Modrinth and attaches it to a GitHub release. The release type is read from the tag suffix. You do not need to edit `versionId` by hand.
 
 ```bash
-zip -r -X ../AERO_SMP_TWO_v1.1.0.mrpack modrinth.index.json overrides
+git tag v1.4.0-beta.1
+git push origin v1.4.0-beta.1
 ```
 
-Upload the result as a new version on the Modrinth project page and attach it to a GitHub release. To roll back, check out an older tag and build the file the same way.
+If a run fails before anything was uploaded, delete the tag and push it again:
+
+```bash
+git tag -d v1.4.0-beta.1
+git push --delete origin v1.4.0-beta.1
+```
+
+To build a file by hand, an `.mrpack` is a zip with the index at the root:
+
+```bash
+zip -r -X ../AERO_SMP_TWO_v1.4.0.mrpack modrinth.index.json overrides
+```
+
+To roll back, check out an older tag and build the file the same way.
 
 ## Known issues and planned work
 

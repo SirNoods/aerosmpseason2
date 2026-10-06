@@ -108,6 +108,38 @@ zip -r -X ../AERO_SMP_TWO_v1.4.0.zip manifest.json overrides
 
 To roll back, check out an older tag and build the file the same way.
 
+## For maintainers on Windows (GitHub Desktop)
+
+GitHub Desktop is the easiest way to work with this repo if you have not used git before.
+
+One-time setup:
+
+1. Ask the repo owner to add you as a collaborator (Settings, Collaborators) and accept the email invite.
+2. Install GitHub Desktop and sign in with your GitHub account.
+3. File, Clone repository, pick `SirNoods/aerosmpseason2`, and choose a folder.
+
+Each time you change the pack:
+
+1. Open GitHub Desktop and press Fetch origin, then Pull if it offers it. This brings in the other maintainer's changes and avoids most conflicts.
+2. Make and test your changes in the CurseForge app.
+3. Export the profile as a CurseForge zip. In the export dialog, untick saves and screenshots.
+4. In the repo folder, delete `overrides`, `manifest.json` and `modlist.html`. Leave `.git`, `.github`, `.gitignore` and the README alone. Then unzip the export into the folder. Deleting first matters, because otherwise removed files stay in the repo.
+5. GitHub Desktop lists the changed files on the left. Write a short summary in plain words, since commit messages become the changelog, then press Commit to main.
+6. Press Push origin.
+
+Releasing:
+
+1. In the History tab, right-click the commit to release and choose Create tag. Type the version, for example `v0.2.0-beta.1`.
+2. Press Push origin again. Desktop pushes tags along with the commits.
+3. The workflow starts by itself. Watch it on GitHub under the Actions tab.
+
+Ground rules:
+
+- Agree on one person who tags releases, so you do not both publish at once.
+- Always use the `v` prefix and the suffix scheme above.
+- Before pushing, check that the file list does not include a world save or any file over 100 MB. GitHub rejects pushes with files that large.
+- Never reuse a version name that is already on CurseForge. If a release goes wrong, tell the other maintainer before deleting a tag.
+
 ## Setting up the workflow
 
 1. Create the modpack project in CurseForge for Creators and note its numeric project ID.

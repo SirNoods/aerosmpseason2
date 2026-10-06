@@ -1,0 +1,12 @@
+#The render distance for physics objects (SubLevels) in chunks.
+# Default: 128
+# Range: 1 ~ 1000000
+physicsRenderDistance = 128
+#The minimum render distance for physics objects (SubLevels) in chunks.
+# Default: 16
+# Range: 1 ~ 1000000
+minPhysicsRenderDistance = 16
+#The maximum render distance for physics objects (SubLevels) in chunks.
+# Default: 4096
+# Range: 1 ~ 1000000
+maxPhysicsRenderDistance = 4096

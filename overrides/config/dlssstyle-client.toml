@@ -12,7 +12,7 @@
 	#DYNAMIC: scale adjusts itself to hold your fps cap or
 	#refresh rate.
 	#Allowed Values: OFF, QUALITY, BALANCED, PERFORMANCE, ULTRA_PERFORMANCE, DLAA, DYNAMIC
-	preset = "BALANCED"
+	preset = "PERFORMANCE"
 	#Edge crispness added back after upscaling.
 	#Too high looks gritty.
 	# Default: 0.35

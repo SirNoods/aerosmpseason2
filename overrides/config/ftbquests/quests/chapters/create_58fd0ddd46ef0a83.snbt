@@ -1693,7 +1693,7 @@
 			}]
 			tasks: [{
 				id: "05BDE9CFC8DDABF8"
-				item: { count: 1, id: "create:package_filter" }
+				item: { components: { "ftbquests:missing_item": "create:package_filter" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -2.0d

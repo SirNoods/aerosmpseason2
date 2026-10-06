@@ -1,6 +1,13 @@
 debug = false
 disable_crowdin = false
 check_for_updates = true
+
+[activations.46927964-3207-377a-84d7-26a82d52be1e]
+type = "VOICE"
+toggle = false
+[activations.4aec07ba-d109-3345-9a0a-92022a116cd0]
+type = "VOICE"
+toggle = false
 key_bindings = []
 
 [voice]
@@ -8,7 +15,7 @@ disabled = false
 microphone_disabled = true
 activation_threshold = -30.0
 input_device = ""
-output_device = ""
+output_device = "OpenAL Soft on Voicemeeter AUX Input (VB-Audio Voicemeeter VAIO)"
 disable_input_device = false
 use_javax_input = false
 microphone_volume = 1.0
@@ -18,7 +25,7 @@ compressor_limiter = true
 sound_occlusion = false
 directional_sources = false
 hrtf = false
-stereo_capture = false
+stereo_capture = true
 
 [voice.volumes.groups]
 volume = 1.0

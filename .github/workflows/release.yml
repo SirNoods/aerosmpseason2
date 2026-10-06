@@ -1,8 +1,11 @@
 # Save as .github/workflows/release.yml in the repo.
 # Push a tag like v1.1.0 (release) or v1.2.0-beta.1 (beta) and this builds the
-# .mrpack, uploads it to Modrinth and attaches it to a GitHub release.
+# CurseForge modpack zip, uploads it to CurseForge and attaches it to a GitHub
+# release.
 # The release type comes from the tag: no suffix = release, -beta/-rc = beta,
 # -alpha = alpha. GitHub marks beta and alpha builds as pre-releases.
+#
+# The repo root must hold a CurseForge pack export: manifest.json + overrides/.
 
 name: Release modpack
 
@@ -18,7 +21,8 @@ env:
   PACK_NAME: AERO SMP TWO
   MC_VERSION: "1.21.1"
   LOADER: neoforge
-  MODRINTH_PROJECT_ID: aJ4COQ6G
+  # Numeric CurseForge project ID (on the project's overview page in CurseForge for Creators)
+  CURSEFORGE_PROJECT_ID: 1729935
 
 jobs:
   release:
@@ -41,17 +45,25 @@ jobs:
           echo "VERSION=$VERSION" >> "$GITHUB_ENV"
           echo "VERSION_TYPE=$TYPE" >> "$GITHUB_ENV"
 
-      - name: Stamp version into the index
+      - name: Check the repo holds a CurseForge export
         run: |
-          jq --arg v "$VERSION" '.versionId = $v' modrinth.index.json > index.tmp
-          mv index.tmp modrinth.index.json
+          if [ ! -f manifest.json ]; then
+            echo "manifest.json not found. Commit a CurseForge pack export (manifest.json + overrides/) at the repo root." >&2
+            exit 1
+          fi
+          jq -e '.manifestType == "minecraftModpack" and (.files | length) > 0' manifest.json > /dev/null
 
-      - name: Build .mrpack
+      - name: Stamp version into the manifest
         run: |
-          FILE="AERO_SMP_TWO-${VERSION}.mrpack"
-          zip -r -X "$FILE" modrinth.index.json overrides \
-            $(ls -d client-overrides server-overrides 2>/dev/null)
-          echo "MRPACK=$FILE" >> "$GITHUB_ENV"
+          jq --arg v "$VERSION" '.version = $v' manifest.json > manifest.tmp
+          mv manifest.tmp manifest.json
+
+      - name: Build modpack zip
+        run: |
+          FILE="AERO_SMP_TWO-${VERSION}.zip"
+          zip -r -X "$FILE" manifest.json overrides \
+            $(ls -d modlist.html 2>/dev/null)
+          echo "PACK_ZIP=$FILE" >> "$GITHUB_ENV"
 
       - name: Generate changelog from commits
         id: changelog
@@ -68,13 +80,13 @@ jobs:
             echo "CHANGELOG_EOF"
           } >> "$GITHUB_OUTPUT"
 
-      - name: Publish to Modrinth and GitHub
+      - name: Publish to CurseForge and GitHub
         uses: Kira-NT/mc-publish@v3
         with:
-          modrinth-id: ${{ env.MODRINTH_PROJECT_ID }}
-          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          curseforge-id: ${{ env.CURSEFORGE_PROJECT_ID }}
+          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          files: ${{ env.MRPACK }}
+          files: ${{ env.PACK_ZIP }}
           name: ${{ env.PACK_NAME }} ${{ env.VERSION }}
           version: ${{ env.VERSION }}
           version-type: ${{ env.VERSION_TYPE }}

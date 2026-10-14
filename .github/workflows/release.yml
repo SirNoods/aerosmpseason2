@@ -22,7 +22,7 @@ env:
   MC_VERSION: "1.21.1"
   LOADER: neoforge
   # Numeric CurseForge project ID (on the project's overview page in CurseForge for Creators)
-  CURSEFORGE_PROJECT_ID: 1729935
+  CURSEFORGE_PROJECT_ID: 1738285
 
 jobs:
   release:

@@ -112,7 +112,7 @@ enabled = true
 		#Minimum horizontal player velocity change over the 3-tick window (m/s) required to trigger.
 		# Default: 16.0
 		# Range: 0.1 ~ 128.0
-		minVelocityDelta = 16.0
+		minVelocityDelta = 25.0
 		#Velocity changes above this (m/s) are ignored as teleports or anomalies rather than physical impacts.
 		# Default: 120.0
 		# Range: 1.0 ~ 1024.0
@@ -159,7 +159,7 @@ enabled = true
 		#Minimum fall damage actually taken (after feather falling, protection, resistance, etc.) required to trigger a ragdoll.
 		# Default: 4.0
 		# Range: 0.0 ~ 1024.0
-		minDamage = 4.0
+		minDamage = 8.0
 		#Fraction of the landing impact speed driven downward to smash the ragdoll into the ground.
 		# Default: 0.5
 		# Range: 0.0 ~ 2.0

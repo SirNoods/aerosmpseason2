@@ -1,0 +1,136 @@
+#Create: Frogport Reworked server settings.
+#These options are authoritative for the current world or dedicated server.
+#They affect every connected player and should be changed only by server administrators.
+#Controls optional Frogport capacity and redstone configuration tools.
+#Operation modes are always available. Disabling another tool preserves its existing Frogport data and blocks new changes server-side.
+[features]
+	#Allow players to change the number of usable package slots in a Frogport.
+	#When disabled, each Frogport keeps its current capacity and no stored packages are removed.
+	#Default: ON.
+	capacityConfigurationEnabled = true
+	#Allow players to change a Frogport's powered redstone action.
+	#When disabled, each Frogport keeps its current redstone behavior.
+	#Default: ON.
+	redstoneConfigurationEnabled = true
+
+#Player-facing controls shown directly in the main Frogport GUI for choosing or restoring a Chain Conveyor link.
+#These controls are separate from Connection Guardian. Manual actions remain available while Guardian is disabled.
+[connectionControls]
+	#Show and allow Move Link plus the contextual Re-Link or Auto Link button in the main Frogport GUI.
+	#When disabled, no connection-control action is accepted by the server. Existing and saved links are preserved.
+	#Default: ON.
+	enabled = true
+	#Allow players to select an exact Chain Conveyor point using Move Link.
+	#Move Link never performs a nearest-chain search.
+	#Default: ON.
+	moveLinkEnabled = true
+	#Allow Auto Link to connect a disconnected Frogport to the nearest valid loaded chain point.
+	#For Frogports with a saved link, Auto Link becomes available only after Re-Link reaches its failed-attempt limit.
+	#Default: ON.
+	autoConnectEnabled = true
+	#Allow Re-Link to retry only the exact saved chain point.
+	#This action never substitutes a different nearby chain.
+	#Default: ON.
+	retrySavedLinkEnabled = true
+	#Number of failed manual Re-Link attempts before the contextual button changes to Auto Link.
+	#The saved original point remains intact until Auto Link successfully installs a new connection.
+	#Default: 3. Range: 1-10 attempts.
+	# Default: 3
+	# Range: 1 ~ 10
+	relinkAttemptsBeforeAutoLink = 3
+
+#Optional recovery system for restoring a Frogport's exact saved Chain Conveyor connection.
+#Connection Guardian is disabled by default; Create retains normal connection control while it is off.
+[guardian]
+	#Enable Frogport Reworked's optional Connection Guardian.
+	#Guardian remembers and restores the exact saved connection when that original chain point becomes valid again.
+	#When disabled, Create controls connection behavior and Frogport Reworked performs no background repair work.
+	#Default: OFF.
+	connectionManagementEnabled = false
+
+	#Advanced server-work limits for Connection Guardian.
+	#Increase these values only when a large network is recovering too slowly; higher values can use more tick time.
+	#Only used while Connection Guardian is enabled.
+	[guardian.performance]
+		#Maximum inexpensive Frogport checks across all dimensions per tick.
+		# Default: 3
+		# Range: 1 ~ 64
+		connectionChecksPerTick = 3
+		#Maximum expensive target searches across all dimensions per tick.
+		# Default: 1
+		# Range: 1 ~ 16
+		repairSearchesPerTick = 1
+		#Maximum new conveyor-component scans across all dimensions per tick.
+		# Default: 1
+		# Range: 1 ~ 16
+		networkScansPerTick = 1
+		#Soft Guardian processing-time budget per server tick.
+		# Default: 750
+		# Range: 100 ~ 10000
+		processingBudgetMicros = 750
+
+	#Advanced timing controls for Connection Guardian checks and retries.
+	#Shorter intervals react faster but can increase server work.
+	#Only used while Connection Guardian is enabled.
+	[guardian.intervals]
+		#Base safety-poll interval for healthy Frogports.
+		# Default: 25
+		# Range: 5 ~ 300
+		healthyCheckIntervalSeconds = 25
+		#Randomized staggering above and below the healthy interval.
+		# Default: 5
+		# Range: 0 ~ 60
+		healthyCheckJitterSeconds = 5
+		#Poll interval while confirming a suspected failure.
+		# Default: 2
+		# Range: 1 ~ 30
+		failureCheckIntervalSeconds = 2
+		#Safety-poll interval while the saved target path is unloaded.
+		# Default: 30
+		# Range: 5 ~ 300
+		waitingChunkCheckIntervalSeconds = 30
+		#Safety-poll interval for an unconfigured Frogport.
+		# Default: 15
+		# Range: 2 ~ 300
+		unconfiguredCheckIntervalSeconds = 15
+		#Minimum delay before Guardian attempts exact saved-target restoration when the opt-in Guardian is enabled.
+		# Default: 15
+		# Range: 10 ~ 300
+		automaticReconnectDelaySeconds = 15
+		#Delay after the first complete repair round fails.
+		# Default: 5
+		# Range: 1 ~ 120
+		firstRepairRetrySeconds = 5
+		#Delay after the second complete repair round fails.
+		# Default: 15
+		# Range: 1 ~ 300
+		secondRepairRetrySeconds = 15
+		#Low-frequency retry interval after the Frogport becomes faulted.
+		# Default: 45
+		# Range: 5 ~ 600
+		faultedRetryIntervalSeconds = 45
+
+#Logging and administrator-command settings for troubleshooting.
+#Logging is disabled by default to keep normal servers quiet.
+[diagnostics]
+	#Minecraft permission level required to use /frogportreworked guardian status.
+	#0 allows all players; 2 is the normal operator level.
+	#Default: 2. Range: 0-4.
+	# Default: 2
+	# Range: 0 ~ 4
+	diagnosticsPermissionLevel = 2
+	#Maximum loaded Chain Conveyors inspected while resolving a fixed Frogport destination for diagnostics.
+	#This limits tooltip inspection work only; it does not change Create package routing.
+	#Default: 128. Range: 16-2048 conveyors.
+	# Default: 128
+	# Range: 16 ~ 2048
+	destinationInspectionLimit = 128
+	#Write meaningful Frogport state changes to the server log while keeping normal healthy checks silent.
+	#Recommended only for troubleshooting. Default: OFF.
+	stateChangeLoggingEnabled = false
+	#Minimum time before the same Frogport can repeat an identical log event.
+	#Only used when Frogport state logging is enabled.
+	#Unit: seconds. Default: 30. Range: 0-3600.
+	# Default: 30
+	# Range: 0 ~ 3600
+	stateChangeLogCooldownSeconds = 30

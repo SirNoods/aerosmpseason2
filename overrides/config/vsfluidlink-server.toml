@@ -15,3 +15,43 @@
 	restrictWorldToWorldConnection = false
 	#If true, connections between two blocks that are on the SAME ship will be blocked.
 	restrictIntraShipConnection = false
+	#Allow non-wrench items and an empty hand to connect or disconnect manual connectors.
+	#Sneaking with a non-wrench item bypasses linking so items can be used normally.
+	connectWithoutWrench = true
+	#ROTATE: wrench right-click rotates, sneak-right-click picks up the connector.
+	#CONNECT: wrench right-click links manual connectors, sneak-right-click rotates (legacy behavior).
+	#Magnet connectors remain automatic and cannot be manually linked.
+	#Allowed Values: CONNECT, ROTATE
+	wrenchRightClickAction = "ROTATE"
+	#Maximum facing misalignment from directly opposing (0 degrees) for all magnet connectors to connect.
+	#Degrees, not the angle to the line between blocks. Connection requires strictly less than this angle.
+	# Default: 45.0
+	# Range: 0.0 ~ 180.0
+	magnetMaxConnectionAngle = 45.0
+	#Facing misalignment in degrees above which fluid, item and electric magnet connectors disconnect.
+	#Use a value larger than magnetMaxConnectionAngle to avoid repeated connecting and disconnecting.
+	# Default: 90.0
+	# Range: 0.0 ~ 180.0
+	magnetDisconnectionAngle = 90.0
+	#Facing misalignment in degrees above which magnet chain connectors disconnect.
+	#Use a value larger than magnetMaxConnectionAngle to avoid repeated connecting and disconnecting.
+	# Default: 90.0
+	# Range: 0.0 ~ 180.0
+	magnetChainDisconnectionAngle = 90.0
+
+[buffers]
+	#Fluid capacity per normal or magnet hose connector, in mB. Restart the world after changing.
+	#Drain buffers before reducing capacity; excess fluid will be discarded on load.
+	# Default: 1000
+	# Range: 1 ~ 1073741823
+	fluidCapacity = 1000
+	#Inventory slots per normal or magnet item hose connector. Restart the world after changing.
+	#Occupied slots beyond a reduced limit remain extract-only until emptied and reloaded.
+	# Default: 1
+	# Range: 1 ~ 256
+	itemSlots = 1
+	#Energy capacity per normal or magnet electric connector, in FE. Restart the world after changing.
+	#Transfer rate remains 10000 FE/t. Excess energy will be discarded when capacity is reduced.
+	# Default: 100000
+	# Range: 1 ~ 1073741823
+	energyCapacity = 100000

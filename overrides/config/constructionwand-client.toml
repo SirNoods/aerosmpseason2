@@ -5,7 +5,7 @@
 #in the /saves/myworld/serverconfig folder. If you want to change the serverconfig for all
 #new worlds, copy the config files in the /defaultconfigs folder.
 [keys]
-	#Key code of OPTKEY (Default: Left Control). Look up key codes under https://www.glfw.org/docs/3.3/group__keys.html
+	#Key code of OPTKEY (Default: Left Control). Look up key codes under https://www.glfw.org/docs/3.3/group__keys.html (SDL scancodes from 26.3 on, Default: 224)
 	# Default: 341
 	# Range: 0 ~ 350
 	OptKey = 341

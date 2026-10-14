@@ -1,4 +1,4 @@
-93 possible biomes found:
+87 possible biomes found:
 - "midgard:arid_peaks"
 - "midgard:aspen_forest"
 - "midgard:autumnal_aspen_forest"
@@ -35,16 +35,10 @@
 - "minecraft:frozen_river"
 - "minecraft:grove"
 - "minecraft:ice_spikes"
+- "createnuclear:irradiated_land"
 - "minecraft:jagged_peaks"
 - "minecraft:jungle"
 - "minecraft:lukewarm_ocean"
-- "rocketnautics:lunar_aged_chasm"
-- "rocketnautics:lunar_aged_spikes"
-- "rocketnautics:lunar_basalt_chasm"
-- "rocketnautics:lunar_basalt_spikes"
-- "rocketnautics:lunar_highlands"
-- "rocketnautics:lunar_maria"
-- "rocketnautics:lunar_megaregolith"
 - "minecraft:lush_caves"
 - "minecraft:mangrove_swamp"
 - "midgard:maple_forest"

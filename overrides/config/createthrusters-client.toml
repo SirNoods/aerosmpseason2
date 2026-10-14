@@ -25,3 +25,30 @@
 	#Claw marker render mode is disabled; OFF is enforced
 	#Allowed Values: DEPTH, DECAL, PARTICLE, OFF
 	clawMarkerRenderMode = "OFF"
+	#Thrusters emit light
+	thrustersEmitLight = true
+	#Minimum updates per second for each visible ACC Display or CCTV camera feed. Actual FPS is limited by your computer's frame rate.
+	# Default: 10
+	# Range: 1 ~ 60
+	cameraMinimumRefreshRate = 10
+	#Use Thruster Plume V2 Renderer with blue, orange/yellow, and burnt sienna exhaust
+	useThrusterPlumeV2Renderer = true
+	#Use Plume metaball rendering for the active V2 exhaust
+	usePlumeMetaballRendering = true
+	#Plumes emit light into the surrounding world
+	plumesEmitLight = false
+
+	#Seasonal visual effects
+	[client.seasonal]
+		#Default uses the current season; Off disables seasonal effects; the other values force a season
+		#Allowed Values: DEFAULT, PRIDE, HALLOWEEN, CHRISTMAS, OFF
+		forceSeasonalEffects = "DEFAULT"
+
+		#Pride Month effects
+		[client.seasonal.pride_month]
+			#Solid cycles one color across the plume; Rainbow moves a gradient along it
+			#Allowed Values: SOLID, RAINBOW
+			thrusterPlumeEffect = "SOLID"
+			#Color palette for Pride Month thruster exhaust
+			#Allowed Values: DARKER, DEFAULT, PASTEL
+			colorPalette = "DEFAULT"

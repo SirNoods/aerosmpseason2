@@ -4,6 +4,8 @@
   "previewScale": 30,
   "guiScale": 1,
   "enablePlayerPreviewCustomization": false,
+  "showTitleScreenPreview": true,
+  "showPauseMenuPreview": true,
   "hudOverlayRotation": 20.0,
   "sizeModelPreviewPercentageTitleScreen": 0,
   "sizeModelPreviewPercentageSkinMenu": 0,
@@ -36,5 +38,12 @@
   "pendingCpmSkinModeReset": false,
   "activeModelType": "auto",
   "activeCapeHash": "",
-  "playerOwnSkinHash": "sha256-c778e4f5bba2a5928c2b1c53aed3dfef67e3eff9eb34043bd00231cd09f021f1"
+  "playerOwnSkinHash": "sha256-c778e4f5bba2a5928c2b1c53aed3dfef67e3eff9eb34043bd00231cd09f021f1",
+  "playerOwnSkinAccount": "ef893d20-83a7-47cf-add9-26c4f01aef37:CharlieDelta99",
+  "accountSkins": {
+    "skins": {
+      "ef893d20-83a7-47cf-add9-26c4f01aef37:CharlieDelta99": "sha256-c778e4f5bba2a5928c2b1c53aed3dfef67e3eff9eb34043bd00231cd09f021f1"
+    },
+    "migrated": true
+  }
 }

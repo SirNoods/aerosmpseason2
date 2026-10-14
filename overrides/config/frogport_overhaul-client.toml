@@ -1,0 +1,63 @@
+#Create: Frogport Reworked client settings.
+#These options affect only your own interface and visuals.
+#They do not change Frogport behavior for the server or other players.
+#Controls the instruction panel shown while choosing a new Chain Conveyor connection.
+#All options in this category affect only your client.
+[moveLinkOverlay]
+	#Show persistent instructions for the entire Move Link selection session.
+	#Turning this off hides only the instructions; Move Link itself still works.
+	#Default: ON.
+	enabled = true
+	#Choose where the Move Link instruction panel appears.
+	#Automatic moves the panel when the current GUI scale leaves too little room.
+	#Default: Automatic.
+	#Allowed Values: AUTO, TOP, ABOVE_HOTBAR
+	position = "AUTO"
+	#Maximum width before the instructions wrap onto additional lines.
+	#Unit: GUI-scaled pixels. Default: 360. Range: 160-720.
+	# Default: 360
+	# Range: 160 ~ 720
+	maxTextWidth = 360
+	#Controls how dark the instruction-panel background appears.
+	#0 is fully transparent and 100 is fully opaque.
+	#Unit: percent. Default: 75%. Range: 0-100%.
+	# Default: 75
+	# Range: 0 ~ 100
+	backgroundOpacityPercent = 75
+	#Draw a shadow behind the instruction text to improve readability.
+	#Default: ON.
+	textShadow = true
+
+#Controls Frogport information shown while wearing Engineer's Goggles.
+#These options affect only your client.
+[tooltips]
+	#Remove lower-priority lines when a Frogport tooltip would extend beyond the screen.
+	#Recommended for large GUI scales and smaller displays.
+	#Default: ON.
+	constrainTooltipHeight = true
+	#Optional hard limit for the total number of Frogport tooltip lines.
+	#Use 0 to calculate the limit automatically from the current screen height.
+	#Unit: lines. Default: Automatic (0). Range: 0-80.
+	# Default: 0
+	# Range: 0 ~ 80
+	maximumLines = 0
+	#Show the Shift and Ctrl help lines at the bottom of Frogport tooltips.
+	#Turning this off does not disable the expanded tooltip views.
+	#Default: ON.
+	showModifierHints = true
+	#Allow Shift+Ctrl to show the complete developer-oriented diagnostics view.
+	#This is intended for troubleshooting and bug reports, not normal play.
+	#Default: OFF.
+	fullDiagnosticsEnabled = false
+
+#Controls optional Frogport status visuals.
+#These options affect only your client and never change server behavior.
+[visuals]
+	#Show crossed eyes on a Frogport that the Connection Guardian has marked as faulted.
+	#This setting has an effect only when the server has Connection Guardian enabled.
+	#Default: ON.
+	faultEyesEnabled = true
+	#While wearing Engineer's Goggles, show a guide toward a disconnected Frogport's saved connection.
+	#This changes only the local visual guide; it does not reconnect the Frogport.
+	#Default: ON.
+	lastKnownLinkEnabled = true

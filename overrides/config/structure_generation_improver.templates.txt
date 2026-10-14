@@ -322,6 +322,7 @@ create_pillagers_arise:small_house
 create_pillagers_arise:updated_camp
 create_pillagers_arise:updated_nieuw_small_pillager_house
 create_pillagers_arise:updated_small_house
+createnuclear:empty_platform
 fabric-gametest-api-v1:empty
 farmersdelight:village/houses/desert_compost_pile
 farmersdelight:village/houses/plains_compost_pile

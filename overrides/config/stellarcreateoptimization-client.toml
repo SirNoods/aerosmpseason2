@@ -1,27 +1,34 @@
 [fanParticles]
+	#Maximum Encased Fan particles spawned per client tick. Set to 0 to disable them.
 	# Default: 96
 	# Range: 0 ~ 4096
 	maxPerTick = 96
+	#Distance in blocks up to which nearPercent is used for Encased Fan particles.
 	# Default: 16
 	# Range: 1 ~ 512
 	nearDistance = 16
+	#Distance in blocks up to which midPercent is used; farther particles use farPercent.
 	# Default: 32
 	# Range: 1 ~ 1024
 	midDistance = 32
+	#Percentage of Encased Fan particles retained within nearDistance.
 	# Default: 80
 	# Range: 0 ~ 100
 	nearPercent = 80
+	#Percentage of Encased Fan particles retained between the near and mid distances.
 	# Default: 50
 	# Range: 0 ~ 100
 	midPercent = 50
+	#Percentage of Encased Fan particles retained beyond midDistance.
 	# Default: 25
 	# Range: 0 ~ 100
 	farPercent = 25
 
 [shaderFlywheel]
-	#Allow Colorwheel's instancing backend for shaderpacks without native Colorwheel support.
-	#This restores Flywheel GPU instancing instead of rebuilding kinetic block vertices every frame.
-	#Fallback mode can cause shaderpack-specific rendering issues; disable this option to use Colorwheel's own compatibility decision.
+	#Opt in to forcing Colorwheel's shaderpack compatibility check to accept fallback rendering.
+	#This can affect either Colorwheel backend; hardware capability checks remain unchanged.
+	#Experimental: fallback may cause shaderpack-specific rendering issues and is not guaranteed visually lossless.
+	#Default false follows Colorwheel's own compatibility and fallback settings. Existing explicit values are preserved.
 	forceColorwheelFallback = true
 
 [blazeBurner]
@@ -79,13 +86,14 @@
 	maxUploadMillisPerFrame = 4.0
 
 [kineticMachineVbo]
-	#Enable persistent VBO rendering for mixers, mechanical presses, mechanical crafters, millstones, Mechanical Arms, and stock small/large cogwheels.
+	#Enable persistent VBO rendering for mixers, mechanical presses, mechanical crafters, millstones, Mechanical Arms, stock deployers, and stock small/large cogwheels.
 	#Compatible cogwheels share rigid-instance draws in both main and shadow passes, including the large cog's independently rotated shaft.
+	#Stock deployer shafts, poles, and all three hand poses share static geometry; extension animation and held items remain unchanged. Contraption deployers use Create's original path.
 	#Animation remains exact through per-instance matrices; dynamic crafter items and scrolling UVs stay on Create's original path.
 	enabled = true
 	#Render mixers, mechanical presses, mechanical crafters, and millstone inner cogs in shader shadow passes.
 	#Disabled by default to omit the complete block-entity renderer for these machines from shader shadows.
-	#Mechanical Arm cogs, rigid parts, and stock small/large cogwheels always retain their shader shadows.
+	#Mechanical Arm cogs, rigid parts, stock deployers, and stock small/large cogwheels always retain their shader shadows.
 	#The renamed key intentionally applies this safer default to configurations created by older releases.
 	renderShaderShadows = false
 
@@ -105,9 +113,11 @@
 	#Use stable distance LOD for the millstone inner cog when shaders disable Flywheel.
 	#Nearby millstones remain complete; omitted distant cogs retain the chunk-baked outer shell.
 	mainLodEnabled = true
+	#Distance in blocks where stable medium-density millstone cog sampling starts.
 	# Default: 32
 	# Range: 1 ~ 512
 	midDistance = 32
+	#Distance in blocks where stable sparse millstone cog sampling starts.
 	# Default: 64
 	# Range: 1 ~ 1024
 	farDistance = 64
@@ -128,48 +138,58 @@
 	#Draw compatible shaft VBO buckets with an internal Iris shader variant and instance matrices.
 	#Unsupported shader stages, transforms, hardware, or compilation failures fall back to the existing exact per-shaft VBO path.
 	instancedDrawEnabled = true
-	#Render shafts and encased shafts in shader shadow passes.
-	#Disabled by default because their shadow-map footprint is negligible while fallback rendering is expensive.
-	renderShaderShadows = false
 	#Client tick interval for shaft ambient-sound contributions.
 	#Create accumulates ambient sources over five ticks, so the default keeps every shaft represented while staggering their work.
 	# Default: 4
 	# Range: 1 ~ 5
 	audioIntervalTicks = 4
+	#Render shaft, encased shaft, and encased chain-drive shaft meshes in Iris shader shadow passes.
+	#Enabled by default. The renamed key applies this default to older configurations that omitted these shadows.
+	#Set this option to false if you prefer to omit shaft shadows.
+	renderInstanceShadows = true
 
 [crushingWheelParticles]
 	#Maximum crushing-wheel particles per client tick. Active item crushing emits groups of four.
 	# Default: 96
 	# Range: 0 ~ 4096
 	maxPerTick = 96
+	#Distance in blocks up to which nearPercent is used for crushing-wheel particles.
 	# Default: 16
 	# Range: 1 ~ 512
 	nearDistance = 16
+	#Distance in blocks up to which midPercent is used; farther particles use farPercent.
 	# Default: 32
 	# Range: 1 ~ 1024
 	midDistance = 32
+	#Percentage of crushing-wheel particle bursts retained within nearDistance.
 	# Default: 100
 	# Range: 0 ~ 100
 	nearPercent = 100
+	#Percentage of crushing-wheel particle bursts retained between the near and mid distances.
 	# Default: 50
 	# Range: 0 ~ 100
 	midPercent = 50
+	#Percentage of crushing-wheel particle bursts retained beyond midDistance.
 	# Default: 25
 	# Range: 0 ~ 100
 	farPercent = 25
 
 [chuteParticles]
+	#Maximum chute item particles spawned per client tick; nearer requests are kept first. Set to 0 to disable them.
 	# Default: 16
 	# Range: 0 ~ 4096
 	maxPerTick = 16
 
 [linkedOutlines]
+	#Minimum ticks between rebuilding the combined linked-outline vertex buffer after geometry changes.
 	# Default: 4
 	# Range: 1 ~ 20
 	rebuildIntervalTicks = 4
+	#Maximum uncached outline-box shapes prepared per rendered frame.
 	# Default: 16
 	# Range: 1 ~ 128
 	prewarmBoxesPerFrame = 16
+	#Maximum distinct outline-box geometries retained in the client cache.
 	# Default: 2048
 	# Range: 64 ~ 16384
 	maxCachedBoxes = 2048
@@ -181,15 +201,19 @@
 	#Use stable distance LOD for factory-panel filter item icons in the main pass.
 	#Nearby panels remain exact; distant panels are spatially sampled without temporal flicker.
 	mainLodEnabled = true
+	#Distance in blocks where stable medium-density filter-icon sampling starts.
 	# Default: 24
 	# Range: 1 ~ 512
 	midDistance = 24
+	#Distance in blocks where stable sparse filter-icon sampling starts.
 	# Default: 48
 	# Range: 1 ~ 1024
 	farDistance = 48
+	#Stable percentage of factory-panel filter icons retained from the mid-distance boundary.
 	# Default: 50
 	# Range: 0 ~ 100
 	midPercent = 50
+	#Stable percentage of factory-panel filter icons retained from the far-distance boundary.
 	# Default: 20
 	# Range: 0 ~ 100
 	farPercent = 20
@@ -268,29 +292,38 @@
 	bodyMainPersistentVboMaxUploadMillisPerFrame = 2.0
 
 [kineticAudio]
+	#Distance in blocks within which non-shaft kinetic machines contribute ambient audio every tick.
+	#Set to 0 to update them every tick at all distances.
 	# Default: 48
 	# Range: 0 ~ 512
 	maxDistance = 48
+	#Client tick interval for non-shaft kinetic ambient-audio contributions beyond maxDistance.
 	# Default: 4
 	# Range: 1 ~ 20
 	farIntervalTicks = 4
 
 [steamJetParticles]
+	#Maximum steam-jet particles spawned per client tick. Set to 0 to disable them.
 	# Default: 96
 	# Range: 0 ~ 4096
 	maxPerTick = 96
+	#Distance in blocks up to which nearPercent is used for steam-jet particles.
 	# Default: 16
 	# Range: 1 ~ 512
 	nearDistance = 16
+	#Distance in blocks up to which midPercent is used; farther particles use farPercent.
 	# Default: 32
 	# Range: 1 ~ 1024
 	midDistance = 32
+	#Percentage of steam-jet particles retained within nearDistance.
 	# Default: 80
 	# Range: 0 ~ 100
 	nearPercent = 80
+	#Percentage of steam-jet particles retained between the near and mid distances.
 	# Default: 50
 	# Range: 0 ~ 100
 	midPercent = 50
+	#Percentage of steam-jet particles retained beyond midDistance.
 	# Default: 25
 	# Range: 0 ~ 100
 	farPercent = 25
@@ -301,13 +334,16 @@
 
 [chainConveyorRender]
 	#Enable Chain Conveyor span culling, light caching, and far-distance geometry LOD.
+	#With Iris shaders, main-pass chain spans use Create's original renderer for compatibility.
 	enabled = true
 	#Keep the stock Chain Conveyor wheel geometry resident on the GPU and submit visible wheels as rigid instances.
 	#Requires Sodium, Iris, and an active shaderpack; unsupported states use the direct writer fallback.
 	persistentWheelVbo = true
 	#Use compatible bulk vertex writers for Chain Conveyor spans and as the stock wheel VBO fallback.
+	#Main-pass chain spans use Create's writer while Iris shaders are active.
 	directVertexWriter = true
 	#Render one double-sided face instead of two beyond Create's 48-block chain MIP distance.
+	#Ignored for main-pass chain spans while Iris shaders are active.
 	farSinglePlane = true
 	#Skip a chain span when its complete bounds are behind the main camera plane.
 	behindCameraCulling = true
@@ -352,3 +388,61 @@
 	# Default: 128
 	# Range: 0 ~ 1024
 	maxRenderDistance = 128
+
+[spout]
+	#Share persistent nozzle geometry and rigid-instance draws for stock spouts in main and shadow passes.
+	#Create's squeeze animation, fluid rendering, and complete nozzle shadows are retained.
+	#Requires Sodium, Iris, an active compatible shaderpack, and Flywheel's backend to be off.
+	persistentVboEnabled = true
+
+[drill]
+	#Instance the stock mechanical drill head instead of rewriting its vertices every frame.
+	#Rotation stays Create's exact kinetic angle. Contraption-mounted drills are unchanged.
+	#Requires Sodium, Iris, an active shaderpack, and Flywheel's backend to be off.
+	persistentVboEnabled = true
+	#Draw the rotating drill head into Iris shader shadow passes.
+	#Enabled by default to preserve the drill head's shadow; the chunk-baked body casts its own shadow.
+	renderShaderShadows = true
+
+[blockBreakSound]
+	#Optionally limit sounds from block-destroy events only. This may omit repeated break sounds.
+	enabled = false
+	#Maximum block-destroy event sounds played per client tick when enabled. Set to 0 to mute them.
+	# Default: 32
+	# Range: 0 ~ 256
+	maxPerTick = 32
+
+[blockBreakEffects]
+	#Limit vanilla block-destroy dust during mass breaking; custom block effects keep their original path.
+	#Off by default. Enabling this can reduce dust above the configured budgets.
+	enabled = false
+	#Maximum vanilla block-destroy dust bursts per client tick when enabled.
+	#Set to 0 to omit vanilla destroy dust; sounds and custom block effects are unaffected.
+	# Default: 4
+	# Range: 0 ~ 256
+	maxBurstsPerTick = 4
+	#Maximum vanilla destroy dust particles admitted per client tick when enabled.
+	#Counts actual particles, including shapes that generate more than a full cube's 64 particles.
+	# Default: 256
+	# Range: 0 ~ 4096
+	maxParticlesPerTick = 256
+	#Maximum tracked vanilla destroy dust particles alive at once when enabled.
+	#Death, queue eviction, resource reload and world changes release this budget.
+	# Default: 2048
+	# Range: 0 ~ 16384
+	maxLiveParticles = 2048
+	#Percentage of vanilla destroy dust bursts retained when enabled.
+	#Selection is stable for one second; 100 keeps all bursts that fit the budgets.
+	# Default: 100
+	# Range: 0 ~ 100
+	retainPercent = 100
+	#Optionally skip collision queries for tracked vanilla destroy dust when enabled.
+	#Off by default to preserve particle movement. Enabling this lets dust pass through blocks.
+	skipCollision = false
+
+[breakingTexture]
+	#Reuse decoded static quad vertices when rendering block-breaking cracks.
+	#Current face culling, tint, lighting, ModelData and destroy-stage UVs remain on the original renderer.
+	#Only plain static models and the standard decal consumer are supported; at most 512 quads are cached.
+	#Off by default until performance is measured in your modpack; unsupported models use the original path.
+	geometryCacheEnabled = false

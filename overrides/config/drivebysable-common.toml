@@ -2,9 +2,10 @@
 #Cables are refunded when a connection is removed.
 #Creative mode players are never charged.
 shouldConsumeCables = true
-#Whether the Cable itself can remove an existing connection.
+#Whether the Cable itself can remove an existing connection in survival.
 #When false, pointing a Cable at a connection it already made does nothing,
 #and the Cable Cutter becomes the only way to remove connections.
+#Creative mode players can always remove connections with the Cable.
 #The Cable Cutter is unaffected by this option.
 allowCableDisconnect = false
 
@@ -78,12 +79,64 @@ allowCableDisconnect = false
 	#Controllers already placed on lecterns are unaffected.
 	handheldTypewriterController = true
 
+	#Stress, range and placement rules for Radio-Kinetic Transceivers.
+	[extensions.radioKineticTransceiver]
+		#Whether the Radio-Kinetic Transceiver is available.
+		#A block that sends rotation and stress wirelessly to others of its kind, linked by Cable or frequency.
+		#Existing Radio-Kinetic Transceivers already placed in a world are unaffected.
+		enabled = true
+		#Stress, in SU per RPM, a Radio-Kinetic Transceiver costs it's power source.
+		#Calculated as transmitterStressPerRpm * Input RPM.
+		# Default: 2.0
+		# Range: 0.0 ~ 64.0
+		transmitterStressPerRpm = 2.0
+		#What each Receiver unit adds to the network cost.
+		#NONE: nothing. FLAT: receiverFlatCost, static cost regardless of RPM.
+		#PER_RPM: receiverStressPerRpm, cost directly scales with RPM.
+		#Allowed Values: NONE, FLAT, PER_RPM
+		receiverCost = "NONE"
+		#Stress, in SU, each driven Receiver unit adds while receiverCost is FLAT.
+		# Default: 64.0
+		# Range: 0.0 ~ 16384.0
+		receiverFlatCost = 64.0
+		#Stress, in SU per RPM, each Receiver unit adds while receiverCost is PER_RPM.
+		# Default: 1.5
+		# Range: 0.0 ~ 64.0
+		receiverStressPerRpm = 1.5
+		#The cost of a linked network is added up and paid by Transmitter units in the network.
+		#True: each pays in proportion to its speed, so a faster one pays more. False: split evenly.
+		splitCostBySpeed = true
+		#Whether there is a limit on the stress a network passes on.
+		#Calculated as transferStressPerRpm * Input RPM. More RPM = more output stress.
+		limitTransfer = false
+		#With limitTransfer on: stress, in SU, a network passes on for each RPM of the Transmitter
+		#units in network. Every Transmitter adds its limited output stress to the shared capacity.
+		# Default: 16.0
+		# Range: 0.0 ~ 1024.0
+		transferStressPerRpm = 16.0
+		#How far, in blocks, a Transmitter unit can reach Receivers for each RPM it turns at.
+		#Number directly translates to blocks per Input RPM. 0RPM = 0 blocks of connection range.
+		#A linked Transceiver outside that reach stays linked, but is not driven until it is back in
+		#reach or the driving side speeds up. Measured where each Transceiver appears in the world.
+		# Default: 1.5
+		# Range: 0.0 ~ 64.0
+		rangePerRpm = 1.5
+		#The most reach a Transmitter unit can ever have, in blocks.
+		#Also the furthest apart two Transceivers may be to stay linked at all.
+		#Applies on top of the general networkConstraints range limit.
+		# Default: 256
+		# Range: 0 ~ 2048
+		maxRange = 256
+		#Whether Radio-Kinetic Transceivers only link while they sit inside a sublevel.
+		#Applies to every Transceiver: one outside a sublevel neither links nor passes rotation on.
+		subLevelOnly = true
+
 #Limits for the /dbs commands.
 [commands]
 	#Largest radius, in blocks, the radius target of a /dbs command may use.
 	#Measured from the command's position to where each Source appears in the world.
-	# Default: 256
-	# Range: 1 ~ 4096
+	# Default: 1000
+	# Range: 1 ~ 10000
 	commandRadiusLimit = 256
 
 #Alternate recipes and textures for certain blocks.
@@ -97,3 +150,8 @@ allowCableDisconnect = false
 	#On a server, clients may need to enable the resourcepack individually.
 	#Recipes and textures are reloaded automatically when this changes.
 	andesiteHub = false
+	#Whether the connections shown in Setup Mode are drawn as hanging cables
+	#instead of straight lines. Covers a selected Source's connections and the
+	#links of a selected Transceiver. Purely visual, and read on the client,
+	#so each player can choose for themselves.
+	fancyCables = true

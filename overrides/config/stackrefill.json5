@@ -1,0 +1,16 @@
+{
+	// Whether the hand is refilled when the last item of a stack is placed, used, eaten or thrown. For example blocks, food, bone meal, eggs and potions.
+	"refillBlocksAndItems": true,
+	// Whether an item with durability is replaced by the same item from the inventory when it breaks or is thrown. For example tools, swords, fishing rods and tridents.
+	"refillToolsAndWeapons": true,
+	// Whether the main hand is refilled when its last item is dropped with the drop key.
+	"refillAfterDroppingLastItem": true,
+	// Whether buckets are refilled. When disabled, a bucket that is emptied or filled stays in the hand instead of being swapped for another bucket from the inventory.
+	"refillBuckets": true,
+	// Whether the other hotbar slots are searched as well. When disabled, only the main inventory is used to refill the hand.
+	"refillFromOtherHotbarSlots": false,
+	// A comma separated list of item ids that are never refilled. Use * as a wildcard. An id without a namespace matches items of every mod. For example 'minecraft:totem_of_undying,*shulker_box'.
+	"itemBlacklist": "",
+	// When not empty, only the items in this comma separated list are refilled. Same format as itemBlacklist, for example 'minecraft:*_planks,cobblestone'.
+	"itemWhitelist": ""
+}

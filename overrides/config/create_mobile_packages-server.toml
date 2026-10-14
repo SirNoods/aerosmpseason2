@@ -2,12 +2,12 @@
 #The Speed of a Robo Bee in Blocks per Second. Default: 6
 # Default: 6
 # Range: > 1
-beeSpeed = 6
+beeSpeed = 10
 #.
 #The Speed of the rotation of a Robo Bee in degrees per Second. Default: 45
 # Default: 45
 # Range: > 1
-beeRotationSpeed = 45
+beeRotationSpeed = 65
 #.
 #If true, the Robo Bee will be able to deliver packages from one port to another. Default: true
 portToPort = true

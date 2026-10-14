@@ -12,7 +12,7 @@
 	#DYNAMIC: scale adjusts itself to hold your fps cap or
 	#refresh rate.
 	#Allowed Values: OFF, QUALITY, BALANCED, PERFORMANCE, ULTRA_PERFORMANCE, DLAA, DYNAMIC
-	preset = "PERFORMANCE"
+	preset = "DLAA"
 	#Edge crispness added back after upscaling.
 	#Too high looks gritty.
 	# Default: 0.35
@@ -82,16 +82,17 @@
 	#gate closed, because every frame Spacewarp would have
 	#reprojected was rendered for real instead (GPU 9-25%
 	#-> 68-94% on the same scene).
-	#The gate exists because Spacewarp masks the
-	#first-person hand using the LIVE depth buffer, which
-	#vanilla leaves at 1.0 everywhere except the hand.
-	#Iris owns the framebuffers and does not preserve that,
-	#so the mask can come back empty - and an unmasked hand
-	#is warped like world geometry, which shears across the
-	#screen on every camera move. That risk is real, but it
-	#is cosmetic and confined to the hand; halving the frame
-	#rate of everyone running a pack is not. Turn this OFF
-	#if your hand smears when you strafe.
+	#Spacewarp must keep the first-person hand out of the
+	#warp, so it needs a mask of the hand's pixels. It gets
+	#one by drawing the hand again on its own; without a
+	#pack the depth buffer can also supply it. A pack owns
+	#the framebuffers and does not keep that depth, so under
+	#a pack only the redrawn hand or the pack's own hand
+	#depth counts, and a frame with no usable mask is
+	#rendered for real instead of warped. A mask can still
+	#miss part of an unusual held item, which then shears
+	#across the screen on camera moves. Turn this OFF if
+	#your hand smears when you strafe.
 	spacewarpUnderShaders = true
 	#On a reprojected frame, render the first-person
 	#hand for real instead of replaying it out of the
@@ -106,7 +107,7 @@
 	#real needs no mask at all, and as a side effect the
 	#hand animates at the full frame rate instead of the
 	#real-frame rate.
-	#ON by default, and under active repair. Aryan's
+	#Under active repair. Aryan's
 	#pixel probe on 2026-08-29 caught two separate
 	#defects in the first version of this - the heatmap
 	#showed exactly two rectangles changing frame to
@@ -233,6 +234,37 @@
 	#than itself. Strafe past a fence and a tree - if
 	#nothing turns red, the signal is broken.
 	confidenceHeatmap = false
+	#Spacewarp: render for real instead of
+	#reprojecting once a turn has swept more than this
+	#many pixels of NEW world in at the edge of the
+	#screen.
+	#Rotation reprojects perfectly everywhere the
+	#captured frame covered - but the strip arriving
+	#at the leading edge was never in that frame, so
+	#there is nothing to sample and the edge pixels
+	#get stretched into a horizontal streak. This is
+	#the turning equivalent of warpMaxStrafeBlocks.
+	#24 is about where the strip stops reading as
+	#softness and starts reading as a smear. Raise it
+	#for more warped frames and more streaking on fast
+	#flicks, lower it for fewer. 0 turns the gate off.
+	#In pixels, not degrees, because that is what you
+	#see: the same angle smears far wider at a narrow
+	#field of view, and wider again at a higher
+	#resolution.
+	# Default: 24.0
+	# Range: 0.0 ~ 512.0
+	warpMaxTurnPixels = 24.0
+	#Shadow cache: the longest an IDLE shadow map may be held,
+	#in milliseconds, for packs whose shadow pass animates with
+	#time (waving foliage, water caustics: frameTimeCounter or
+	#worldTime used in the shadow programs). Detected per pack
+	#after its options are applied. Other packs keep the long
+	#still-camera hold. 33 = the same cap as while moving;
+	#250 = the old behaviour (animated shadows step at ~4 Hz).
+	# Default: 33
+	# Range: 16 ~ 250
+	animatedShadowStaleMs = 33
 
 #Entity culling: stop drawing mobs that a wall is
 #already hiding.

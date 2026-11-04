@@ -4,6 +4,9 @@
 # release.
 # The release type comes from the tag: no suffix = release, -beta/-rc = beta,
 # -alpha = alpha. GitHub marks beta and alpha builds as pre-releases.
+# The changelog is built by .github/scripts/changelog.sh, which compares this
+# tag with the previous release (mods added/removed/updated, changed config
+# files, then commit notes).
 #
 # The repo root must hold a CurseForge pack export: manifest.json + overrides/.
 
@@ -53,6 +56,20 @@ jobs:
           fi
           jq -e '.manifestType == "minecraftModpack" and (.files | length) > 0' manifest.json > /dev/null
 
+      - name: Generate changelog from the previous release
+        id: changelog
+        run: |
+          # Runs before the version is stamped into manifest.json, so it
+          # compares the committed files exactly as tagged.
+          bash .github/scripts/changelog.sh "$GITHUB_REF_NAME" > changelog.md
+          cat changelog.md
+          {
+            echo "text<<CHANGELOG_EOF"
+            cat changelog.md
+            echo "CHANGELOG_EOF"
+          } >> "$GITHUB_OUTPUT"
+          rm changelog.md
+
       - name: Stamp version into the manifest
         run: |
           jq --arg v "$VERSION" '.version = $v' manifest.json > manifest.tmp
@@ -64,21 +81,6 @@ jobs:
           zip -r -X "$FILE" manifest.json overrides \
             $(ls -d modlist.html 2>/dev/null)
           echo "PACK_ZIP=$FILE" >> "$GITHUB_ENV"
-
-      - name: Generate changelog from commits
-        id: changelog
-        run: |
-          PREV=$(git describe --tags --abbrev=0 "${GITHUB_REF_NAME}^" 2>/dev/null || true)
-          if [ -n "$PREV" ]; then
-            LOG=$(git log --pretty=format:'- %s' "${PREV}..${GITHUB_REF_NAME}")
-          else
-            LOG=$(git log --pretty=format:'- %s' "${GITHUB_REF_NAME}")
-          fi
-          {
-            echo "text<<CHANGELOG_EOF"
-            echo "$LOG"
-            echo "CHANGELOG_EOF"
-          } >> "$GITHUB_OUTPUT"
 
       - name: Publish to CurseForge and GitHub
         uses: Kira-NT/mc-publish@v3

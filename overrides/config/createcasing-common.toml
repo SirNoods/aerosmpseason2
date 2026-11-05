@@ -666,6 +666,20 @@
 				weathered_iron_encased_cherry_cogwheel = 0.0
 				industrial_iron_encased_acacia_cogwheel = 0.0
 				creative_encased_jungle_cogwheel = 0.0
+				zinc_chain_conveyor = 1.0
+				zinc_encased_fan = 2.0
+				zinc_mechanical_drill = 4.0
+				zinc_gearbox = 0.0
+				zinc_gearshift = 0.0
+				zinc_adjustable_chain_gearshift = 0.0
+				zinc_clutch = 0.0
+				zinc_mechanical_saw = 4.0
+				zinc_press = 8.0
+				zinc_mixer = 4.0
+				zinc_encased_chain_drive = 0.0
+				zinc_deployer = 4.0
+				zinc_automatic_clutch = 0.0
+				zinc_configurable_gearbox = 0.0
 
 			#.
 			#[in Stress Units]

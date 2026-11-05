@@ -2,6 +2,6 @@
 #Allowed Values: PEACEFUL, EASY, NORMAL, HARD
 defaultDifficulty = "NORMAL"
 #Resource pack IDs to have enabled by default on the first run.
-defaultResourcePacks = ["vanilla", "fabric", "mod_resources", "moonlight:merged_pack", "file/Sounds x Create V1.4.zip", "file/EvilAirFixer.zip", "file/Create v6 SolidSails Soft.zip", "file/Create Style Interface 1.21 - v0.3.zip", "file/Create LootR Chest.zip", "file/CreateSophBackpacks.zip", "file/CreateSophiStorage.zip", "file/create-trash-cans-1.2.zip", "file/Create_Style_for_Refined_Storage.zip", "mod/simplylight:optional_fullblock_ctm"]
+defaultResourcePacks = ["vanilla", "fabric", "mod_resources", "moonlight:merged_pack", "file/EvilAirFixer.zip", "file/Create Style Interface 1.21 - v0.3.zip", "file/Create LootR Chest.zip", "file/CreateSophBackpacks.zip", "file/CreateSophiStorage.zip", "file/create-trash-cans-1.2.zip", "file/ccc.zip", "mod/simplylight:optional_fullblock_ctm", "file/JustExpressions_v1.2.1.zip", "file/Create FTB Quests 1.0.zip"]
 #Set to true if the difficulty for new world's should be locked to the specific default. This cannot be unlocked by players without external tools! Probably a bad idea. I don't recommend. Why am I adding this option?
 lockDifficulty = false

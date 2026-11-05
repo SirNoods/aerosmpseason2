@@ -1090,6 +1090,7 @@ integrated_villages:tavern_village/well/tavern_village_well2
 integrated_villages:tavern_village/well/tavern_village_well2_bottom
 integrated_villages:tavern_village/well/tavern_village_well_bottom
 ldlib2:empty
+let_it_walk:walker_arena
 minecraft:ancient_city/city/entrance/entrance_connector
 minecraft:ancient_city/city/entrance/entrance_path_1
 minecraft:ancient_city/city/entrance/entrance_path_2
@@ -2533,6 +2534,12 @@ sable:assemblytest.brittlebreak
 sable:physicstest.continuouscollision
 sable:physicstest.gravity
 sable:physicstest.snag
+simpleradio:gametest/system/all_routers
+simpleradio:gametest/system/closed_system
+simpleradio:gametest/system/open_system
+simpleradio:gametest/system/short_circuit
+simpleradio:gametest/system/transceiver_ground_to_ground
+simpleradio:gametest/system/wire_survival
 simulated:extrakineticstest.analogtransmission
 simulated:extrakineticstest.analogtransmissionreverse
 simulated:extrakineticstest.swivelbearing

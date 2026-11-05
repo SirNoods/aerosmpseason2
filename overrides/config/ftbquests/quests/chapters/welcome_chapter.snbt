@@ -1,15 +1,22 @@
 {
-	autofocus_id: "0000000000000000"
+	autofocus_id: "4DFE9760C24227B4"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "welcome_chapter"
 	group: ""
+	icon: {
+		components: {
+			"ftbquests:icon": "ftblibrary:icons/friends_group"
+		}
+		id: "ftbquests:custom_icon"
+	}
 	id: "5643BBCABC0964A5"
 	images: [ ]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				id: "simulated:physics_assembler"
 			}
@@ -26,20 +33,355 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
+			y: -1.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "create:wrench"
+			}
+			id: "120CEC6AAE6D027E"
+			tasks: [{
+				id: "7DDB28759891E116"
+				type: "checkmark"
+			}]
+			x: 2.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["6EEDD37CBB070FCE"]
+			entity_vis_size: 1.0f
 			icon: {
-				id: "aeronautics:andesite_propeller"
+				components: {
+					"ftbquests:icon": "ftblibrary:icons/camera"
+				}
+				id: "ftbquests:custom_icon"
 			}
-			id: "2B49C95AEE86C994"
+			id: "452BC2805C38CC42"
 			tasks: [{
-				id: "4D4834CDA54CB61C"
+				id: "43D6DD5062535BC0"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			ftbquestsentityvis_icon: {
+				cycle_seconds: 0.0f
+				enabled: 1b
+				entity: "minecraft:player"
+				idle_mode: "USE_GLOBAL"
+				offset_x: 0.0f
+				offset_y: 0.0f
+				rotation: 0.0f
+				silhouette_mode: "NONE"
+				size: 1.0f
+				skin: "charliedelta99"
+				slim_arms: 0b
+				spin_mode: "FORCE_OFF"
+				tag_cycle_mode: "USE_GLOBAL"
+				use_as_quest_icon: 0b
+				walk_mode: "FORCE_OFF"
+			}
+			icon_scale: 2.0d
+			id: "4DFE9760C24227B4"
+			size: 2.0d
+			tasks: [{
+				id: "155B2179995A8090"
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: 1.5d
+			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			ftbquestsentityvis_icon: {
+				cycle_seconds: 0.0f
+				enabled: 1b
+				entity: "minecraft:player"
+				idle_mode: "FORCE_ON"
+				offset_x: 0.0f
+				offset_y: 0.0f
+				rotation: 0.0f
+				silhouette_mode: "NONE"
+				size: 1.0f
+				skin: "goshva"
+				slim_arms: 0b
+				spin_mode: "FORCE_OFF"
+				tag_cycle_mode: "USE_GLOBAL"
+				use_as_quest_icon: 0b
+				walk_mode: "FORCE_OFF"
+			}
+			icon_scale: 2.0d
+			id: "15E153767508BF70"
+			size: 2.0d
+			tasks: [{
+				id: "7A1A73A2E5E16356"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			ftbquestsentityvis_icon: {
+				cycle_seconds: 0.0f
+				enabled: 1b
+				entity: "minecraft:player"
+				idle_mode: "USE_GLOBAL"
+				offset_x: 0.0f
+				offset_y: 0.0f
+				rotation: 0.0f
+				silhouette_mode: "NONE"
+				size: 1.0f
+				skin: "kindlebubbledump"
+				slim_arms: 0b
+				spin_mode: "FORCE_OFF"
+				tag_cycle_mode: "USE_GLOBAL"
+				use_as_quest_icon: 0b
+				walk_mode: "FORCE_OFF"
+			}
+			icon_scale: 2.0d
+			id: "3DE1FCB205F0C224"
+			size: 2.0d
+			tasks: [{
+				id: "76C77734D9E116EF"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			ftbquestsentityvis_icon: {
+				cycle_seconds: 0.0f
+				enabled: 1b
+				entity: "minecraft:player"
+				idle_mode: "USE_GLOBAL"
+				offset_x: 0.0f
+				offset_y: 0.0f
+				rotation: 0.0f
+				silhouette_mode: "NONE"
+				size: 1.0f
+				skin: "general_ross_"
+				slim_arms: 0b
+				spin_mode: "FORCE_OFF"
+				tag_cycle_mode: "USE_GLOBAL"
+				use_as_quest_icon: 0b
+				walk_mode: "FORCE_OFF"
+			}
+			icon_scale: 2.0d
+			id: "12DB29A84AC87B3C"
+			size: 2.0d
+			tasks: [{
+				id: "0D5E6D68A5BD5D39"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			ftbquestsentityvis_icon: {
+				cycle_seconds: 0.0f
+				enabled: 1b
+				entity: "minecraft:player"
+				idle_mode: "USE_GLOBAL"
+				offset_x: 0.0f
+				offset_y: 0.0f
+				rotation: 0.0f
+				silhouette_mode: "NONE"
+				size: 1.0f
+				skin: "fadingarw"
+				slim_arms: 0b
+				spin_mode: "FORCE_OFF"
+				tag_cycle_mode: "USE_GLOBAL"
+				use_as_quest_icon: 0b
+				walk_mode: "FORCE_OFF"
+			}
+			icon_scale: 2.0d
+			id: "346C8C872A018447"
+			size: 2.0d
+			tasks: [{
+				id: "2132552478EAA116"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			ftbquestsentityvis_icon: {
+				cycle_seconds: 0.0f
+				enabled: 1b
+				entity: "minecraft:player"
+				idle_mode: "USE_GLOBAL"
+				offset_x: 0.0f
+				offset_y: 0.0f
+				rotation: 0.0f
+				silhouette_mode: "NONE"
+				size: 1.0f
+				skin: "woodchuckyt"
+				slim_arms: 0b
+				spin_mode: "FORCE_OFF"
+				tag_cycle_mode: "USE_GLOBAL"
+				use_as_quest_icon: 0b
+				walk_mode: "FORCE_OFF"
+			}
+			icon_scale: 2.0d
+			id: "3E26F5BAB35268BD"
+			size: 2.0d
+			tasks: [{
+				id: "4F29C60DBEFC7C56"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			ftbquestsentityvis_icon: {
+				cycle_seconds: 0.0f
+				enabled: 1b
+				entity: "minecraft:player"
+				idle_mode: "USE_GLOBAL"
+				offset_x: 0.0f
+				offset_y: 0.0f
+				rotation: 0.0f
+				silhouette_mode: "NONE"
+				size: 1.0f
+				skin: "MadenPlay"
+				slim_arms: 0b
+				spin_mode: "FORCE_OFF"
+				tag_cycle_mode: "USE_GLOBAL"
+				use_as_quest_icon: 0b
+				walk_mode: "FORCE_OFF"
+			}
+			icon_scale: 2.0d
+			id: "0FDCDE221E6A1953"
+			size: 2.0d
+			tasks: [{
+				id: "0126445F0AB215B0"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			ftbquestsentityvis_icon: {
+				cycle_seconds: 0.0f
+				enabled: 1b
+				entity: "minecraft:player"
+				idle_mode: "USE_GLOBAL"
+				offset_x: 0.0f
+				offset_y: 0.0f
+				rotation: 0.0f
+				silhouette_mode: "NONE"
+				size: 1.0f
+				skin: "bigjim713"
+				slim_arms: 0b
+				spin_mode: "FORCE_OFF"
+				tag_cycle_mode: "USE_GLOBAL"
+				use_as_quest_icon: 0b
+				walk_mode: "FORCE_OFF"
+			}
+			icon_scale: 2.0d
+			id: "374E232563667426"
+			size: 2.0d
+			tasks: [{
+				id: "646B8285CB4F8FEA"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			ftbquestsentityvis_icon: {
+				cycle_seconds: 0.0f
+				enabled: 1b
+				entity: "minecraft:player"
+				idle_mode: "USE_GLOBAL"
+				offset_x: 0.0f
+				offset_y: 0.0f
+				rotation: 0.0f
+				silhouette_mode: "NONE"
+				size: 1.0f
+				skin: "fyemir"
+				slim_arms: 0b
+				spin_mode: "FORCE_OFF"
+				tag_cycle_mode: "USE_GLOBAL"
+				use_as_quest_icon: 0b
+				walk_mode: "FORCE_OFF"
+			}
+			icon_scale: 2.0d
+			id: "163C17249215FE25"
+			size: 2.0d
+			tasks: [{
+				id: "03E4A5D6B2F1473D"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			ftbquestsentityvis_icon: {
+				cycle_seconds: 0.0f
+				enabled: 1b
+				entity: "minecraft:player"
+				idle_mode: "USE_GLOBAL"
+				offset_x: 0.0f
+				offset_y: 0.0f
+				rotation: 0.0f
+				silhouette_mode: "NONE"
+				size: 1.0f
+				skin: "weido"
+				slim_arms: 0b
+				spin_mode: "FORCE_OFF"
+				tag_cycle_mode: "USE_GLOBAL"
+				use_as_quest_icon: 0b
+				walk_mode: "FORCE_OFF"
+			}
+			icon_scale: 2.0d
+			id: "2FF4D814115282EE"
+			size: 2.0d
+			tasks: [{
+				id: "597093D0F6A2E96B"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			ftbquestsentityvis_icon: {
+				cycle_seconds: 0.0f
+				enabled: 1b
+				entity: "minecraft:player"
+				idle_mode: "USE_GLOBAL"
+				offset_x: 0.0f
+				offset_y: 0.0f
+				rotation: 0.0f
+				silhouette_mode: "NONE"
+				size: 1.0f
+				skin: "GrayPans"
+				slim_arms: 0b
+				spin_mode: "FORCE_OFF"
+				tag_cycle_mode: "USE_GLOBAL"
+				use_as_quest_icon: 0b
+				walk_mode: "FORCE_OFF"
+			}
+			icon_scale: 2.0d
+			id: "397465465B1E8AA8"
+			size: 2.0d
+			tasks: [{
+				id: "289A89E4000A073D"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 4.0d
 		}
 	]
 }

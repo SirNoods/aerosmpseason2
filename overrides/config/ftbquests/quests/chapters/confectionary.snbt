@@ -5,10 +5,11 @@
 	group: "6398AB49C115030C"
 	id: "3E72C52E7F86053A"
 	images: [ ]
-	order_index: 9
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{
+			entity_vis_size: 1.0f
 			id: "33A0198E1D098A1D"
 			tasks: [{
 				id: "0D3095C6203EBB78"
@@ -19,6 +20,7 @@
 			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "1F24C2771922FF55"
 			tasks: [{
 				id: "09FA9A25BB71B401"
@@ -29,6 +31,7 @@
 			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "37AF6E4BA5B41118"
 			tasks: [{
 				id: "31D89151AD602201"
@@ -40,6 +43,7 @@
 		}
 		{
 			dependencies: ["37AF6E4BA5B41118"]
+			entity_vis_size: 1.0f
 			id: "5F1AD904545650BB"
 			rewards: [{
 				id: "0D49E32822B5E535"
@@ -56,6 +60,7 @@
 		}
 		{
 			dependencies: ["5F1AD904545650BB"]
+			entity_vis_size: 1.0f
 			id: "3E6032E2197B8FFB"
 			rewards: [{
 				id: "30DDF7B33555BE1D"
@@ -72,6 +77,7 @@
 		}
 		{
 			dependencies: ["3E6032E2197B8FFB"]
+			entity_vis_size: 1.0f
 			id: "1F8C7E4FF3FCF23B"
 			rewards: [{
 				id: "533DB647410995A0"
@@ -98,6 +104,7 @@
 		}
 		{
 			dependencies: ["3E6032E2197B8FFB"]
+			entity_vis_size: 1.0f
 			id: "6D2CF198E59DFED2"
 			rewards: [{
 				id: "7D93F23AEF469E73"
@@ -114,6 +121,7 @@
 		}
 		{
 			dependencies: ["3E6032E2197B8FFB"]
+			entity_vis_size: 1.0f
 			id: "5A9F2FCA5AAD59E3"
 			rewards: [{
 				id: "36C26FAF7254CD1C"
@@ -130,6 +138,7 @@
 		}
 		{
 			dependencies: ["33A0198E1D098A1D"]
+			entity_vis_size: 1.0f
 			id: "65718103B3198F72"
 			tasks: [{
 				id: "29E138DBEA9D73D4"
@@ -141,6 +150,7 @@
 		}
 		{
 			dependencies: ["65718103B3198F72"]
+			entity_vis_size: 1.0f
 			id: "468974B645B918E6"
 			tasks: [{
 				id: "7AA6EA9A47CE6796"
@@ -152,6 +162,7 @@
 		}
 		{
 			dependencies: ["65718103B3198F72"]
+			entity_vis_size: 1.0f
 			id: "68D3622D2174A5D6"
 			tasks: [{
 				id: "1D69D3C7BDC68882"
@@ -163,6 +174,7 @@
 		}
 		{
 			dependencies: ["65718103B3198F72"]
+			entity_vis_size: 1.0f
 			id: "297B5B1E519CFE9F"
 			tasks: [{
 				id: "5F2398C15B1B503B"
@@ -174,6 +186,7 @@
 		}
 		{
 			dependencies: ["65718103B3198F72"]
+			entity_vis_size: 1.0f
 			id: "7F66A0579F5F4EAC"
 			tasks: [{
 				id: "19CF982CC552924F"
@@ -185,6 +198,7 @@
 		}
 		{
 			dependencies: ["65718103B3198F72"]
+			entity_vis_size: 1.0f
 			id: "5748406984A15B8C"
 			tasks: [{
 				id: "39766B1840E18207"
@@ -196,6 +210,7 @@
 		}
 		{
 			dependencies: ["65718103B3198F72"]
+			entity_vis_size: 1.0f
 			id: "67D37AD7E1AF6401"
 			tasks: [{
 				id: "0D8F6F57AE723251"
@@ -207,6 +222,7 @@
 		}
 		{
 			dependencies: ["65718103B3198F72"]
+			entity_vis_size: 1.0f
 			id: "24FFEE0A7A189043"
 			tasks: [{
 				id: "6608676DED9416CA"
@@ -218,6 +234,7 @@
 		}
 		{
 			dependencies: ["1F24C2771922FF55"]
+			entity_vis_size: 1.0f
 			id: "3DE72F84DCADC792"
 			rewards: [{
 				id: "52CF3B14F2EB884C"
@@ -234,6 +251,7 @@
 		}
 		{
 			dependencies: ["3DE72F84DCADC792"]
+			entity_vis_size: 1.0f
 			id: "654E0628C79163BA"
 			rewards: [{
 				id: "4B2D1DA278899149"
@@ -250,6 +268,7 @@
 		}
 		{
 			dependencies: ["654E0628C79163BA"]
+			entity_vis_size: 1.0f
 			id: "75AD8C2F90F31169"
 			rewards: [{
 				id: "59753FB4CB9DCDB9"
@@ -266,6 +285,7 @@
 		}
 		{
 			dependencies: ["654E0628C79163BA"]
+			entity_vis_size: 1.0f
 			id: "34BAF4E6B4D5E930"
 			rewards: [{
 				id: "11EDB0E22707C61F"
@@ -282,6 +302,7 @@
 		}
 		{
 			dependencies: ["654E0628C79163BA"]
+			entity_vis_size: 1.0f
 			id: "121C7228A4938D5B"
 			rewards: [{
 				id: "77AEA80CAD61F5F7"
@@ -298,6 +319,7 @@
 		}
 		{
 			dependencies: ["654E0628C79163BA"]
+			entity_vis_size: 1.0f
 			id: "07E575A029AFD871"
 			rewards: [{
 				id: "0920CDB358F0BAB4"
@@ -314,6 +336,7 @@
 		}
 		{
 			dependencies: ["654E0628C79163BA"]
+			entity_vis_size: 1.0f
 			id: "46A3B64568429777"
 			rewards: [{
 				id: "5EE0F313F1963418"
@@ -329,6 +352,7 @@
 			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "412EBE6E314C1353"
 			rewards: [{
 				id: "56F7B812869A3314"
@@ -337,7 +361,7 @@
 			}]
 			tasks: [{
 				id: "7536B47E31C6F69F"
-				item: { components: { "ftbquests:missing_item": "camping:marshmallow" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_confectionery:marshmallow" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -345,6 +369,7 @@
 		}
 		{
 			dependencies: ["412EBE6E314C1353"]
+			entity_vis_size: 1.0f
 			id: "7CA49A542120F11E"
 			rewards: [{
 				id: "71E8DE88732AE30F"
@@ -361,6 +386,7 @@
 		}
 		{
 			dependencies: ["7CA49A542120F11E"]
+			entity_vis_size: 1.0f
 			id: "34709BA585795B3A"
 			rewards: [{
 				id: "73CB38A697BC5589"
@@ -377,6 +403,7 @@
 		}
 		{
 			dependencies: ["412EBE6E314C1353"]
+			entity_vis_size: 1.0f
 			id: "071A56C0192BB89D"
 			rewards: [{
 				id: "01A507E5BE92B45C"
@@ -393,6 +420,7 @@
 		}
 		{
 			dependencies: ["412EBE6E314C1353"]
+			entity_vis_size: 1.0f
 			id: "360B7B572FF83696"
 			rewards: [{
 				id: "7961FC531ACC0D29"
@@ -409,6 +437,7 @@
 		}
 		{
 			dependencies: ["412EBE6E314C1353"]
+			entity_vis_size: 1.0f
 			id: "0ADF2F355F1427C2"
 			rewards: [{
 				id: "5CA28BAA83A0D056"
@@ -425,6 +454,7 @@
 		}
 		{
 			dependencies: ["412EBE6E314C1353"]
+			entity_vis_size: 1.0f
 			id: "6E5A68D0A0D20661"
 			rewards: [{
 				id: "1CB98EE4DC03AB83"

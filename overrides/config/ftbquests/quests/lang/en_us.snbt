@@ -1,25 +1,35 @@
 {
+	chapter.0B412E60DD1B129A.title: "Deep Seas"
 	chapter.0E21FB2EFB41A583.title: "Minecolonies"
 	chapter.0F6CCDB4ABBAE4C6.title: "Connected"
 	chapter.16FB60006AEFF4EA.title: "awddaw"
 	chapter.1A29E39877A391C3.title: "Crafts and Additions"
+	chapter.1BA6B971BC80841B.title: "Gadgets n' Gizmos"
 	chapter.1FED0B2DC9E5C6AC.title: "Farmers Delight"
+	chapter.200BE8986FBE0BC3.title: "Synaxis"
 	chapter.2EDCB11C700F8BAE.title: "Enchantment Industry"
+	chapter.307B9EBAFB088450.title: "Flight Control"
 	chapter.31DE2AF4A3147EDF.title: "Handy Stuff!"
 	chapter.3E72C52E7F86053A.title: "Confectionary"
 	chapter.3F0013667E35E963.title: "Tetra"
 	chapter.41D954C3F57B4BF1.title: "Sophisticated"
+	chapter.45EAD17E4F77A62B.title: "Propulsion"
 	chapter.4ADD1419A62943A4.title: "Diesel Generators"
-	chapter.563CFCB2EA16C2A8.title: "AERONAUTICS"
+	chapter.4C10664E57B7A1DF.title: "Propulsion"
+	chapter.563CFCB2EA16C2A8.title: "Aeronautics"
 	chapter.5643BBCABC0964A5.title: "WELCOME"
 	chapter.58FD0DDD46EF0A83.title: "Create"
 	chapter.5FB589EA440C356B.title: "Immersive Armors"
 	chapter.612AE87D4BCDF0A6.title: "NEW AGE"
 	chapter.63FBDE11A8970B12.title: "Stuff and Additions"
+	chapter.650A1D3708AA6E61.title: "Aeroworks"
 	chapter.658AA64BA56F0E68.title: "Trading Floor"
+	chapter.6B4D03A2865E8784.title: "CC:Tweaked"
+	chapter.77B2D3017F9DB340.title: "BIG CANNONS"
 	chapter.78AA124AC9E370B1.title: "Mob Spawners"
+	chapter_group.51F71B4D9DE33E6B.title: "AERONAUTICS"
 	chapter_group.6398AB49C115030C.title: "CREATE"
-	image.4446604E2C0CB543.title: "Simulated"
+	image.431ACB304FDC550F.title: "Simulated"
 	quest.0000000080010000.quest_desc: ["Craft an **Acacia Cabinet** (or any wood type) for a dedicated food storage block on your farm or in your kitchen."]
 	quest.0000000080010000.title: "Food Storage"
 	quest.0000000080010003.quest_desc: ["Make a bowl meal like **Cabbage Rolls** or a **Beef Stew**. These full meals offer high saturation and are great for exploration."]
@@ -87,10 +97,6 @@
 	quest.0ABA0995CC4AB6CB.quest_desc: ["Use the **Filter Upgrade** to define exactly what items can go in (or out) of the backpack. The **Advanced** version increases the filter slots."]
 	quest.0ABA0995CC4AB6CB.quest_subtitle: "Input/Output Item Control"
 	quest.0ABA0995CC4AB6CB.title: "Filter Upgrades"
-	quest.0AC85C39CEEE118C.quest_desc: [
-		"Mine Blocks from far away!"
-		"(useful for mining on sky islands)"
-	]
 	quest.0B009391E3F76D6E.quest_desc: ["The **Fisherman Hut** provides a steady, hands-off source of fish. Place the hut over water and hire a Fisherman to keep your early food stocks filled."]
 	quest.0B009391E3F76D6E.title: "Fisherman Hut"
 	quest.0B12EBD18763F023.quest_desc: ["PONDER!"]
@@ -99,6 +105,7 @@
 	quest.0BE6236A78C6894D.title: "Compacting Upgrades"
 	quest.0C2B7732BCF7BC81.quest_desc: ["Obtain the **Quick Latch** component, which can be used on a **Tool Belt** or a **Bow**. Experience the convenience of this rapid-use ability!"]
 	quest.0C2B7732BCF7BC81.title: "Rapid Deployment Mechanism"
+	quest.0C89A5F227C52FA5.title: "Twin Auto Cannon"
 	quest.0D6E099A1A242153.quest_desc: [
 		"The **Town Hall** is the heart of your colony, defining the colony boundaries and housing the Colony Control block."
 		"Place the Town Hall block inside the deployment boundary you set with the **Supply Deployer**."
@@ -119,6 +126,8 @@
 	quest.0F409DACBEB7BBF8.title: "Option: Supply Chest Deployer"
 	quest.0F6777CAB70D17AE.quest_desc: ["The **Vein Finder** gives an initial direction to nearby veins. Try using poner on the Vein Atlas to see how it works"]
 	quest.0F6777CAB70D17AE.title: "Advanced Prospecting (Atlas)"
+	quest.0FDCDE221E6A1953.quest_desc: ["[ { \"text\": \"Subscribe to KindleBubbleDump\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.youtube.com/@kindlebubbledump?sub_confirmation=1\" } } ]"]
+	quest.0FDCDE221E6A1953.title: "MadenPlay"
 	quest.10BC36D23A81AF11.quest_desc: ["The **Limited Barrel** series sacrifices inventory slots for enormous stack capacity, ideal for bulk storage of single item types like stone, wood, or dirt."]
 	quest.10BC36D23A81AF11.quest_subtitle: "High density bulk storage."
 	quest.10BC36D23A81AF11.title: "Limited Barrels"
@@ -131,10 +140,14 @@
 	quest.1157A9548EB3044A.quest_desc: ["Highly Conductive Metal"]
 	quest.120152510AD4B59A.quest_desc: ["The **Build Goggles** allow you to see the outline of buildings *before* they are placed, helping you perfectly plan your colony layout."]
 	quest.120152510AD4B59A.title: "Utility: Build Goggles"
+	quest.120CEC6AAE6D027E.quest_desc: ["&4Disabling shaders&r (default key: K) and &4Voxy&r (in the video options menu) will help alot if youre struggling with framerate"]
+	quest.120CEC6AAE6D027E.title: "Performance issues?"
 	quest.125C1B72258B20FE.quest_subtitle: "The Electric motor generates kinetic energy from &cFE&r. The Alternator generates electricity from &9Rotational Force.&r"
 	quest.125C1B72258B20FE.title: "Craft &cElectric Motor and Alternator"
 	quest.128D971AEC6AC230.quest_desc: ["The **Ultimate Drill** is the pinnacle of the mod, capable of drilling any vein at maximum speed, regardless of its composition."]
 	quest.128D971AEC6AC230.title: "Pinnacle Excavation"
+	quest.12DB29A84AC87B3C.quest_desc: ["[ { \"text\": \"Subscribe to General Ross\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.youtube.com/@generalross?sub_confirmation=1\" } } ]"]
+	quest.12DB29A84AC87B3C.title: "General Ross"
 	quest.130E8FC7479E4271.quest_desc: ["The **Shepherd Hut** manages a herd of sheep for wool production. They require shears to operate."]
 	quest.130E8FC7479E4271.title: "Herder: Shepherd Hut"
 	quest.1312B33261493897.quest_desc: ["Better magnets means MORE &4FE POWER&r"]
@@ -147,8 +160,12 @@
 	quest.154A2371225585E9.quest_desc: ["You're gonna need some &4FE power&r and an &bEnergizer&r for this! "]
 	quest.15B51FB56A64C303.quest_desc: ["The **University** is the primary building for training citizens into specialized roles, enabling high-level jobs like the Scholar, which can boost research speed and citizen quality."]
 	quest.15B51FB56A64C303.title: "The University: Advanced Training"
+	quest.15E153767508BF70.quest_desc: ["[ { \"text\": \"Subbscribe to Goshva\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.youtube.com/@goshvayt?sub_confirmation=1\" } } ]"]
+	quest.15E153767508BF70.title: "Goshva"
 	quest.15F03A5E7E14C022.quest_desc: ["The **Stonemason Hut** specializes in cutting, shaping, and crafting stone blocks and complex stone decorations needed for higher-tier buildings and specific schematics."]
 	quest.15F03A5E7E14C022.title: "Advanced Stone: Stonemason"
+	quest.163C17249215FE25.quest_desc: ["[ { \"text\": \"Subscribe to FyeMir\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.youtube.com/@FyeMir?sub_confirmation=1\" } } ]"]
+	quest.163C17249215FE25.title: "FyeMir"
 	quest.167C5A3841D3B89F.quest_desc: [
 		"The **Soul Catcher** is used to capture a mob's soul."
 		"To work, the target mob must have an active **Weakness effect**, often applied with a throwable potion."
@@ -160,6 +177,7 @@
 	quest.172938CA9D2EF823.quest_desc: ["Vertical item vaults"]
 	quest.1762E8D84A5D523D.quest_desc: ["The **Pickup** upgrade absorbs nearby drops into the barrel's inventory. The **Magnet** upgrade attracts items from a wider radius. Use the **Advanced** variants for filtering and greater range."]
 	quest.1762E8D84A5D523D.title: "Pickup Upgrades"
+	quest.18160A3FFCD85FD5.title: "Rocket Pod"
 	quest.187073F9830ECE79.quest_desc: ["Connect this to one side of your &2Reactor Rod&r"]
 	quest.18922D8834A0CF95.quest_desc: ["Outputs a redstone signal baed on altitude. Also shows info about air pressure and altitude when wearing goggles"]
 	quest.190D10907EC19AC1.quest_desc: ["Fuel for your reactor"]
@@ -168,6 +186,7 @@
 	quest.19D03831EB5EED02.quest_desc: ["The **Blacksmith** is responsible for crafting all metal tools, weapons, and armor required by your citizens and military forces."]
 	quest.19D03831EB5EED02.title: "Production: Blacksmith Hut"
 	quest.1A17EFA6931E49CC.quest_desc: ["it only connects if the input is spinning in the right direction"]
+	quest.1AC6EABFAC904781.quest_desc: ["Paxels provide an eas way to break almost ANY block with one tool!"]
 	quest.1B48D15EF425C8C9.quest_desc: ["a small tire"]
 	quest.1BB571557F74D3A1.quest_desc: [
 		"MineColonies allows you to build a thriving player-run civilization. You recruit NPCs, assign them jobs, and manage all resources needed for growth."
@@ -228,11 +247,10 @@
 	quest.238BD8E064D2D4CB.quest_desc: ["The **Prismarine Armor** (Prismarine) is a heavy set that grants permanent Depth Strider for fast underwater movement. Its sharp texture causes spike damage to any mobs that attack you."]
 	quest.238BD8E064D2D4CB.title: "Tier 3: Aquatic Spikes"
 	quest.2421FAEB8BE21B1D.quest_desc: ["P O N D E R"]
+	quest.24BE895BC82E82C4.quest_desc: ["Handcrafted adds handy interior decorating blocks like tables, chairs and much more!"]
+	quest.24BE895BC82E82C4.title: "Handcrafted"
 	quest.25606F0A9C843721.quest_desc: ["Atempts to face upwards along only one axis"]
 	quest.25AFA8426F16F7DE.quest_desc: ["its a grappling hook!"]
-	quest.25D87D5522FD4861.quest_desc: ["Try mixing an apple with Purple dye"]
-	quest.25D87D5522FD4861.title: "Chorus Fruit?"
-	quest.265DEDBF34CB37AF.quest_desc: ["Like a Pikarang but on FIRE"]
 	quest.2694808D51042470.title: "Gold Backpack"
 	quest.26D2235E1F464F42.quest_desc: ["The **Inception Upgrade** is a unique, high-tier upgrade that allows you to put a backpack *inside* another backpack."]
 	quest.26D2235E1F464F42.quest_subtitle: "Backpacks within Backpacks."
@@ -250,12 +268,6 @@
 	quest.2A4D23849D9E75C0.quest_desc: ["Also holds liquids"]
 	quest.2B01B964638DFBD1.quest_desc: ["The **Crusher Hut** is a basic processing unit that breaks down stone, cobblestone, and other blocks into raw resources for the Builder to use."]
 	quest.2B01B964638DFBD1.title: "Production: Crusher Hut"
-	quest.2B49C95AEE86C994.quest_desc: [
-		"Check out the workshop to get some hands on experiance with some of the awesome new features of Areonautics. "
-		""
-		"That plane in the hangar isnt quite in working order, see if you can get it flying!"
-	]
-	quest.2B49C95AEE86C994.title: "Let's get flying!"
 	quest.2D43DDEE8D229F42.quest_desc: ["Add the full range of **Chipped** decoration workbenches directly to your static storage blocks for easy access while crafting."]
 	quest.2D43DDEE8D229F42.title: "Chipped Workbenches"
 	quest.2D821681720A5409.quest_desc: ["A bearing for creating propellers that produce thrust"]
@@ -268,6 +280,8 @@
 	quest.2F17C0820C336EB5.title: "Stack Upgrades (T1 to Omega)"
 	quest.2F41C6CFFB43E38F.quest_desc: ["RIGHT CLICK to move you SHIFT HOLD RIGHT CLICK to move IT"]
 	quest.2F5AD51B6A6C01A3.quest_desc: ["it breaks when overstressed "]
+	quest.2FF4D814115282EE.quest_desc: ["[ { \"text\": \"Subscribe to Weido\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.youtube.com/channel/UCy857Vj-nIxIHmeoGL6DAHQ?sub_confirmation=1\" } } ]"]
+	quest.2FF4D814115282EE.title: "Weido"
 	quest.30151FE4EE927AA4.quest_desc: ["OVERSTRESS your machine when powered by redstone"]
 	quest.308E1F5B53BFE9AB.quest_desc: ["Provides precise and adjustable rotational output"]
 	quest.30FED0F5BD258790.quest_desc: ["Obtain the **Planar Stabilizer** component, which can be applied to either a **Tool Belt** or a **Bow**. Apply it to experience its balancing effect!"]
@@ -290,8 +304,10 @@
 	quest.340F5320DB6749AC.quest_desc: ["a medium tire"]
 	quest.342A1EF584823D2C.quest_desc: ["The **Sawmill** and other workshops allow the Worker to craft items for the Builder. Ensure your Sawmill has the recipe for Torches to keep the colony safe at night."]
 	quest.342A1EF584823D2C.title: "Torch Production"
+	quest.346C8C872A018447.quest_desc: ["[ { \"text\": \"Subscribe to Fading Arrow\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.youtube.com/@fadingarrow?sub_confirmation=1\" } } ]"]
+	quest.346C8C872A018447.title: "Fading Arrow"
 	quest.34E39DE9EF4F080A.quest_desc: ["Engeneer's goggles for MAVRICS"]
-	quest.34E6DA713B6DF25F.quest_desc: ["Macaw's provides LOTS of diferent blocks for building"]
+	quest.34E6DA713B6DF25F.quest_desc: ["Mega torches make a \"Hostile Mob free\" zone in a large area"]
 	quest.34F3C116A5DDEA9D.quest_desc: ["Encased fans can produce thrust"]
 	quest.359C4CAEFE608840.quest_desc: [
 		"The only way to forge your tetra tool."
@@ -319,14 +335,19 @@
 	quest.3681C21A44EBD0C0.title: "Scroll of the Warforge"
 	quest.369CB78ACDDB0A88.quest_desc: ["Obtain a **Ham**! Ham is a valuable meat that can be cooked over a campfire or used in high-tier recipes. Try cooking the **Honey Glazed Ham Block**!"]
 	quest.369CB78ACDDB0A88.title: "A Tasty Cut"
+	quest.374E232563667426.quest_desc: ["[ { \"text\": \"Subscribe to Big Jim\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.youtube.com/@BigJim713?sub_confirmation=1\" } } ]"]
+	quest.374E232563667426.title: "Big Jim"
 	quest.37BE190EE466D697.quest_desc: ["Upgrading the **Town Hall to Level 5** is the final stage of the original Town Hall structure, granting maximum influence and unlocking all available base features."]
 	quest.37BE190EE466D697.title: "Town Hall Level 5 (MAX)"
 	quest.37E43341FA234E84.quest_desc: ["The **Florist Hut** focuses on growing and collecting flowers and tall grass, producing dyes and other decorative resources."]
 	quest.37E43341FA234E84.title: "Production: Florist Hut"
 	quest.3806D43A958A0751.quest_desc: ["Detects blocks that obstruct its laser pointer, can be filtered for specific blocks"]
+	quest.3895AD704107325F.title: "Heavy Auto Cannon"
 	quest.38E452884834812E.quest_desc: ["**Schematic Scrolls** grant special, unique abilities and modules for your **Tetra** tools."]
 	quest.38E452884834812E.title: "Craftsman's Blueprints"
 	quest.390F025F4B6316CA.quest_desc: ["Both Chipped and Rechiseled blocks can be automated with create or made in your backpack!"]
+	quest.397465465B1E8AA8.quest_desc: ["[ { \"text\": \"Subscribe To GrayPans\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://youtube.com/@graypans?si=WTZkCbMk9IT2x_WI?sub_confirmation=1\" } } ]"]
+	quest.397465465B1E8AA8.title: "GrayPans"
 	quest.3A6250944C41A0BF.quest_desc: ["The **Earthpiercer** component is for single-headed tools (like shovels). It allows the tool to mine a straight line of five stone blocks. Using a lightweight handle also allows the player to throw the tool for distance mining."]
 	quest.3A6250944C41A0BF.title: "Deep Earth Penetrator"
 	quest.3AE1C3290500638F.quest_desc: ["Your colony has grown to a population of **10** citizens! You will need to build more residences and ensure a steady food supply to keep growing."]
@@ -336,6 +357,10 @@
 	quest.3B91163DE3DA885C.quest_desc: ["The **Nether Worker Hut** is key for automating the collection of essential Nether-only resources like Netherrack and Quartz, allowing your colony to grow into the mid-game."]
 	quest.3B91163DE3DA885C.title: "Production: Nether Worker Hut"
 	quest.3DD65447EA2C0EEF.quest_desc: ["A steam powered burner for generating LOTS of hot air"]
+	quest.3DE1FCB205F0C224.quest_desc: ["[ { \"text\": \"Subscribe to KindleBubbleDump\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.youtube.com/@kindlebubbledump?sub_confirmation=1\" } } ]"]
+	quest.3DE1FCB205F0C224.title: "KindleBubbleDump"
+	quest.3E26F5BAB35268BD.quest_desc: ["[ { \"text\": \"Subscribe to Wood Chuck\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.youtube.com/@WoodChuckYT?sub_confirmation=1\" } } ]"]
+	quest.3E26F5BAB35268BD.title: "Wood Chuck"
 	quest.3E6032E2197B8FFB.quest_desc: ["requires HONEY! (Its worth it trust me)"]
 	quest.3F8DE97B1961FA95.quest_desc: ["Continuously upgrade your tool belt to unlock maximum utility and convenience. Follow the material progression: **Wool** $\\rightarrow$ **Leather** $\\rightarrow$ **Iron** $\\rightarrow$ **Shulker Shell**."]
 	quest.3F8DE97B1961FA95.title: "Ultimate Tool Rig"
@@ -361,6 +386,7 @@
 	quest.44CA9AD9FFFFC90B.quest_desc: ["Finding bimes can be handy even in the sky!"]
 	quest.44DBEF7E43052868.quest_desc: ["A propeller for generating thrust"]
 	quest.452652A47626C707.quest_desc: ["Moveable soul campfire"]
+	quest.452BC2805C38CC42.quest_desc: ["Want to use Flashback? Disable the Starter Structures mod in the mods menu of your launcher."]
 	quest.45B87D51EF224B8C.quest_desc: ["The **Sample Drill** is your initial prospecting tool. Place it on a block, power it with a backtank, and wait for a sample to be returned. This tells you what ore is in the ground."]
 	quest.45B87D51EF224B8C.title: "The Sample Drill"
 	quest.461E28CA38F4FF8F.quest_desc: ["Blackstone is tier 4 material for tetra"]
@@ -368,6 +394,7 @@
 	quest.468F6E0151E77E71.title: "A New Tool: The Empty Soul Catcher"
 	quest.46ABE925335C066C.quest_desc: ["**Chipped** upgrades add the full functionality of Chipped's decoration workbenches to your backpack. Essential for creative building on the go."]
 	quest.46ABE925335C066C.title: "Chipped Workbenches I"
+	quest.46E74B09FBE0D4A8.quest_desc: ["A mini display with 4 lines, sitiing in front of it adds the text to your HUD!"]
 	quest.48AC8545D66B71B7.quest_desc: ["Upgrading the **Builder's Hut** grants the Builder access to more complex schematics (larger buildings) and increases their maximum skill level."]
 	quest.48AC8545D66B71B7.title: "Builder Hut Upgrade"
 	quest.48BF028309BD0A36.quest_desc: ["Looking for a specific structure?"]
@@ -390,6 +417,7 @@
 	quest.4B8FC4B924A93366.title: "Reinforced Platework"
 	quest.4C476592AA64996B.quest_subtitle: "Charges electric items, and can also be used to inflict damage to &cPlayers&r and &cMobs&r.&r"
 	quest.4C476592AA64996B.title: "Craft &cTesla Coil"
+	quest.4C6346743A45D50A.title: "Auto Cannon"
 	quest.4CEA538689841610.quest_desc: ["Immersive Armors adds visually unique and functionally powerful armor sets, moving beyond simple material progression. Each set offers exclusive effects, such as Berserk mode, anti-knockback, fire resistance, or double jump."]
 	quest.4CEA538689841610.title: "Immersive Armors Introduction"
 	quest.4D34030504790509.quest_desc: ["a gearbox but parallel"]
@@ -403,6 +431,7 @@
 	quest.4DD7E2BD8508A117.title: "All Herders Established"
 	quest.4DF313A9F6B04C63.quest_desc: ["The **Wither Armor** is the ultimate endgame set. It offers unmatched stats, grants resistance to Wither effects, and most importantly: Skeletons will completely ignore you."]
 	quest.4DF313A9F6B04C63.title: "Tier 5: Wither Endgame Mastery"
+	quest.4DFE9760C24227B4.quest_desc: ["[ { \"text\": \"Subscribe to Charlie Delta\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.youtube.com/@imcharliedelta?sub_confirmation=1\" } } ]"]
 	quest.4DFFD56294AF6E0F.quest_desc: ["Name your simulated contraption in any color!"]
 	quest.4E5A011F861FCE5A.quest_desc: ["Outputs a redstone signal based on its speed. Shows precise information when wearing goggles"]
 	quest.4EAF4F9F7317CAE1.quest_desc: ["The **Pickup** upgrade absorbs nearby drops into the backpack. The **Magnet** draws items from a larger radius. Get the **Advanced** versions for increased range and filtered magnetizing!"]
@@ -422,6 +451,7 @@
 		"**Heavy Armor** (Iron/Toughness): Offers superior armor, high toughness, and dramatically reduced knockback, turning you into an unstoppable tank."
 	]
 	quest.506BD7AA9AB36E8F.title: "Tier 2: Combat and Tanking"
+	quest.50EB3988EF6E9710.quest_desc: ["Chipped blocks can be automated with a mechanical saw!"]
 	quest.52453550206EC770.quest_desc: ["The **Dyer Hut** automates the production of various dyes, which are necessary for cosmetic changes to buildings, uniforms, and specific recipes."]
 	quest.52453550206EC770.title: "Production: Dyer Hut"
 	quest.52B3B09AB5BA8C90.quest_desc: ["**Stack Downgrades** reduce the stack size limit in a slot. This is useful for regulating automation inputs or ensuring certain item types don't fill up a large storage slot."]
@@ -443,6 +473,7 @@
 	quest.5411D7D6AD053E66.title: "Crafting Upgrade"
 	quest.54A7C357AE0ADF65.title: "Diamond Backpack"
 	quest.54C81018CE13F6F1.quest_desc: ["Emits a laser when powered by redstone. dyeable, black is invisible"]
+	quest.54F19B1B03509CEE.title: "Cannon"
 	quest.55768951471D44D8.quest_desc: [
 		"**Wooden Armor** (Wood): Primitive, but offers great projectile and explosion resistance."
 		"**Bone Armor** (Bones): Lightweight, grants extra mobility and retaliates with spikes upon being hit."
@@ -474,10 +505,11 @@
 	quest.58A16F3668D53950.quest_desc: ["**Forged Bolts** are unique materials used in the workbench to fine-tune and customize your tool's statistics for precise performance."]
 	quest.58A16F3668D53950.title: "Precision Tool Tuning (Bolts)"
 	quest.58F80E1BD05B026F.quest_desc: [
-		"You can pick up mobs and chests!"
+		"You can go prone with (Default key: C) "
 		""
-		"SHIFT + right click with open hand"
+		"To get in those tight spaces around your machines!"
 	]
+	quest.58F80E1BD05B026F.title: "GO PRONE!!"
 	quest.593FC0DC7C3B85CC.quest_desc: ["The **Feeding Upgrade** can feed and optionally heal players in a radius around the storage block."]
 	quest.593FC0DC7C3B85CC.title: "Feeding Upgrades"
 	quest.5960CEAD282364D2.quest_desc: ["The **Smithing Upgrade** adds a portable smithing table. The **Alchemy Upgrade** adds a brewing stand, perfect for making potions on the go."]
@@ -582,11 +614,9 @@
 	quest.6EE28FF64778030F.title: "The Full Warchest"
 	quest.6EEA012FA11C7C08.quest_desc: ["You must first claim the land your colony will occupy. Craft and use the **Supply Deployer** to place a temporary supply chest and claim your territory. Be careful of mobs!"]
 	quest.6EEA012FA11C7C08.title: "Claim Your Territory"
-	quest.6EEDD37CBB070FCE.quest_desc: [
-		"Welcome to the beginning of your journey!"
-		"This pack mixes Create, Aeronautics and Minecolonies into one unified adventure."
-	]
+	quest.6EEDD37CBB070FCE.quest_desc: ["Welcome to the offical Modpack for the AERO SMP 2 on this page you will find all the creators apart of our SMP!"]
 	quest.6EEDD37CBB070FCE.title: "Welcome to Your Adventure"
+	quest.6EF2FEEA043BF642.title: "Advanced Cannon Tech"
 	quest.6F26C02744F415BE.quest_desc: ["Collect all of the **Tools of War Scrolls** from various chests to complete your collection of Warforge schematics!"]
 	quest.6F26C02744F415BE.title: "The Full Warchest"
 	quest.6F4069D2C20C472A.quest_desc: ["DRONE INNIT!"]
@@ -598,6 +628,7 @@
 	quest.7078F6E8A179D88F.quest_desc: ["A redstone link that adds wireless redstone to buttons and levers without using extra space!"]
 	quest.70DC1CF6F284E511.quest_desc: ["runs a redstone sequence when powered"]
 	quest.714D87B91E1B61C6.quest_desc: ["Obtain Magnitite by mining"]
+	quest.71BEC6A36D0AF99B.quest_desc: ["A sword thats also a WRENCH!?"]
 	quest.71CAD1D9089778BC.quest_desc: ["Crafting **Rope** is a versatile recipe, useful for decorating, building, or moving items vertically. Also craft a **Straw Bale** for storage/decoration."]
 	quest.71CAD1D9089778BC.title: "Farmstead Ropework"
 	quest.71D7D48518966ACD.quest_desc: [
@@ -666,6 +697,7 @@
 	quest.7B43A14AECC5C405.title: "The Stone Carver Blade"
 	quest.7B5E2CD676A1A1C4.quest_desc: ["The **Baker Hut** is an early food processor that turns wheat into bread, a good staple food source for your growing population."]
 	quest.7B5E2CD676A1A1C4.title: "Production: Baker Hut"
+	quest.7B6773DDD14D909B.quest_desc: ["Put physics objects in your pocket! "]
 	quest.7BB7CCADADDD0BA8.quest_desc: [
 		"Update your hammer to tier 3"
 		"(You need to build two hammer to upgrade each other)"
@@ -685,27 +717,36 @@
 	quest.7EB349B912AB9E1E.title: "Piglins' Golden Insight (Hone)"
 	quest.7EDFBC8BAEC5E525.quest_desc: ["used to make cylinders of all types"]
 	task.000000008002000A.title: "Any #createoreexcavation:drills"
+	task.0126445F0AB215B0.title: "I SUBSCRIBED"
+	task.03E4A5D6B2F1473D.title: "I SUBSCRIBED"
 	task.076C0E7460402699.title: "CARRY ON"
 	task.07F8ED5B57C50B69.title: "SO MANY BLOCKS"
 	task.0D31FB2D2AF9C5F2.title: "Place the Town Hall Block"
+	task.0D5E6D68A5BD5D39.title: "I SUBSCRIBED"
 	task.0E7DB74C94F180D0.title: "Iron Hammer"
 	task.136FF1798ACD8180.title: "Begin the Armor Journey"
+	task.155B2179995A8090.title: "Charlie Delta"
 	task.1B7CC401CF79C3A3.title: "Modify a shield in tetra workbench"
 	task.1E7DC27EBA6D7E1E.title: "Master of All Armors"
 	task.1FA87064D782FD96.title: "Collect All Scrolls for Tool Efficiency"
+	task.2132552478EAA116.title: "I SUBSCRIBED"
 	task.21F0B07A70AF6AE7.title: "Welcome to Your Adventure"
+	task.289A89E4000A073D.title: "I SUBSCRIBED"
 	task.2B4DAB606F0EDCD8.title: "Collect All Scrolls for Material Expertise"
 	task.30D119CEC3132EA9.title: "Stone Hammer"
 	task.314FD37C28AAF053.title: "Auto Enchanting Line"
 	task.382E8129CA13F3A4.title: "Read up on the basics"
 	task.3ADDD08026CF484A.title: "text"
-	task.4D4834CDA54CB61C.title: "CHECK THE BOOK"
+	task.43D6DD5062535BC0.title: "FLASHBACK"
+	task.4F29C60DBEFC7C56.title: "I SUBSCRIBED"
 	task.4FE4B1390240DF79.title: "Modify a bow in tetra workbench"
 	task.505BE84D82585AE3.title: "Modify a pickaxe in tetra workbench"
 	task.50B639F40E40EF4F.title: "Blackstone Hammer"
+	task.597093D0F6A2E96B.title: "I SUBSCRIBED"
 	task.5A49554B3AFBC850.title: "Simulated"
 	task.63240FE48620A116.title: "Spouting XP back into bottles"
 	task.641289A433E29693.title: "Find any Tools of War scroll"
+	task.646B8285CB4F8FEA.title: "I SUBSCRIBED"
 	task.69C59B97E310195D.title: "Claim Colony Territory"
 	task.6BBA8DFD43D74A81.title: "Find any scroll"
 	task.6D6C7C593AD40A98.title: "Make WorkBench"
@@ -713,6 +754,9 @@
 	task.70D7C92461D36B5E.title: "Spawn a mob using the Mechanical Spawner"
 	task.71F5A6C3DE6C00C3.title: "Dispencing XP"
 	task.75DA541E52369015.title: "Modify a sword in tetra workbench"
+	task.76C77734D9E116EF.title: "I SUBSCRIBED"
 	task.7732B5DC114EB3F3.title: "Hyper Enchanting"
+	task.7A1A73A2E5E16356.title: "I SUBSCRIBED"
 	task.7BE92C777F0CDFCE.title: "Read the Introduction"
+	task.7DDB28759891E116.title: "Preformance issues?"
 }

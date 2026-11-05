@@ -11,8 +11,8 @@ toggle = false
 key_bindings = []
 
 [voice]
-disabled = false
-microphone_disabled = false
+disabled = true
+microphone_disabled = true
 activation_threshold = -30.0
 input_device = ""
 output_device = "OpenAL Soft on Voicemeeter AUX Input (VB-Audio Voicemeeter VAIO)"

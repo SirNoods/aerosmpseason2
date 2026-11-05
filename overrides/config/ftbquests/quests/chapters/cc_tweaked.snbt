@@ -1,0 +1,458 @@
+{
+	autofocus_id: "692EFEA96AFE5EDD"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "cc_tweaked"
+	group: ""
+	icon: {
+		id: "computercraft:computer_advanced"
+	}
+	id: "6B4D03A2865E8784"
+	images: [
+		{
+			height: 0.81d
+			id: "36DE955F2447A2CE"
+			image: "kubejs:textures/gui/quests/cc_header.png"
+			rotation: 0.0d
+			width: 5.535d
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			height: 0.444d
+			id: "3DABAB9BD9C91FE8"
+			image: "kubejs:textures/gui/quests/cc_peripherals.png"
+			rotation: 0.0d
+			width: 3.037d
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			height: 0.444d
+			id: "4900AE32970FDE37"
+			image: "kubejs:textures/gui/quests/cc_mobile.png"
+			rotation: 0.0d
+			width: 2.049d
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			click_action: "none:"
+			height: 4.0d
+			id: "742FC7C4B1AA109A"
+			image: "kubejs:textures/gui/quests/cc_turtle_joke.png"
+			rotation: 0.0d
+			width: 7.1d
+			x: 3.5d
+			y: 4.0d
+		}
+	]
+	order_index: 5
+	quest_links: [{
+		id: "6476B96EC7EEC502"
+		linked_quest: "2407137107780255"
+		shape: "gear"
+		size: 2.0d
+		x: 9.5d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			id: "692EFEA96AFE5EDD"
+			rewards: [{
+				id: "54B9174126B5199E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "642C0043BB8F907E"
+				item: { count: 1, id: "computercraft:computer_normal" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["692EFEA96AFE5EDD"]
+			entity_vis_size: 1.0f
+			id: "627C5E84C6CAF04C"
+			rewards: [{
+				id: "45C29045091071CB"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "37490AFFE0C7CD97"
+				item: { count: 1, id: "computercraft:computer_advanced" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["692EFEA96AFE5EDD"]
+			entity_vis_size: 1.0f
+			id: "1787C8795709E405"
+			rewards: [{
+				count: 8
+				id: "27F1C700586510C8"
+				item: {
+					count: 1
+					id: "computercraft:monitor_normal"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1671DD16A46471A6"
+				item: { count: 1, id: "computercraft:monitor_normal" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1787C8795709E405"]
+			entity_vis_size: 1.0f
+			id: "276A40461F53EB8C"
+			rewards: [{
+				count: 4
+				id: "171778D33A136979"
+				item: {
+					count: 1
+					id: "computercraft:monitor_advanced"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3BAC022F20B51520"
+				item: { count: 1, id: "computercraft:monitor_advanced" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["692EFEA96AFE5EDD"]
+			entity_vis_size: 1.0f
+			id: "36D4F07B409EBBBB"
+			rewards: [{
+				id: "3E27B60FCA21E89A"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "30BD7F031E83B92F"
+				item: { count: 1, id: "computercraft:disk_drive" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -0.75d
+		}
+		{
+			dependencies: ["36D4F07B409EBBBB"]
+			entity_vis_size: 1.0f
+			id: "69BD7580E3D69361"
+			rewards: [{
+				id: "47A308A6B7410BD9"
+				type: "xp"
+				xp: 25
+			}]
+			tags: ["disks"]
+			tasks: [{
+				icon: {
+					components: {
+						"minecraft:dyed_color": {
+							rgb: 15790320
+							show_in_tooltip: 0b
+						}
+					}
+					id: "computercraft:disk"
+				}
+				id: "2E88990F6824CAF8"
+				item: { components: { "minecraft:dyed_color": { rgb: 15790320, show_in_tooltip: 0b } }, count: 1, id: "computercraft:disk" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["692EFEA96AFE5EDD"]
+			entity_vis_size: 1.0f
+			id: "11D9164052D36AB6"
+			rewards: [
+				{
+					count: 16
+					id: "56648AB6561CB9E0"
+					item: {
+						count: 1
+						id: "minecraft:paper"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "38C1EB1C89241E06"
+					item: {
+						count: 1
+						id: "minecraft:ink_sac"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "57D7FA1BDC6457D7"
+				item: { count: 1, id: "computercraft:printer" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.75d
+		}
+		{
+			dependencies: ["11D9164052D36AB6"]
+			entity_vis_size: 1.0f
+			id: "365BD592906C5067"
+			rewards: [
+				{
+					count: 4
+					id: "70AF1D3F70DDC185"
+					item: {
+						count: 1
+						id: "minecraft:string"
+					}
+					type: "item"
+				}
+				{
+					id: "208BD9A18970DAB4"
+					item: {
+						count: 1
+						id: "minecraft:leather"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6865F4AFAD762128"
+				item: { count: 1, id: "computercraft:printed_page" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.75d
+		}
+		{
+			dependencies: ["692EFEA96AFE5EDD"]
+			entity_vis_size: 1.0f
+			id: "742C8CA158220BAC"
+			rewards: [{
+				id: "5CE15055C628479B"
+				type: "xp"
+				xp: 25
+			}]
+			tasks: [{
+				id: "169B40D0609801EE"
+				item: { count: 1, id: "computercraft:speaker" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["692EFEA96AFE5EDD"]
+			entity_vis_size: 1.0f
+			id: "4C289819587E8F7E"
+			rewards: [{
+				count: 8
+				id: "3FFFD1337E19579E"
+				item: {
+					count: 1
+					id: "computercraft:cable"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D9AF9890EC16136"
+				item: { count: 1, id: "computercraft:wired_modem" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["692EFEA96AFE5EDD"]
+			entity_vis_size: 1.0f
+			id: "258B204A6F02824F"
+			rewards: [{
+				id: "676D33F71B441234"
+				item: {
+					count: 1
+					id: "minecraft:ender_pearl"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "524FF42BD32F9709"
+				item: { count: 1, id: "computercraft:wireless_modem_normal" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["258B204A6F02824F"]
+			entity_vis_size: 1.0f
+			id: "14743B2DDB0BF2A2"
+			rewards: [{
+				id: "33FBD3D9E5B8288B"
+				item: {
+					count: 1
+					id: "minecraft:ender_eye"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1023F0CD2E349520"
+				item: { count: 1, id: "computercraft:wireless_modem_advanced" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["692EFEA96AFE5EDD"]
+			entity_vis_size: 1.0f
+			id: "673BE51E6295C77C"
+			rewards: [{
+				id: "6A9F235EFAB04C3F"
+				item: {
+					count: 1
+					id: "minecraft:golden_apple"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1156635DD9E2C42F"
+				item: { count: 1, id: "computercraft:pocket_computer_normal" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["673BE51E6295C77C"]
+			entity_vis_size: 1.0f
+			id: "292A38FF5BC51A9B"
+			rewards: [{
+				count: 4
+				id: "3EB597FCD6C6B906"
+				item: {
+					count: 1
+					id: "minecraft:gold_ingot"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A44B8E2E2829DFD"
+				item: { count: 1, id: "computercraft:pocket_computer_advanced" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["692EFEA96AFE5EDD"]
+			entity_vis_size: 1.0f
+			id: "71059D3FC1F79035"
+			rewards: [{
+				count: 16
+				id: "5B50894F50C84805"
+				item: {
+					count: 1
+					id: "minecraft:coal"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6A7977642BA01887"
+				item: { count: 1, id: "computercraft:turtle_normal" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["71059D3FC1F79035"]
+			entity_vis_size: 1.0f
+			id: "55A72A6A8BE046B0"
+			rewards: [{
+				id: "3009D0836F40EE90"
+				item: {
+					count: 1
+					id: "minecraft:gold_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6CE59BCDE73351DB"
+				item: { count: 1, id: "computercraft:turtle_advanced" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["742C8CA158220BAC"]
+			entity_vis_size: 1.0f
+			id: "20B5F8989EE72B44"
+			rewards: [{
+				id: "19796CDA9D84CCAE"
+				item: {
+					components: {
+						"minecraft:custom_name": "\"Noise complaint from the neighbours\""
+					}
+					count: 1
+					id: "minecraft:paper"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6C76D33FFB11B04E"
+					item: { count: 1, id: "computercraft:speaker" }
+					type: "item"
+				}
+				{
+					id: "4E2B422A544807EB"
+					item: { count: 1, id: "computercraft:computer_normal" }
+					type: "item"
+				}
+				{
+					id: "400C4B59B0FEA977"
+					item: { count: 1, id: "simulated:laser_pointer" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 3.25d
+		}
+		{
+			dependencies: ["627C5E84C6CAF04C"]
+			entity_vis_size: 1.0f
+			id: "12C585C5D5F8B7AC"
+			rewards: [{
+				id: "25D85B34845A271C"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "3A91CF92C181F321"
+				type: "checkmark"
+			}]
+			x: 6.75d
+			y: 0.0d
+		}
+	]
+}

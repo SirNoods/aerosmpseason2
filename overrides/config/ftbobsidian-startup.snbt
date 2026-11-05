@@ -4,6 +4,10 @@
 		# Default: []
 		force_loaded: [ ]
 		
+		# List of force loaded resource packs to use that are forced to be at the top of the load order. The resource pack must exist in the resourcepacks folder for it to be automatically enabled and placed at the top of the load order.
+		# Default: []
+		force_loaded_top: [ ]
+		
 		# List of resource packs that are forced to be compatible with the current Minecraft version even if they would normally be marked as incompatible.
 		# Default: []
 		forced_compatible: [ ]

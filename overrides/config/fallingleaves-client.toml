@@ -31,6 +31,8 @@
 	# Default: 10
 	# Range: 1 ~ 1000
 	decayingLeaves = 10
+	#Whether the leaves particles should disappear when touching the ground
+	particlesDisappearOnGroundContact = false
 
 [wind]
 	#Disable wind effects

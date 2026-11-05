@@ -1,0 +1,427 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "aeroworks"
+	group: "51F71B4D9DE33E6B"
+	icon: {
+		id: "aeroworks:gyroscope"
+	}
+	id: "650A1D3708AA6E61"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			id: "393BC75B8D3CAA97"
+			rewards: [{
+				id: "7310072DF6DA0092"
+				item: {
+					count: 1
+					id: "simulated:gyroscopic_mechanism"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7EBEA5B9919F1A88"
+				item: { count: 1, id: "aeroworks:gyroscope" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1F7F452D7E37E245"
+			rewards: [{
+				id: "31612184D5193BCF"
+				item: {
+					count: 1
+					id: "create:precision_mechanism"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "76D9B29C774BD709"
+				item: { count: 1, id: "aeroworks:joystick" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "66AA2CD3631A284B"
+			rewards: [{
+				id: "3E40361D3C4502E6"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [
+				{
+					id: "4336BAA5DDA7B75B"
+					item: { count: 1, id: "aeroworks:control_desk" }
+					type: "item"
+				}
+				{
+					id: "5CF1D568E4DB0DA1"
+					item: { count: 1, id: "aeroworks:copycat_control_desk" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "245B54F5EE87C055"
+			rewards: [{
+				id: "20E33D72EBF21583"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [
+				{
+					id: "03BF3DF3727D04DA"
+					item: { count: 1, id: "aeroworks:control_stand" }
+					type: "item"
+				}
+				{
+					id: "10E897397B208B1E"
+					item: { count: 1, id: "aeroworks:copycat_control_stand" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "43EA75015FEC1CEF"
+			rewards: [{
+				id: "57779545717ABD84"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [
+				{
+					id: "605C9403C43E4960"
+					item: { count: 1, id: "aeroworks:lever_module" }
+					type: "item"
+				}
+				{
+					id: "23410F0E5A86A47F"
+					item: { count: 1, id: "aeroworks:copper_lever_module" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1ECA2880CAED1B77"
+			rewards: [{
+				id: "7247CE9C9ED09A66"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [
+				{
+					id: "08D1565C2338D659"
+					item: { count: 1, id: "aeroworks:button_panel_module" }
+					type: "item"
+				}
+				{
+					id: "40E1D6D499D7DB22"
+					item: { count: 1, id: "aeroworks:copper_button_panel_module" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1BEEE9421247DAED"
+			rewards: [{
+				id: "212C9CC0E364C592"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [
+				{
+					id: "78A3717E20D983BF"
+					item: { count: 1, id: "aeroworks:button_keypad_module" }
+					type: "item"
+				}
+				{
+					id: "61B44DB03D1CB310"
+					item: { count: 1, id: "aeroworks:copper_button_keypad_module" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7B766CA9D3F84CC6"
+			rewards: [{
+				id: "247721D183FCDC4C"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [
+				{
+					id: "07F3ED6C4813FCB8"
+					item: { count: 1, id: "aeroworks:joystick_module" }
+					type: "item"
+				}
+				{
+					id: "543E6E321D111199"
+					item: { count: 1, id: "aeroworks:copper_joystick_module" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6A43EFF40D4950E5"
+			rewards: [{
+				id: "7FC44BAA18E6391B"
+				item: {
+					count: 1
+					id: "minecraft:netherite_block"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "629C29C0794B2DFF"
+					item: { count: 1, id: "aeroworks:wheel_module" }
+					type: "item"
+				}
+				{
+					id: "59582E56E55057D8"
+					item: { count: 1, id: "aeroworks:copper_wheel_module" }
+					type: "item"
+				}
+				{
+					id: "2652DAB753BFE9C5"
+					item: { count: 1, id: "aeroworks:white_wheel_module" }
+					type: "item"
+				}
+				{
+					id: "5A5E1DCA541CC98C"
+					item: { count: 1, id: "aeroworks:orange_wheel_module" }
+					type: "item"
+				}
+				{
+					id: "300BB2B516C90F8A"
+					item: { count: 1, id: "aeroworks:magenta_wheel_module" }
+					type: "item"
+				}
+				{
+					id: "05BF5AB9D999721F"
+					item: { count: 1, id: "aeroworks:light_blue_wheel_module" }
+					type: "item"
+				}
+				{
+					id: "36E0B13111D5674E"
+					item: { count: 1, id: "aeroworks:yellow_wheel_module" }
+					type: "item"
+				}
+				{
+					id: "665BC8F200B73AF8"
+					item: { count: 1, id: "aeroworks:lime_wheel_module" }
+					type: "item"
+				}
+				{
+					id: "380748EEAAC6C9E8"
+					item: { count: 1, id: "aeroworks:pink_wheel_module" }
+					type: "item"
+				}
+				{
+					id: "6700C82C34C68466"
+					item: { count: 1, id: "aeroworks:gray_wheel_module" }
+					type: "item"
+				}
+				{
+					id: "1FAD8D754552174D"
+					item: { count: 1, id: "aeroworks:light_gray_wheel_module" }
+					type: "item"
+				}
+				{
+					id: "43FB59B19F123A85"
+					item: { count: 1, id: "aeroworks:cyan_wheel_module" }
+					type: "item"
+				}
+				{
+					id: "445746231C579140"
+					item: { count: 1, id: "aeroworks:purple_wheel_module" }
+					type: "item"
+				}
+				{
+					id: "748A4B2E33763FED"
+					item: { count: 1, id: "aeroworks:blue_wheel_module" }
+					type: "item"
+				}
+				{
+					id: "7FEEDB76CB4A3EA8"
+					item: { count: 1, id: "aeroworks:brown_wheel_module" }
+					type: "item"
+				}
+				{
+					id: "1CE98C74E3C0DA3A"
+					item: { count: 1, id: "aeroworks:green_wheel_module" }
+					type: "item"
+				}
+				{
+					id: "11825065B0C81080"
+					item: { count: 1, id: "aeroworks:red_wheel_module" }
+					type: "item"
+				}
+				{
+					id: "5EBFC08F23CFE9A2"
+					item: { count: 1, id: "aeroworks:black_wheel_module" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6B7DDE666F685522"
+			rewards: [{
+				id: "2A59AA68EB822FC5"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [
+				{
+					id: "6ED926BE91B0A6F6"
+					item: { count: 1, id: "aeroworks:button_module" }
+					type: "item"
+				}
+				{
+					id: "4D77D07F6028731A"
+					item: { count: 1, id: "aeroworks:copper_button_module" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0282FF13F00FC6A3"
+			rewards: [{
+				id: "1C95C3C7232FB798"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [
+				{
+					id: "06D4E0A88C9C8887"
+					item: { count: 1, id: "aeroworks:throttle_quadrant_module" }
+					type: "item"
+				}
+				{
+					id: "4CC982D15AFCB906"
+					item: { count: 1, id: "aeroworks:copper_throttle_quadrant_module" }
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5D3128D9042521BF"
+			rewards: [{
+				id: "1272E88659B1389E"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [
+				{
+					id: "432F26E8647BA8D1"
+					item: { count: 1, id: "aeroworks:yoke_module" }
+					type: "item"
+				}
+				{
+					id: "09427C5668969E14"
+					item: { count: 1, id: "aeroworks:copper_yoke_module" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "29BE2F3C38874313"
+			rewards: [{
+				id: "7A706DB6C8238768"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [
+				{
+					id: "2BD3B32F4041393E"
+					item: { count: 1, id: "aeroworks:pedal_module" }
+					type: "item"
+				}
+				{
+					id: "1F883E593C557761"
+					item: { count: 1, id: "aeroworks:copper_pedal_module" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1A4DEEA50BA601B0"
+			rewards: [{
+				id: "1D1C75FAF80EF38F"
+				item: {
+					count: 1
+					id: "create:precision_mechanism"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "53E20EFD3C88BC10"
+				item: { count: 1, id: "aeroworks:mechanical_servo" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -5.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3CAA43E1289FB051"
+			rewards: [{
+				id: "3CEA43BEA5E1E1AE"
+				item: {
+					count: 1
+					id: "create:precision_mechanism"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0D1A998123A62981"
+				item: { count: 1, id: "aeroworks:stepper_servo" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.0d
+		}
+	]
+}

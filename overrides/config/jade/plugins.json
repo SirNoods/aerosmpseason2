@@ -65,8 +65,8 @@
     "entity": true,
     "entity_variant": true
   },
-  "waterwheelbearing": {
-    "wheel_bearing": true
+  "create_aeronautics_automated_logistics": {
+    "logistics_identity": true
   },
   "supplementaries": {
     "hat_stand": true
@@ -91,10 +91,6 @@
   },
   "cbcatfix": {
     "individual_rocket": true
-  },
-  "stockbridge": {
-    "colony_demand_terminal": true,
-    "network_interface": true
   },
   "balm": {
     "jade": true

@@ -128,7 +128,7 @@
 		
 		# Enable minimap
 		# Default: true
-		enabled: false
+		enabled: true
 		
 		# Show entities on minimap
 		# Default: true
@@ -138,66 +138,74 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:polar_bear": true
-			"minecraft:cat": true
-			"minecraft:parrot": true
-			"spider_overhaul:jungle_spider": true
-			"minecraft:villager": true
-			"variantsandventures:thicket": true
-			"minecraft:zombie": true
-			"minecraft:zombie_villager": true
-			"minecraft:fox": true
 			"minecraft:pig": true
-			"minecraft:bat": true
-			"minecraft:cow": true
-			"minecraft:frog": true
-			"spider_overhaul:cavern_spider": true
-			"variantsandventures:murk": true
-			"minecraft:squid": true
-			"minecraft:enderman": true
-			"minecraft:goat": true
-			"minecraft:ocelot": true
-			"creeperoverhaul:bamboo_creeper": true
-			"spider_overhaul:ice_spider": true
-			"minecraft:sheep": true
-			"minecraft:witch": true
-			"minecraft:dolphin": true
-			"minecraft:chicken": true
-			"variantsandventures:gelid": true
-			"minecraft:horse": true
+			"creeperoverhaul:savannah_creeper": true
 			"minecraft:pillager": true
-			"minecraft:rabbit": true
-			"minecraft:bee": true
-			"variantsandventures:verdant": true
-			"minecraft:cod": false
-			"minecraft:drowned": true
-			"minecraft:skeleton": true
-			"minecraft:axolotl": true
-			"minecraft:donkey": true
-			"endermanoverhaul:cave_enderman": true
-			"endermanoverhaul:dark_oak_enderman": true
-			"minecraft:salmon": false
-			"minecraft:tropical_fish": false
 			"creeperoverhaul:jungle_creeper": true
-			"minecraft:turtle": true
-			"minecraft:glow_squid": true
-			"creeperoverhaul:cave_creeper": true
-			"minecraft:spider": true
-			"minecraft:wolf": true
-			"creeperoverhaul:dripstone_creeper": true
-			"creeperoverhaul:dark_oak_creeper": true
-			"minecraft:pufferfish": false
-			"creeperoverhaul:spruce_creeper": true
-			"minecraft:phantom": true
-			"creeperoverhaul:ocean_creeper": true
+			"minecraft:fox": true
+			"variantsandventures:verdant": true
+			"minecraft:frog": true
 			"creeperoverhaul:snowy_creeper": true
+			"minecraft:cat": true
 			"minecraft:iron_golem": true
-			"minecraft:skeleton_horse": true
-			"minecraft:slime": true
-			"endermanoverhaul:snowy_enderman": true
+			"spider_overhaul:jungle_spider": true
+			"minecraft:llama": true
+			"minecraft:donkey": true
+			"variantsandventures:murk": true
+			"creeperoverhaul:dripstone_creeper": true
+			"creeperoverhaul:ocean_creeper": true
+			"minecraft:phantom": true
+			"creeperoverhaul:dark_oak_creeper": true
 			"minecraft:stray": true
+			"variantsandventures:gelid": true
+			"minecraft:pufferfish": false
+			"endermanoverhaul:snowy_enderman": true
+			"creeperoverhaul:spruce_creeper": true
+			"endermanoverhaul:coral_enderman": true
+			"minecraft:enderman": true
+			"minecraft:rabbit": true
+			"minecraft:villager": true
+			"minecraft:zombie": true
+			"minecraft:skeleton": true
+			"minecraft:zombie_villager": true
+			"minecraft:salmon": false
+			"minecraft:skeleton_horse": true
+			"spider_overhaul:cavern_spider": true
+			"minecraft:cow": true
+			"minecraft:trader_llama": true
+			"minecraft:tropical_fish": false
+			"minecraft:wolf": true
+			"minecraft:parrot": true
+			"minecraft:allay": true
+			"minecraft:squid": true
+			"minecraft:axolotl": true
+			"spider_overhaul:ice_spider": true
 			"minecraft:evoker": true
+			"minecraft:wandering_trader": true
+			"minecraft:ocelot": true
+			"minecraft:polar_bear": true
+			"variantsandventures:thicket": true
+			"minecraft:bat": true
+			"endermanoverhaul:cave_enderman": true
+			"minecraft:dolphin": true
+			"minecraft:turtle": true
+			"creeperoverhaul:cave_creeper": true
+			"minecraft:chicken": true
+			"minecraft:witch": true
+			"minecraft:drowned": true
+			"minecraft:goat": true
+			"minecraft:horse": true
 			"minecraft:creeper": true
+			"minecraft:bee": true
+			"minecraft:cod": false
+			"endermanoverhaul:dark_oak_enderman": true
+			"creeperoverhaul:hills_creeper": true
+			"minecraft:glow_squid": true
+			"minecraft:spider": true
+			"creeperoverhaul:desert_creeper": true
+			"minecraft:slime": true
+			"minecraft:sheep": true
+			"creeperoverhaul:bamboo_creeper": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)

@@ -185,6 +185,14 @@
 	AngelFalling = false
 	#Blocks to treat equally when in Similar mode. Enter block IDs seperated by ;
 	SimilarBlocks = ["minecraft:dirt;minecraft:grass_block;minecraft:coarse_dirt;minecraft:podzol;minecraft:mycelium;minecraft:farmland;minecraft:dirt_path;minecraft:rooted_dirt"]
+	#Energy a wand with the Energy Upgrade can store (FE)
+	# Default: 100000
+	# Range: > 1
+	EnergyCapacity = 100000
+	#Energy a wand with the Energy Upgrade uses for every block it places or exchanges (FE)
+	# Default: 100
+	# Range: > 0
+	EnergyPerBlock = 100
 
 [tileentity]
 	#White/Blacklist for Tile Entities. Allow/Prevent blocks with TEs from being placed by wand.
@@ -192,3 +200,27 @@
 	TEList = ["chiselsandbits"]
 	#If set to TRUE, treat TEList as a whitelist, otherwise blacklist
 	TEWhitelist = false
+
+[copper_wand]
+	#Wand durability
+	# Default: 190
+	# Range: > 1
+	durability = 190
+	#Wand block limit
+	# Default: 18
+	# Range: > 1
+	limit = 18
+	#Max placement distance with angel core (0 to disable angel core)
+	# Default: 1
+	# Range: > 0
+	angel = 1
+	#Wand destruction block limit (0 to disable destruction core)
+	# Default: 5
+	# Range: > 0
+	destruction = 5
+	#Wand exchange block limit (0 to disable exchange core)
+	# Default: 5
+	# Range: > 0
+	exchange = 5
+	#Allow wand upgrading by putting the wand together with a wand core in a crafting grid.
+	upgradeable = true

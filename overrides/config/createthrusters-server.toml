@@ -18,10 +18,6 @@
 	# Default: 128
 	# Range: 1 ~ 1024
 	gyroscopeLinkRange = 128
-	#How many ticks a virtual orientation source remains active without an update
-	# Default: 40
-	# Range: 1 ~ 1200
-	virtualOrientationSourceTimeoutTicks = 40
 	#Maximum tilt magnitude (degrees) when deriving orientation from Analogue Contraption Controller pitch/roll axes
 	# Default: 45.0
 	# Range: 1.0 ~ 89.0
@@ -129,8 +125,12 @@
 			ratchet_cogwheel = true
 			#Allow large ratchet cogwheel on this server. Existing content is not removed automatically.
 			large_ratchet_cogwheel = true
-			#Allow diagnostic tablet on this server. Existing content is not removed automatically.
-			diagnostic_tablet = false
+			#Allow world hologram projector on this server. Existing content is not removed automatically.
+			world_hologram_projector = true
+			#Allow celebration thruster on this server. Existing content is not removed automatically.
+			celebration_thruster = true
+			#Allow Smart Tablet on this server. Existing content is not removed automatically.
+			smart_tablet = true
 
 		[server.features.items]
 			#Allow blackstone alloy on this server. Existing content is not removed automatically.
@@ -213,6 +213,8 @@
 			music_disc_unplug_the_earth = true
 			#Allow pilot cap on this server. Existing content is not removed automatically.
 			pilot_cap = true
+			#Allow thruster dye on this server. Existing content is not removed automatically.
+			thruster_dye = true
 
 		[server.features.entities]
 			#Allow launched claw on this server. Existing content is not removed automatically.
@@ -231,7 +233,14 @@
 		#Incomplete: enable SCM Plane vehicles. Disabled by default. Rudder steering remains available for airships.
 		enableScmPlane = false
 
-	#Advanced Contraption Controller chat delivery
+	#Advanced Contraption Controller settings
 	[server.advanced_controller]
 		#Allow Send Chat Message nodes to broadcast nearby: the same sub-level, or a centered 3x3 chunk area in the main world. Private messages remain available when disabled. The legacy config key is retained so existing opt-outs keep working.
 		allowGlobalChatBroadcast = true
+		#Allow Command nodes to execute and new Command nodes to be created. Disabled nodes remain saved but do not execute or appear in node libraries.
+		enableCommandNodes = true
+
+	#World Hologram Projector
+	[server.world_hologram_projector]
+		#Obfuscate Ores: replace ores below each column's surface with stone or deepslate before sending hologram data to clients.
+		obfuscateOres = true

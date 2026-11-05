@@ -8,10 +8,11 @@
 	}
 	id: "1A29E39877A391C3"
 	images: [ ]
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
+			entity_vis_size: 1.0f
 			id: "53BC23A56A1080A0"
 			rewards: [{
 				count: 4
@@ -39,6 +40,7 @@
 			y: 0.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "125C1B72258B20FE"
 			rewards: [{
 				count: 2
@@ -66,6 +68,7 @@
 			y: 1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "27BCC7C61D5BD336"
 			rewards: [
 				{
@@ -98,6 +101,7 @@
 			y: 1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "4C476592AA64996B"
 			size: 1.0d
 			tasks: [{
@@ -109,6 +113,7 @@
 			y: 1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "7EDFBC8BAEC5E525"
 			rewards: [{
 				count: 8
@@ -128,6 +133,7 @@
 			y: 2.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "59AA7879BD8A6AEB"
 			rewards: [{
 				id: "7E8176D95121F262"
@@ -146,6 +152,7 @@
 			y: 2.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "6FD5A1B2FC94F47A"
 			rewards: [{
 				id: "3A06C1BE31911051"
@@ -164,6 +171,7 @@
 			y: 2.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "1157A9548EB3044A"
 			rewards: [{
 				id: "55D46FB847F6F658"
@@ -182,6 +190,7 @@
 			y: -1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "03A6C339A6F203C6"
 			rewards: [{
 				id: "617FD37B06F89C1B"

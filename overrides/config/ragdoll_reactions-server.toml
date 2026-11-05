@@ -203,7 +203,7 @@ enabled = true
 #Ragdoll reactions for mobs. Separate from the player triggers above; only whitelisted mobs can ragdoll.
 [mobs]
 	#Master switch for all mob ragdoll reactions.
-	enabled = true
+	enabled = false
 
 	#Hard fall landing reactions for mobs.
 	[mobs.fall]

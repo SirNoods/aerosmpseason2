@@ -12,7 +12,7 @@
 	#X Offset of the Controller Settings button in the main menu, default is 4
 	# Default: 4
 	# Range: > -2147483648
-	config_button_main_menu_offset = 4
+	config_button_main_menu_offset = 20000
 	#Row of the Controller Settings button in the ingame pause menu, default is 3
 	# Default: 3
 	# Range: 0 ~ 5

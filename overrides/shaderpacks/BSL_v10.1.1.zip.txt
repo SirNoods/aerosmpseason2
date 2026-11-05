@@ -1,0 +1,8 @@
+#Fri Oct 16 19:30:51 MDT 2026
+AUTO_EXPOSURE=true
+COLOR_GRADING=true
+SHADOW_COLOR=false
+TAA=false
+VIGNETTE=false
+shadowDistance=192.0
+shadowMapResolution=1536

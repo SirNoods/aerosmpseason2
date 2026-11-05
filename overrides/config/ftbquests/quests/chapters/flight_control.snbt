@@ -1,0 +1,452 @@
+{
+	autofocus_id: "1D1EE4FBA11D1EFD"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "flight_control"
+	group: "51F71B4D9DE33E6B"
+	icon: {
+		id: "create_flight_control:flight_control_computer"
+	}
+	id: "307B9EBAFB088450"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			id: "78757A195B10EB1A"
+			tasks: [{
+				id: "11E0ECCBAF857469"
+				item: { count: 1, id: "create_flight_control:arrester_hook" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6EA3AB173ED7C332"
+			tasks: [{
+				id: "7213B0F47E4E705A"
+				item: { count: 1, id: "create_flight_control:arrester_wire" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1D1EE4FBA11D1EFD"]
+			entity_vis_size: 1.0f
+			id: "48BBF5463164B20A"
+			rewards: [{
+				id: "008E5995ABD9B9C2"
+				item: {
+					count: 1
+					id: "create_flight_control:control_unit"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5DD762F216C5E10D"
+				item: { count: 1, id: "create_flight_control:attitude_hold" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1D1EE4FBA11D1EFD"]
+			entity_vis_size: 1.0f
+			id: "53D168C1699DCC9A"
+			rewards: [
+				{
+					id: "5A295D414D913B98"
+					item: {
+						count: 1
+						id: "create:black_seat"
+					}
+					type: "item"
+				}
+				{
+					id: "379EA52C5CBB28D1"
+					item: {
+						count: 1
+						id: "create_flight_control:control_unit"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5DB6E4B0EC06E51F"
+				item: { count: 1, id: "create_flight_control:mouse_flight_controller" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1D1EE4FBA11D1EFD"]
+			entity_vis_size: 1.0f
+			id: "616719BEAC6B90B9"
+			rewards: [{
+				id: "725CFFFC12CE20FC"
+				item: {
+					count: 1
+					id: "create_flight_control:control_unit"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D3A6ACB145C4CFF"
+				item: { count: 1, id: "create_flight_control:altitude_hold" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1D1EE4FBA11D1EFD"]
+			entity_vis_size: 1.0f
+			id: "524A29C611D981A4"
+			rewards: [{
+				id: "361334EEAAB4B1CC"
+				item: {
+					count: 1
+					id: "minecraft:nether_star"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "43FD473A183B67BE"
+				item: { count: 1, id: "create_flight_control:attitude_display" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1D1EE4FBA11D1EFD"]
+			entity_vis_size: 1.0f
+			id: "28E05449FB2DAAD8"
+			rewards: [{
+				id: "764F8BE66109C8DB"
+				item: {
+					count: 1
+					id: "minecraft:nether_star"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "60F7C3E678FCA3B9"
+				item: { count: 1, id: "create_flight_control:hud_projector" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["28E05449FB2DAAD8"]
+			entity_vis_size: 1.0f
+			id: "0D863A3681082C0E"
+			rewards: [{
+				id: "324580FD2D17D8E4"
+				item: {
+					count: 1
+					id: "create_flight_control:control_unit"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "621B24F3E125F029"
+				item: { count: 1, id: "create_flight_control:forward_indicator" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1D1EE4FBA11D1EFD"]
+			entity_vis_size: 1.0f
+			id: "6F2B774AFF44F296"
+			rewards: [{
+				id: "5CC9F126DFF50CE6"
+				item: {
+					count: 1
+					id: "create_flight_control:control_unit"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1FF2A61FEDCFE463"
+				item: { count: 1, id: "create_flight_control:velocity_coupler" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1D1EE4FBA11D1EFD"]
+			entity_vis_size: 1.0f
+			id: "32897E19F42CEF5C"
+			rewards: [{
+				id: "35A74C9BD5F92539"
+				item: {
+					count: 1
+					id: "create_flight_control:control_unit"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7E8CB4DD3975636E"
+				item: { count: 1, id: "create_flight_control:distance_coupler" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1D1EE4FBA11D1EFD"]
+			entity_vis_size: 1.0f
+			id: "22CD6822B934FF31"
+			rewards: [{
+				id: "51DFEF5AA0AF060F"
+				item: {
+					count: 1
+					id: "create_flight_control:control_unit"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "772DC85BEAF9252D"
+				item: { count: 1, id: "create_flight_control:angular_velocity_coupler" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1D1EE4FBA11D1EFD"
+			rewards: [
+				{
+					id: "127F7BB98ABB440F"
+					item: {
+						count: 1
+						id: "create_flight_control:control_unit"
+					}
+					type: "item"
+				}
+				{
+					id: "1CFF5559972739FD"
+					item: {
+						count: 1
+						id: "create_flight_control:flight_control_tool_gun"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2FECE824511412F5"
+				item: { count: 1, id: "create_flight_control:flight_control_computer" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1D1EE4FBA11D1EFD"]
+			entity_vis_size: 1.0f
+			id: "566BA382DFAB41A9"
+			rewards: [{
+				id: "223C36DDE35AA5F5"
+				item: {
+					count: 1
+					id: "create_flight_control:control_unit"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "207E1083B63A640D"
+				item: { count: 1, id: "create_flight_control:navigation_profile_builder" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1D1EE4FBA11D1EFD"]
+			entity_vis_size: 1.0f
+			id: "35C5B0B327A00B2D"
+			rewards: [{
+				id: "0CA7CDCF20721A87"
+				item: {
+					count: 1
+					id: "create_flight_control:control_unit"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "553F8D32E3068889"
+				item: { count: 1, id: "create_flight_control:navigation_terminal" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["566BA382DFAB41A9"]
+			entity_vis_size: 1.0f
+			id: "3D2E396DEDD5A978"
+			rewards: [{
+				id: "0ED197D58BC903A0"
+				item: {
+					count: 1
+					id: "create_flight_control:control_unit"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1F12B1E72B2BEBC0"
+				item: { count: 1, id: "create_flight_control:navigation_profile" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1D1EE4FBA11D1EFD"]
+			entity_vis_size: 1.0f
+			id: "386D0BB8B3CB4307"
+			rewards: [{
+				id: "1E60431FC3D27008"
+				item: {
+					count: 1
+					id: "create_flight_control:control_unit"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C1200B6FE4BF171"
+				item: { count: 1, id: "create_flight_control:copycat_integrated_sail_i" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "29B2CF1BDB5AA5DB"
+			rewards: [{
+				count: 2
+				id: "19C9245C32E2AF32"
+				item: {
+					count: 1
+					id: "create_flight_control:control_unit"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "604A25CF7861E64C"
+					item: { count: 1, id: "create_flight_control:smart_vector_thruster" }
+					type: "item"
+				}
+				{
+					id: "2B188332B70884F5"
+					item: { count: 1, id: "create_flight_control:smart_vector_ion_thruster" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6C22C28614256DA3"
+			rewards: [{
+				count: 2
+				id: "64E7B8E1BF99300B"
+				item: {
+					count: 1
+					id: "create_flight_control:control_unit"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2C916CC57201085E"
+					item: { count: 1, id: "create_flight_control:smart_vector_thruster_small" }
+					type: "item"
+				}
+				{
+					id: "01AAE319F9572449"
+					item: { count: 1, id: "create_flight_control:smart_vector_ion_thruster_small" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "12A3286D42F3709F"
+			rewards: [{
+				id: "729B82EDEDA5AAAF"
+				item: {
+					count: 1
+					id: "create_flight_control:control_unit"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "54CC8CAA3C0866C3"
+				item: { count: 1, id: "create_flight_control:flight_control_tool_gun" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -6.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "475E9AEFA28B8DFA"
+			tasks: [{
+				id: "79BCA8A3C8102B3C"
+				item: { count: 1, id: "create_flight_control:calculator" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1D1EE4FBA11D1EFD"]
+			entity_vis_size: 1.0f
+			id: "67A5C68E9DE517D9"
+			rewards: [{
+				id: "68A106B3A1E8EC1A"
+				item: {
+					count: 1
+					id: "create_flight_control:control_unit"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "17E939B61510E8B5"
+				item: { count: 1, id: "create_flight_control:flight_control_redstone_proxy" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1E8894AC71DA5227"
+			tasks: [{
+				id: "784AB84C05ABE3F5"
+				item: { count: 1, id: "create_flight_control:aerodynamic_trail_creator" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+	]
+}

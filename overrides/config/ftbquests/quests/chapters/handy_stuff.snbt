@@ -6,9 +6,9 @@
 	group: ""
 	icon: {
 		components: {
-			"ftbquests:missing_item": "quark:pickarang"
+			"ftbquests:icon": "ftbquests:textures/gui/info.png"
 		}
-		id: "ftbquests:missing_item"
+		id: "ftbquests:custom_icon"
 	}
 	id: "31DE2AF4A3147EDF"
 	images: [ ]
@@ -17,6 +17,7 @@
 	quests: [
 		{
 			dependencies: ["390F025F4B6316CA"]
+			entity_vis_size: 1.0f
 			id: "75381FED11B19F94"
 			tasks: [{
 				id: "3F6C43F666063567"
@@ -28,6 +29,7 @@
 		}
 		{
 			dependencies: ["390F025F4B6316CA"]
+			entity_vis_size: 1.0f
 			id: "4BDC7D2311DE3529"
 			tasks: [{
 				id: "0827F254D081940F"
@@ -39,6 +41,7 @@
 		}
 		{
 			dependencies: ["390F025F4B6316CA"]
+			entity_vis_size: 1.0f
 			id: "6AD51F0EF068C421"
 			tasks: [{
 				id: "4E312133C9D2BB1D"
@@ -50,6 +53,7 @@
 		}
 		{
 			dependencies: ["390F025F4B6316CA"]
+			entity_vis_size: 1.0f
 			id: "4A718F7CD8A8C919"
 			tasks: [{
 				id: "037573C945330033"
@@ -61,6 +65,7 @@
 		}
 		{
 			dependencies: ["390F025F4B6316CA"]
+			entity_vis_size: 1.0f
 			id: "0EA30D7284020F0B"
 			tasks: [{
 				id: "4C3654DF92AAB46A"
@@ -72,6 +77,7 @@
 		}
 		{
 			dependencies: ["390F025F4B6316CA"]
+			entity_vis_size: 1.0f
 			id: "071B6B4B6F072EC0"
 			tasks: [{
 				id: "4A4377BC1EDC852C"
@@ -83,6 +89,7 @@
 		}
 		{
 			dependencies: ["75381FED11B19F94"]
+			entity_vis_size: 1.0f
 			id: "4A76971D7B104816"
 			tasks: [{
 				id: "652A9537D1B298AD"
@@ -94,6 +101,7 @@
 		}
 		{
 			dependencies: ["4BDC7D2311DE3529"]
+			entity_vis_size: 1.0f
 			id: "170E70764F6E96BE"
 			tasks: [{
 				id: "0ED07F8C087FB7D8"
@@ -105,6 +113,7 @@
 		}
 		{
 			dependencies: ["6AD51F0EF068C421"]
+			entity_vis_size: 1.0f
 			id: "3F1B37DD6228026C"
 			tasks: [{
 				id: "361CF5FDEF939541"
@@ -116,6 +125,7 @@
 		}
 		{
 			dependencies: ["4A718F7CD8A8C919"]
+			entity_vis_size: 1.0f
 			id: "5EC18F69B2F7A645"
 			tasks: [{
 				id: "271AF39782DFE676"
@@ -127,6 +137,7 @@
 		}
 		{
 			dependencies: ["0EA30D7284020F0B"]
+			entity_vis_size: 1.0f
 			id: "6D45F6EC5CD84130"
 			tasks: [{
 				id: "1C779083DFF6A5DD"
@@ -138,6 +149,7 @@
 		}
 		{
 			dependencies: ["071B6B4B6F072EC0"]
+			entity_vis_size: 1.0f
 			id: "2610D6EF553F3C9B"
 			tasks: [{
 				id: "10994B509E6AA46A"
@@ -149,6 +161,7 @@
 		}
 		{
 			dependencies: ["1DEA3143D4609AF8"]
+			entity_vis_size: 1.0f
 			id: "0780956CADABC7C6"
 			tasks: [{
 				id: "5465621F028C94B7"
@@ -159,10 +172,11 @@
 			y: 5.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "142A02A9DA930FB4"
 			tasks: [{
 				id: "07B5748CF6BDF234"
-				item: { components: { "ftbquests:missing_item": "rechiseled:chisel" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "chipped:chisel" }
 				type: "item"
 			}]
 			x: -3.5d
@@ -170,10 +184,11 @@
 		}
 		{
 			dependencies: ["142A02A9DA930FB4"]
+			entity_vis_size: 1.0f
 			id: "50EB3988EF6E9710"
 			tasks: [{
 				id: "1E383816F6ACCE0C"
-				item: { components: { "ftbquests:missing_item": "rechiseledcreate:mechanical_chisel" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create:mechanical_saw" }
 				type: "item"
 			}]
 			x: -3.5d
@@ -181,6 +196,7 @@
 		}
 		{
 			dependencies: ["390F025F4B6316CA"]
+			entity_vis_size: 1.0f
 			id: "1DEA3143D4609AF8"
 			tasks: [{
 				id: "69431BED4958DCCC"
@@ -191,26 +207,29 @@
 			y: 4.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "02C39AF9B0CDB5A4"
 			tasks: [{
 				id: "4DBE4B459A4061E3"
-				item: { components: { "ftbquests:missing_item": "quark:trowel" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "simple_trowel:trowel" }
 				type: "item"
 			}]
 			x: 5.5d
 			y: 4.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "06AFC3385C85BBD6"
 			tasks: [{
 				id: "63BE789F8989DE97"
-				item: { components: { "ftbquests:missing_item": "quark:abacus" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "measurements:tape_measure" }
 				type: "item"
 			}]
 			x: 5.5d
 			y: 5.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "390F025F4B6316CA"
 			tasks: [{
 				id: "07F8ED5B57C50B69"
@@ -220,27 +239,7 @@
 			y: 2.5d
 		}
 		{
-			id: "0AC85C39CEEE118C"
-			tasks: [{
-				id: "44EFFE522BF7ADCC"
-				item: { components: { "ftbquests:missing_item": "quark:pickarang" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 6.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["0AC85C39CEEE118C"]
-			id: "265DEDBF34CB37AF"
-			tasks: [{
-				id: "72B5AE74B8764767"
-				item: { components: { "ftbquests:missing_item": "quark:flamerang" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 6.5d
-			y: 5.5d
-		}
-		{
+			entity_vis_size: 1.0f
 			id: "44CA9AD9FFFFC90B"
 			tasks: [{
 				id: "7EE4CD115134B61B"
@@ -251,6 +250,13 @@
 			y: 2.5d
 		}
 		{
+			entity_vis_size: 1.0f
+			icon: {
+				components: {
+					"ftbquests:icon": "ftblibrary:icons/player"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "58F80E1BD05B026F"
 			tasks: [{
 				id: "076C0E7460402699"
@@ -260,6 +266,7 @@
 			y: 2.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "40727A633E80B537"
 			rewards: [{
 				id: "39CAC4AE5B866AC1"
@@ -275,6 +282,7 @@
 			y: 6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "59DBB1D2EAEF1F34"
 			rewards: [{
 				id: "510346F45C0C33BA"
@@ -297,6 +305,7 @@
 			y: 6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "7614FDF43E0AAD07"
 			rewards: [{
 				count: 64
@@ -316,6 +325,7 @@
 			y: 6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "63FE80143DB276C3"
 			rewards: [{
 				id: "37C9BC957D24BC32"
@@ -337,6 +347,7 @@
 			y: 6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "32C545450F2DBD65"
 			rewards: [{
 				count: 2
@@ -356,6 +367,7 @@
 			y: 6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "29D06B640C276146"
 			rewards: [{
 				id: "5C6541AB9DAF6A41"
@@ -374,16 +386,7 @@
 			y: 6.0d
 		}
 		{
-			id: "25D87D5522FD4861"
-			tasks: [{
-				id: "593B4485E36491B5"
-				item: { count: 1, id: "minecraft:apple" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: 6.0d
-		}
-		{
+			entity_vis_size: 1.0f
 			id: "48BF028309BD0A36"
 			tasks: [{
 				id: "0A850AD2151EC463"
@@ -394,6 +397,7 @@
 			y: 2.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "69F9DB75244E6B3B"
 			rewards: [{
 				id: "688ED87B160A31AC"
@@ -405,13 +409,28 @@
 			}]
 			tasks: [
 				{
+					id: "6A04D8607D91E092"
+					item: { count: 1, id: "constructionwand:wood_wand" }
+					type: "item"
+				}
+				{
 					id: "20BCED9F2294AD9C"
 					item: { count: 1, id: "constructionwand:stone_wand" }
 					type: "item"
 				}
 				{
+					id: "58568A5C233A4A60"
+					item: { count: 1, id: "constructionwand:copper_wand" }
+					type: "item"
+				}
+				{
 					id: "066D331E1C9DAF52"
 					item: { count: 1, id: "constructionwand:iron_wand" }
+					type: "item"
+				}
+				{
+					id: "671D9C4F954E1CE8"
+					item: { count: 1, id: "constructionwand:gold_wand" }
 					type: "item"
 				}
 				{
@@ -434,19 +453,150 @@
 					item: { count: 1, id: "constructionwand:core_destruction" }
 					type: "item"
 				}
+				{
+					id: "00E008189BBAC990"
+					item: { count: 1, id: "constructionwand:core_exchange" }
+					type: "item"
+				}
 			]
-			x: 1.5d
-			y: 6.0d
+			x: 6.5d
+			y: 5.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "34E6DA713B6DF25F"
+			rewards: [{
+				count: 2
+				id: "219D916BD5ACAF0E"
+				item: {
+					count: 1
+					id: "minecraft:diamond"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "10FBD4B318A42820"
-				item: { components: { "ftbquests:missing_item": "mcwlights:red_lamp" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "torchmaster:megatorch" }
 				type: "item"
 			}]
 			x: 4.5d
 			y: 2.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1AC6EABFAC904781"
+			rewards: [{
+				id: "3A21E9D58F11C794"
+				item: {
+					count: 1
+					id: "minecraft:netherite_ingot"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3BF3CC8EEC7839BA"
+					item: { count: 1, id: "simplest_paxels:wooden_paxel" }
+					type: "item"
+				}
+				{
+					id: "3F08B0F5211064B4"
+					item: { count: 1, id: "simplest_paxels:stone_paxel" }
+					type: "item"
+				}
+				{
+					id: "5E3BC890CB0EAD8E"
+					item: { count: 1, id: "simplest_paxels:iron_paxel" }
+					type: "item"
+				}
+				{
+					id: "44692D6EC43938FD"
+					item: { count: 1, id: "simplest_paxels:golden_paxel" }
+					type: "item"
+				}
+				{
+					id: "470D92ECA9F19FDE"
+					item: { count: 1, id: "simplest_paxels:diamond_paxel" }
+					type: "item"
+				}
+				{
+					id: "59FA3E708F0EE8AA"
+					item: { count: 1, id: "simplest_paxels:netherite_paxel" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "24BE895BC82E82C4"
+			rewards: [{
+				count: 64
+				id: "5DC7CE24DA34FB2C"
+				item: {
+					count: 1
+					id: "minecraft:acacia_log"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C1F36157B6107DF"
+				item: { count: 1, id: "handcrafted:acacia_fancy_bed" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "71BEC6A36D0AF99B"
+			rewards: [{
+				id: "1471BE839CF14EF7"
+				item: {
+					count: 1
+					id: "minecraft:nether_star"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "724EF3D538AC311C"
+					item: { count: 1, id: "creatorsword:creator_sword" }
+					type: "item"
+				}
+				{
+					id: "3534AA0A52C51F7F"
+					item: { count: 1, id: "creatorsword:netherite_creator_sword" }
+					type: "item"
+				}
+				{
+					id: "0494B139A26563E3"
+					item: { count: 1, id: "creatorsword:trial_creator_sword" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7B6773DDD14D909B"
+			rewards: [{
+				id: "61C50D2BAC4DAE43"
+				item: {
+					count: 1
+					id: "minecraft:nether_star"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E4041F7EF2EC183"
+				item: { count: 1, id: "create_aeronautics_toolgun:portable_structure_container" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.0d
 		}
 	]
 }

@@ -1,0 +1,1405 @@
+{
+	autofocus_id: "3D410A0C549DF290"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_big_cannons"
+	group: "6398AB49C115030C"
+	icon: {
+		id: "createbigcannons:solid_shot"
+	}
+	id: "77B2D3017F9DB340"
+	images: [ ]
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			id: "3D410A0C549DF290"
+			rewards: [{
+				count: 8
+				id: "2D0E91CFE638A342"
+				item: {
+					count: 1
+					id: "createbigcannons:casting_sand"
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "24021DB4272D2070"
+				item: { count: 1, id: "createbigcannons:casting_sand" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "125732B45E19EB2D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "10B569DFB9FE4750"
+					type: "random"
+				}
+				{
+					id: "3D647CDB949C1D12"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "5578D09D87DDD721"
+					item: {
+						count: 1
+						id: "createbigcannons:nitropowder"
+					}
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			tasks: [{
+				id: "2EEEA9B4366389D0"
+				item: { count: 1, id: "createbigcannons:filled_autocannon_cartridge" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -6.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "684C694DD8EAF8AC"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3B6AB34D785BC726"
+					type: "random"
+				}
+				{
+					id: "67FD7078D26AFD44"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "41DD953FB70B0A1F"
+					item: {
+						count: 1
+						id: "createbigcannons:nitropowder"
+					}
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			tasks: [{
+				id: "23AC815DB31F49EE"
+				item: { count: 1, id: "createbigcannons:autocannon_ammo_container" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "57ADFF6921FF43DF"
+			rewards: [{
+				count: 16
+				id: "284E2086B8673C19"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "74DAE0F8E9E02D59"
+				item: { count: 1, id: "createbigcannons:drop_mortar_shell" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -13.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "01B852D1F40D9E4B"
+			rewards: [{
+				count: 16
+				id: "0E360211159D63A1"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "17C55448BA81F2FA"
+				item: { count: 1, id: "createbigcannons:mortar_stone" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -13.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1C8376900AE4279D"
+			rewards: [{
+				count: 16
+				id: "47A95278D22335E9"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "73DFF8560291374B"
+				item: { count: 1, id: "createbigcannons:big_cartridge" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -12.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "31A1CDC3BF093F32"
+			rewards: [{
+				count: 16
+				id: "38ABA6DD37E03E3C"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "22C7B46BF1CB8EF3"
+				item: { count: 1, id: "createbigcannons:solid_shot" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -12.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6776BB1D1EB11A55"
+			rewards: [{
+				count: 16
+				id: "06E9F8E7630A7D16"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6A8942BAF9C43B3A"
+				item: { count: 1, id: "createbigcannons:ap_shot" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -10.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "12BF4CFDA0975809"
+			rewards: [{
+				count: 16
+				id: "6EADA37812FB85EA"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2B2E2E1995B9E2BC"
+				item: { count: 1, id: "createbigcannons:bag_of_grapeshot" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -11.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7B7A7C225846EDB9"
+			rewards: [{
+				count: 16
+				id: "4CF3F15F32A4AB11"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "33B567E70EC7C236"
+				item: { count: 1, id: "createbigcannons:he_shell" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -10.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5000936ADB685DC2"
+			rewards: [{
+				count: 16
+				id: "07BA78987707CD07"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5E8477D848C0DCA1"
+				item: { count: 1, id: "createbigcannons:ap_shell" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -13.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "765605C142A9FBF2"
+			rewards: [{
+				count: 16
+				id: "6B2910B9E7D9E0B4"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "510E59BCAD2CCE44"
+				item: { count: 1, id: "createbigcannons:shrapnel_shell" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -11.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2BF4ACDD447D38EB"
+			rewards: [{
+				count: 16
+				id: "1AFC3C73A0998056"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "28B99F611C1E2A22"
+				item: { count: 1, id: "createbigcannons:fluid_shell" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -12.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "47BA74691C21D851"
+			rewards: [{
+				count: 16
+				id: "02F7A4A3B35CF797"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0FA712ACED9E7FD0"
+				item: { count: 1, id: "createbigcannons:smoke_shell" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -13.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7DF6FD2B69C8F93F"
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "28FD908EA149F40A"
+				item: { count: 1, id: "createbigcannons:cannon_mount" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.75d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5F1C2F3DBFBB9EBC"
+			tasks: [{
+				id: "2FA99ACA453E199B"
+				item: { count: 1, id: "createbigcannons:cannon_mount_extension" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "50FFC7D78C99DB36"
+			tasks: [{
+				id: "25F1F697D6282076"
+				item: { count: 1, id: "createbigcannons:fixed_cannon_mount" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3D410A0C549DF290"]
+			entity_vis_size: 1.0f
+			id: "652442BDE0602E91"
+			tasks: [{
+				id: "359B9F8C2F4EABEA"
+				item: { count: 1, id: "createbigcannons:cannon_drill" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["652442BDE0602E91"]
+			entity_vis_size: 1.0f
+			id: "2B134F2CA0768C11"
+			tasks: [{
+				id: "4A95EE5F66FBD968"
+				item: { count: 1, id: "createbigcannons:cannon_builder" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3A526F4EAF77091F"]
+			entity_vis_size: 1.0f
+			id: "14A078132DF017D5"
+			tasks: [{
+				id: "51176A9215B39BD1"
+				item: { count: 1, id: "createbigcannons:worm_head" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3A526F4EAF77091F"]
+			entity_vis_size: 1.0f
+			id: "1D07E682757EE3EF"
+			tasks: [{
+				id: "4D6F87455088B018"
+				item: { count: 1, id: "createbigcannons:ram_head" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3D410A0C549DF290"]
+			entity_vis_size: 1.0f
+			id: "48D6A12A1FBD6D16"
+			rewards: [{
+				count: 16
+				id: "5668511177D65AE4"
+				item: {
+					count: 1
+					id: "createbigcannons:steel_ingot"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "04F8E22A5BA578A0"
+					item: { count: 1, id: "createbigcannons:basin_foundry_lid" }
+					type: "item"
+				}
+				{
+					id: "5EEE6070313DEAFC"
+					item: { count: 1, id: "create:basin" }
+					type: "item"
+				}
+				{
+					id: "4196DF14E48FF9BC"
+					item: { count: 1, id: "create:blaze_burner" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3D410A0C549DF290"]
+			entity_vis_size: 1.0f
+			id: "54F19B1B03509CEE"
+			rewards: [{
+				count: 64
+				id: "26BAA7C0F5DE1081"
+				item: {
+					count: 1
+					id: "createbigcannons:casting_sand"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "37C009BCF5DD3F89"
+					item: { count: 1, id: "createbigcannons:very_small_cast_mould" }
+					type: "item"
+				}
+				{
+					id: "3CB9752929F69439"
+					item: { count: 1, id: "createbigcannons:small_cast_mould" }
+					type: "item"
+				}
+				{
+					id: "1EB97214845A8CB1"
+					item: { count: 1, id: "createbigcannons:medium_cast_mould" }
+					type: "item"
+				}
+				{
+					id: "353EF619AB1B60F9"
+					item: { count: 1, id: "createbigcannons:large_cast_mould" }
+					type: "item"
+				}
+				{
+					id: "6F11C6DF5E48DDAC"
+					item: { count: 1, id: "createbigcannons:very_large_cast_mould" }
+					type: "item"
+				}
+				{
+					id: "62486D96273E3B10"
+					item: { count: 1, id: "createbigcannons:cannon_end_cast_mould" }
+					type: "item"
+				}
+				{
+					id: "2D53E14847B57F61"
+					item: { count: 1, id: "createbigcannons:sliding_breech_cast_mould" }
+					type: "item"
+				}
+				{
+					id: "051DA7F7E27E7539"
+					item: { count: 1, id: "createbigcannons:screw_breech_cast_mould" }
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3D410A0C549DF290"]
+			entity_vis_size: 1.0f
+			id: "4C6346743A45D50A"
+			rewards: [{
+				count: 64
+				id: "77ACB2181C10ADF8"
+				item: {
+					count: 1
+					id: "createbigcannons:casting_sand"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "053E712E246B12F3"
+					item: { count: 1, id: "createbigcannons:autocannon_barrel_cast_mould" }
+					type: "item"
+				}
+				{
+					id: "0555751F067DA9C7"
+					item: { count: 1, id: "createbigcannons:autocannon_recoil_spring_cast_mould" }
+					type: "item"
+				}
+				{
+					id: "652E9FAE670FA752"
+					item: { count: 1, id: "createbigcannons:autocannon_breech_cast_mould" }
+					type: "item"
+				}
+				{
+					id: "6B92EBFDDF55968F"
+					item: { count: 1, id: "cbc_at:autocannon_muzzle_brake_mould" }
+					type: "item"
+				}
+				{
+					id: "0AC2C02BC7DDA2E1"
+					item: { count: 1, id: "cbc_at:autocannon_silencer_mould" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3D410A0C549DF290"]
+			entity_vis_size: 1.0f
+			id: "6EF2FEEA043BF642"
+			rewards: [{
+				count: 64
+				id: "265A5DC51D7D73FA"
+				item: {
+					count: 1
+					id: "createbigcannons:casting_sand"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "36F014465CED3D44"
+					item: { count: 1, id: "cbcatfix:rapid_cycling_module_mould" }
+					type: "item"
+				}
+				{
+					id: "6C4B3AB890B64D09"
+					item: { count: 1, id: "cbcatfix:traverse_gear_module_mould" }
+					type: "item"
+				}
+				{
+					id: "422FD227F5EBFEF9"
+					item: { count: 1, id: "cbc_at:muzzle_brake_cast_mould" }
+					type: "item"
+				}
+				{
+					id: "7B2AABD9A2457465"
+					item: { count: 1, id: "cbc_at:fume_extractor_cast_mould" }
+					type: "item"
+				}
+				{
+					id: "7817EB1C5BB310F5"
+					item: { count: 1, id: "cbc_at:silencer_cast_mould" }
+					type: "item"
+				}
+				{
+					id: "52C43F4AEF3F259B"
+					item: { count: 1, id: "cbc_at:rifled_barrel_cast_mould" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3D410A0C549DF290"]
+			entity_vis_size: 1.0f
+			id: "0C89A5F227C52FA5"
+			rewards: [{
+				count: 64
+				id: "1CD5AB0F3EF8AB6E"
+				item: {
+					count: 1
+					id: "createbigcannons:casting_sand"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "49C61A103E59A1A4"
+					item: { count: 1, id: "cbc_at:twin_autocannon_muzzle_brake_mould" }
+					type: "item"
+				}
+				{
+					id: "71B04D0AF0847ADD"
+					item: { count: 1, id: "cbc_at:twin_autocannon_barrel_mould" }
+					type: "item"
+				}
+				{
+					id: "0499FE30C23D94D9"
+					item: { count: 1, id: "cbc_at:twin_autocannon_silencer_mould" }
+					type: "item"
+				}
+				{
+					id: "2B50610249BB055E"
+					item: { count: 1, id: "cbc_at:twin_autocannon_recoil_spring_mould" }
+					type: "item"
+				}
+				{
+					id: "3485CEE4FC92827F"
+					item: { count: 1, id: "cbc_at:twin_autocannon_breech_mould" }
+					type: "item"
+				}
+				{
+					id: "47737B9A1AD21DEE"
+					item: { count: 1, id: "cbc_at:vert_twin_autocannon_muzzle_brake_mould" }
+					type: "item"
+				}
+				{
+					id: "068263CB56B38CCE"
+					item: { count: 1, id: "cbc_at:vert_twin_autocannon_barrel_mould" }
+					type: "item"
+				}
+				{
+					id: "67166613B07F7D90"
+					item: { count: 1, id: "cbc_at:vert_twin_autocannon_silencer_mould" }
+					type: "item"
+				}
+				{
+					id: "1016D80DC8C6B40C"
+					item: { count: 1, id: "cbc_at:vert_twin_autocannon_recoil_spring_mould" }
+					type: "item"
+				}
+				{
+					id: "009B291E3F7DC498"
+					item: { count: 1, id: "cbc_at:vert_twin_autocannon_breech_mould" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3D410A0C549DF290"]
+			entity_vis_size: 1.0f
+			id: "3895AD704107325F"
+			tasks: [
+				{
+					id: "69D6908ED45F6E64"
+					item: { count: 1, id: "cbc_at:heavy_autocannon_muzzle_brake_mould" }
+					type: "item"
+				}
+				{
+					id: "215F97E11E022D0A"
+					item: { count: 1, id: "cbc_at:heavy_autocannon_barrel_mould" }
+					type: "item"
+				}
+				{
+					id: "219B1E1D2B167011"
+					item: { count: 1, id: "cbc_at:heavy_autocannon_silencer_mould" }
+					type: "item"
+				}
+				{
+					id: "005AE9B4CC9830A7"
+					item: { count: 1, id: "cbc_at:heavy_autocannon_recoil_spring_mould" }
+					type: "item"
+				}
+				{
+					id: "6176BDA809BE91AC"
+					item: { count: 1, id: "cbc_at:heavy_autocannon_breech_mould" }
+					type: "item"
+				}
+				{
+					id: "03BA0EFD9B695088"
+					item: { count: 1, id: "cbc_at:heavy_autocannon_qfbreech_mould" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3D410A0C549DF290"]
+			entity_vis_size: 1.0f
+			id: "18160A3FFCD85FD5"
+			tasks: [
+				{
+					id: "1158C6AB1150FC68"
+					item: { count: 1, id: "cbc_at:rocket_pod_rail_mould" }
+					type: "item"
+				}
+				{
+					id: "5352DF06932E6B84"
+					item: { count: 1, id: "cbc_at:rocket_pod_breech_mould" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3A526F4EAF77091F"
+			tasks: [{
+				id: "3E05075C6000280A"
+				item: { count: 1, id: "createbigcannons:cannon_loader" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "38DC141B0AFA9FC7"
+			rewards: [{
+				count: 16
+				id: "427ED582E2BB2F50"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F1E04D4D059AC7E"
+				item: { count: 1, id: "cbcatfix:flak_shell" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -9.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6D24DA65B6DE38D2"
+			rewards: [{
+				count: 16
+				id: "229BFB1BAD4E0528"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2E0D026CA42A4ED8"
+				item: { count: 1, id: "cbcatfix:heavy_he_shell" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -9.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3911B9CC7C1BCDFC"
+			rewards: [{
+				count: 16
+				id: "7FFD8C43B87CD9C7"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7827D852009C17DA"
+				item: { count: 1, id: "cbcatfix:heat_shell" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -9.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0E39FFF5132E3F77"
+			rewards: [{
+				count: 16
+				id: "1F670585F4614DEC"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4DAC70E0E7BADF75"
+				item: { components: { "createbigcannons:power": 1 }, count: 1, id: "cbc_at:armor_piercing_shell_cartridge" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -9.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "577B2EF705724B01"
+			rewards: [{
+				count: 16
+				id: "193C49896F4EF796"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5BA8A550D0316AED"
+				item: { components: { "createbigcannons:power": 1 }, count: 1, id: "cbc_at:armor_piercing_shell_caseless" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -9.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7132132A40E330E6"
+			rewards: [{
+				count: 16
+				id: "636B43725A47E2F2"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3ACA943658B04F66"
+				item: { components: { "createbigcannons:power": 1 }, count: 1, id: "cbc_at:fluid_shell_cartridge" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -9.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "12FBD05567F3E16B"
+			rewards: [{
+				count: 16
+				id: "44CB23B6AB0ADAAB"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4037552BEBE65808"
+				item: { components: { "createbigcannons:power": 1 }, count: 1, id: "cbc_at:fluid_shell_caseless" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -9.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "546AEF570ECB82FE"
+			rewards: [{
+				count: 16
+				id: "5985ACC4C8F65EF8"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "28E530AB99260840"
+				item: { components: { "createbigcannons:power": 1 }, count: 1, id: "cbc_at:high_explosive_cartridge" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -8.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4A341BE664357851"
+			rewards: [{
+				count: 16
+				id: "745B1490F648B258"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3520A979B6BB51D3"
+				item: { components: { "createbigcannons:power": 1 }, count: 1, id: "cbc_at:high_explosive_caseless" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -8.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "609C51EBD6459E5B"
+			rewards: [{
+				count: 16
+				id: "59C30469BFF3563B"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "402B220948129BE0"
+				item: { components: { "createbigcannons:power": 1 }, count: 1, id: "cbc_at:shrapnel_cartridge" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -8.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7D15748A5D2D1FAD"
+			rewards: [{
+				count: 16
+				id: "30AC4151E7B9EE5D"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C79015170C5D972"
+				item: { components: { "createbigcannons:power": 1 }, count: 1, id: "cbc_at:smoke_cartridge" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -8.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "73D0788554FA61DF"
+			rewards: [{
+				count: 16
+				id: "5C0180662DB2BE9A"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "00AADB92323B7F40"
+				item: { components: { "createbigcannons:power": 1 }, count: 1, id: "cbc_at:smoke_caseless" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -8.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4BDE98D8C72D7952"
+			rewards: [{
+				id: "53AEBBDBC3E3333C"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "025607FD79940B4C"
+				item: { count: 1, id: "createbigcannons:ap_autocannon_round" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -6.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2820B7EEEA7CEAED"
+			rewards: [{
+				id: "783328DCF18A7DCA"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7057C6EA1B5E180B"
+				item: { count: 1, id: "createbigcannons:flak_autocannon_round" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -6.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "77A555AF733484AE"
+			rewards: [{
+				id: "697D12FBCE84D06B"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "107ED2AFA211BD1A"
+				item: { count: 1, id: "cbc_at:heavy_autocannon_ammo_box" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "36A67A5CE84DBC0F"
+			rewards: [{
+				id: "3DB69630D7CE8A7E"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D7DFE882A162738"
+				item: { count: 1, id: "cbc_at:apds_item" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "05CE736A953DCE72"
+			rewards: [{
+				id: "7E99531D497B9792"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "674BFEDC96670A7B"
+				item: { count: 1, id: "cbc_at:apdsfs_item" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "08705AEF9DCC230A"
+			rewards: [{
+				id: "17E38B7C98070591"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "61E803ADB5F78F22"
+				item: { count: 1, id: "cbc_at:he_item" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6D9ED0D7081CE280"
+			rewards: [{
+				id: "5C441D902F792269"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1EEA2297C4F82701"
+				item: { count: 1, id: "cbc_at:hei_item" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6CF257FE26DD96B3"
+			rewards: [{
+				id: "5B3EA974FC1FC6B8"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "5E357176C5815835"
+				item: { count: 1, id: "createbigcannons:empty_machine_gun_round" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3A0E9F5D51C1997E"
+			rewards: [{
+				id: "67A7F8B1BA271F0B"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			tasks: [{
+				id: "62EDB82CE4B1C015"
+				item: { count: 1, id: "cbc_at:heavy_autocannon_empty_cartridge" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5E40BBA08A995E06"
+			rewards: [{
+				id: "5DF8F23425B1E16F"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "27B6EB7DDB6DD528"
+				item: { count: 1, id: "cbc_at:ha_ap_item" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -6.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "55F689D673280691"
+			rewards: [{
+				id: "45E62AA926D64BAF"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "31509A7F71187004"
+				item: { count: 1, id: "cbc_at:ha_apds_item" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -6.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1BDC81990A196402"
+			rewards: [{
+				id: "4D72E2FFD83FCC17"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2B9E6AA6A8E020AF"
+				item: { count: 1, id: "cbc_at:ha_apdsfs_item" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "41E4A4211D6B085A"
+			rewards: [{
+				id: "22A1E0B43F7F88B5"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "44802446E3A4E0C4"
+				item: { count: 1, id: "cbc_at:ha_he_item" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6E969AD952F8B371"
+			rewards: [{
+				id: "40435EF7ACFBE994"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "58D8746CEA7F0B78"
+				item: { count: 1, id: "cbc_at:ha_hef_item" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3E5628C7DA4DC2A0"
+			rewards: [{
+				id: "5994D169F902A08D"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "52C54B5E714CB7D4"
+				item: { count: 1, id: "cbc_at:ha_heat_item" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0D40C44FA617CB17"
+			rewards: [{
+				id: "2AB8CC31D50F246A"
+				item: {
+					count: 1
+					id: "createbigcannons:nitropowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "13A9CA1F7EB6FF00"
+				item: { count: 1, id: "cbc_at:ha_smoke_item" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "52903AF451E0BAC6"
+			tasks: [{
+				id: "2E291E31633671CB"
+				item: { components: { "cbc_at:rocket_fuel": 30b, "createbigcannons:projectile": [{ item: { count: 1, id: "createbigcannons:ap_autocannon_round" }, slot: 0 }], "minecraft:custom_data": { CbcatFixAssemblyFuel: 1b, CbcatFixFuelTicks: 30, CbcatFixLightweight: 1b } }, count: 1, id: "cbc_at:ap_rocket_item" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -7.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "78C835DEC91CB312"
+			tasks: [{
+				id: "747F930F5D9EB43D"
+				item: { components: { "cbc_at:rocket_fuel": 30b, "createbigcannons:projectile": [{ item: { count: 1, id: "createbigcannons:flak_autocannon_round" }, slot: 0 }], "minecraft:custom_data": { CbcatFixAssemblyFuel: 1b, CbcatFixFuelTicks: 30, CbcatFixLightweight: 1b } }, count: 1, id: "cbc_at:flak_rocket_item" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -6.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "070A21B75787E6B9"
+			tasks: [{
+				id: "21F88FD2622834D1"
+				item: { components: { "cbc_at:rocket_fuel": 30b, "createbigcannons:projectile": [{ item: { count: 1, id: "cbc_at:he_item" }, slot: 0 }], "minecraft:custom_data": { CbcatFixAssemblyFuel: 1b, CbcatFixFuelTicks: 30, CbcatFixLightweight: 1b } }, count: 1, id: "cbc_at:he_rocket_item" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "58139D733463B4AF"
+			tasks: [{
+				id: "6A5245F10BB9FAB5"
+				item: { components: { "cbc_at:rocket_fuel": 30b, "createbigcannons:projectile": [{ item: { count: 1, id: "cbc_at:hei_item" }, slot: 0 }], "minecraft:custom_data": { CbcatFixAssemblyFuel: 1b, CbcatFixFuelTicks: 30, CbcatFixLightweight: 1b } }, count: 1, id: "cbc_at:hei_rocket_item" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5C9F3B0BE5150AE8"
+			tasks: [{
+				id: "28E029D5124E14E5"
+				item: { components: { "cbc_at:rocket_fuel": 120b, "createbigcannons:projectile": [{ item: { count: 1, id: "cbc_at:ha_ap_item" }, slot: 0 }], "minecraft:custom_data": { CbcatFixAssemblyFuel: 1b, CbcatFixFuelTicks: 120, CbcatFixLightweight: 1b } }, count: 1, id: "cbc_at:medium_ap_rocket_item" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -7.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1FDCD4CBC59EA550"
+			tasks: [{
+				id: "703BCBEEB8715BA6"
+				item: { components: { "cbc_at:rocket_fuel": 120b, "createbigcannons:projectile": [{ item: { count: 1, id: "cbc_at:ha_he_item" }, slot: 0 }], "minecraft:custom_data": { CbcatFixAssemblyFuel: 1b, CbcatFixFuelTicks: 120, CbcatFixLightweight: 1b } }, count: 1, id: "cbc_at:medium_he_rocket_item" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -6.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "67C38D4D444BF3E1"
+			tasks: [{
+				id: "4E34553EC46A96F2"
+				item: { components: { "cbc_at:rocket_fuel": 120b, "createbigcannons:projectile": [{ item: { count: 1, id: "cbc_at:ha_hef_item" }, slot: 0 }], "minecraft:custom_data": { CbcatFixAssemblyFuel: 1b, CbcatFixFuelTicks: 120, CbcatFixLightweight: 1b } }, count: 1, id: "cbc_at:medium_hef_rocket_item" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -5.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6721D1C1677329A1"
+			tasks: [{
+				id: "020724A6A3EB007A"
+				item: { components: { "cbc_at:rocket_fuel": 120b, "createbigcannons:projectile": [{ item: { count: 1, id: "cbc_at:ha_heat_item" }, slot: 0 }], "minecraft:custom_data": { CbcatFixAssemblyFuel: 1b, CbcatFixFuelTicks: 120, CbcatFixLightweight: 1b } }, count: 1, id: "cbc_at:medium_heat_rocket_item" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0F38087EC1AEA176"
+			tasks: [{
+				id: "207532EFB747A61A"
+				item: { components: { "cbc_at:rocket_fuel": 127b, "createbigcannons:projectile": [{ item: { count: 1, id: "createbigcannons:ap_shot" }, slot: 0 }], "minecraft:custom_data": { CbcatFixAssemblyFuel: 1b, CbcatFixFuelTicks: 360, CbcatFixLightweight: 1b } }, count: 1, id: "cbcatfix:big_ap_rocket" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -7.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "10181D9FCA987907"
+			tasks: [{
+				id: "407EAE86E2740103"
+				item: { components: { "cbc_at:rocket_fuel": 127b, "createbigcannons:projectile": [{ item: { count: 1, id: "createbigcannons:he_shell" }, slot: 0 }], "minecraft:custom_data": { CbcatFixAssemblyFuel: 1b, CbcatFixFuelTicks: 360, CbcatFixLightweight: 1b } }, count: 1, id: "cbcatfix:big_he_rocket" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -6.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5D237F330AC40EE5"
+			tasks: [{
+				id: "1B5BDFD185AC9572"
+				item: { components: { "cbc_at:rocket_fuel": 120b, "createbigcannons:projectile": [{ item: { count: 1, id: "cbc_at:ha_hef_item" }, slot: 0 }], "minecraft:custom_data": { CbcatFixAssemblyFuel: 1b, CbcatFixFuelTicks: 120, CbcatFixLightweight: 1b } }, count: 1, id: "cbc_at:medium_hef_rocket_item" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -5.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "579E8F586B14EE85"
+			tasks: [{
+				id: "5383404206A1A5BA"
+				item: { components: { "cbc_at:rocket_fuel": 127b, "createbigcannons:projectile": [{ item: { count: 1, id: "cbcatfix:heat_shell" }, slot: 0 }], "minecraft:custom_data": { CbcatFixAssemblyFuel: 1b, CbcatFixFuelTicks: 360, CbcatFixLightweight: 1b } }, count: 1, id: "cbcatfix:big_heat_rocket" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.0d
+		}
+	]
+}

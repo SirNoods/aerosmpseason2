@@ -1,4 +1,5 @@
 {
+	always_invisible: true
 	autofocus_id: "6E925E17FB4454E2"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
@@ -6,9 +7,10 @@
 	group: "6398AB49C115030C"
 	id: "658AA64BA56F0E68"
 	images: [ ]
-	order_index: 6
+	order_index: 5
 	quest_links: [ ]
 	quests: [{
+		entity_vis_size: 1.0f
 		id: "6E925E17FB4454E2"
 		shape: "gear"
 		size: 2.0d

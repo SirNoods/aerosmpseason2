@@ -12,8 +12,6 @@
 	enableMannequinPoserGui = true
 	#Use the StrawStatues/Statue Menus armor stand GUI for armor stands and player mannequins when StrawStatues is installed. StrawStatues entities always keep their own GUI.
 	preferStrawStatuesPoserGui = true
-	#Use the V2 node graph interface for Advanced Contraption Controllers
-	advancedControllerV2Ui = true
 	#Maximum local volume multiplier for thruster sounds (0 disables local thruster audio)
 	# Default: 1.0
 	# Range: 0.0 ~ 2.0
@@ -25,9 +23,7 @@
 	#Claw marker render mode is disabled; OFF is enforced
 	#Allowed Values: DEPTH, DECAL, PARTICLE, OFF
 	clawMarkerRenderMode = "OFF"
-	#Thrusters emit light
-	thrustersEmitLight = true
-	#Minimum updates per second for each visible ACC Display or CCTV camera feed. Actual FPS is limited by your computer's frame rate.
+	#Target frames per second for each visible ACC Display or CCTV tablet camera feed. Actual FPS is limited by your computer's frame rate. Changes apply to active feeds.
 	# Default: 10
 	# Range: 1 ~ 60
 	cameraMinimumRefreshRate = 10
@@ -35,8 +31,13 @@
 	useThrusterPlumeV2Renderer = true
 	#Use Plume metaball rendering for the active V2 exhaust
 	usePlumeMetaballRendering = true
-	#Plumes emit light into the surrounding world
-	plumesEmitLight = false
+	#Pixel resolution of the longest edge of ACC Display and CCTV tablet camera feeds. Aspect ratio is preserved. Higher values improve detail and use more GPU resources. Changes apply to active feeds.
+	# Default: 320
+	# Range: 64 ~ 2048
+	cameraFeedResolution = 320
+	#World Hologram Projector Resolution. FULL keeps original textured models. HIGH simplifies small projected blocks. MEDIUM always averages eligible solid faces; LOW also groups their colors, including nearby and layered terrain such as grass. Glass, thin blocks and block entity partials retain their models. Distant surfaces simplify further. Changes apply to active holograms.
+	#Allowed Values: FULL, HIGH, MEDIUM, LOW
+	worldHologramProjectorResolution = "FULL"
 
 	#Seasonal visual effects
 	[client.seasonal]

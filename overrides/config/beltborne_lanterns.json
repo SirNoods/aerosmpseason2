@@ -10,5 +10,14 @@
   "rotYDeg": 0,
   "rotZDeg": 0,
   "scale100": 500,
-  "extraLampLight": []
+  "extraLampLight": [
+    {
+      "id": "minecraft:lantern",
+      "luminance": 15
+    },
+    {
+      "id": "minecraft:soul_lantern",
+      "luminance": 10
+    }
+  ]
 }

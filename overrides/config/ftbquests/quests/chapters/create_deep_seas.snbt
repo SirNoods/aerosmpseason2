@@ -1,0 +1,522 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_deep_seas"
+	group: "51F71B4D9DE33E6B"
+	icon: {
+		id: "create_submarine:oxygene_diffuser"
+	}
+	id: "0B412E60DD1B129A"
+	images: [ ]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			id: "0899F1A317DE5D5C"
+			rewards: [{
+				count: 4
+				id: "6527EB844614688C"
+				item: {
+					count: 1
+					id: "minecraft:copper_block"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.35d
+			tasks: [{
+				id: "525D3D9F512C3B50"
+				item: { count: 1, id: "create_submarine:ballast_tank" }
+				type: "item"
+			}]
+			x: -2.025d
+			y: 0.675d
+		}
+		{
+			dependencies: ["0899F1A317DE5D5C"]
+			entity_vis_size: 1.0f
+			id: "56964EE9BF575F80"
+			rewards: [{
+				count: 4
+				id: "0B89A33B35408EF9"
+				item: {
+					count: 1
+					id: "minecraft:copper_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7DDDC32E2386EC0E"
+				item: { count: 1, id: "create_submarine:ballast_vent" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "21C1B82822A265E6"
+			rewards: [{
+				count: 4
+				id: "1B9AD7696594B258"
+				item: {
+					count: 1
+					id: "minecraft:copper_block"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.35d
+			tasks: [{
+				id: "395E8997A63C8648"
+				item: { count: 1, id: "create_submarine:oxygene_diffuser" }
+				type: "item"
+			}]
+			x: 2.025d
+			y: 0.675d
+		}
+		{
+			dependencies: ["21C1B82822A265E6"]
+			entity_vis_size: 1.0f
+			id: "1345BAD71D0CBBEA"
+			rewards: [{
+				count: 4
+				id: "2615BA2987A91224"
+				item: {
+					count: 1
+					id: "minecraft:copper_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "424AAE59672269C5"
+				item: { count: 1, id: "create_submarine:electrolyzer" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0DE6BF03E14CC2B0"
+			rewards: [
+				{
+					count: 4
+					id: "3F69FAA4E461DE0B"
+					item: {
+						count: 1
+						id: "minecraft:copper_block"
+					}
+					type: "item"
+				}
+				{
+					id: "034EABF79CBF31B2"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "5D2D2D3E3F72219C"
+					item: {
+						count: 1
+						id: "create_submarine:water_thruster"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "479608F9C310FBDC"
+				item: { count: 1, id: "create_submarine:water_thruster" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "29D1EEFD160B4FB7"
+			rewards: [
+				{
+					count: 8
+					id: "6670AEB8F560C0B3"
+					item: {
+						count: 1
+						id: "create_submarine:iron_pressurizer"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "03B75B08FD547467"
+					item: {
+						count: 1
+						id: "create_submarine:copper_pressurizer"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1096AA8240D58A07"
+					item: { count: 1, id: "create_submarine:iron_pressurizer" }
+					type: "item"
+				}
+				{
+					id: "6D1D36DDC50F8B4E"
+					item: { count: 1, id: "create_submarine:copper_pressurizer" }
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "30BFB48A05925FCC"
+			rewards: [
+				{
+					count: 8
+					id: "0072C966B96F28FD"
+					item: {
+						count: 1
+						id: "create_submarine:floater"
+					}
+					type: "item"
+				}
+				{
+					id: "531995B35E66380C"
+					item: {
+						count: 1
+						id: "create_submarine:phycological_membrane"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6848763CF591F809"
+				item: { count: 1, id: "create_submarine:floater" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3B4F880DC32D4830"
+			rewards: [{
+				count: 2
+				id: "4469D7957CC9AC3F"
+				item: {
+					count: 1
+					id: "create_submarine:submarine_propeller"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4130F26971350D10"
+				item: { count: 1, id: "create_submarine:submarine_propeller" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "44D127D6C4FA6368"
+			rewards: [
+				{
+					count: 8
+					id: "24199A2EFA375D54"
+					item: {
+						count: 1
+						id: "create_submarine:iron_pressurizer"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "3633346BD60803CF"
+					item: {
+						count: 1
+						id: "create_submarine:copper_pressurizer"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6F2D9CA96C2C75EC"
+				item: { count: 1, id: "create_submarine:barometer" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0EE9FE3B39DF6DE2"
+			rewards: [{
+				id: "21C8DB11CCB3C0D5"
+				item: {
+					count: 1
+					id: "create:transmitter"
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "2F49C653F6F283BB"
+				item: { count: 1, id: "create_submarine:command_sub" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "45B6336EEA8D2865"
+			rewards: [{
+				id: "4A350345BA73FDEF"
+				item: {
+					count: 1
+					id: "create:electron_tube"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7196E8D52B392E32"
+				item: { count: 1, id: "create_submarine:pressure_goggles" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0349901B34ED7A71"
+			rewards: [{
+				id: "081AEA2EBBA456DF"
+				item: {
+					count: 1
+					id: "minecraft:copper_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "50DAA6D434A0562D"
+				item: { count: 1, id: "create_submarine:diving_chestplate" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5ACAA00501229B20"
+			rewards: [{
+				id: "7DE977A38E3F7A98"
+				item: {
+					count: 1
+					id: "minecraft:copper_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7E5331135BC9E2F9"
+				item: { count: 1, id: "create_submarine:diving_leggings" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "48B77978CCBADAA3"
+			rewards: [{
+				count: 4
+				id: "1330062A5C0A5DFB"
+				item: {
+					count: 1
+					id: "create:copper_sheet"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "40DB2F8355401438"
+				item: { count: 1, id: "create_submarine:decompression_chamber" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7DD11EA18B8159CC"
+			rewards: [{
+				count: 4
+				id: "10C43A2745270355"
+				item: {
+					count: 1
+					id: "minecraft:amethyst_shard"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0725B81B5266A511"
+				item: { count: 1, id: "create_submarine:sonar" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4EC0DA8B114FDD49"
+			rewards: [{
+				id: "7A86EC965FBE404F"
+				item: {
+					count: 1
+					id: "create:electron_tube"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4C415B934B65537E"
+				item: { count: 1, id: "create_submarine:industrial_alarm" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "25435B08F0B7A64A"
+			rewards: [
+				{
+					id: "7E9770F0D655BA89"
+					item: {
+						count: 1
+						id: "simulated:rope_connector"
+					}
+					type: "item"
+				}
+				{
+					id: "64667AADF5E25FB8"
+					item: {
+						count: 1
+						id: "simulated:rope_winch"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "43AF379C7ADBAC9B"
+					item: { count: 1, id: "create_submarine:arresting_hook" }
+					type: "item"
+				}
+				{
+					id: "4655E188EC718C28"
+					item: { count: 1, id: "create_submarine:steel_cable" }
+					type: "item"
+				}
+				{
+					id: "66A8078B038B1BEF"
+					item: { count: 1, id: "create_flight_control:arrester_wire" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6D1B3E8EB897CA3E"
+			tasks: [{
+				id: "18C627B293C5C9BA"
+				item: { count: 1, id: "create_submarine:pulley" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0951CE285C9569E3"
+			rewards: [{
+				count: 16
+				id: "0881D2720807A34C"
+				item: {
+					count: 1
+					id: "minecraft:gunpowder"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "407647A29EF63EBA"
+				item: { count: 1, id: "create_submarine:underwater_mine" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3865F6907749DE6E"
+			rewards: [{
+				count: 8
+				id: "62491B0193B5BADC"
+				item: {
+					count: 1
+					id: "minecraft:copper_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "09F8D0405A757F90"
+				item: { count: 1, id: "create_submarine:pump_controller" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0BB176624FB255D5"
+			rewards: [{
+				id: "56FC9981733FBEF5"
+				item: {
+					count: 1
+					id: "minecraft:copper_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0F59801CF76E2B60"
+				item: { count: 1, id: "create:copper_diving_helmet" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "41611FC5126A59AB"
+			rewards: [{
+				id: "45F0C329B626C071"
+				item: {
+					count: 1
+					id: "minecraft:copper_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1B677A9676CA228D"
+				item: { count: 1, id: "create:copper_diving_boots" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+	]
+}

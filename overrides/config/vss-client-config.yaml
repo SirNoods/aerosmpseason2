@@ -1,0 +1,94 @@
+# LOD Server Support — client defaults (Fabric/NeoForge).
+# After editing this file, run /vss reload to activate changes.
+# Sodium Apply saves and reloads automatically. [reconnect] settings wait for the next connection.
+config_version: 1 # Local settings schema version, independent of the network protocol.
+
+# Downloads distant terrain for installed consumers such as Voxy or a map mod.
+# The terrain renderer controls how that data is drawn; this download radius does
+# not raise vanilla render/simulation distance. More terrain can cost client disk,
+# memory and processing time. Turning reception off does not erase cached terrain.
+lod:
+  # Experimental keys (lod.source, lod.dh.*, lod.voxy_border_fill) are kept in the
+  # separate *-client-experimental.yaml file beside this one, so this file stays
+  # readable by older versions. General > Allow DH Server Terrain writes it.
+  receive: true # Download server LOD terrain; off stops acquisition, not saved terrain display.
+  distance_chunks: 0 # 0 = server default; otherwise 1–2048, capped by the server's radius.
+  # Balance terrain fill speed against connection quality and client processing load.
+  # A column-rate limit counts chunk columns, not bytes: dense/modded terrain can
+  # cost more per column. Lower rates can help stutters but take longer to fill.
+  # Adaptive controls react to latency or consumer backlog; they are not an FPS cap.
+  download:
+    max_columns_per_second: 0 # 0 = unlimited; positive range 10–100000 columns/second.
+    adaptive_rate: true # Adjust download rate when latency indicates congestion; also paces DH joins.
+    slow_start_on_join: true # Begin new sessions gently; requires adaptive_rate.
+    ingest_backpressure: true # Slow downloads when terrain consumers fall behind.
+
+# Controls which missing or stale terrain is requested and how often it is checked.
+# Region ordering and scan shortcuts reduce repeated work; they do not invent terrain
+# or increase server generation speed. These are primarily troubleshooting switches.
+scan:
+  region_order: true # [reconnect] Complete nearby regions instead of scanning chunk rings.
+  adaptive_cadence: true # [reconnect] Rescan sooner when the current request set completes.
+  retain_completed_prefix: true # [reconnect] Avoid rewalking already satisfied terrain.
+  quadtree: true # [reconnect] Use the optimized completed-region scan.
+  region_summaries: true # [reconnect] Validate cached terrain using server summaries.
+
+# Tracks terrain freshness so revisits can avoid downloading unchanged columns.
+# This is separate from the terrain renderer's own saved data. World separation
+# prevents one server address's replacement world from inheriting stale freshness.
+# Use address aliases only for addresses reaching the same world, with matching
+# consumer storage; sharing freshness alone could leave missing terrain unrequested.
+cache:
+  split_by_world: true # [reconnect] Separate cache identity when one address changes worlds.
+  address_aliases: [] # [reconnect] Ordered address groups; first address is canonical.
+  # Example: [["play.example.com", "alt.example.com"]]. Requires consumer corroboration.
+  # Aliases stay inactive while map ingestion writes into a per-server map store.
+
+# Protocol fallbacks allow older LOD servers. Block fallbacks provide a local visual
+# substitute when this client does not know a received block; they do not install
+# missing content or make otherwise incompatible modpacks compatible.
+compatibility:
+  protocols:
+    v16: true # [reconnect] Allow fallback to protocol-16 servers.
+    v19: true # [reconnect] Allow fallback to protocol-19 servers.
+  v16_generation: true # [reconnect] Request generation from compatible protocol-16 servers.
+  block_fallbacks:
+    default: "minecraft:stone" # [reconnect] Unknown block fallback; must not resolve to air.
+    overrides: {} # [reconnect] Remote block ID -> local block ID mappings.
+
+integrations:
+  # Writes received distant terrain into installed map mods (Xaero's World Map, JourneyMap),
+  # so the map shows beyond the area you have explored. See the README for supported versions.
+  # Maps save these tiles like explored terrain (they stay until you revisit), and a large LOD
+  # distance can add GBs of map data. Map writing paces downloads so maps stay complete; turning
+  # this off stops future writes after reconnect without removing terrain already saved.
+  # map_ingestion.nether_store_mib (experimental file, default 256) caps the disk kept to fill
+  # Xaero's cave layers when you switch layer; 0 = no store and no fill on switch.
+  map_ingestion:
+    enabled: true # [reconnect] Write server terrain into installed map mods; off = maps show only explored terrain.
+    backpressure: true # Pace downloads to map writes; requires ingest_backpressure.
+
+# Draws distant player models from server snapshots, not fully simulated entities.
+# Larger render/animation distances add client work; reducing animation distance
+# keeps distant models visible while skipping their walk animation.
+# Showing other players and sharing your own position are independent choices:
+# disabling this renderer does not automatically hide you from other players.
+far_players:
+  enabled: true # Show distant players when this loader has a renderer and the server allows it.
+  distance:
+    min_blocks: 0 # 0 = server-controlled inner ring; otherwise up to 16384 blocks.
+    max_blocks: 0 # 0 = server maximum; otherwise up to 16384 blocks.
+  name_tags: true # Show this mod's far-player name tags.
+  full_bright: false # Draw distant players at full brightness, including at night.
+  render_distance_blocks: 0 # 0 = effective server/client ring; caps models and name tags.
+  # extend_far_plane (experimental file, default false) draws far players past the game's
+  # far clipping plane, out to the farthest far player; only visible with an LOD mod such
+  # as Voxy, not used while a shader pack is on. Fog can still hide very distant players:
+  # turn off your LOD mod's fog if they fade out.
+  animation_distance_blocks: 512 # Animate nearby proxies; 0 = no walk animation.
+  # Controls whether others may see your position through the far-player feature.
+  # This does not hide you from normal Minecraft tracking or unrelated systems.
+  # Sodium Apply activates this choice; after a disk edit, run /vss reload.
+  sharing:
+    enabled: true # Let other players see you at a distance; use Sodium Apply or /vss reload.
+    max_distance_blocks: 0 # 0 = no extra sharing cap; otherwise up to 16384 blocks.

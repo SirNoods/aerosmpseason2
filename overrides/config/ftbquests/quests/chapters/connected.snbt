@@ -1,22 +1,19 @@
 {
-	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "connected"
 	group: "6398AB49C115030C"
 	icon: {
-		components: {
-			"ftbquests:missing_item": "create_connected:empty_fan_catalyst"
-		}
-		id: "ftbquests:missing_item"
+		id: "create_connected:fan_seething_catalyst"
 	}
 	id: "0F6CCDB4ABBAE4C6"
 	images: [ ]
-	order_index: 4
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["6A46C70D8A7DBC04"]
+			entity_vis_size: 1.0f
 			id: "1C29150EA7A53EFC"
 			rewards: [{
 				id: "2BC78BE6B189029D"
@@ -28,7 +25,7 @@
 			}]
 			tasks: [{
 				id: "7399D586AAF60E4B"
-				item: { components: { "ftbquests:missing_item": "create_connected:fan_splashing_catalyst" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:fan_splashing_catalyst" }
 				type: "item"
 			}]
 			x: -0.5d
@@ -36,6 +33,7 @@
 		}
 		{
 			dependencies: ["6A46C70D8A7DBC04"]
+			entity_vis_size: 1.0f
 			id: "452652A47626C707"
 			rewards: [{
 				id: "6305638AC7664499"
@@ -47,24 +45,22 @@
 			}]
 			tasks: [{
 				id: "740F4C97425E7DE3"
-				item: { components: { "ftbquests:missing_item": "create_connected:fan_haunting_catalyst" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:fan_haunting_catalyst" }
 				type: "item"
 			}]
 			x: -0.5d
 			y: 1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "6A46C70D8A7DBC04"
 			rewards: [
 				{
 					count: 3
 					id: "2D9B4E1A4A83D53B"
 					item: {
-						components: {
-							"ftbquests:missing_item": "create_connected:empty_fan_catalyst"
-						}
 						count: 1
-						id: "ftbquests:missing_item"
+						id: "create_connected:empty_fan_catalyst"
 					}
 					type: "item"
 				}
@@ -76,7 +72,7 @@
 			]
 			tasks: [{
 				id: "16E267D945B1B6B5"
-				item: { components: { "ftbquests:missing_item": "create_connected:empty_fan_catalyst" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:empty_fan_catalyst" }
 				type: "item"
 			}]
 			x: -1.0d
@@ -84,6 +80,7 @@
 		}
 		{
 			dependencies: ["6A46C70D8A7DBC04"]
+			entity_vis_size: 1.0f
 			id: "6CE7AC11D89F7998"
 			rewards: [{
 				id: "7225DB553F20EC85"
@@ -95,7 +92,7 @@
 			}]
 			tasks: [{
 				id: "4DF4AAF110256ECA"
-				item: { components: { "ftbquests:missing_item": "create_connected:fan_blasting_catalyst" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:fan_blasting_catalyst" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -103,6 +100,7 @@
 		}
 		{
 			dependencies: ["6A46C70D8A7DBC04"]
+			entity_vis_size: 1.0f
 			id: "2859F1B560AC334B"
 			rewards: [{
 				id: "0756899E10F278E9"
@@ -114,13 +112,14 @@
 			}]
 			tasks: [{
 				id: "7EA86A4E6E051517"
-				item: { components: { "ftbquests:missing_item": "create_connected:fan_smoking_catalyst" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:fan_smoking_catalyst" }
 				type: "item"
 			}]
 			x: -1.5d
 			y: 1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "4F15D1EB5397C942"
 			rewards: [
 				{
@@ -131,18 +130,15 @@
 				{
 					id: "0564FAC87D3443FB"
 					item: {
-						components: {
-							"ftbquests:missing_item": "create_connected:brass_gearbox"
-						}
 						count: 1
-						id: "ftbquests:missing_item"
+						id: "create_connected:brass_gearbox"
 					}
 					type: "item"
 				}
 			]
 			tasks: [{
 				id: "52441F87522F05AD"
-				item: { components: { "ftbquests:missing_item": "create_connected:brass_gearbox" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:brass_gearbox" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -150,6 +146,7 @@
 		}
 		{
 			dependencies: ["6943D3E73AD3E8B0"]
+			entity_vis_size: 1.0f
 			id: "490B52D011E6A0DE"
 			rewards: [
 				{
@@ -168,23 +165,24 @@
 			]
 			tasks: [{
 				id: "49C0B298CE19E485"
-				item: { components: { "ftbquests:missing_item": "create_connected:kinetic_battery" }, count: 1, id: "ftbquests:missing_item" }
+				item: { components: { "create_connected:kinetic_battery_charge": 3.6864E7d }, count: 1, id: "create_connected:kinetic_battery" }
 				type: "item"
 			}]
 			x: 1.0d
 			y: -0.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "6943D3E73AD3E8B0"
 			rewards: [
 				{
 					id: "61554907BDE72888"
 					item: {
 						components: {
-							"ftbquests:missing_item": "create_connected:kinetic_battery"
+							"create_connected:kinetic_battery_charge": 3.6864E7d
 						}
 						count: 1
-						id: "ftbquests:missing_item"
+						id: "create_connected:kinetic_battery"
 					}
 					type: "item"
 				}
@@ -196,13 +194,14 @@
 			]
 			tasks: [{
 				id: "27998F64D5C372E5"
-				item: { components: { "ftbquests:missing_item": "create_connected:kinetic_bridge" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:kinetic_bridge" }
 				type: "item"
 			}]
 			x: 1.0d
 			y: 0.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "72B78E193A7D0D0E"
 			rewards: [{
 				count: 16
@@ -215,75 +214,74 @@
 			}]
 			tasks: [{
 				id: "71D39AC926D254B4"
-				item: { components: { "ftbquests:missing_item": "create_connected:cross_connector" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:cross_connector" }
 				type: "item"
 			}]
 			x: -2.5d
 			y: -2.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "4D34030504790509"
 			rewards: [{
 				id: "7ED3435CCEFE7CB0"
 				item: {
-					components: {
-						"ftbquests:missing_item": "create_connected:parallel_gearbox"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "create_connected:parallel_gearbox"
 				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "02D9CEC30C7B3C45"
-				item: { components: { "ftbquests:missing_item": "create_connected:parallel_gearbox" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:parallel_gearbox" }
 				type: "item"
 			}]
 			x: -1.5d
 			y: -2.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "051E5008AF90F86B"
 			rewards: [{
 				id: "1CB4CEE5542E57B8"
 				item: {
-					components: {
-						"ftbquests:missing_item": "create_connected:six_way_gearbox"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "create_connected:six_way_gearbox"
 				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "5C1564196ABC8AD2"
-				item: { components: { "ftbquests:missing_item": "create_connected:six_way_gearbox" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:six_way_gearbox" }
 				type: "item"
 			}]
 			x: -0.5d
 			y: -2.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "53795E0502DAA36D"
 			tasks: [{
 				id: "378511EE42D90573"
-				item: { components: { "ftbquests:missing_item": "create_connected:crank_wheel" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:crank_wheel" }
 				type: "item"
 			}]
 			x: -3.0d
 			y: -0.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "03D3695417CE2B82"
 			tasks: [{
 				id: "5540247C08387831"
-				item: { components: { "ftbquests:missing_item": "create_connected:large_crank_wheel" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:large_crank_wheel" }
 				type: "item"
 			}]
 			x: -3.0d
 			y: 0.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "7068CA538D7F8D85"
 			rewards: [{
 				id: "641EA9B6BE8CC797"
@@ -295,13 +293,14 @@
 			}]
 			tasks: [{
 				id: "7A023045DBA30EF8"
-				item: { components: { "ftbquests:missing_item": "create_connected:inverted_clutch" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:inverted_clutch" }
 				type: "item"
 			}]
 			x: 2.5d
 			y: -0.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "1CA1F6BC2F508536"
 			rewards: [{
 				id: "7B42CEEF76A7100F"
@@ -313,77 +312,75 @@
 			}]
 			tasks: [{
 				id: "5753E81802CC5519"
-				item: { components: { "ftbquests:missing_item": "create_connected:inverted_gearshift" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:inverted_gearshift" }
 				type: "item"
 			}]
 			x: 2.5d
 			y: 0.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "172938CA9D2EF823"
 			rewards: [{
 				count: 8
 				id: "2A3CCFC34AC11AF1"
 				item: {
-					components: {
-						"ftbquests:missing_item": "create_connected:item_silo"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "create_connected:item_silo"
 				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "4C197D7C9D49A4E8"
-				item: { components: { "ftbquests:missing_item": "create_connected:item_silo" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:item_silo" }
 				type: "item"
 			}]
 			x: -4.5d
 			y: -0.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "667A91871415DF44"
 			rewards: [{
 				count: 8
 				id: "7C0A80660EBD69DB"
 				item: {
-					components: {
-						"ftbquests:missing_item": "create_connected:fluid_vessel"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "create_connected:fluid_vessel"
 				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "5C85BA7E77D1279E"
-				item: { components: { "ftbquests:missing_item": "create_connected:fluid_vessel" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:fluid_vessel" }
 				type: "item"
 			}]
 			x: -4.5d
 			y: 0.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "7078F6E8A179D88F"
 			tasks: [{
 				id: "00B49C85E0DF4F82"
-				item: { components: { "ftbquests:missing_item": "create_connected:linked_transmitter" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:linked_transmitter" }
 				type: "item"
 			}]
 			x: -0.5d
 			y: 2.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "76C8626BF50E7479"
 			tasks: [
 				{
 					id: "71C78EAD2F71C96C"
-					item: { components: { "ftbquests:missing_item": "create_connected:inventory_access_port" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "create_connected:inventory_access_port" }
 					type: "item"
 				}
 				{
 					id: "040D964BB1506CD3"
-					item: { components: { "ftbquests:missing_item": "create_connected:inventory_bridge" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "create_connected:inventory_bridge" }
 					type: "item"
 				}
 			]
@@ -391,54 +388,89 @@
 			y: -3.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "1A17EFA6931E49CC"
 			tasks: [{
 				id: "04CE2CA882D2DF12"
-				item: { components: { "ftbquests:missing_item": "create_connected:freewheel_clutch" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:freewheel_clutch" }
 				type: "item"
 			}]
 			x: 3.5d
 			y: -0.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "30151FE4EE927AA4"
 			tasks: [{
 				id: "6FFC7546D0DA9721"
-				item: { components: { "ftbquests:missing_item": "create_connected:brake" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:brake" }
 				type: "item"
 			}]
 			x: 3.5d
 			y: 0.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "74FE0EF7A62B7CF4"
 			tasks: [{
 				id: "54169F7AA15612BA"
-				item: { components: { "ftbquests:missing_item": "create_connected:centrifugal_clutch" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:centrifugal_clutch" }
 				type: "item"
 			}]
 			x: 3.0d
 			y: 1.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "2F5AD51B6A6C01A3"
 			tasks: [{
 				id: "175743B462918100"
-				item: { components: { "ftbquests:missing_item": "create_connected:shear_pin" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:shear_pin" }
 				type: "item"
 			}]
 			x: 0.0d
 			y: -3.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "70DC1CF6F284E511"
 			tasks: [{
 				id: "644EC183DC101055"
-				item: { components: { "ftbquests:missing_item": "create_connected:sequenced_pulse_generator" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "create_connected:sequenced_pulse_generator" }
 				type: "item"
 			}]
 			x: -1.5d
 			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "46E74B09FBE0D4A8"
+			tasks: [{
+				id: "079634A8CA6FC4CE"
+				item: { count: 1, id: "create_connected:dashboard" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1B9060465FA503ED"
+			rewards: [{
+				id: "43AB508806BEE188"
+				item: {
+					count: 1
+					id: "create:brass_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3139D9A7BC0D4AD5"
+				item: { count: 1, id: "create_connected:brass_chute" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
 		}
 	]
 }

@@ -1,4 +1,5 @@
 {
+	always_invisible: true
 	autofocus_id: "1BB571557F74D3A1"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
@@ -10,6 +11,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			entity_vis_size: 1.0f
 			id: "1BB571557F74D3A1"
 			rewards: [{
 				id: "5CD3EE9DDB8E0915"
@@ -30,6 +32,7 @@
 				"0F409DACBEB7BBF8"
 			]
 			dependency_requirement: "one_completed"
+			entity_vis_size: 1.0f
 			id: "0D6E099A1A242153"
 			rewards: [
 				{
@@ -68,6 +71,7 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
+			entity_vis_size: 1.0f
 			id: "15B51FB56A64C303"
 			rewards: [
 				{
@@ -105,6 +109,7 @@
 		}
 		{
 			dependencies: ["0D6E099A1A242153"]
+			entity_vis_size: 1.0f
 			id: "75599A9909C7A8C8"
 			rewards: [
 				{
@@ -133,6 +138,7 @@
 		}
 		{
 			dependencies: ["0D6E099A1A242153"]
+			entity_vis_size: 1.0f
 			id: "583A7AA84FEC027F"
 			rewards: [{
 				id: "2DD72858F74DB0F1"
@@ -152,6 +158,7 @@
 		}
 		{
 			dependencies: ["0D6E099A1A242153"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "342A1EF584823D2C"
 			rewards: [
@@ -190,6 +197,7 @@
 		}
 		{
 			dependencies: ["0D6E099A1A242153"]
+			entity_vis_size: 1.0f
 			id: "65D23E7683812E26"
 			rewards: [
 				{
@@ -222,6 +230,7 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
+			entity_vis_size: 1.0f
 			id: "23012F6C4C522CEB"
 			rewards: [
 				{
@@ -268,6 +277,7 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
+			entity_vis_size: 1.0f
 			id: "6BB0C51EE8CA5966"
 			rewards: [
 				{
@@ -305,6 +315,7 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
+			entity_vis_size: 1.0f
 			id: "0B009391E3F76D6E"
 			rewards: [
 				{
@@ -332,6 +343,7 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
+			entity_vis_size: 1.0f
 			id: "57C889EC980D33D9"
 			rewards: [
 				{
@@ -368,6 +380,7 @@
 		}
 		{
 			dependencies: ["0D6E099A1A242153"]
+			entity_vis_size: 1.0f
 			id: "67E8B8DCFC93F832"
 			rewards: [
 				{
@@ -408,6 +421,7 @@
 		}
 		{
 			dependencies: ["67E8B8DCFC93F832"]
+			entity_vis_size: 1.0f
 			id: "490628CE108A833A"
 			rewards: [
 				{
@@ -435,6 +449,7 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "71FCF06A98CC66D7"
 			rewards: [{
@@ -452,6 +467,7 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
+			entity_vis_size: 1.0f
 			id: "48AC8545D66B71B7"
 			rewards: [{
 				id: "26291BA2B0B493D5"
@@ -470,6 +486,7 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "3B40A769EDB26EA2"
 			rewards: [{
@@ -500,6 +517,7 @@
 		}
 		{
 			dependencies: ["1BB571557F74D3A1"]
+			entity_vis_size: 1.0f
 			id: "6EEA012FA11C7C08"
 			rewards: [{
 				id: "0C26B4C4C2E40B99"
@@ -515,6 +533,7 @@
 		}
 		{
 			dependencies: ["6EEA012FA11C7C08"]
+			entity_vis_size: 1.0f
 			id: "22F4C38E79DEFF1E"
 			rewards: [{
 				id: "686F219F7D0FA4DF"
@@ -530,6 +549,7 @@
 		}
 		{
 			dependencies: ["22F4C38E79DEFF1E"]
+			entity_vis_size: 1.0f
 			id: "1E1870FAD295DEDE"
 			rewards: [{
 				id: "39770AE2E1C10F79"
@@ -546,6 +566,7 @@
 		}
 		{
 			dependencies: ["22F4C38E79DEFF1E"]
+			entity_vis_size: 1.0f
 			id: "0F409DACBEB7BBF8"
 			rewards: [{
 				id: "07C2786C7B699300"
@@ -562,6 +583,7 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
+			entity_vis_size: 1.0f
 			id: "132AF80A62FFF98D"
 			rewards: [{
 				id: "70FF8005358FD4D3"
@@ -579,6 +601,7 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
+			entity_vis_size: 1.0f
 			id: "5FC01763770A062E"
 			rewards: [{
 				id: "75BD758BFC0D4791"
@@ -596,6 +619,7 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
+			entity_vis_size: 1.0f
 			id: "647F95EED59927B7"
 			rewards: [{
 				id: "6B894F7FD493FE50"
@@ -613,6 +637,7 @@
 		}
 		{
 			dependencies: ["0D6E099A1A242153"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "69EAF1072D492F1A"
 			rewards: [
@@ -640,6 +665,7 @@
 		}
 		{
 			dependencies: ["0D6E099A1A242153"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			icon: {
 				components: {
@@ -669,6 +695,7 @@
 				"493B9FC17C3CF3CA"
 				"130E8FC7479E4271"
 			]
+			entity_vis_size: 1.0f
 			id: "4DD7E2BD8508A117"
 			rewards: [{
 				id: "69375D01EECF69DB"
@@ -686,6 +713,7 @@
 		}
 		{
 			dependencies: ["0D6E099A1A242153"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "49793060345FB28C"
 			rewards: [
@@ -713,6 +741,7 @@
 		}
 		{
 			dependencies: ["0D6E099A1A242153"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "201CB898A399F1D5"
 			rewards: [{
@@ -730,6 +759,7 @@
 		}
 		{
 			dependencies: ["0D6E099A1A242153"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "7870800C28A7E199"
 			rewards: [
@@ -758,6 +788,7 @@
 		}
 		{
 			dependencies: ["0D6E099A1A242153"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "130E8FC7479E4271"
 			rewards: [
@@ -785,6 +816,7 @@
 		}
 		{
 			dependencies: ["0D6E099A1A242153"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "493B9FC17C3CF3CA"
 			rewards: [{
@@ -802,6 +834,7 @@
 		}
 		{
 			dependencies: ["00A3AD4BD4EE0FC7"]
+			entity_vis_size: 1.0f
 			id: "5A11A2FC20E5CE2A"
 			rewards: [
 				{
@@ -853,6 +886,7 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
+			entity_vis_size: 1.0f
 			id: "0EBB4E5195610A82"
 			rewards: [
 				{
@@ -883,6 +917,7 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
+			entity_vis_size: 1.0f
 			id: "6B0CE8AD86991E28"
 			rewards: [
 				{
@@ -911,6 +946,7 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
+			entity_vis_size: 1.0f
 			id: "206159A3C7A78447"
 			rewards: [{
 				id: "78FC5B1200521DB0"
@@ -928,6 +964,7 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
+			entity_vis_size: 1.0f
 			id: "00A3AD4BD4EE0FC7"
 			rewards: [
 				{
@@ -992,6 +1029,7 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
+			entity_vis_size: 1.0f
 			id: "52453550206EC770"
 			rewards: [
 				{
@@ -1063,6 +1101,7 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
+			entity_vis_size: 1.0f
 			id: "2B01B964638DFBD1"
 			rewards: [
 				{
@@ -1090,6 +1129,7 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
+			entity_vis_size: 1.0f
 			id: "37E43341FA234E84"
 			rewards: [
 				{
@@ -1118,6 +1158,7 @@
 		}
 		{
 			dependencies: ["0D6E099A1A242153"]
+			entity_vis_size: 1.0f
 			id: "743D7D9204915A13"
 			rewards: [
 				{
@@ -1148,6 +1189,7 @@
 		}
 		{
 			dependencies: ["0D6E099A1A242153"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "1C16AEE8E29FB5A0"
 			rewards: [{
@@ -1165,6 +1207,7 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
+			entity_vis_size: 1.0f
 			id: "15F03A5E7E14C022"
 			rewards: [{
 				id: "0299FC878824E0CD"
@@ -1182,6 +1225,7 @@
 		}
 		{
 			dependencies: ["5A11A2FC20E5CE2A"]
+			entity_vis_size: 1.0f
 			id: "4D9DC4973FD340E5"
 			rewards: [
 				{
@@ -1217,6 +1261,7 @@
 		}
 		{
 			dependencies: ["5A11A2FC20E5CE2A"]
+			entity_vis_size: 1.0f
 			id: "6D56AD1BEC644A10"
 			rewards: [
 				{
@@ -1244,6 +1289,7 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
+			entity_vis_size: 1.0f
 			id: "33058894ACD9CB06"
 			rewards: [
 				{
@@ -1270,6 +1316,7 @@
 		}
 		{
 			dependencies: ["583A7AA84FEC027F"]
+			entity_vis_size: 1.0f
 			id: "72C749AD9F1C634E"
 			rewards: [
 				{
@@ -1298,6 +1345,7 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
+			entity_vis_size: 1.0f
 			id: "74C114D0C0D4D374"
 			rewards: [{
 				id: "17B3D67DE05A7CD3"
@@ -1314,6 +1362,7 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
+			entity_vis_size: 1.0f
 			id: "68FC81E133443E76"
 			rewards: [
 				{
@@ -1351,6 +1400,7 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
+			entity_vis_size: 1.0f
 			id: "19D03831EB5EED02"
 			rewards: [
 				{
@@ -1379,6 +1429,7 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
+			entity_vis_size: 1.0f
 			id: "430475E11D259B74"
 			rewards: [
 				{
@@ -1407,6 +1458,7 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
+			entity_vis_size: 1.0f
 			id: "6A60B76053393288"
 			rewards: [
 				{
@@ -1435,6 +1487,7 @@
 		}
 		{
 			dependencies: ["0D6E099A1A242153"]
+			entity_vis_size: 1.0f
 			id: "7B5E2CD676A1A1C4"
 			rewards: [
 				{
@@ -1463,6 +1516,7 @@
 		}
 		{
 			dependencies: ["0D6E099A1A242153"]
+			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			id: "085F473094778DCD"
 			rewards: [{
@@ -1480,6 +1534,7 @@
 		}
 		{
 			dependencies: ["15B51FB56A64C303"]
+			entity_vis_size: 1.0f
 			id: "3B91163DE3DA885C"
 			rewards: [
 				{
@@ -1507,6 +1562,7 @@
 		}
 		{
 			dependencies: ["00A3AD4BD4EE0FC7"]
+			entity_vis_size: 1.0f
 			id: "537A8F99CC3F525D"
 			rewards: [{
 				id: "17D96E22386475B6"
@@ -1524,6 +1580,7 @@
 		}
 		{
 			dependencies: ["537A8F99CC3F525D"]
+			entity_vis_size: 1.0f
 			id: "5F5DB67F6A470C73"
 			rewards: [{
 				id: "7D4665C76890CAA4"
@@ -1541,6 +1598,7 @@
 		}
 		{
 			dependencies: ["5F5DB67F6A470C73"]
+			entity_vis_size: 1.0f
 			id: "53F8923B85A8A9CC"
 			rewards: [{
 				id: "0C00F01F3B567297"
@@ -1558,6 +1616,7 @@
 		}
 		{
 			dependencies: ["72C749AD9F1C634E"]
+			entity_vis_size: 1.0f
 			id: "3AE1C3290500638F"
 			rewards: [{
 				id: "391403C87C45AA1A"
@@ -1575,6 +1634,7 @@
 		}
 		{
 			dependencies: ["3AE1C3290500638F"]
+			entity_vis_size: 1.0f
 			id: "4D61009737D94BDA"
 			rewards: [{
 				id: "1BF4CDE00A585B13"
@@ -1592,6 +1652,7 @@
 		}
 		{
 			dependencies: ["4D61009737D94BDA"]
+			entity_vis_size: 1.0f
 			id: "14DA3DC7C0009A6A"
 			rewards: [{
 				id: "339C2D7D2E13CC60"
@@ -1609,6 +1670,7 @@
 		}
 		{
 			dependencies: ["5A11A2FC20E5CE2A"]
+			entity_vis_size: 1.0f
 			id: "360E9E02A494217C"
 			rewards: [{
 				id: "163866DF3DC8067E"
@@ -1626,6 +1688,7 @@
 		}
 		{
 			dependencies: ["33058894ACD9CB06"]
+			entity_vis_size: 1.0f
 			id: "696BDC29ACCBBE29"
 			rewards: [{
 				id: "07ACEB931B4480C1"
@@ -1643,6 +1706,7 @@
 		}
 		{
 			dependencies: ["0EBB4E5195610A82"]
+			entity_vis_size: 1.0f
 			id: "68500900087F92BC"
 			rewards: [{
 				id: "319C392EAB9692FF"
@@ -1660,6 +1724,7 @@
 		}
 		{
 			dependencies: ["0D6E099A1A242153"]
+			entity_vis_size: 1.0f
 			id: "6B26495A9E7D77FC"
 			rewards: [
 				{
@@ -1687,6 +1752,7 @@
 		}
 		{
 			dependencies: ["5FC01763770A062E"]
+			entity_vis_size: 1.0f
 			id: "37BE190EE466D697"
 			rewards: [{
 				id: "1CE52B3E62FB0202"
@@ -1705,6 +1771,7 @@
 		}
 		{
 			dependencies: ["647F95EED59927B7"]
+			entity_vis_size: 1.0f
 			id: "6012A593D0FB81EC"
 			rewards: [{
 				id: "5DDEF735E137334D"

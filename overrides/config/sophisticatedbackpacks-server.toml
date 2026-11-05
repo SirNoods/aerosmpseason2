@@ -83,11 +83,11 @@
 		#Number of inventory slots in the backpack
 		# Default: 120
 		# Range: 1 ~ 144
-		inventorySlotCount = 120
+		inventorySlotCount = 144
 		#Number of upgrade slots in the backpack
 		# Default: 7
 		# Range: 0 ~ 10
-		upgradeSlotCount = 7
+		upgradeSlotCount = 8
 
 	#Compacting Upgrade Settings
 	[server.compactingUpgrade]
@@ -569,7 +569,7 @@
 		#List of music discs that are not supposed to be played by entities
 		discBlockList = ["botania:record_gaia_1", "botania:record_gaia_2"]
 		#Turns on/off a chance that the entity that wears backpack gets jukebox upgrade and plays a music disc.
-		playJukebox = true
+		playJukebox = false
 		#Determines whether backpack drops to fake players if killed by them in addition to real ones that it always drops to
 		dropToFakePlayers = false
 		#Chance of mob dropping backpack when killed by player

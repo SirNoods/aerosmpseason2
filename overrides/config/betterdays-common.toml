@@ -22,7 +22,7 @@
 	#This setting defines the length of the day in real-world minutes.
 	#Vanilla length: 10.0 minutes
 	#Range: 0.1 ~ 10000.0
-	daySpeedMinutes = 10.0
+	daySpeedMinutes = 30.0
 	#An alternative way to set night speed. This setting is mutually exclusive with nightSpeed.
 	#If both are set, speedMethod (see above) determines which setting is used.
 	#This setting defines the length of the night in real-world minutes.

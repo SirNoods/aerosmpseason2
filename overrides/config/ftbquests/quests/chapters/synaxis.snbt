@@ -1,0 +1,208 @@
+{
+	autofocus_id: "1EE9B774A66A0725"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "synaxis"
+	group: "51F71B4D9DE33E6B"
+	icon: {
+		id: "synaxis:dynamic_revolute_motor"
+	}
+	id: "200BE8986FBE0BC3"
+	images: [{
+		height: 0.72d
+		id: "4CAE0CA5BCED8229"
+		image: "kubejs:textures/gui/quests/sx_header.png"
+		rotation: 0.0d
+		width: 6.0d
+		x: 1.0d
+		y: -2.0d
+	}]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			id: "1EE9B774A66A0725"
+			rewards: [{
+				id: "6386F7CF44E2B842"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "717BC0677A1EA1A5"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1EE9B774A66A0725"]
+			entity_vis_size: 1.0f
+			id: "524E409681852B2A"
+			rewards: [{
+				count: 2
+				id: "459A1282BE38288B"
+				item: {
+					count: 1
+					id: "create:electron_tube"
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "4E823DE369FE9CC1"
+				item: { count: 1, id: "create:sequenced_gearshift" }
+				type: "item"
+			}]
+			x: 3.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["524E409681852B2A"]
+			entity_vis_size: 1.0f
+			id: "6EFAA1F7827E5FD5"
+			rewards: [{
+				id: "5D824418636A8B54"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "3B77A27004955558"
+				item: { count: 1, id: "synaxis:dynamic_revolute_motor" }
+				type: "item"
+			}]
+			x: 4.625d
+			y: -2.382d
+		}
+		{
+			dependencies: ["524E409681852B2A"]
+			entity_vis_size: 1.0f
+			id: "1484C2FF84E3C4A5"
+			rewards: [{
+				id: "4BADBECE741490E1"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "220B36AF2C036EC5"
+				item: { count: 1, id: "synaxis:dynamic_joint_motor" }
+				type: "item"
+			}]
+			x: 5.632d
+			y: -1.375d
+		}
+		{
+			dependencies: ["524E409681852B2A"]
+			entity_vis_size: 1.0f
+			id: "52E729582816CA66"
+			rewards: [{
+				id: "6A13E3996E10B4F1"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "2880A9EA3E324ADA"
+				item: { count: 1, id: "synaxis:hydraulic_linear_actuator" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["524E409681852B2A"]
+			entity_vis_size: 1.0f
+			id: "1A58D7DCAC7FA956"
+			rewards: [{
+				id: "30A95BAD59C3DCDB"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "7322F89929448CA2"
+				item: { count: 1, id: "synaxis:kinetic_resistor" }
+				type: "item"
+			}]
+			x: 5.632d
+			y: 1.375d
+		}
+		{
+			dependencies: ["524E409681852B2A"]
+			entity_vis_size: 1.0f
+			id: "60F4E9F7A174B7C2"
+			rewards: [{
+				id: "4F956E527DA1C816"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "42FC53633C10653B"
+				item: { count: 1, id: "synaxis:compact_flap" }
+				type: "item"
+			}]
+			x: 4.625d
+			y: 2.382d
+		}
+		{
+			dependencies: ["1EE9B774A66A0725"]
+			entity_vis_size: 1.0f
+			id: "4DAAD1C1E90F4AFB"
+			rewards: [{
+				id: "41D2D73FB40CAA3E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "50C7199B6338E625"
+				item: { count: 1, id: "synaxis:control_chair" }
+				type: "item"
+			}]
+			x: -2.598d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1EE9B774A66A0725"]
+			entity_vis_size: 1.0f
+			id: "51CDD91DB2E3F179"
+			rewards: [{
+				id: "317AB77B70EF27A3"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "5C801C32FB53C7E2"
+				item: { count: 1, id: "synaxis:camera" }
+				type: "item"
+			}]
+			x: -2.598d
+			y: 1.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				components: {
+					"ftbquests:icon": "kubejs:textures/gui/quests/jim-video-link-icon.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			icon_scale: 1.5d
+			id: "4F04C7F0E8E2EBB0"
+			optional: true
+			rewards: [{
+				id: "6AE3875EBAF800CA"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "none"
+			size: 4.0d
+			tasks: [{
+				id: "761E3573A2B4FBCB"
+				type: "checkmark"
+			}]
+			x: 6.642857142857132d
+			y: -3.267857142857146d
+		}
+	]
+}

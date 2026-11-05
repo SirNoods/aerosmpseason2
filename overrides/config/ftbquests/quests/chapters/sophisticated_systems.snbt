@@ -13,6 +13,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			entity_vis_size: 1.0f
 			id: "4F0DD18D7647A103"
 			shape: "octagon"
 			tasks: [{
@@ -24,6 +25,7 @@
 		}
 		{
 			dependencies: ["4F0DD18D7647A103"]
+			entity_vis_size: 1.0f
 			id: "5640650E72BDAAEA"
 			rewards: [{
 				id: "7968999E201852BA"
@@ -43,6 +45,7 @@
 		}
 		{
 			dependencies: ["5640650E72BDAAEA"]
+			entity_vis_size: 1.0f
 			id: "638EB4E35F41405B"
 			rewards: [{
 				id: "43637477030645EC"
@@ -59,6 +62,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "4EAF4F9F7317CAE1"
 			rewards: [{
 				id: "6FF85980AEFC7D21"
@@ -82,6 +86,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "0ABA0995CC4AB6CB"
 			rewards: [{
 				id: "4847A4CDDD7CB7AA"
@@ -108,6 +113,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "42ABFA348B764E04"
 			rewards: [{
 				id: "53F8C570552242AA"
@@ -134,6 +140,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "75165E16BE3CA30C"
 			rewards: [{
 				id: "40132DE7D32DFB62"
@@ -160,6 +167,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "0BE6236A78C6894D"
 			rewards: [{
 				id: "2D073F6FA73A8DDD"
@@ -186,6 +194,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "6DE2AA3A79F054DE"
 			rewards: [{
 				id: "2D79B36C1A9CD26D"
@@ -212,6 +221,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "5A5068B2BA044F6D"
 			rewards: [{
 				id: "44B21F277B82D002"
@@ -238,6 +248,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "78F716258C26AFC5"
 			rewards: [{
 				id: "4027A25303590319"
@@ -264,6 +275,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "7B2EF52654BC3C22"
 			rewards: [{
 				id: "13896AE4CB4CB190"
@@ -290,6 +302,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "26D2235E1F464F42"
 			rewards: [{
 				id: "0489DD7DD3D6189D"
@@ -306,6 +319,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "00C8C2FAC2459375"
 			rewards: [{
 				id: "3762197389696483"
@@ -322,6 +336,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "74615FBE8C93952D"
 			rewards: [{
 				id: "0AA23FE481F5074E"
@@ -348,6 +363,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "4B2B22401FF12C27"
 			rewards: [
 				{
@@ -394,6 +410,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "5890502EE26E95FB"
 			rewards: [
 				{
@@ -430,6 +447,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "6B7759342D4AE496"
 			rewards: [
 				{
@@ -463,6 +481,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "36777FCDAA9ABDF7"
 			rewards: [{
 				id: "54C80284F19E0383"
@@ -489,6 +508,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "2EC8420FC47F06F9"
 			rewards: [
 				{
@@ -543,6 +563,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "77A2704F9551D0B5"
 			rewards: [
 				{
@@ -579,6 +600,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "5960CEAD282364D2"
 			rewards: [
 				{
@@ -620,6 +642,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "46ABE925335C066C"
 			rewards: [{
 				id: "1B7F8C94A4575E71"
@@ -651,6 +674,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "52B3B09AB5BA8C90"
 			rewards: [{
 				id: "0AB9E04DD526709A"
@@ -677,6 +701,7 @@
 		}
 		{
 			dependencies: ["638EB4E35F41405B"]
+			entity_vis_size: 1.0f
 			id: "2316FFE66B36924B"
 			tasks: [
 				{
@@ -705,6 +730,7 @@
 		}
 		{
 			dependencies: ["5640650E72BDAAEA"]
+			entity_vis_size: 1.0f
 			id: "52FFA3E691992828"
 			tasks: [{
 				id: "029246D5474217FF"
@@ -716,6 +742,7 @@
 		}
 		{
 			dependencies: ["52FFA3E691992828"]
+			entity_vis_size: 1.0f
 			id: "03F9939977753992"
 			tasks: [{
 				id: "0393D5B807EF187B"
@@ -727,6 +754,7 @@
 		}
 		{
 			dependencies: ["03F9939977753992"]
+			entity_vis_size: 1.0f
 			id: "2694808D51042470"
 			tasks: [{
 				id: "58C84BC5527DA89E"
@@ -738,6 +766,7 @@
 		}
 		{
 			dependencies: ["2694808D51042470"]
+			entity_vis_size: 1.0f
 			id: "54A7C357AE0ADF65"
 			tasks: [{
 				id: "27E82E773F6D9331"
@@ -749,6 +778,7 @@
 		}
 		{
 			dependencies: ["54A7C357AE0ADF65"]
+			entity_vis_size: 1.0f
 			id: "0602CB99A77F9CB8"
 			rewards: [{
 				id: "1F0138D4E4867B4C"
@@ -765,6 +795,7 @@
 		}
 		{
 			dependencies: ["21F20E65F0CF4FB7"]
+			entity_vis_size: 1.0f
 			id: "28EE13DE7CBE9518"
 			rewards: [{
 				id: "23ADABD5642DF2BA"
@@ -783,6 +814,7 @@
 			y: 2.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "08CEE78252594F5F"
 			rewards: [{
 				id: "76A685F277FEA005"
@@ -814,6 +846,7 @@
 		}
 		{
 			dependencies: ["28EE13DE7CBE9518"]
+			entity_vis_size: 1.0f
 			id: "1762E8D84A5D523D"
 			rewards: [{
 				id: "33FC19719818B065"
@@ -840,6 +873,7 @@
 		}
 		{
 			dependencies: ["28EE13DE7CBE9518"]
+			entity_vis_size: 1.0f
 			id: "1F879560512B92E5"
 			rewards: [{
 				id: "5A3E5820E9F71926"
@@ -866,6 +900,7 @@
 		}
 		{
 			dependencies: ["28EE13DE7CBE9518"]
+			entity_vis_size: 1.0f
 			id: "203A0C651EA25098"
 			rewards: [{
 				id: "653A61261576F55D"
@@ -892,6 +927,7 @@
 		}
 		{
 			dependencies: ["28EE13DE7CBE9518"]
+			entity_vis_size: 1.0f
 			id: "593FC0DC7C3B85CC"
 			rewards: [{
 				id: "2F0CB31F1F507E92"
@@ -918,6 +954,7 @@
 		}
 		{
 			dependencies: ["28EE13DE7CBE9518"]
+			entity_vis_size: 1.0f
 			id: "1E3B2C2A5B3F8891"
 			rewards: [{
 				id: "03E75DD3BD3BD99C"
@@ -944,6 +981,7 @@
 		}
 		{
 			dependencies: ["28EE13DE7CBE9518"]
+			entity_vis_size: 1.0f
 			id: "6E47004B5BA60AAC"
 			rewards: [{
 				id: "2BA5D8BC904ACB62"
@@ -970,6 +1008,7 @@
 		}
 		{
 			dependencies: ["28EE13DE7CBE9518"]
+			entity_vis_size: 1.0f
 			id: "6B2D00B54B16464B"
 			rewards: [
 				{
@@ -1006,6 +1045,7 @@
 		}
 		{
 			dependencies: ["28EE13DE7CBE9518"]
+			entity_vis_size: 1.0f
 			id: "08ACA2EAE7CB44AA"
 			rewards: [{
 				id: "72B78278DA1FC735"
@@ -1032,6 +1072,7 @@
 		}
 		{
 			dependencies: ["28EE13DE7CBE9518"]
+			entity_vis_size: 1.0f
 			id: "5411D7D6AD053E66"
 			rewards: [
 				{
@@ -1061,6 +1102,7 @@
 		}
 		{
 			dependencies: ["28EE13DE7CBE9518"]
+			entity_vis_size: 1.0f
 			id: "799E18C17D0CACCF"
 			tasks: [{
 				id: "7292564270A26446"
@@ -1072,6 +1114,7 @@
 		}
 		{
 			dependencies: ["28EE13DE7CBE9518"]
+			entity_vis_size: 1.0f
 			id: "2F17C0820C336EB5"
 			rewards: [
 				{
@@ -1130,6 +1173,7 @@
 		}
 		{
 			dependencies: ["28EE13DE7CBE9518"]
+			entity_vis_size: 1.0f
 			id: "1FC3C1EC91AD1443"
 			rewards: [{
 				id: "682033A670200378"
@@ -1156,6 +1200,7 @@
 		}
 		{
 			dependencies: ["28EE13DE7CBE9518"]
+			entity_vis_size: 1.0f
 			id: "5E1D5B6D719FE708"
 			rewards: [
 				{
@@ -1197,6 +1242,7 @@
 		}
 		{
 			dependencies: ["28EE13DE7CBE9518"]
+			entity_vis_size: 1.0f
 			id: "5C229CFEA7C5D2DD"
 			rewards: [{
 				id: "74187A45F850F792"
@@ -1223,6 +1269,7 @@
 		}
 		{
 			dependencies: ["28EE13DE7CBE9518"]
+			entity_vis_size: 1.0f
 			id: "2D43DDEE8D229F42"
 			rewards: [{
 				id: "6AF3BDD8E1727749"
@@ -1274,6 +1321,7 @@
 		}
 		{
 			dependencies: ["28EE13DE7CBE9518"]
+			entity_vis_size: 1.0f
 			id: "03DB76C4A4A1386B"
 			rewards: [{
 				id: "6ACA9BC4D38DC92D"
@@ -1300,6 +1348,7 @@
 		}
 		{
 			dependencies: ["28EE13DE7CBE9518"]
+			entity_vis_size: 1.0f
 			id: "298B1994C646424F"
 			rewards: [{
 				id: "64CB879047BDCA50"
@@ -1318,6 +1367,7 @@
 			y: 5.5d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "21F20E65F0CF4FB7"
 			rewards: [
 				{
@@ -1353,6 +1403,7 @@
 			y: 1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "10BC36D23A81AF11"
 			rewards: [{
 				id: "25C7BDF4CE3C57CF"
@@ -1371,6 +1422,7 @@
 			y: 1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "030E3962451BB4BD"
 			rewards: [
 				{
@@ -1406,6 +1458,7 @@
 			y: 1.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "31A3C643745E1953"
 			rewards: [
 				{

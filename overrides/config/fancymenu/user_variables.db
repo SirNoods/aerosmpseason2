@@ -1,0 +1,158 @@
+type = user_variables
+
+variable {
+  name = next
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = music_angle
+  value = 253.59999999998988
+  reset_on_launch = false
+}
+
+variable {
+  name = widget
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = portal_anger
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = hero_summon
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = back
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = music_play
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = music_play_plate
+  value = ▶
+  reset_on_launch = false
+}
+
+variable {
+  name = teleanim
+  value = fma
+  reset_on_launch = false
+}
+
+variable {
+  name = flower5
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = flower6
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = flower3
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = flower4
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = portal_active_config
+  value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = hero_summon_config
+  value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = title1
+  value = Changelog
+  reset_on_launch = false
+}
+
+variable {
+  name = title2
+  value = Music
+  reset_on_launch = false
+}
+
+variable {
+  name = title3
+  value = Config
+  reset_on_launch = false
+}
+
+variable {
+  name = flower1
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = flower2
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = volume
+  value = 0.65
+  reset_on_launch = false
+}
+
+variable {
+  name = update_request
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = update_play
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = disc
+  value = 1
+  reset_on_launch = false
+}
+
+variable {
+  name = portal_active
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = widget_content
+  value = 2
+  reset_on_launch = false
+}
+

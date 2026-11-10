@@ -186,6 +186,8 @@
 		#Who owns the paid apps, PLAYER is shared across tablets, DEVICE is not.
 		#Allowed Values: PLAYER, DEVICE
 		appPurchaseScope = "PLAYER"
+		#Legacy startup fallback for the Smart Tablet. The server.features.blocks.diagnostic_tablet setting takes precedence.
+		enabled = false
 
 	#RCS Thruster propulsion
 	[common.rcs_thruster]
@@ -198,10 +200,3 @@
 	[common.flight_control]
 		#Easy Flight control integration. Allow control nodes without dedicated Flight Control blocks. A Creative Flight Control Computer on the sublevel also enables this. Its node always requires the physical block. Existing blocks synchronize with their nodes in either mode. The HUD node is always available.
 		easyFlightControlIntegration = false
-
-	#Dye Applicator
-	[common.dye_applicator]
-		#Allow the Dye Applicator on Flight Control thruster plumes. The server controls application; each client controls visibility. Disabled clients see the native plume. Saved presets are retained.
-		flightControl = true
-		#Allow the Dye Applicator on Propulsion Simulated thruster plumes. The server controls application; each client controls visibility. Disabled clients see the native plume. Saved presets are retained.
-		propulsionSimulated = true

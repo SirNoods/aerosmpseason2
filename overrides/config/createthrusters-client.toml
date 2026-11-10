@@ -35,9 +35,12 @@
 	# Default: 320
 	# Range: 64 ~ 2048
 	cameraFeedResolution = 320
-	#World Hologram Projector Resolution. FULL keeps original textured models. HIGH simplifies small projected blocks. MEDIUM always averages eligible solid faces; LOW also groups their colors, including nearby and layered terrain such as grass. Glass, thin blocks and block entity partials retain their models. Distant surfaces simplify further. Changes apply to active holograms.
-	#Allowed Values: FULL, HIGH, MEDIUM, LOW
-	worldHologramProjectorResolution = "FULL"
+	#Use the V2 node graph interface for Advanced Contraption Controllers
+	advancedControllerV2Ui = true
+	#Thrusters emit light
+	thrustersEmitLight = true
+	#Plumes emit light into the surrounding world
+	plumesEmitLight = false
 
 	#Seasonal visual effects
 	[client.seasonal]

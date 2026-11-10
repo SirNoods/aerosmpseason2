@@ -45645,10 +45645,6 @@
     "maxWaterDepth": 64,
     "implosionChance": 0.39013878
   },
-  "createthrusters:celebration_thruster": {
-    "maxWaterDepth": 71,
-    "implosionChance": 0.31137055
-  },
   "createthrusters:claw": {
     "maxWaterDepth": 71,
     "implosionChance": 0.31137055
@@ -45680,6 +45676,10 @@
   "createthrusters:fuel_oxidizer": {
     "maxWaterDepth": 71,
     "implosionChance": 0.31137055
+  },
+  "createthrusters:gyro_redstone_bridge": {
+    "maxWaterDepth": 59,
+    "implosionChance": 0.39013878
   },
   "createthrusters:gyroscope_link": {
     "maxWaterDepth": 59,
@@ -45801,13 +45801,9 @@
     "maxWaterDepth": 77,
     "implosionChance": 0.27459225
   },
-  "createthrusters:worker_pod": {
-    "maxWaterDepth": 65,
-    "implosionChance": 0.3497237
-  },
-  "createthrusters:world_hologram_projector": {
-    "maxWaterDepth": 70,
-    "implosionChance": 0.3497237
+  "createthrusters:virtual_orientation_source": {
+    "maxWaterDepth": 59,
+    "implosionChance": 0.39013878
   },
   "createtransmission:andesite_encased_transmission_chain": {
     "maxWaterDepth": 27,

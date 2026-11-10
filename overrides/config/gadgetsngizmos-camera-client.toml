@@ -3,5 +3,3 @@
 	showFrame = true
 	#Show a rule-of-thirds grid while controlling a camera.
 	showGrid = false
-	#Independent frame and grid settings for each camera source.
-	sources = []

@@ -683,12 +683,6 @@
       "isLocked": false
     },
     {
-      "projectID": 1671440,
-      "fileID": 9218718,
-      "required": false,
-      "isLocked": false
-    },
-    {
       "projectID": 1282587,
       "fileID": 7707570,
       "required": true,
@@ -1304,12 +1298,6 @@
       "projectID": 499980,
       "fileID": 9122548,
       "required": true,
-      "isLocked": false
-    },
-    {
-      "projectID": 1700155,
-      "fileID": 8913921,
-      "required": false,
       "isLocked": false
     },
     {
